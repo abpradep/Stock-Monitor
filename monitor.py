@@ -2,13 +2,18 @@
 """
 Stock monitor -> Telegram alerts.
 
-  python monitor.py scan     check news + price/volume, alert on new material events
-  python monitor.py summary  send the 7 PM daily summary
+  python monitor.py scan     check news, NSE/BSE filings and price/volume, alert on new
+                             material events
+  python monitor.py report   scan, then send the 3-hourly report (7 AM to 7 PM IST). Claude
+                             is only called when something crucial happened since the last report
+  python monitor.py summary  send the plain daily summary (no Claude needed)
   python monitor.py test     send a test message to confirm Telegram works
 
 Configuration comes from environment variables (GitHub Secrets):
   TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID   required
-  ANTHROPIC_API_KEY                      optional, enables Bullish/Bearish analysis
+  ANTHROPIC_API_KEY                      optional, enables Bullish/Bearish analysis and
+                                         the detailed report (without it, report sends the
+                                         plain summary instead)
 """
 import datetime as dt
 import hashlib
@@ -20,6 +25,7 @@ import sys
 import urllib.parse
 from zoneinfo import ZoneInfo
 
+import anthropic
 import feedparser
 import requests
 import yfinance as yf
@@ -30,7 +36,8 @@ STATE_FILE = "state.json"
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5")
+CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5")          # per-headline alerts
+REPORT_MODEL = os.environ.get("REPORT_MODEL", "claude-haiku-5-5")        # 3-hourly report
 
 PRICE_MOVE_PCT = float(os.environ.get("PRICE_MOVE_PCT", "5"))   # alert on moves >= 5%
 VOLUME_SPIKE_X = float(os.environ.get("VOLUME_SPIKE_X", "2.5")) # volume >= 2.5x 20-day avg
@@ -73,6 +80,15 @@ JUNK = re.compile(
     re.I,
 )
 
+# Routine exchange filings that are never worth an alert.
+ROUTINE_FILING = re.compile(
+    r"trading window|loss of (share )?certificate|duplicate (share )?certificate|reg(ulation)?\.? ?74|"
+    r"74 ?\(5\)|newspaper|publication|investor (meet|conference)|analysts?(/| and )?(institutional )?investor|"
+    r"\bmeet\b|\bkyc\b|transfer of shares|transmission of shares|compliance certificate|certificate under|"
+    r"reg(ulation)?\.? ?(7|40|39)\b|esop|esos|allotment of (equity )?shares under",
+    re.I,
+)
+
 # Headlines must match one of these before they are analysed (keeps noise and API cost down).
 KEYWORDS = re.compile(
     r"result|profit|loss|revenue|earning|ebitda|margin|dividend|bonus|split|buyback|"
@@ -96,7 +112,8 @@ def load_state():
 
 def save_state(state, today):
     cutoff = (today - dt.timedelta(days=7)).isoformat()
-    state["seen"] = {k: d for k, d in state.get("seen", {}).items() if d >= cutoff}
+    for bucket in ("seen", "reported_news"):
+        state[bucket] = {k: d for k, d in state.get(bucket, {}).items() if d >= cutoff}
     for bucket in ("events", "price_alerted"):
         state[bucket] = {d: v for d, v in state.get(bucket, {}).items() if d >= cutoff}
     with open(STATE_FILE, "w") as f:
@@ -120,10 +137,19 @@ def send_telegram(text):
         print("Telegram not configured. Message would be:\n" + text)
         return
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-    for i in range(0, len(text), 4000):
+    # Telegram caps messages at 4096 chars. Split on line breaks so an HTML tag
+    # is never cut in half (which makes Telegram reject the message).
+    chunks, cur = [], ""
+    for line in text.split("\n"):
+        if cur and len(cur) + len(line) + 1 > 4000:
+            chunks.append(cur)
+            cur = ""
+        cur = f"{cur}\n{line}" if cur else line
+    chunks.append(cur)
+    for chunk in chunks:
         r = requests.post(url, data={
             "chat_id": TELEGRAM_CHAT_ID,
-            "text": text[i:i + 4000],
+            "text": chunk,
             "disable_web_page_preview": "true",
             "parse_mode": "HTML",
         }, timeout=20)
@@ -144,7 +170,7 @@ def format_alert(symbol, a, link=""):
         f"<b>Importance:</b> {e(a.get('importance', '-'))}/10",
     ]
     if link:
-        lines.append(f'<a href="{e(link)}">Read the news</a>')
+        lines.append(f'<a href="{e(link)}">{"Open the filing" if "nseindia.com" in link or "bseindia.com" in link else "Read the news"}</a>')
     return "\n".join(lines)
 
 
@@ -165,8 +191,116 @@ def fetch_news(name):
     return items
 
 
+# ---------- exchange filings (NSE + BSE corporate announcements) ----------
+
+BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.5",
+}
+
+
+def filing_item(source, subject, text, link):
+    text = re.sub(r"\s+", " ", text or "").strip()
+    if len(text) > 300:
+        text = text[:300] + "…"
+    title = f"[{source} filing] {subject}" + (f": {text}" if text and text != subject else "")
+    return {"title": title, "link": link, "filing": True}
+
+
+def fetch_nse_filings(today):
+    """All NSE announcements from yesterday and today, main board and SME,
+    for the watchlist. NSE needs a browser-like session cookie first."""
+    s = requests.Session()
+    s.headers.update(BROWSER_HEADERS)
+    s.headers["Referer"] = "https://www.nseindia.com/companies-listing/corporate-filings-announcements"
+    s.get("https://www.nseindia.com/companies-listing/corporate-filings-announcements", timeout=20)
+    params = {"from_date": f"{today - dt.timedelta(days=1):%d-%m-%Y}", "to_date": f"{today:%d-%m-%Y}"}
+    out = {}
+    for index in ("equities", "sme"):
+        r = s.get("https://www.nseindia.com/api/corporate-announcements",
+                  params={"index": index, **params}, timeout=30)
+        r.raise_for_status()
+        for a in r.json():
+            sym = a.get("symbol", "")
+            if sym in WATCHLIST:
+                out.setdefault(sym, []).append(filing_item(
+                    "NSE", a.get("desc", ""), a.get("attchmntText", ""), a.get("attchmntFile", "")))
+    return out
+
+
+def bse_code(session, state, symbol):
+    """BSE scrip code for an NSE symbol, looked up once and remembered in state."""
+    codes = state.setdefault("bse_codes", {})
+    if symbol not in codes:
+        r = session.get("https://api.bseindia.com/BseIndiaAPI/api/PeerSmartSearch/w",
+                        params={"Type": "SS", "text": symbol}, timeout=20)
+        r.raise_for_status()
+        # The response is HTML like "<strong>LAURUSLABS</strong>  INE947Q01028  540222"
+        m = re.search(rf"<\w+>{re.escape(symbol)}</\w+>\s+\w+\s+(\d{{6}})",
+                      r.text.replace("&nbsp;", " "), re.I)
+        if not m:
+            return None  # not listed on BSE (e.g. NSE SME stocks); tried again next run
+        codes[symbol] = m.group(1)
+    return codes[symbol]
+
+
+def fetch_bse_filings(state, today):
+    s = requests.Session()
+    s.headers.update(BROWSER_HEADERS)
+    s.headers.update({"Origin": "https://www.bseindia.com", "Referer": "https://www.bseindia.com/"})
+    out = {}
+    for sym in WATCHLIST:
+        try:
+            code = bse_code(s, state, sym)
+            if not code:
+                continue
+            r = s.get("https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w", params={
+                "pageno": 1, "strCat": -1, "subcategory": -1, "strSearch": "P", "strType": "C",
+                "strPrevDate": f"{today - dt.timedelta(days=1):%Y%m%d}", "strToDate": f"{today:%Y%m%d}",
+                "strScrip": code,
+            }, timeout=20)
+            r.raise_for_status()
+        except Exception as ex:
+            print(f"BSE filings failed for {sym}: {ex}")
+            continue
+        for a in r.json().get("Table", []):
+            att = (a.get("ATTACHMENTNAME") or "").strip()
+            link = (f"https://www.bseindia.com/xml-data/corpfiling/AttachLive/{att}" if att
+                    else a.get("NSURL", ""))
+            subject = (a.get("NEWSSUB") or "").split(" - ")[-1].strip() or a.get("SUBCATNAME") or ""
+            out.setdefault(sym, []).append(filing_item("BSE", subject, a.get("HEADLINE", ""), link))
+    return out
+
+
+def fetch_filings(state, today):
+    """symbol -> list of filing items from NSE and BSE. A failure on one exchange
+    (they sometimes block cloud servers) doesn't stop the other."""
+    filings = {}
+    for name, fetch in (("NSE", lambda: fetch_nse_filings(today)),
+                        ("BSE", lambda: fetch_bse_filings(state, today))):
+        try:
+            for sym, items in fetch().items():
+                filings.setdefault(sym, []).extend(items)
+        except Exception as ex:
+            print(f"{name} filings fetch failed: {ex}")
+    return filings
+
+
+def is_relevant(item, mentions):
+    """Filings are always about the company; news headlines must name it."""
+    if item.get("filing"):
+        return not ROUTINE_FILING.search(item["title"])
+    return bool(mentions.search(item["title"])) and not JUNK.search(item["title"])
+
+
+def is_material(item):
+    return bool(item.get("filing") or KEYWORDS.search(item["title"]))
+
+
 CLAUDE_PROMPT = """You are a stock monitoring analyst for Indian equities.
-Below are new news headlines about {name} (NSE: {symbol}).
+Below are new news headlines and stock exchange filings about {name} (NSE: {symbol}).
 
 Decide whether any of them is a material event for this stock: earnings results, corporate
 announcements, dividends/bonus/buyback, management changes, analyst upgrades/downgrades,
@@ -189,25 +323,20 @@ Reply with ONLY a JSON object, no other text:
 Judge only from the headlines. If they are too vague to judge, lower the confidence."""
 
 
+def claude_client():
+    return anthropic.Anthropic(api_key=ANTHROPIC_API_KEY, timeout=180)
+
+
 def analyze_with_claude(symbol, name, headlines):
     items = "\n".join(f"{i + 1}. {h['title']}" for i, h in enumerate(headlines))
-    r = requests.post(
-        "https://api.anthropic.com/v1/messages",
-        headers={
-            "x-api-key": ANTHROPIC_API_KEY,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
-        },
-        json={
-            "model": CLAUDE_MODEL,
-            "max_tokens": 600,
-            "messages": [{"role": "user", "content": CLAUDE_PROMPT.format(
-                name=name, symbol=symbol, items=items)}],
-        },
-        timeout=60,
+    resp = claude_client().messages.create(
+        model=CLAUDE_MODEL,
+        max_tokens=2000,
+        output_config={"effort": "low"},
+        messages=[{"role": "user", "content": CLAUDE_PROMPT.format(
+            name=name, symbol=symbol, items=items)}],
     )
-    r.raise_for_status()
-    text = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text")
+    text = "".join(b.text for b in resp.content if b.type == "text")
     match = re.search(r"\{.*\}", text, re.S)
     return json.loads(match.group(0)) if match else None
 
@@ -284,16 +413,25 @@ def rule_analyze(headlines):
     return a, idx
 
 
-def scan_news(state, today):
+def scan_news(state, today, collected=None):
+    """Alert on new material news. If `collected` is a dict, it is filled with
+    symbol -> all of today's relevant headlines (new or already seen) for the report."""
     priming = "seen" not in state  # first run: remember existing news without alerting
+    # Filings were added later: the first run with them only remembers what's already there.
+    filings_priming = not state.get("filings_primed")
     seen = state.setdefault("seen", {})
+    filings = fetch_filings(state, today)
     for symbol, (name, aliases) in WATCHLIST.items():
         mentions = re.compile(r"\b(" + "|".join(re.escape(a) for a in aliases) + r")\b", re.I)
         try:
-            items = fetch_news(name)
+            news = fetch_news(name)
         except Exception as ex:
             print(f"News fetch failed for {symbol}: {ex}")
-            continue
+            news = []
+        items = filings.get(symbol, []) + news
+
+        if collected is not None:
+            collected[symbol] = [it for it in items if is_relevant(it, mentions)][:8]
 
         new = []
         for it in items:
@@ -301,8 +439,9 @@ def scan_news(state, today):
             if key in seen:
                 continue
             seen[key] = today.isoformat()
-            t = it["title"]
-            if mentions.search(t) and KEYWORDS.search(t) and not JUNK.search(t):
+            if filings_priming and it.get("filing"):
+                continue
+            if is_relevant(it, mentions) and is_material(it):
                 new.append(it)
         if priming or not new:
             continue
@@ -331,6 +470,7 @@ def scan_news(state, today):
 
         send_telegram(format_alert(symbol, a, link))
         record_event(state, today, symbol, a)
+    state["filings_primed"] = True
     if priming:
         print("First run: existing news recorded, no alerts sent.")
 
@@ -438,6 +578,207 @@ def daily_summary(state, today):
     send_telegram("\n".join(lines))
 
 
+# ---------- 3-hourly report ----------
+
+def get_snapshot():
+    """Latest price picture for every stock: day / week / month change, volume and
+    52-week range. Uses the most recent candle, so it also works before the open."""
+    tickers = [s + ".NS" for s in WATCHLIST]
+    data = yf.download(tickers, period="1y", interval="1d", group_by="ticker",
+                       auto_adjust=False, progress=False, threads=True)
+    snap = {}
+    for sym in WATCHLIST:
+        try:
+            df = data[sym + ".NS"].dropna(subset=["Close"])
+        except KeyError:
+            continue
+        if len(df) < 22:
+            continue
+        close = df["Close"]
+        last = float(close.iloc[-1])
+        chg = lambda n: (last / float(close.iloc[-1 - n]) - 1) * 100
+        avg_vol = df["Volume"].iloc[-21:-1].mean()
+        hi, lo = float(df["High"].max()), float(df["Low"].min())
+        snap[sym] = {
+            "date": df.index[-1].date().isoformat(),
+            "close": round(last, 2),
+            "day_pct": round(chg(1), 2),
+            "week_pct": round(chg(5), 2),
+            "month_pct": round(chg(21), 2),
+            "vol_x": round(float(df["Volume"].iloc[-1] / avg_vol), 2) if avg_vol else 0,
+            "from_52w_high_pct": round((last / hi - 1) * 100, 1),
+            "from_52w_low_pct": round((last / lo - 1) * 100, 1),
+        }
+    return snap
+
+
+def report_slot(now):
+    """Name for this report, based on where we are in the Indian trading day."""
+    t = now.hour * 60 + now.minute
+    if now.weekday() >= 5:
+        return "Weekend review"
+    if t < 9 * 60 + 15:
+        return "Pre-market"
+    if t < 15 * 60 + 30:
+        return "Intraday"
+    if t < 17 * 60:
+        return "Market close"
+    return "Evening wrap"
+
+
+REPORT_SYSTEM = """You are an equity research analyst covering Indian small and mid caps for
+one investor. You are shown only the stocks where something crucial happened since the last
+report (a sharp move, a volume spike, an alert, new company news or a stock exchange filing).
+
+Rules:
+- Be specific. Cite the numbers you were given (price change, volume multiple, distance from
+  the 52-week high/low) and name the actual news. No generic filler such as "monitor closely".
+- Use only the data provided. Don't invent results, targets or events.
+- "view" is the near-term (days to weeks) read from the price action and news, not a buy/sell call.
+- "summary" explains what happened and why it matters, in 1-2 sentences.
+- "watch" is the one concrete thing to check next (a level, a filing, an event, a date)."""
+
+REPORT_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "headline": {"type": "string",
+                     "description": "One sentence on what matters most right now."},
+        "stocks": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "symbol": {"type": "string"},
+                    "view": {"type": "string", "enum": ["Bullish", "Bearish", "Neutral"]},
+                    "summary": {"type": "string"},
+                    "watch": {"type": "string"},
+                },
+                "required": ["symbol", "view", "summary", "watch"],
+                "additionalProperties": False,
+            },
+        },
+    },
+    "required": ["headline", "stocks"],
+    "additionalProperties": False,
+}
+
+
+def news_key(title):
+    return hashlib.sha1(title.lower().encode()).hexdigest()[:16]
+
+
+def find_crucial(state, today, news):
+    """Stocks with something crucial since the last report: an alert that was sent (news,
+    price move or volume spike) or a material headline not covered by an earlier report.
+    Returns symbol -> {"reasons": [...], "fresh": [headline keys]}."""
+    last = state.get("last_report", "")
+    reported = state.get("reported_news", {})
+    events = state.get("events", {}).get(today.isoformat(), [])
+    crucial = {}
+    for sym in WATCHLIST:
+        reasons = [f"alert at {e['time']}: {e['event']}" for e in events
+                   if e["symbol"] == sym and f"{today.isoformat()}T{e['time']}" > last]
+        fresh = [news_key(h["title"]) for h in news.get(sym, [])
+                 if is_material(h) and news_key(h["title"]) not in reported]
+        if fresh:
+            reasons.append(f"{len(fresh)} new filing(s) or material headline(s)")
+        if reasons:
+            crucial[sym] = {"reasons": reasons, "fresh": fresh}
+    return crucial
+
+
+def claude_report(now, slot, snap, news, events, crucial):
+    stocks = []
+    for sym, c in crucial.items():
+        stocks.append({
+            "symbol": sym,
+            "name": WATCHLIST[sym][0],
+            "why_flagged": c["reasons"],
+            "price": snap.get(sym, "no price data"),
+            "news_and_filings_last_24h": [h["title"] for h in news.get(sym, [])],
+            "alerts_sent_today": [f"{e['time']} {e['event']} ({e['impact']})"
+                                  for e in events if e["symbol"] == sym],
+        })
+    user = (f"Report time: {now:%A %d %b %Y, %I:%M %p} IST ({slot}).\n"
+            "NSE trades 9:15 AM to 3:30 PM IST on weekdays; the price data's \"date\" is the "
+            "latest daily candle, which is still forming during market hours.\n\n"
+            "Flagged stocks:\n" + json.dumps(stocks, ensure_ascii=False, indent=1) +
+            "\n\nWrite the report. Include every flagged stock, in the order given.")
+    resp = claude_client().messages.create(
+        model=REPORT_MODEL,
+        max_tokens=8000,
+        output_config={"effort": "medium",
+                       "format": {"type": "json_schema", "schema": REPORT_SCHEMA}},
+        system=REPORT_SYSTEM,
+        messages=[{"role": "user", "content": user}],
+    )
+    if resp.stop_reason != "end_turn":
+        raise RuntimeError(f"report stopped early: {resp.stop_reason}")
+    return json.loads(next(b.text for b in resp.content if b.type == "text"))
+
+
+def format_report(now, slot, snap, crucial, r):
+    """r is Claude's analysis of the crucial stocks, or None when Claude wasn't used."""
+    e = lambda v: html.escape(str(v))
+    icon = {"Bullish": "🟢", "Bearish": "🔴", "Neutral": "⚪"}
+
+    def price(sym, full=False):
+        p = snap.get(sym)
+        if not p:
+            return ""
+        txt = f" ₹{p['close']:,.2f} · {p['day_pct']:+.1f}%"
+        if full:
+            txt += f" day · {p['week_pct']:+.1f}% wk"
+        if p["vol_x"] >= VOLUME_SPIKE_X:
+            txt += f" · vol {p['vol_x']:.1f}x"
+        return txt
+
+    lines = [f"📈 <b>Stock report — {now:%I:%M %p} · {e(slot)}</b>", f"{now:%a %d %b %Y}", ""]
+    if r:
+        lines += ["🧠 <b>What matters</b>", f"<i>{e(r['headline'])}</i>"]
+        for s in r["stocks"]:
+            sym = s["symbol"]
+            lines += ["", f"{icon.get(s['view'], '⚪')} <b>{e(sym)}</b>{e(price(sym, True))} — {e(s['view'])}",
+                      e(s["summary"]), f"👀 {e(s['watch'])}"]
+    elif crucial:
+        lines.append("⚠️ <b>Flagged since last report</b>")
+        lines += [f"• <b>{e(sym)}</b>: {e('; '.join(c['reasons']))}" for sym, c in crucial.items()]
+    else:
+        lines.append("✅ Nothing crucial since the last report.")
+
+    lines += ["", "<b>Watchlist</b>"]
+    if snap:
+        for sym in sorted(snap, key=lambda x: snap[x]["day_pct"], reverse=True):
+            lines.append(f"• {e(sym)}{e(price(sym))}")
+        lines.append(f"<i>Prices as of {e(max(p['date'] for p in snap.values()))} close or latest.</i>")
+    else:
+        lines.append("No price data available.")
+    return "\n".join(lines)
+
+
+def send_report(state, today, news):
+    now = dt.datetime.now(IST)
+    slot = report_slot(now)
+    try:
+        snap = get_snapshot()
+    except Exception as ex:
+        print("Price fetch failed:", ex)
+        snap = {}
+    crucial = find_crucial(state, today, news)
+    r = None
+    if crucial and ANTHROPIC_API_KEY:  # Claude is only called when something crucial happened
+        events = state.get("events", {}).get(today.isoformat(), [])
+        try:
+            r = claude_report(now, slot, snap, news, events, crucial)
+        except Exception as ex:
+            print("Claude report failed, sending without analysis:", ex)
+    send_telegram(format_report(now, slot, snap, crucial, r))
+    for c in crucial.values():
+        for k in c["fresh"]:
+            state.setdefault("reported_news", {})[k] = today.isoformat()
+    state["last_report"] = now.strftime("%Y-%m-%dT%H:%M")
+
+
 # ---------- main ----------
 
 def main():
@@ -450,6 +791,11 @@ def main():
         return
     if mode == "summary":
         daily_summary(state, today)
+    elif mode == "report":
+        news = {}
+        scan_news(state, today, news)
+        scan_prices(state, today)
+        send_report(state, today, news)
     else:
         scan_news(state, today)
         scan_prices(state, today)
