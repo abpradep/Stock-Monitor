@@ -181,7 +181,20 @@
   "7bd27b959e3105bb": "2026-10-21",
   "48f261b6c3c11d85": "2026-10-21",
   "08a0a1becbb6f996": "2026-10-21",
-  "0817398e64aefc30": "2026-10-21"
+  "0817398e64aefc30": "2026-10-21",
+  "30fb35a9cbd97624": "2026-10-21",
+  "2c4cbcdde67a1e0b": "2026-10-21",
+  "7a4d4f90d2a9f143": "2026-10-21",
+  "28a27a4eefb73e83": "2026-10-21",
+  "4f2d5b5ce57d45cf": "2026-10-21",
+  "ef5b1bca17b15146": "2026-10-21",
+  "6de550ff2bf558cd": "2026-10-21",
+  "90d7d42ab9f06a20": "2026-10-21",
+  "d1239c8fca49bb8f": "2026-10-21",
+  "bf6226df179a10e5": "2026-10-21",
+  "1553693f6273d20c": "2026-10-21",
+  "88b6a2ad555471d4": "2026-10-21",
+  "4b12ec453ac5d074": "2026-10-21"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -273,6 +286,20 @@
     "impact": "Not analysed",
     "importance": "-",
     "time": "19:55"
+   },
+   {
+    "symbol": "HDFCBANK",
+    "event": "Video | HDFC Bank Says Probe Into Confidential Information Leak Is Underway - NDTV Profit",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "20:31"
+   },
+   {
+    "symbol": "ICICIBANK",
+    "event": "ICICI Bank stock: JPMorgan raises target for ICICI Bank stock to INR 1,800 - AD HOC NEWS (+1 more)",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "20:31"
    }
   ]
  }
