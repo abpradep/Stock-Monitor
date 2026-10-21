@@ -147,7 +147,15 @@
   "224f8d4a9eb29fd9": "2026-10-21",
   "3a40782bd42c6b78": "2026-10-21",
   "6570243fbdfb2b57": "2026-10-21",
-  "14d630c252173df8": "2026-10-21"
+  "14d630c252173df8": "2026-10-21",
+  "70ac6d1089795aba": "2026-10-21",
+  "ef2f64e725e4869d": "2026-10-21",
+  "1a317391f02afc47": "2026-10-21",
+  "53295d692c0bbfb9": "2026-10-21",
+  "e5c06bc3665191fb": "2026-10-21",
+  "4123f3922417172e": "2026-10-21",
+  "4f50f66e758b629b": "2026-10-21",
+  "eb93f99e1309a35b": "2026-10-21"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -204,6 +212,20 @@
     "impact": "Not analysed",
     "importance": "-",
     "time": "17:29"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "LTTS shares rally 15%: Should you buy this IT stock after Q2 results? - Business Today",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "18:05"
+   },
+   {
+    "symbol": "FDC",
+    "event": "FDC Board To Review Share Buyback Proposal Via Tender Offer Route - Sahi",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "18:05"
    }
   ]
  }
