@@ -194,7 +194,18 @@
   "bf6226df179a10e5": "2026-10-21",
   "1553693f6273d20c": "2026-10-21",
   "88b6a2ad555471d4": "2026-10-21",
-  "4b12ec453ac5d074": "2026-10-21"
+  "4b12ec453ac5d074": "2026-10-21",
+  "2d951bb2d1a96a2f": "2026-10-21",
+  "9a89f1c5aa6f24e0": "2026-10-21",
+  "bedc12866e765214": "2026-10-21",
+  "47dfd32bc170eb43": "2026-10-21",
+  "833a995735c78832": "2026-10-21",
+  "bbfeda0a855ed3c3": "2026-10-21",
+  "78ce9b09edacf21d": "2026-10-21",
+  "11c9cce268a7de70": "2026-10-21",
+  "495c67b0100bd8dc": "2026-10-21",
+  "3230dc31e0dea5d4": "2026-10-21",
+  "34d9b3ce649a28ca": "2026-10-21"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -300,6 +311,20 @@
     "impact": "Not analysed",
     "importance": "-",
     "time": "20:31"
+   },
+   {
+    "symbol": "INFY",
+    "event": "Infosys stock: Jefferies raises target for Infosys stock to INR 1,160 - AD HOC NEWS",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "21:32"
+   },
+   {
+    "symbol": "PDSL",
+    "event": "PDS Ltd subsidiary acquires remaining 49% stake in DBS Lifestyle HK - scanx.trade",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "21:32"
    }
   ]
  }
