@@ -90,6 +90,29 @@ JUNK = re.compile(
     re.I,
 )
 
+# Watched companies that are also brokerages: headlines that only quote them as the
+# analyst on some other stock are dropped. symbol -> (quoted as broker, about itself).
+# A headline is dropped when the first pattern matches and the second doesn't.
+BROKER_ONLY = {
+    "JMFINANCIL": (
+        re.compile(
+            r"JM Financial (institutional|research|analysts?|securities|services)\b|"
+            r"(according to|says|said|per|brokerage|broker|analysts? at|by|from|via) JM Financial|"
+            r"JM Financial (says|sees|expects|maintains|retains|upgrades?|downgrades?|initiates|"
+            r"recommends|gives|assigns|is (bullish|bearish|positive|negative)|bullish|bearish|"
+            r"likes|prefers|top picks?|picks?|(raises|cuts|hikes|lowers) (its )?(target|rating|estimates?))|"
+            r"JM Financial'?s? (top picks?|target|view|outlook|report|note|estimates?|rating)|"
+            r"[:|]\s*JM Financial\s*$",
+            re.I),
+        re.compile(
+            r"JM Financial( Ltd| Limited)?('s)? (shares?|stock|q[1-4]|quarter|results?|net profit|"
+            r"profit|revenue|board|dividend|ceo|md|chairman|arm|subsidiar|home loans|"
+            r"asset reconstruction|credit solutions|products|nbfc|unit|raises \S+ (crore|cr)|ncd)|"
+            r"(shares? of|stake in|rbi|sebi|curbs on|ban on)\b.{0,40}JM Financial",
+            re.I),
+    ),
+}
+
 # Routine exchange filings that are never worth an alert.
 ROUTINE_FILING = re.compile(
     r"trading window|loss of (share )?certificate|duplicate (share )?certificate|reg(ulation)?\.? ?74|"
@@ -335,11 +358,17 @@ def fetch_filings(state, today):
     return filings
 
 
-def is_relevant(item, mentions):
-    """Filings are always about the company; news headlines must name it."""
+def is_relevant(item, mentions, symbol=None):
+    """Filings are always about the company; news headlines must name it, and not
+    only as the brokerage quoted on another stock."""
+    t = item["title"]
     if item.get("filing"):
-        return not ROUTINE_FILING.search(item["title"])
-    return bool(mentions.search(item["title"])) and not JUNK.search(item["title"])
+        return not ROUTINE_FILING.search(t)
+    if symbol in BROKER_ONLY:
+        as_broker, about_itself = BROKER_ONLY[symbol]
+        if as_broker.search(t) and not about_itself.search(t):
+            return False
+    return bool(mentions.search(t)) and not JUNK.search(t)
 
 
 def is_material(item):
@@ -478,7 +507,7 @@ def scan_news(state, today, collected=None):
         items = filings.get(symbol, []) + news
 
         if collected is not None:
-            collected[symbol] = [it for it in items if is_relevant(it, mentions)][:8]
+            collected[symbol] = [it for it in items if is_relevant(it, mentions, symbol)][:8]
 
         new = []
         for it in items:
@@ -488,7 +517,7 @@ def scan_news(state, today, collected=None):
             seen[key] = today.isoformat()
             if filings_priming and it.get("filing"):
                 continue
-            if is_relevant(it, mentions) and is_material(it):
+            if is_relevant(it, mentions, symbol) and is_material(it):
                 new.append(it)
         if priming or not new:
             continue
