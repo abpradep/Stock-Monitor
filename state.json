@@ -155,7 +155,21 @@
   "e5c06bc3665191fb": "2026-10-21",
   "4123f3922417172e": "2026-10-21",
   "4f50f66e758b629b": "2026-10-21",
-  "eb93f99e1309a35b": "2026-10-21"
+  "eb93f99e1309a35b": "2026-10-21",
+  "2bfa506953839916": "2026-10-21",
+  "dc853a545afc4f72": "2026-10-21",
+  "ecb1fb8db58dcb8e": "2026-10-21",
+  "367e222af7ecc2d7": "2026-10-21",
+  "75eec7cae25f91f0": "2026-10-21",
+  "591be684c7247888": "2026-10-21",
+  "2615f214df96ac68": "2026-10-21",
+  "ef7825b7e424d58e": "2026-10-21",
+  "3542184a8dc9a9eb": "2026-10-21",
+  "2ecbfaafce74996f": "2026-10-21",
+  "328ed3a6e653a438": "2026-10-21",
+  "1c07a291a5252e2c": "2026-10-21",
+  "0d1d57524761da2d": "2026-10-21",
+  "5a53b26de5c62c42": "2026-10-21"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -226,6 +240,20 @@
     "impact": "Not analysed",
     "importance": "-",
     "time": "18:05"
+   },
+   {
+    "symbol": "TCS",
+    "event": "Infosys, TCS to HCL Tech: Tectonic rally in Indian IT stocks but experts recommend JUST one IT stock to buy | Target, SL - TradingView (+1 more)",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "19:03"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "YES Bank shares: 57 lakh investors hit as AT-1 verdict raises RoA doubts; target prices - Business Today",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "19:03"
    }
   ]
  }
