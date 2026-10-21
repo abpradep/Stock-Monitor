@@ -12,6 +12,7 @@ Configuration comes from environment variables (GitHub Secrets):
 """
 import datetime as dt
 import hashlib
+import html
 import json
 import os
 import re
@@ -33,36 +34,44 @@ CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5")
 
 PRICE_MOVE_PCT = float(os.environ.get("PRICE_MOVE_PCT", "5"))   # alert on moves >= 5%
 VOLUME_SPIKE_X = float(os.environ.get("VOLUME_SPIKE_X", "2.5")) # volume >= 2.5x 20-day avg
-MIN_IMPORTANCE = int(os.environ.get("MIN_IMPORTANCE", "6"))     # only alert news rated >= 6/10
+MIN_IMPORTANCE = int(os.environ.get("MIN_IMPORTANCE", "6"))     # only alert news rated >= 6/10 (Claude mode)
+MIN_IMPORTANCE_RULES = int(os.environ.get("MIN_IMPORTANCE_RULES", "5"))  # same, free rule-based mode
 
-# NSE symbol -> name used for the news search. Edit this to change your watchlist.
+# NSE symbol -> (name used for the news search, words that must appear in the headline).
+# A headline is only considered if it mentions the company by one of these names.
 WATCHLIST = {
-    "RELIANCE": "Reliance Industries",
-    "TCS": "Tata Consultancy Services",
-    "INFY": "Infosys",
-    "HDFCBANK": "HDFC Bank",
-    "ICICIBANK": "ICICI Bank",
-    "LAURUSLABS": "Laurus Labs",
-    "SOLARA": "Solara Active Pharma",
-    "NORTHARC": "Northern Arc Capital",
-    "SHIVALIK": "Shivalik Rasayan",
-    "SYNGENE": "Syngene International",
-    "ALLETEC": "All E Technologies",
-    "INFOBEAN": "InfoBeans Technologies",
-    "JAYBEE": "Jay Bee Laminations",
-    "PRAJIND": "Praj Industries",
-    "BAJAJHCARE": "Bajaj Healthcare",
-    "ALIVUS": "Alivus Life Sciences",
-    "PDSL": "PDS Limited",
-    "GREAVESCOT": "Greaves Cotton",
-    "RAYMOND": "Raymond Ltd",
-    "RBA": "Restaurant Brands Asia",
-    "ARMANFIN": "Arman Financial",
-    "PENIND": "Pennar Industries",
-    "JMFINANCIL": "JM Financial",
-    "BIRLANU": "BirlaNu",
-    "FDC": "FDC Limited",
+    "LAURUSLABS": ("Laurus Labs", ["Laurus"]),
+    "SOLARA": ("Solara Active Pharma", ["Solara"]),
+    "NORTHARC": ("Northern Arc Capital", ["Northern Arc"]),
+    "SHIVALIK": ("Shivalik Rasayan", ["Shivalik Rasayan"]),
+    "SYNGENE": ("Syngene International", ["Syngene"]),
+    "ALLETEC": ("All E Technologies", ["All E Technologies", "All e Tech"]),
+    "INFOBEAN": ("InfoBeans Technologies", ["InfoBeans"]),
+    "JAYBEE": ("Jay Bee Laminations", ["Jay Bee"]),
+    "PRAJIND": ("Praj Industries", ["Praj"]),
+    "BAJAJHCARE": ("Bajaj Healthcare", ["Bajaj Healthcare"]),
+    "ALIVUS": ("Alivus Life Sciences", ["Alivus"]),
+    "PDSL": ("PDS Limited", ["PDS Ltd", "PDS Limited", "PDS share", "PDS Q"]),
+    "GREAVESCOT": ("Greaves Cotton", ["Greaves"]),
+    "RAYMOND": ("Raymond Ltd", ["Raymond"]),
+    "RBA": ("Restaurant Brands Asia", ["Restaurant Brands Asia", "Burger King India"]),
+    "ARMANFIN": ("Arman Financial", ["Arman Financial"]),
+    "PENIND": ("Pennar Industries", ["Pennar"]),
+    "JMFINANCIL": ("JM Financial", ["JM Financial"]),
+    "BIRLANU": ("BirlaNu", ["BirlaNu", "Birla Nu"]),
+    "FDC": ("FDC Limited", ["FDC Ltd", "FDC Limited", "FDC share", "FDC Q"]),
 }
+
+# Headlines matching these are skipped even if they mention a watched company.
+JUNK = re.compile(
+    r"stocks? to (watch|buy|sell)|shares? to buy|top (gainers|losers)|live updates|market live|"
+    r"iphone|samsung|smartphone|mobile phone|laptop|\\btv\\b|flipkart|amazon|myntra|meesho|"
+    r"big billion|great indian|shopping|\\bsale\\b|\\boffers?\\b|\\bdeals?\\b|discount|coupon|cashback|"
+    r"festive|diwali|dhanteras|gift|best buy|price list|horoscope|recipe|"
+    r"credit card|fd rates|fixed deposit|savings account|loan offer|"
+    r"cricket|ipl|bollywood|movie|box office|weather",
+    re.I,
+)
 
 # Headlines must match one of these before they are analysed (keeps noise and API cost down).
 KEYWORDS = re.compile(
@@ -70,7 +79,7 @@ KEYWORDS = re.compile(
     r"ceo|cfo|\bmd\b|chairman|resign|appoint|steps down|upgrade|downgrade|target|rating|"
     r"order|contract|acqui|merger|demerger|stake|usfda|fda|warning letter|inspection|"
     r"block deal|bulk deal|pledge|fund ?rais|qip|rights issue|penalty|sebi|rbi|"
-    r"guidance|concall|surge|jump|soar|plunge|crash|slump|tumble|rall|52-week|upper circuit|lower circuit",
+    r"guidance|concall|nim|npa|asset quality|surge|jump|soar|plunge|crash|slump|tumble|rall|52-week|upper circuit|lower circuit|fall|drop|declin|slide|rise|rose|gain|climb|probe|raid|fraud|warning letter|import alert",
     re.I,
 )
 
@@ -116,24 +125,26 @@ def send_telegram(text):
             "chat_id": TELEGRAM_CHAT_ID,
             "text": text[i:i + 4000],
             "disable_web_page_preview": "true",
+            "parse_mode": "HTML",
         }, timeout=20)
         if not r.ok:
             print("Telegram error:", r.status_code, r.text)
 
 
 def format_alert(symbol, a, link=""):
+    e = lambda v: html.escape(str(v))
     lines = [
-        f"🔔 ALERT — {symbol}",
-        f"Stock: {WATCHLIST.get(symbol, symbol)}",
-        f"Event: {a.get('event', '')}",
-        f"Impact: {a.get('impact', '')}",
-        f"Reason: {a.get('reason', '')}",
-        f"Action to Monitor: {a.get('action', '')}",
-        f"Confidence: {a.get('confidence', '')}",
-        f"Importance: {a.get('importance', '-')}/10",
+        f"🔔 <b>ALERT — {e(symbol)}</b>",
+        f"<b>Stock:</b> {e(WATCHLIST[symbol][0] if symbol in WATCHLIST else symbol)}",
+        f"<b>Event:</b> {e(a.get('event', ''))}",
+        f"<b>Impact:</b> {e(a.get('impact', ''))}",
+        f"<b>Reason:</b> {e(a.get('reason', ''))}",
+        f"<b>Action to Monitor:</b> {e(a.get('action', ''))}",
+        f"<b>Confidence:</b> {e(a.get('confidence', ''))}",
+        f"<b>Importance:</b> {e(a.get('importance', '-'))}/10",
     ]
     if link:
-        lines.append(f"Source: {link}")
+        lines.append(f'<a href="{e(link)}">Read the news</a>')
     return "\n".join(lines)
 
 
@@ -143,7 +154,15 @@ def fetch_news(name):
     q = urllib.parse.quote(f'"{name}" when:1d')
     url = f"https://news.google.com/rss/search?q={q}&hl=en-IN&gl=IN&ceid=IN:en"
     feed = feedparser.parse(url)
-    return [{"title": e.get("title", ""), "link": e.get("link", "")} for e in feed.entries[:20]]
+    items = []
+    for entry in feed.entries[:20]:
+        title = entry.get("title", "")
+        # Google News titles end with " - Source name"; drop it so the source
+        # name (e.g. "NDTV Profit") doesn't trigger keyword matches.
+        if " - " in title:
+            title = title.rsplit(" - ", 1)[0]
+        items.append({"title": title.strip(), "link": entry.get("link", "")})
+    return items
 
 
 CLAUDE_PROMPT = """You are a stock monitoring analyst for Indian equities.
@@ -193,10 +212,83 @@ def analyze_with_claude(symbol, name, headlines):
     return json.loads(match.group(0)) if match else None
 
 
+# ---------- free rule-based analysis (used when there is no API key) ----------
+
+# (pattern, event type, importance, what to monitor). First match wins, so the
+# most serious event types come first.
+EVENT_RULES = [
+    (r"usfda|warning letter|import alert|form 483|sebi|\brbi\b|penalty|raid|probe|show.cause|fraud|default",
+     "Regulatory / legal", 8, "Company clarification and the financial impact."),
+    (r"resign|steps down|appoint|new ceo|\bceo\b|\bcfo\b|\bmd\b|chairman|management change",
+     "Management change", 7, "Reason for the change and who succeeds."),
+    (r"acqui|merger|demerger|takeover|stake sale|buys stake|sells stake|stake",
+     "M&A / stake change", 7, "Deal value, valuation and funding."),
+    (r"result|earning|\bq[1-4]\b|quarter|net profit|profit|revenue|ebitda|margin|net loss|guidance|\bnim\b|\bnpa\b|asset quality",
+     "Earnings / results", 7, "Margins, guidance and concall commentary."),
+    (r"upgrade|downgrade|target price|\btarget\b|rating|initiates coverage|brokerage",
+     "Analyst action", 6, "Other brokers' views and the new target."),
+    (r"fund ?rais|\bqip\b|rights issue|preferential|\bncd\b",
+     "Fund raising", 6, "Issue price, dilution and use of funds."),
+    (r"block deal|bulk deal|pledge",
+     "Large deal / pledge", 6, "Who bought or sold, and promoter pledge levels."),
+    (r"surge|jump|soar|plunge|crash|slump|tumble|rall|upper circuit|lower circuit|52-week",
+     "Sharp price move", 6, "Whether news explains the move and if it holds."),
+    (r"order|contract|bags|wins",
+     "Order win", 5, "Order size versus annual revenue, and execution timeline."),
+    (r"dividend|bonus|split|buyback|record date",
+     "Corporate action", 5, "Record date and payout details."),
+    (r"\\bfall|\\bfalls|\\bfell|drop|declin|slide|\\brise|\\brises|\\brose|gain|climb",
+     "Price move", 5, "Whether the move continues and what's driving it."),
+]
+EVENT_RULES = [(re.compile(p, re.I), t, imp, act) for p, t, imp, act in EVENT_RULES]
+
+BULLISH_WORDS = re.compile(
+    r"\brise|\brises|\brose|jump|surge|soar|gain|beat|record|strong|upgrade|wins|bags|"
+    r"approv|improv|raises|higher|growth|grows|expands|turnaround|narrow|rall|upper circuit|"
+    r"52-week high|outperform|\bbuy\b|dividend|bonus|buyback|up \d", re.I)
+BEARISH_WORDS = re.compile(
+    r"\bfall|\bfalls|\bfell|drop|declin|plunge|crash|slump|tumble|miss|weak|downgrade|"
+    r"\bloss\b|worsen|deteriorat|resign|penalty|warning letter|import alert|probe|raid|\bcut|lower|"
+    r"\bsell\b|underperform|lower circuit|52-week low|pledge|default|delay|down \d", re.I)
+
+
+def rule_analyze(headlines):
+    """Pick the most important headline and label it with simple keyword rules."""
+    best = None
+    for idx, h in enumerate(headlines):
+        t = h["title"]
+        for pattern, event_type, importance, action in EVENT_RULES:
+            if pattern.search(t):
+                if best is None or importance > best[2]:
+                    best = (idx, event_type, importance, action)
+                break
+    if best is None:
+        return None, 0
+    idx, event_type, importance, action = best
+    title = headlines[idx]["title"]
+    scored = re.sub(r"loss(es)? narrow", "narrow", title, flags=re.I)  # "loss narrows" is good news
+    bull, bear = len(BULLISH_WORDS.findall(scored)), len(BEARISH_WORDS.findall(scored))
+    impact = "Bullish" if bull > bear else "Bearish" if bear > bull else "Neutral"
+    if len(headlines) >= 3:
+        importance = min(10, importance + 1)  # several new stories at once = bigger news
+    extra = f" (+{len(headlines) - 1} more stories)" if len(headlines) > 1 else ""
+    a = {
+        "event": f"{event_type}: {title}{extra}",
+        "impact": impact,
+        "reason": f"Headline points to {event_type.lower()} with {impact.lower()} wording. "
+                  "Keyword-based read, so open the story before acting.",
+        "action": action,
+        "confidence": "Low" if impact == "Neutral" else "Medium",
+        "importance": importance,
+    }
+    return a, idx
+
+
 def scan_news(state, today):
     priming = "seen" not in state  # first run: remember existing news without alerting
     seen = state.setdefault("seen", {})
-    for symbol, name in WATCHLIST.items():
+    for symbol, (name, aliases) in WATCHLIST.items():
+        mentions = re.compile(r"\b(" + "|".join(re.escape(a) for a in aliases) + r")\b", re.I)
         try:
             items = fetch_news(name)
         except Exception as ex:
@@ -209,7 +301,8 @@ def scan_news(state, today):
             if key in seen:
                 continue
             seen[key] = today.isoformat()
-            if KEYWORDS.search(it["title"]):
+            t = it["title"]
+            if mentions.search(t) and KEYWORDS.search(t) and not JUNK.search(t):
                 new.append(it)
         if priming or not new:
             continue
@@ -230,16 +323,11 @@ def scan_news(state, today):
                 idx = int(a.get("headline_index", 1) or 1) - 1
                 link = new[max(0, min(idx, len(new) - 1))]["link"]
 
-        if a is None:  # no API key, or analysis failed: send the raw headline
-            extra = f" (+{len(new) - 1} more)" if len(new) > 1 else ""
-            a = {
-                "event": new[0]["title"] + extra,
-                "impact": "Not analysed",
-                "reason": "Add ANTHROPIC_API_KEY to get Bullish/Bearish analysis.",
-                "action": "Read the story and the exchange filing.",
-                "confidence": "-",
-                "importance": "-",
-            }
+        if a is None:  # no API key, or analysis failed: use the free keyword rules
+            a, idx = rule_analyze(new)
+            if a is None or a["importance"] < MIN_IMPORTANCE_RULES:
+                continue
+            link = new[idx]["link"]
 
         send_telegram(format_alert(symbol, a, link))
         record_event(state, today, symbol, a)
