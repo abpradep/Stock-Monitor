@@ -466,7 +466,7 @@
  },
  "last_report": "2026-10-21T23:28",
  "filing_sources": {
-  "checked": "2026-10-21 23:28",
+  "checked": "2026-10-21 23:30",
   "NSE": "ok: 8 filings for 5 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
@@ -509,11 +509,12 @@
   "VOEPL"
  ],
  "price_status": {
-  "checked": "2026-10-21 23:26",
+  "checked": "2026-10-21 23:31",
   "found": 35,
   "missing": [
    "JAYBEE"
   ],
+  "from_nse": [],
   "KARBON": 103.05
  }
 }
