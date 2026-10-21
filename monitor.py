@@ -3,8 +3,8 @@
 Stock monitor -> Telegram alerts.
 
   python monitor.py scan     check news + price/volume, alert on new material events
-  python monitor.py report   scan, then send a Claude-written report on every stock
-                             (runs every 3 hours, 7 AM to 7 PM IST)
+  python monitor.py report   scan, then send the 3-hourly report (7 AM to 7 PM IST). Claude
+                             is only called when something crucial happened since the last report
   python monitor.py summary  send the plain daily summary (no Claude needed)
   python monitor.py test     send a test message to confirm Telegram works
 
@@ -36,7 +36,7 @@ TELEGRAM_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5")          # per-headline alerts
-REPORT_MODEL = os.environ.get("REPORT_MODEL", "claude-opus-5-5")         # 3-hourly report
+REPORT_MODEL = os.environ.get("REPORT_MODEL", "claude-haiku-5-5")        # 3-hourly report
 
 PRICE_MOVE_PCT = float(os.environ.get("PRICE_MOVE_PCT", "5"))   # alert on moves >= 5%
 VOLUME_SPIKE_X = float(os.environ.get("VOLUME_SPIKE_X", "2.5")) # volume >= 2.5x 20-day avg
@@ -102,7 +102,8 @@ def load_state():
 
 def save_state(state, today):
     cutoff = (today - dt.timedelta(days=7)).isoformat()
-    state["seen"] = {k: d for k, d in state.get("seen", {}).items() if d >= cutoff}
+    for bucket in ("seen", "reported_news"):
+        state[bucket] = {k: d for k, d in state.get(bucket, {}).items() if d >= cutoff}
     for bucket in ("events", "price_alerted"):
         state[bucket] = {d: v for d, v in state.get(bucket, {}).items() if d >= cutoff}
     with open(STATE_FILE, "w") as f:
@@ -454,7 +455,7 @@ def daily_summary(state, today):
     send_telegram("\n".join(lines))
 
 
-# ---------- 3-hourly Claude report ----------
+# ---------- 3-hourly report ----------
 
 def get_snapshot():
     """Latest price picture for every stock: day / week / month change, volume and
@@ -503,25 +504,22 @@ def report_slot(now):
 
 
 REPORT_SYSTEM = """You are an equity research analyst covering Indian small and mid caps for
-one investor. You write a short report on their watchlist several times a day.
+one investor. You are shown only the stocks where something crucial happened since the last
+report (a sharp move, a volume spike, an alert or new company news).
 
 Rules:
 - Be specific. Cite the numbers you were given (price change, volume multiple, distance from
-  the 52-week high/low) and name the actual news. No generic filler such as "monitor closely"
-  or "market sentiment".
-- Use only the data provided. Don't invent results, targets or events. If there is no news and
-  the move is small, say that plainly in a few words.
-- The "view" is the near-term (days to weeks) read from the price action and news, not a buy/sell call.
-- "priority" is High when something happened that the investor should look at today, Medium
-  when it is worth noting, Low when nothing material is going on.
-- "watch" is the one concrete thing to check next (a level, a filing, an event, a date).
-- Keep each summary to 1-2 sentences."""
+  the 52-week high/low) and name the actual news. No generic filler such as "monitor closely".
+- Use only the data provided. Don't invent results, targets or events.
+- "view" is the near-term (days to weeks) read from the price action and news, not a buy/sell call.
+- "summary" explains what happened and why it matters, in 1-2 sentences.
+- "watch" is the one concrete thing to check next (a level, a filing, an event, a date)."""
 
 REPORT_SCHEMA = {
     "type": "object",
     "properties": {
         "headline": {"type": "string",
-                     "description": "One sentence on the watchlist as a whole right now."},
+                     "description": "One sentence on what matters most right now."},
         "stocks": {
             "type": "array",
             "items": {
@@ -529,28 +527,50 @@ REPORT_SCHEMA = {
                 "properties": {
                     "symbol": {"type": "string"},
                     "view": {"type": "string", "enum": ["Bullish", "Bearish", "Neutral"]},
-                    "priority": {"type": "string", "enum": ["High", "Medium", "Low"]},
                     "summary": {"type": "string"},
                     "watch": {"type": "string"},
                 },
-                "required": ["symbol", "view", "priority", "summary", "watch"],
+                "required": ["symbol", "view", "summary", "watch"],
                 "additionalProperties": False,
             },
         },
-        "top_watch": {"type": "array", "items": {"type": "string"},
-                      "description": "Up to 3 most important things to watch across the watchlist."},
     },
-    "required": ["headline", "stocks", "top_watch"],
+    "required": ["headline", "stocks"],
     "additionalProperties": False,
 }
 
 
-def claude_report(now, slot, snap, news, events):
+def news_key(title):
+    return hashlib.sha1(title.lower().encode()).hexdigest()[:16]
+
+
+def find_crucial(state, today, news):
+    """Stocks with something crucial since the last report: an alert that was sent (news,
+    price move or volume spike) or a material headline not covered by an earlier report.
+    Returns symbol -> {"reasons": [...], "fresh": [headline keys]}."""
+    last = state.get("last_report", "")
+    reported = state.get("reported_news", {})
+    events = state.get("events", {}).get(today.isoformat(), [])
+    crucial = {}
+    for sym in WATCHLIST:
+        reasons = [f"alert at {e['time']}: {e['event']}" for e in events
+                   if e["symbol"] == sym and f"{today.isoformat()}T{e['time']}" > last]
+        fresh = [news_key(h["title"]) for h in news.get(sym, [])
+                 if KEYWORDS.search(h["title"]) and news_key(h["title"]) not in reported]
+        if fresh:
+            reasons.append(f"{len(fresh)} new material headline(s)")
+        if reasons:
+            crucial[sym] = {"reasons": reasons, "fresh": fresh}
+    return crucial
+
+
+def claude_report(now, slot, snap, news, events, crucial):
     stocks = []
-    for sym, (name, _) in WATCHLIST.items():
+    for sym, c in crucial.items():
         stocks.append({
             "symbol": sym,
-            "name": name,
+            "name": WATCHLIST[sym][0],
+            "why_flagged": c["reasons"],
             "price": snap.get(sym, "no price data"),
             "headlines_last_24h": [h["title"] for h in news.get(sym, [])],
             "alerts_sent_today": [f"{e['time']} {e['event']} ({e['impact']})"
@@ -559,13 +579,11 @@ def claude_report(now, slot, snap, news, events):
     user = (f"Report time: {now:%A %d %b %Y, %I:%M %p} IST ({slot}).\n"
             "NSE trades 9:15 AM to 3:30 PM IST on weekdays; the price data's \"date\" is the "
             "latest daily candle, which is still forming during market hours.\n\n"
-            "Watchlist data:\n" + json.dumps(stocks, ensure_ascii=False, indent=1) +
-            "\n\nWrite the report. Include every stock in the watchlist, in the order given.")
-    resp = claude_client().beta.messages.create(
+            "Flagged stocks:\n" + json.dumps(stocks, ensure_ascii=False, indent=1) +
+            "\n\nWrite the report. Include every flagged stock, in the order given.")
+    resp = claude_client().messages.create(
         model=REPORT_MODEL,
-        max_tokens=16000,
-        betas=["server-side-fallback-2026-07-01"],
-        fallbacks="default",  # if the model declines, the API retries on its recommended fallback
+        max_tokens=8000,
         output_config={"effort": "medium",
                        "format": {"type": "json_schema", "schema": REPORT_SCHEMA}},
         system=REPORT_SYSTEM,
@@ -576,49 +594,66 @@ def claude_report(now, slot, snap, news, events):
     return json.loads(next(b.text for b in resp.content if b.type == "text"))
 
 
-def format_report(now, slot, snap, r):
+def format_report(now, slot, snap, crucial, r):
+    """r is Claude's analysis of the crucial stocks, or None when Claude wasn't used."""
     e = lambda v: html.escape(str(v))
     icon = {"Bullish": "🟢", "Bearish": "🔴", "Neutral": "⚪"}
-    rank = {"High": 0, "Medium": 1, "Low": 2}
-    lines = [f"📈 <b>Stock report — {now:%I:%M %p} · {e(slot)}</b>",
-             f"{now:%a %d %b %Y}", "", f"<i>{e(r['headline'])}</i>"]
-    current = None
-    for s in sorted(r["stocks"], key=lambda s: rank.get(s["priority"], 3)):
-        if s["priority"] != current:
-            current = s["priority"]
-            lines += ["", f"<b>{e(current)} priority</b>"]
-        sym = s["symbol"]
+
+    def price(sym, full=False):
         p = snap.get(sym)
-        price = (f" ₹{p['close']:,.2f} · {p['day_pct']:+.1f}% day · {p['week_pct']:+.1f}% wk"
-                 + (f" · vol {p['vol_x']:.1f}x" if p["vol_x"] >= VOLUME_SPIKE_X else "")) if p else ""
-        lines.append(f"{icon.get(s['view'], '⚪')} <b>{e(sym)}</b>{e(price)} — {e(s['view'])}")
-        lines.append(e(s["summary"]))
-        if current != "Low":
-            lines.append(f"👀 {e(s['watch'])}")
-    if r["top_watch"]:
-        lines += ["", "<b>Watch next</b>"] + [f"• {e(w)}" for w in r["top_watch"][:3]]
+        if not p:
+            return ""
+        txt = f" ₹{p['close']:,.2f} · {p['day_pct']:+.1f}%"
+        if full:
+            txt += f" day · {p['week_pct']:+.1f}% wk"
+        if p["vol_x"] >= VOLUME_SPIKE_X:
+            txt += f" · vol {p['vol_x']:.1f}x"
+        return txt
+
+    lines = [f"📈 <b>Stock report — {now:%I:%M %p} · {e(slot)}</b>", f"{now:%a %d %b %Y}", ""]
+    if r:
+        lines += ["🧠 <b>What matters</b>", f"<i>{e(r['headline'])}</i>"]
+        for s in r["stocks"]:
+            sym = s["symbol"]
+            lines += ["", f"{icon.get(s['view'], '⚪')} <b>{e(sym)}</b>{e(price(sym, True))} — {e(s['view'])}",
+                      e(s["summary"]), f"👀 {e(s['watch'])}"]
+    elif crucial:
+        lines.append("⚠️ <b>Flagged since last report</b>")
+        lines += [f"• <b>{e(sym)}</b>: {e('; '.join(c['reasons']))}" for sym, c in crucial.items()]
+    else:
+        lines.append("✅ Nothing crucial since the last report.")
+
+    lines += ["", "<b>Watchlist</b>"]
+    if snap:
+        for sym in sorted(snap, key=lambda x: snap[x]["day_pct"], reverse=True):
+            lines.append(f"• {e(sym)}{e(price(sym))}")
+        lines.append(f"<i>Prices as of {e(max(p['date'] for p in snap.values()))} close or latest.</i>")
+    else:
+        lines.append("No price data available.")
     return "\n".join(lines)
 
 
 def send_report(state, today, news):
     now = dt.datetime.now(IST)
-    if not ANTHROPIC_API_KEY:
-        daily_summary(state, today)
-        return
     slot = report_slot(now)
     try:
         snap = get_snapshot()
     except Exception as ex:
         print("Price fetch failed:", ex)
         snap = {}
-    events = state.get("events", {}).get(today.isoformat(), [])
-    try:
-        r = claude_report(now, slot, snap, news, events)
-    except Exception as ex:
-        print("Claude report failed, sending plain summary instead:", ex)
-        daily_summary(state, today)
-        return
-    send_telegram(format_report(now, slot, snap, r))
+    crucial = find_crucial(state, today, news)
+    r = None
+    if crucial and ANTHROPIC_API_KEY:  # Claude is only called when something crucial happened
+        events = state.get("events", {}).get(today.isoformat(), [])
+        try:
+            r = claude_report(now, slot, snap, news, events, crucial)
+        except Exception as ex:
+            print("Claude report failed, sending without analysis:", ex)
+    send_telegram(format_report(now, slot, snap, crucial, r))
+    for c in crucial.values():
+        for k in c["fresh"]:
+            state.setdefault("reported_news", {})[k] = today.isoformat()
+    state["last_report"] = now.strftime("%Y-%m-%dT%H:%M")
 
 
 # ---------- main ----------
