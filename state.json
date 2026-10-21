@@ -135,7 +135,19 @@
   "72af5b8670b11d9a": "2026-10-21",
   "9f17502042597897": "2026-10-21",
   "083c8191f152599b": "2026-10-21",
-  "6511ae1f2cd998fd": "2026-10-21"
+  "6511ae1f2cd998fd": "2026-10-21",
+  "973f3731050811b3": "2026-10-21",
+  "c4d6dc27a639c72d": "2026-10-21",
+  "0fdbd10529b69617": "2026-10-21",
+  "0b327da7c6366c52": "2026-10-21",
+  "7d3d92958f2d8624": "2026-10-21",
+  "41e6d20906b36960": "2026-10-21",
+  "42196fd8a52acd90": "2026-10-21",
+  "abd795e23b0bdbf2": "2026-10-21",
+  "224f8d4a9eb29fd9": "2026-10-21",
+  "3a40782bd42c6b78": "2026-10-21",
+  "6570243fbdfb2b57": "2026-10-21",
+  "14d630c252173df8": "2026-10-21"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -164,6 +176,34 @@
     "impact": "Not analysed",
     "importance": "-",
     "time": "17:08"
+   },
+   {
+    "symbol": "TCS",
+    "event": "Bull vs Bear on IT Stocks: 35% rally or 34% crash! Jefferies\u2019 outlook on 11 shares - TCS, Coforge, Infosys on list - Zee Business",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "17:29"
+   },
+   {
+    "symbol": "INFY",
+    "event": "IT stocks on fire, rally up to 15% today; check performance of TCS, L&T Technology, Wipro, Infosys | Jefferies bullish - Livemint",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "17:29"
+   },
+   {
+    "symbol": "HDFCBANK",
+    "event": "HDFC Bank Share Price: Anand Rathi Target Rs 966 - Univest",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "17:29"
+   },
+   {
+    "symbol": "ICICIBANK",
+    "event": "ICICI Bank Q2 FY27 Earnings Beat Driven by High Growth and Low Provisions - Kalkine India (+1 more)",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "17:29"
    }
   ]
  }
