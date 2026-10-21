@@ -28,6 +28,7 @@ from zoneinfo import ZoneInfo
 
 import anthropic
 import feedparser
+import pandas as pd
 import requests
 import yfinance as yf
 
@@ -114,7 +115,69 @@ def download_prices(period):
                 df = None
         if df is not None and len(df):
             frames[sym] = df
+    missing = [s for s in WATCHLIST if s not in frames]
+    if missing:  # e.g. thinly traded NSE SME stocks that Yahoo has no data for
+        days = 370 if period == "1y" else 60
+        try:
+            session = nse_session()
+        except Exception as ex:
+            print("NSE session failed, no price fallback:", ex)
+            return frames
+        for sym in missing:
+            try:
+                df = nse_history(session, sym, days)
+            except Exception as ex:
+                print(f"NSE price history failed for {sym}: {ex}")
+                continue
+            if df is not None:
+                frames[sym] = df
+                PRICES_FROM_NSE.add(sym)
     return frames
+
+
+PRICES_FROM_NSE = set()  # stocks whose prices came from NSE this run (shown by "check")
+
+
+def nse_session():
+    """requests session with the cookies NSE's API needs."""
+    s = requests.Session()
+    s.headers.update(BROWSER_HEADERS)
+    page = "https://www.nseindia.com/get-quotes/equity?symbol=HDFCBANK"
+    s.headers["Referer"] = page
+    s.get(page, timeout=20)
+    return s
+
+
+def nse_history(session, symbol, days):
+    """Daily prices from NSE for the last `days` days, as a DataFrame like Yahoo's.
+    Tries the main board series first, then the SME ones. None if NSE has nothing."""
+    end = dt.datetime.now(IST).date()
+    start = end - dt.timedelta(days=days)
+    for series in ("EQ", "SM", "ST", "BE"):
+        rows, to = [], end
+        while to > start:  # NSE serves at most ~100 days per request
+            frm = max(start, to - dt.timedelta(days=99))
+            r = session.get("https://www.nseindia.com/api/NextApi/apiClient/GetQuoteApi", params={
+                "functionName": "getHistoricalTradeData", "symbol": symbol, "series": series,
+                "fromDate": f"{frm:%d-%m-%Y}", "toDate": f"{to:%d-%m-%Y}",
+            }, timeout=20)
+            r.raise_for_status()
+            chunk = r.json()
+            if not isinstance(chunk, list) or not chunk:
+                break
+            rows += chunk
+            to = frm - dt.timedelta(days=1)
+        if rows:
+            df = pd.DataFrame({
+                "Open": [x["CH_OPENING_PRICE"] for x in rows],
+                "High": [x["CH_TRADE_HIGH_PRICE"] for x in rows],
+                "Low": [x["CH_TRADE_LOW_PRICE"] for x in rows],
+                "Close": [x["CH_CLOSING_PRICE"] for x in rows],
+                "Volume": [x["CH_TOT_TRADED_QTY"] for x in rows],
+            }, index=pd.to_datetime([x["CH_TIMESTAMP"] for x in rows]))
+            df = df[~df.index.duplicated()].sort_index().astype(float)
+            return df.dropna(subset=["Close"])
+    return None
 
 
 # Other listed companies whose names contain a watched company's name. These
@@ -949,6 +1012,7 @@ def main():
         fetch_filings(state, today)
         state["price_status"] = {"checked": dt.datetime.now(IST).strftime("%Y-%m-%d %H:%M"),
                                  "found": len(snap), "missing": sorted(set(WATCHLIST) - set(snap)),
+                                 "from_nse": sorted(PRICES_FROM_NSE),
                                  **{s: snap[s]["close"] for s in YAHOO_TICKERS if s in snap}}
         print(state["price_status"], state["filing_sources"])
     elif mode == "summary":
