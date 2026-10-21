@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "report, scan, summary or test"
+        description: "report, scan, summary, check or test"
         default: "test"
 
 permissions:

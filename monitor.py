@@ -7,6 +7,7 @@ Stock monitor -> Telegram alerts.
   python monitor.py report   scan, then send the 3-hourly report (7 AM to 7 PM IST). Claude
                              is only called when something crucial happened since the last report
   python monitor.py summary  send the plain daily summary (no Claude needed)
+  python monitor.py check    check price and filing sources, save status, send nothing
   python monitor.py test     send a test message to confirm Telegram works
 
 Configuration comes from environment variables (GitHub Secrets):
@@ -85,14 +86,35 @@ WATCHLIST = {
     "EUREKAFORB": ("Eureka Forbes", ["Eureka Forbes"]),
 }
 
-# Stocks not on NSE: Yahoo Finance ticker to use instead of SYMBOL.NS.
+# Stocks not on NSE: Yahoo Finance tickers to try, in order, instead of SYMBOL.NS.
 YAHOO_TICKERS = {
-    "KARBON": "544511.BO",  # Karbonsteel Engineering, BSE SME only
+    "KARBON": ["KARBON.BO", "544511.BO"],  # Karbonsteel Engineering, BSE SME only
 }
 
 
-def yahoo_ticker(symbol):
-    return YAHOO_TICKERS.get(symbol, symbol + ".NS")
+def download_prices(period):
+    """symbol -> daily price DataFrame from Yahoo Finance. Stocks with several
+    candidate tickers fall back to the next one when the first has no data."""
+    first = {s: YAHOO_TICKERS.get(s, [s + ".NS"])[0] for s in WATCHLIST}
+    data = yf.download(list(first.values()), period=period, interval="1d", group_by="ticker",
+                       auto_adjust=False, progress=False, threads=True)
+    frames = {}
+    for sym, ticker in first.items():
+        try:
+            df = data[ticker].dropna(subset=["Close"])
+        except KeyError:
+            df = None
+        for alt in YAHOO_TICKERS.get(sym, [])[1:]:
+            if df is not None and len(df):
+                break
+            try:
+                df = yf.download([alt], period=period, interval="1d", group_by="ticker",
+                                 auto_adjust=False, progress=False)[alt].dropna(subset=["Close"])
+            except Exception:
+                df = None
+        if df is not None and len(df):
+            frames[sym] = df
+    return frames
 
 
 # Other listed companies whose names contain a watched company's name. These
@@ -597,15 +619,8 @@ def scan_news(state, today, collected=None):
 # ---------- price & volume ----------
 
 def get_price_moves(today):
-    tickers = [yahoo_ticker(s) for s in WATCHLIST]
-    data = yf.download(tickers, period="40d", interval="1d", group_by="ticker",
-                       auto_adjust=False, progress=False, threads=True)
     moves = []
-    for sym in WATCHLIST:
-        try:
-            df = data[yahoo_ticker(sym)].dropna(subset=["Close"])
-        except KeyError:
-            continue
+    for sym, df in download_prices("40d").items():
         if len(df) < 5 or df.index[-1].date() != today:
             continue  # no data, or no candle for today (holiday / not listed on Yahoo)
         last, prev = df.iloc[-1], df.iloc[-2]
@@ -702,15 +717,8 @@ def daily_summary(state, today):
 def get_snapshot():
     """Latest price picture for every stock: day / week / month change, volume and
     52-week range. Uses the most recent candle, so it also works before the open."""
-    tickers = [yahoo_ticker(s) for s in WATCHLIST]
-    data = yf.download(tickers, period="1y", interval="1d", group_by="ticker",
-                       auto_adjust=False, progress=False, threads=True)
     snap = {}
-    for sym in WATCHLIST:
-        try:
-            df = data[yahoo_ticker(sym)].dropna(subset=["Close"])
-        except KeyError:
-            continue
+    for sym, df in download_prices("1y").items():
         if len(df) < 22:
             continue
         close = df["Close"]
@@ -924,7 +932,15 @@ def main():
     if mode == "test":
         send_telegram("✅ Stock monitor is connected. You'll get alerts here.")
         return
-    if mode == "summary":
+    if mode == "check":
+        # Diagnostics only, nothing is sent: which stocks have prices, and filing sources.
+        snap = get_snapshot()
+        fetch_filings(state, today)
+        state["price_status"] = {"checked": dt.datetime.now(IST).strftime("%Y-%m-%d %H:%M"),
+                                 "found": len(snap), "missing": sorted(set(WATCHLIST) - set(snap)),
+                                 **{s: snap[s]["close"] for s in YAHOO_TICKERS if s in snap}}
+        print(state["price_status"], state["filing_sources"])
+    elif mode == "summary":
         daily_summary(state, today)
     elif mode == "report":
         news = {}
