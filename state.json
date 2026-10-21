@@ -239,7 +239,8 @@
   "f296d72029f81d60": "2026-10-21",
   "959eb6c973f90937": "2026-10-21",
   "e51d4fbd884a80b6": "2026-10-21",
-  "750baae7bc89ee86": "2026-10-21"
+  "750baae7bc89ee86": "2026-10-21",
+  "342731c058c5131b": "2026-10-21"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -387,6 +388,13 @@
     "impact": "Bearish",
     "importance": 7,
     "time": "22:00"
+   },
+   {
+    "symbol": "PDSL",
+    "event": "M&A / stake change: PDS Limited (NSE:PDSL) Acquires 100% of DBS Lifestyle HK",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "22:30"
    }
   ]
  }
