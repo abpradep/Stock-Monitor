@@ -466,7 +466,7 @@
  },
  "last_report": "2026-10-21T23:21",
  "filing_sources": {
-  "checked": "2026-10-21 23:21",
+  "checked": "2026-10-21 23:26",
   "NSE": "ok: 8 filings for 5 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
@@ -507,5 +507,13 @@
   "SYNGENE",
   "UNIPARTS",
   "VOEPL"
- ]
+ ],
+ "price_status": {
+  "checked": "2026-10-21 23:26",
+  "found": 35,
+  "missing": [
+   "JAYBEE"
+  ],
+  "KARBON": 103.05
+ }
 }
