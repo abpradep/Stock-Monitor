@@ -122,12 +122,14 @@ def download_prices(period):
             session = nse_session()
         except Exception as ex:
             print("NSE session failed, no price fallback:", ex)
+            PRICE_PROBLEMS.update({s: f"NSE session failed: {ex}"[:200] for s in missing})
             return frames
         for sym in missing:
             try:
                 df = nse_history(session, sym, days)
             except Exception as ex:
                 print(f"NSE price history failed for {sym}: {ex}")
+                PRICE_PROBLEMS[sym] = f"error: {ex}"[:200]
                 continue
             if df is not None:
                 frames[sym] = df
@@ -136,6 +138,7 @@ def download_prices(period):
 
 
 PRICES_FROM_NSE = set()  # stocks whose prices came from NSE this run (shown by "check")
+PRICE_PROBLEMS = {}  # symbol -> what NSE answered when its price couldn't be found
 
 
 def nse_session():
@@ -164,6 +167,10 @@ def nse_history(session, symbol, days):
             r.raise_for_status()
             chunk = r.json()
             if not isinstance(chunk, list) or not chunk:
+                PRICE_PROBLEMS.setdefault(symbol, {})
+                if isinstance(PRICE_PROBLEMS[symbol], dict) and to == end:
+                    PRICE_PROBLEMS[symbol][series] = (f"HTTP {r.status_code}, "
+                                                      f"{type(chunk).__name__}: {str(chunk)[:80]}")
                 break
             rows += chunk
             to = frm - dt.timedelta(days=1)
@@ -912,8 +919,12 @@ def claude_report(now, slot, snap, news, events, crucial):
 def format_report(now, slot, snap, crucial, r):
     """r is Claude's analysis of the crucial stocks, or None when Claude wasn't used."""
     e = lambda v: html.escape(str(v))
-    icon = {"Bullish": "🟢", "Bearish": "🔴", "Neutral": "⚪"}
+    icon = {"Bullish": "📈", "Bearish": "📉", "Neutral": "➖"}  # Claude's view
     rule = "━━━━━━━━━━━━━━━━━━━━"
+
+    def dot(pct):
+        """Green/red marker for the direction of a price change (Telegram can't colour text)."""
+        return "🟢" if pct > 0.05 else "🔴" if pct < -0.05 else "⚪"
 
     def filing_links(sym):
         """📄 link to each new exchange filing for this stock (up to 3)."""
@@ -933,7 +944,7 @@ def format_report(now, slot, snap, crucial, r):
         parts = [f"₹{p['close']:,.2f}", f"{p['day_pct']:+.1f}% day", f"{p['week_pct']:+.1f}% wk"]
         if p["vol_x"] >= VOLUME_SPIKE_X:
             parts.append(f"vol {p['vol_x']:.1f}x")
-        return f"<code>{e(' │ '.join(parts))}</code>"
+        return f"{dot(p['day_pct'])} <code>{e(' │ '.join(parts))}</code>"
 
     # Blank lines separate blocks; send_telegram never splits a message inside one.
     blocks = [f"📈 <b>STOCK REPORT</b>\n🕒 {now:%I:%M %p} · {e(slot)}\n📅 {now:%a, %d %b %Y}\n{rule}"]
@@ -960,14 +971,14 @@ def format_report(now, slot, snap, crucial, r):
 
     if snap:
         # Fixed-width table so the columns line up on the phone.
-        rows = [f"{'STOCK':<10}  {'PRICE':>9}  {'DAY':>6}", "─" * 29]
+        rows = [f"   {'STOCK':<10}  {'PRICE':>9}  {'DAY':>6}", "   " + "─" * 29]
         for sym in sorted(snap, key=lambda x: snap[x]["day_pct"], reverse=True):
             p = snap[sym]
             mark = " ⚡" if p["vol_x"] >= VOLUME_SPIKE_X else ""
-            rows.append(f"{sym[:10]:<10}  {p['close']:>9,.2f}  {p['day_pct']:>+5.1f}%{mark}")
+            rows.append(f"{dot(p['day_pct'])} {sym[:10]:<10}  {p['close']:>9,.2f}  {p['day_pct']:>+5.1f}%{mark}")
         as_of = dt.date.fromisoformat(max(p["date"] for p in snap.values()))
         blocks.append(f"{rule}\n📊 <b>WATCHLIST</b>\n<pre>{e(chr(10).join(rows))}</pre>\n"
-                      f"<i>Prices in ₹ as of {as_of:%d %b}. ⚡ = volume {VOLUME_SPIKE_X:g}x+ average.</i>")
+                      f"<i>Prices in ₹ as of {as_of:%d %b}. 🟢 up · 🔴 down · ⚡ volume {VOLUME_SPIKE_X:g}x+ avg.</i>")
     else:
         blocks.append(f"{rule}\n📊 <b>WATCHLIST</b>\nNo price data available.")
     return "\n\n".join(blocks)
@@ -1012,7 +1023,7 @@ def main():
         fetch_filings(state, today)
         state["price_status"] = {"checked": dt.datetime.now(IST).strftime("%Y-%m-%d %H:%M"),
                                  "found": len(snap), "missing": sorted(set(WATCHLIST) - set(snap)),
-                                 "from_nse": sorted(PRICES_FROM_NSE),
+                                 "from_nse": sorted(PRICES_FROM_NSE), "problems": PRICE_PROBLEMS,
                                  **{s: snap[s]["close"] for s in YAHOO_TICKERS if s in snap}}
         print(state["price_status"], state["filing_sources"])
     elif mode == "summary":
