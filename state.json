@@ -464,9 +464,9 @@
   "872bc429b43ea101": "2026-10-21",
   "8aa051e44b4a72e4": "2026-10-21"
  },
- "last_report": "2026-10-21T23:21",
+ "last_report": "2026-10-21T23:28",
  "filing_sources": {
-  "checked": "2026-10-21 23:26",
+  "checked": "2026-10-21 23:28",
   "NSE": "ok: 8 filings for 5 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
