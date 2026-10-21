@@ -205,7 +205,41 @@
   "11c9cce268a7de70": "2026-10-21",
   "495c67b0100bd8dc": "2026-10-21",
   "3230dc31e0dea5d4": "2026-10-21",
-  "34d9b3ce649a28ca": "2026-10-21"
+  "34d9b3ce649a28ca": "2026-10-21",
+  "c263216d8e568f0a": "2026-10-21",
+  "1bc7404a11a63020": "2026-10-21",
+  "da939f21d69f9505": "2026-10-21",
+  "294eb9932990eaac": "2026-10-21",
+  "4b08fae85a133053": "2026-10-21",
+  "05c5d5af48abe47f": "2026-10-21",
+  "84418a40836b3b21": "2026-10-21",
+  "1708e97c0a08aa6d": "2026-10-21",
+  "374770131baf98a1": "2026-10-21",
+  "79010258b4142b98": "2026-10-21",
+  "81c2d0cdfa77b871": "2026-10-21",
+  "627c7302f794aed0": "2026-10-21",
+  "d9a3c39c6178e413": "2026-10-21",
+  "cffb104544497282": "2026-10-21",
+  "fa006efe956ed7b0": "2026-10-21",
+  "3159a08740f68325": "2026-10-21",
+  "32db8492a1c4a244": "2026-10-21",
+  "5291c5022e00a9a8": "2026-10-21",
+  "96157fc8b8b0ecdb": "2026-10-21",
+  "04e1285532383080": "2026-10-21",
+  "6334a80569f14311": "2026-10-21",
+  "fb260d14fc08831d": "2026-10-21",
+  "2bc1c91fc23326a2": "2026-10-21",
+  "333b5df1586b18a6": "2026-10-21",
+  "1183601ab46dd76b": "2026-10-21",
+  "93f715345329f9f0": "2026-10-21",
+  "28f50f0e04f93c03": "2026-10-21",
+  "f9cfccb91fc2c65c": "2026-10-21",
+  "a873c8716459209e": "2026-10-21",
+  "395828a1ab03ba27": "2026-10-21",
+  "f296d72029f81d60": "2026-10-21",
+  "959eb6c973f90937": "2026-10-21",
+  "e51d4fbd884a80b6": "2026-10-21",
+  "750baae7bc89ee86": "2026-10-21"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -325,6 +359,34 @@
     "impact": "Not analysed",
     "importance": "-",
     "time": "21:32"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Price move: Syngene International Share Price News After 5.43% Drop",
+    "impact": "Bearish",
+    "importance": 5,
+    "time": "22:00"
+   },
+   {
+    "symbol": "INFOBEAN",
+    "event": "Earnings / results: InfoBeans Technologies Attains Select Partner Status In Claude Partner Network As AI Revenue Hits 43%",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "22:00"
+   },
+   {
+    "symbol": "PDSL",
+    "event": "M&A / stake change: PDS Ltd subsidiary acquires remaining 49% stake in DBS Lifestyle HK",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "22:00"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Earnings / results: SC verdict on AT1 bonds to impact Yes Bank's profitability by Rs 6,300 crore, weaken capital ratio: JM Financial",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "22:00"
    }
   ]
  }
