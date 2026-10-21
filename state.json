@@ -240,7 +240,13 @@
   "959eb6c973f90937": "2026-10-21",
   "e51d4fbd884a80b6": "2026-10-21",
   "750baae7bc89ee86": "2026-10-21",
-  "342731c058c5131b": "2026-10-21"
+  "342731c058c5131b": "2026-10-21",
+  "4115dc27bf64057c": "2026-10-21",
+  "e5fa9f058e915844": "2026-10-21",
+  "55c36b2a0c2983d6": "2026-10-21",
+  "4967a1c0a8950d48": "2026-10-21",
+  "27b5b732ee176afb": "2026-10-21",
+  "f3bbde48ece88f10": "2026-10-21"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -395,7 +401,28 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "22:30"
+   },
+   {
+    "symbol": "PDSL",
+    "event": "M&A / stake change: PDS Ltd acquires 100% Ownership of Hong Kong Subsidiary DBS Lifestyle Limited",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "22:53"
    }
   ]
- }
+ },
+ "bse_codes": {},
+ "filings_primed": true,
+ "reported_news": {
+  "374770131baf98a1": "2026-10-21",
+  "4115dc27bf64057c": "2026-10-21",
+  "e5fa9f058e915844": "2026-10-21",
+  "627c7302f794aed0": "2026-10-21",
+  "4967a1c0a8950d48": "2026-10-21",
+  "f3bbde48ece88f10": "2026-10-21",
+  "342731c058c5131b": "2026-10-21",
+  "1183601ab46dd76b": "2026-10-21",
+  "f9cfccb91fc2c65c": "2026-10-21"
+ },
+ "last_report": "2026-10-21T22:54"
 }
