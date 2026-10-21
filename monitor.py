@@ -280,7 +280,13 @@ def bse_code(session, state, symbol):
 def fetch_bse_filings(state, today):
     s = requests.Session()
     s.headers.update(BROWSER_HEADERS)
-    s.headers.update({"Origin": "https://www.bseindia.com", "Referer": "https://www.bseindia.com/"})
+    s.headers.update({"Origin": "https://www.bseindia.com", "Referer": "https://www.bseindia.com/",
+                      "Sec-Fetch-Site": "same-site", "Sec-Fetch-Mode": "cors", "Sec-Fetch-Dest": "empty"})
+    try:
+        # Pick up BSE's session cookies the way a browser would before calling the API.
+        s.get("https://www.bseindia.com/corporates/ann.html", timeout=20)
+    except Exception as ex:
+        print("BSE homepage fetch failed:", ex)
     out = {}
     for sym in WATCHLIST:
         try:
@@ -292,7 +298,12 @@ def fetch_bse_filings(state, today):
                 "strPrevDate": f"{today - dt.timedelta(days=1):%Y%m%d}", "strToDate": f"{today:%Y%m%d}",
                 "strScrip": code,
             }, timeout=20)
+            if r.status_code in (401, 403):
+                # BSE is refusing this server; the other stocks would fail the same way.
+                raise PermissionError(f"BSE refused the request (HTTP {r.status_code})")
             r.raise_for_status()
+        except PermissionError:
+            raise
         except Exception as ex:
             print(f"BSE filings failed for {sym}: {ex}")
             continue
@@ -309,13 +320,18 @@ def fetch_filings(state, today):
     """symbol -> list of filing items from NSE and BSE. A failure on one exchange
     (they sometimes block cloud servers) doesn't stop the other."""
     filings = {}
+    status = {"checked": dt.datetime.now(IST).strftime("%Y-%m-%d %H:%M")}
     for name, fetch in (("NSE", lambda: fetch_nse_filings(today)),
                         ("BSE", lambda: fetch_bse_filings(state, today))):
         try:
-            for sym, items in fetch().items():
+            found = fetch()
+            for sym, items in found.items():
                 filings.setdefault(sym, []).extend(items)
+            status[name] = f"ok: {sum(len(v) for v in found.values())} filings for {len(found)} stocks"
         except Exception as ex:
             print(f"{name} filings fetch failed: {ex}")
+            status[name] = f"failed: {ex}"[:200]
+    state["filing_sources"] = status  # saved in state.json so a failing source is easy to spot
     return filings
 
 
