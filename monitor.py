@@ -164,19 +164,32 @@ def send_telegram(text):
 
 def format_alert(symbol, a, link=""):
     e = lambda v: html.escape(str(v))
-    lines = [
-        f"🔔 <b>ALERT — {e(symbol)}</b>",
-        f"<b>Stock:</b> {e(WATCHLIST[symbol][0] if symbol in WATCHLIST else symbol)}",
-        f"<b>Event:</b> {e(a.get('event', ''))}",
-        f"<b>Impact:</b> {e(a.get('impact', ''))}",
-        f"<b>Reason:</b> {e(a.get('reason', ''))}",
-        f"<b>Action to Monitor:</b> {e(a.get('action', ''))}",
-        f"<b>Confidence:</b> {e(a.get('confidence', ''))}",
-        f"<b>Importance:</b> {e(a.get('importance', '-'))}/10",
+    now = dt.datetime.now(IST)
+    impact = str(a.get("impact", ""))
+    icon = "🟢" if impact.startswith("Bullish") else "🔴" if impact.startswith("Bearish") else "⚪"
+    try:
+        imp = max(0, min(10, int(a.get("importance"))))
+        meter = f"{'█' * imp}{'░' * (10 - imp)} {imp}/10"
+    except (TypeError, ValueError):
+        meter = "-"
+
+    # Blank lines separate blocks, the same layout as the 3-hourly report.
+    blocks = [
+        f"🔔 <b>ALERT · {e(symbol)}</b>\n"
+        f"🏢 {e(WATCHLIST[symbol][0] if symbol in WATCHLIST else symbol)}\n"
+        f"🕒 {now:%I:%M %p} · {now:%a, %d %b}\n"
+        "━━━━━━━━━━━━━━━━━━━━",
+        f"📌 <b>EVENT</b>\n{e(a.get('event', ''))}",
+        f"{icon} <b>{e(impact or 'Neutral')}</b>\n"
+        f"<code>Importance  {e(meter)}</code>\n"
+        f"<code>Confidence  {e(a.get('confidence', '-'))}</code>",
+        f"💡 <b>WHY IT MATTERS</b>\n{e(a.get('reason', ''))}",
+        f"👀 <b>WHAT TO WATCH</b>\n<i>{e(a.get('action', ''))}</i>",
     ]
     if link:
-        lines.append(f'<a href="{e(link)}">{"Open the filing" if "nseindia.com" in link or "bseindia.com" in link else "Read the news"}</a>')
-    return "\n".join(lines)
+        label = "Open the filing" if "nseindia.com" in link or "bseindia.com" in link else "Read the news"
+        blocks.append(f'━━━━━━━━━━━━━━━━━━━━\n🔗 <a href="{e(link)}">{label}</a>')
+    return "\n\n".join(blocks)
 
 
 # ---------- news ----------
