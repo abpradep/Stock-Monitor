@@ -126,7 +126,16 @@
   "cf5a8696d263caf5": "2026-10-21",
   "db012edbfc7fb44d": "2026-10-21",
   "fdf3244cee890c3f": "2026-10-21",
-  "fcfd99fc4083788f": "2026-10-21"
+  "fcfd99fc4083788f": "2026-10-21",
+  "1b85b8000c5a50c4": "2026-10-21",
+  "47aafc715fd4c3d1": "2026-10-21",
+  "002fb6d663c03f6a": "2026-10-21",
+  "91dc6d7011b4c440": "2026-10-21",
+  "820b7d0403a8ad98": "2026-10-21",
+  "72af5b8670b11d9a": "2026-10-21",
+  "9f17502042597897": "2026-10-21",
+  "083c8191f152599b": "2026-10-21",
+  "6511ae1f2cd998fd": "2026-10-21"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -141,6 +150,20 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "16:52"
+   },
+   {
+    "symbol": "TCS",
+    "event": "Tata Consultancy Services Completes Acquisition of Best Buy\u2019s India GCC, Establishing an AI-Native Capability Centre - TradingView",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "17:08"
+   },
+   {
+    "symbol": "ICICIBANK",
+    "event": "iPhone 17 At Rs 79,999, iPhone 15 At 62,999; Check Deals And Discounts At Flipkart Big Shopping Utsav - NDTV Profit",
+    "impact": "Not analysed",
+    "importance": "-",
+    "time": "17:08"
    }
   ]
  }
