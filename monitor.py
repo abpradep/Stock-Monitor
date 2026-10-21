@@ -315,7 +315,7 @@ def filing_item(source, subject, text, link):
     if len(text) > 300:
         text = text[:300] + "…"
     title = f"[{source} filing] {subject}" + (f": {text}" if text and text != subject else "")
-    return {"title": title, "link": link, "filing": True}
+    return {"title": title, "link": link, "filing": True, "source": source, "subject": subject}
 
 
 def fetch_nse_filings(today):
@@ -797,7 +797,7 @@ def news_key(title):
 def find_crucial(state, today, news):
     """Stocks with something crucial since the last report: an alert that was sent (news,
     price move or volume spike) or a material headline not covered by an earlier report.
-    Returns symbol -> {"reasons": [...], "fresh": [headline keys]}."""
+    Returns symbol -> {"reasons": [...], "fresh": [headline keys], "filings": [new filing items]}."""
     last = state.get("last_report", "")
     reported = state.get("reported_news", {})
     events = state.get("events", {}).get(today.isoformat(), [])
@@ -805,12 +805,14 @@ def find_crucial(state, today, news):
     for sym in WATCHLIST:
         reasons = [f"alert at {e['time']}: {e['event']}" for e in events
                    if e["symbol"] == sym and f"{today.isoformat()}T{e['time']}" > last]
-        fresh = [news_key(h["title"]) for h in news.get(sym, [])
-                 if is_material(h) and news_key(h["title"]) not in reported]
+        fresh_items = [h for h in news.get(sym, [])
+                       if is_material(h) and news_key(h["title"]) not in reported]
+        fresh = [news_key(h["title"]) for h in fresh_items]
         if fresh:
             reasons.append(f"{len(fresh)} new filing(s) or material headline(s)")
         if reasons:
-            crucial[sym] = {"reasons": reasons, "fresh": fresh}
+            crucial[sym] = {"reasons": reasons, "fresh": fresh,
+                            "filings": [h for h in fresh_items if h.get("filing") and h.get("link")]}
     return crucial
 
 
@@ -850,6 +852,15 @@ def format_report(now, slot, snap, crucial, r):
     icon = {"Bullish": "🟢", "Bearish": "🔴", "Neutral": "⚪"}
     rule = "━━━━━━━━━━━━━━━━━━━━"
 
+    def filing_links(sym):
+        """📄 link to each new exchange filing for this stock (up to 3)."""
+        items = crucial.get(sym, {}).get("filings", [])
+        lines = [f'📄 <a href="{e(f["link"])}">{e(f["source"])}: {e(f["subject"] or "Filing")}</a>'
+                 for f in items[:3]]
+        if len(items) > 3:
+            lines.append(f"📄 <i>+{len(items) - 3} more filings</i>")
+        return lines
+
     def price_line(sym):
         """Monospace line with price, day, week and (if unusual) volume, e.g.
         ₹612.30 │ +6.1% day │ +8.0% wk │ vol 3.1x"""
@@ -871,7 +882,7 @@ def format_report(now, slot, snap, crucial, r):
             block = [f"{icon.get(s['view'], '⚪')} <b>{e(sym)}</b>  ·  {e(s['view'])}"]
             if price_line(sym):
                 block.append(price_line(sym))
-            block += [f"📝 {e(s['summary'])}", f"👀 <i>{e(s['watch'])}</i>"]
+            block += [f"📝 {e(s['summary'])}", f"👀 <i>{e(s['watch'])}</i>"] + filing_links(sym)
             blocks.append("\n".join(block))
     elif crucial:
         blocks.append("⚠️ <b>FLAGGED SINCE LAST REPORT</b>")
@@ -879,7 +890,7 @@ def format_report(now, slot, snap, crucial, r):
             block = [f"🔸 <b>{e(sym)}</b>"]
             if price_line(sym):
                 block.append(price_line(sym))
-            block += [f"• {e(reason)}" for reason in c["reasons"]]
+            block += [f"• {e(reason)}" for reason in c["reasons"]] + filing_links(sym)
             blocks.append("\n".join(block))
     else:
         blocks.append("✅ <b>Nothing crucial since the last report.</b>")
