@@ -1,3 +1,4 @@
 yfinance
 feedparser
 requests
+anthropic>=2,<3

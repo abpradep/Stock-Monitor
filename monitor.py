@@ -3,12 +3,16 @@
 Stock monitor -> Telegram alerts.
 
   python monitor.py scan     check news + price/volume, alert on new material events
-  python monitor.py summary  send the 7 PM daily summary
+  python monitor.py report   scan, then send a Claude-written report on every stock
+                             (runs every 3 hours, 7 AM to 7 PM IST)
+  python monitor.py summary  send the plain daily summary (no Claude needed)
   python monitor.py test     send a test message to confirm Telegram works
 
 Configuration comes from environment variables (GitHub Secrets):
   TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID   required
-  ANTHROPIC_API_KEY                      optional, enables Bullish/Bearish analysis
+  ANTHROPIC_API_KEY                      optional, enables Bullish/Bearish analysis and
+                                         the detailed report (without it, report sends the
+                                         plain summary instead)
 """
 import datetime as dt
 import hashlib
@@ -20,6 +24,7 @@ import sys
 import urllib.parse
 from zoneinfo import ZoneInfo
 
+import anthropic
 import feedparser
 import requests
 import yfinance as yf
@@ -30,7 +35,8 @@ STATE_FILE = "state.json"
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5")
+CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5")          # per-headline alerts
+REPORT_MODEL = os.environ.get("REPORT_MODEL", "claude-opus-5-5")         # 3-hourly report
 
 PRICE_MOVE_PCT = float(os.environ.get("PRICE_MOVE_PCT", "5"))   # alert on moves >= 5%
 VOLUME_SPIKE_X = float(os.environ.get("VOLUME_SPIKE_X", "2.5")) # volume >= 2.5x 20-day avg
@@ -120,10 +126,19 @@ def send_telegram(text):
         print("Telegram not configured. Message would be:\n" + text)
         return
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-    for i in range(0, len(text), 4000):
+    # Telegram caps messages at 4096 chars. Split on line breaks so an HTML tag
+    # is never cut in half (which makes Telegram reject the message).
+    chunks, cur = [], ""
+    for line in text.split("\n"):
+        if cur and len(cur) + len(line) + 1 > 4000:
+            chunks.append(cur)
+            cur = ""
+        cur = f"{cur}\n{line}" if cur else line
+    chunks.append(cur)
+    for chunk in chunks:
         r = requests.post(url, data={
             "chat_id": TELEGRAM_CHAT_ID,
-            "text": text[i:i + 4000],
+            "text": chunk,
             "disable_web_page_preview": "true",
             "parse_mode": "HTML",
         }, timeout=20)
@@ -189,25 +204,20 @@ Reply with ONLY a JSON object, no other text:
 Judge only from the headlines. If they are too vague to judge, lower the confidence."""
 
 
+def claude_client():
+    return anthropic.Anthropic(api_key=ANTHROPIC_API_KEY, timeout=180)
+
+
 def analyze_with_claude(symbol, name, headlines):
     items = "\n".join(f"{i + 1}. {h['title']}" for i, h in enumerate(headlines))
-    r = requests.post(
-        "https://api.anthropic.com/v1/messages",
-        headers={
-            "x-api-key": ANTHROPIC_API_KEY,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
-        },
-        json={
-            "model": CLAUDE_MODEL,
-            "max_tokens": 600,
-            "messages": [{"role": "user", "content": CLAUDE_PROMPT.format(
-                name=name, symbol=symbol, items=items)}],
-        },
-        timeout=60,
+    resp = claude_client().messages.create(
+        model=CLAUDE_MODEL,
+        max_tokens=2000,
+        output_config={"effort": "low"},
+        messages=[{"role": "user", "content": CLAUDE_PROMPT.format(
+            name=name, symbol=symbol, items=items)}],
     )
-    r.raise_for_status()
-    text = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text")
+    text = "".join(b.text for b in resp.content if b.type == "text")
     match = re.search(r"\{.*\}", text, re.S)
     return json.loads(match.group(0)) if match else None
 
@@ -284,7 +294,9 @@ def rule_analyze(headlines):
     return a, idx
 
 
-def scan_news(state, today):
+def scan_news(state, today, collected=None):
+    """Alert on new material news. If `collected` is a dict, it is filled with
+    symbol -> all of today's relevant headlines (new or already seen) for the report."""
     priming = "seen" not in state  # first run: remember existing news without alerting
     seen = state.setdefault("seen", {})
     for symbol, (name, aliases) in WATCHLIST.items():
@@ -294,6 +306,10 @@ def scan_news(state, today):
         except Exception as ex:
             print(f"News fetch failed for {symbol}: {ex}")
             continue
+
+        if collected is not None:
+            collected[symbol] = [it for it in items
+                                 if mentions.search(it["title"]) and not JUNK.search(it["title"])][:6]
 
         new = []
         for it in items:
@@ -438,6 +454,173 @@ def daily_summary(state, today):
     send_telegram("\n".join(lines))
 
 
+# ---------- 3-hourly Claude report ----------
+
+def get_snapshot():
+    """Latest price picture for every stock: day / week / month change, volume and
+    52-week range. Uses the most recent candle, so it also works before the open."""
+    tickers = [s + ".NS" for s in WATCHLIST]
+    data = yf.download(tickers, period="1y", interval="1d", group_by="ticker",
+                       auto_adjust=False, progress=False, threads=True)
+    snap = {}
+    for sym in WATCHLIST:
+        try:
+            df = data[sym + ".NS"].dropna(subset=["Close"])
+        except KeyError:
+            continue
+        if len(df) < 22:
+            continue
+        close = df["Close"]
+        last = float(close.iloc[-1])
+        chg = lambda n: (last / float(close.iloc[-1 - n]) - 1) * 100
+        avg_vol = df["Volume"].iloc[-21:-1].mean()
+        hi, lo = float(df["High"].max()), float(df["Low"].min())
+        snap[sym] = {
+            "date": df.index[-1].date().isoformat(),
+            "close": round(last, 2),
+            "day_pct": round(chg(1), 2),
+            "week_pct": round(chg(5), 2),
+            "month_pct": round(chg(21), 2),
+            "vol_x": round(float(df["Volume"].iloc[-1] / avg_vol), 2) if avg_vol else 0,
+            "from_52w_high_pct": round((last / hi - 1) * 100, 1),
+            "from_52w_low_pct": round((last / lo - 1) * 100, 1),
+        }
+    return snap
+
+
+def report_slot(now):
+    """Name for this report, based on where we are in the Indian trading day."""
+    t = now.hour * 60 + now.minute
+    if now.weekday() >= 5:
+        return "Weekend review"
+    if t < 9 * 60 + 15:
+        return "Pre-market"
+    if t < 15 * 60 + 30:
+        return "Intraday"
+    if t < 17 * 60:
+        return "Market close"
+    return "Evening wrap"
+
+
+REPORT_SYSTEM = """You are an equity research analyst covering Indian small and mid caps for
+one investor. You write a short report on their watchlist several times a day.
+
+Rules:
+- Be specific. Cite the numbers you were given (price change, volume multiple, distance from
+  the 52-week high/low) and name the actual news. No generic filler such as "monitor closely"
+  or "market sentiment".
+- Use only the data provided. Don't invent results, targets or events. If there is no news and
+  the move is small, say that plainly in a few words.
+- The "view" is the near-term (days to weeks) read from the price action and news, not a buy/sell call.
+- "priority" is High when something happened that the investor should look at today, Medium
+  when it is worth noting, Low when nothing material is going on.
+- "watch" is the one concrete thing to check next (a level, a filing, an event, a date).
+- Keep each summary to 1-2 sentences."""
+
+REPORT_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "headline": {"type": "string",
+                     "description": "One sentence on the watchlist as a whole right now."},
+        "stocks": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "symbol": {"type": "string"},
+                    "view": {"type": "string", "enum": ["Bullish", "Bearish", "Neutral"]},
+                    "priority": {"type": "string", "enum": ["High", "Medium", "Low"]},
+                    "summary": {"type": "string"},
+                    "watch": {"type": "string"},
+                },
+                "required": ["symbol", "view", "priority", "summary", "watch"],
+                "additionalProperties": False,
+            },
+        },
+        "top_watch": {"type": "array", "items": {"type": "string"},
+                      "description": "Up to 3 most important things to watch across the watchlist."},
+    },
+    "required": ["headline", "stocks", "top_watch"],
+    "additionalProperties": False,
+}
+
+
+def claude_report(now, slot, snap, news, events):
+    stocks = []
+    for sym, (name, _) in WATCHLIST.items():
+        stocks.append({
+            "symbol": sym,
+            "name": name,
+            "price": snap.get(sym, "no price data"),
+            "headlines_last_24h": [h["title"] for h in news.get(sym, [])],
+            "alerts_sent_today": [f"{e['time']} {e['event']} ({e['impact']})"
+                                  for e in events if e["symbol"] == sym],
+        })
+    user = (f"Report time: {now:%A %d %b %Y, %I:%M %p} IST ({slot}).\n"
+            "NSE trades 9:15 AM to 3:30 PM IST on weekdays; the price data's \"date\" is the "
+            "latest daily candle, which is still forming during market hours.\n\n"
+            "Watchlist data:\n" + json.dumps(stocks, ensure_ascii=False, indent=1) +
+            "\n\nWrite the report. Include every stock in the watchlist, in the order given.")
+    resp = claude_client().beta.messages.create(
+        model=REPORT_MODEL,
+        max_tokens=16000,
+        betas=["server-side-fallback-2026-07-01"],
+        fallbacks="default",  # if the model declines, the API retries on its recommended fallback
+        output_config={"effort": "medium",
+                       "format": {"type": "json_schema", "schema": REPORT_SCHEMA}},
+        system=REPORT_SYSTEM,
+        messages=[{"role": "user", "content": user}],
+    )
+    if resp.stop_reason != "end_turn":
+        raise RuntimeError(f"report stopped early: {resp.stop_reason}")
+    return json.loads(next(b.text for b in resp.content if b.type == "text"))
+
+
+def format_report(now, slot, snap, r):
+    e = lambda v: html.escape(str(v))
+    icon = {"Bullish": "🟢", "Bearish": "🔴", "Neutral": "⚪"}
+    rank = {"High": 0, "Medium": 1, "Low": 2}
+    lines = [f"📈 <b>Stock report — {now:%I:%M %p} · {e(slot)}</b>",
+             f"{now:%a %d %b %Y}", "", f"<i>{e(r['headline'])}</i>"]
+    current = None
+    for s in sorted(r["stocks"], key=lambda s: rank.get(s["priority"], 3)):
+        if s["priority"] != current:
+            current = s["priority"]
+            lines += ["", f"<b>{e(current)} priority</b>"]
+        sym = s["symbol"]
+        p = snap.get(sym)
+        price = (f" ₹{p['close']:,.2f} · {p['day_pct']:+.1f}% day · {p['week_pct']:+.1f}% wk"
+                 + (f" · vol {p['vol_x']:.1f}x" if p["vol_x"] >= VOLUME_SPIKE_X else "")) if p else ""
+        lines.append(f"{icon.get(s['view'], '⚪')} <b>{e(sym)}</b>{e(price)} — {e(s['view'])}")
+        lines.append(e(s["summary"]))
+        if current != "Low":
+            lines.append(f"👀 {e(s['watch'])}")
+    if r["top_watch"]:
+        lines += ["", "<b>Watch next</b>"] + [f"• {e(w)}" for w in r["top_watch"][:3]]
+    return "\n".join(lines)
+
+
+def send_report(state, today, news):
+    now = dt.datetime.now(IST)
+    if not ANTHROPIC_API_KEY:
+        daily_summary(state, today)
+        return
+    slot = report_slot(now)
+    try:
+        snap = get_snapshot()
+    except Exception as ex:
+        print("Price fetch failed:", ex)
+        snap = {}
+    events = state.get("events", {}).get(today.isoformat(), [])
+    try:
+        r = claude_report(now, slot, snap, news, events)
+    except Exception as ex:
+        print("Claude report failed, sending plain summary instead:", ex)
+        daily_summary(state, today)
+        return
+    send_telegram(format_report(now, slot, snap, r))
+
+
 # ---------- main ----------
 
 def main():
@@ -450,6 +633,11 @@ def main():
         return
     if mode == "summary":
         daily_summary(state, today)
+    elif mode == "report":
+        news = {}
+        scan_news(state, today, news)
+        scan_prices(state, today)
+        send_report(state, today, news)
     else:
         scan_news(state, today)
         scan_prices(state, today)
