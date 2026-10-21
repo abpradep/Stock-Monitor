@@ -137,14 +137,19 @@ def send_telegram(text):
         print("Telegram not configured. Message would be:\n" + text)
         return
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-    # Telegram caps messages at 4096 chars. Split on line breaks so an HTML tag
-    # is never cut in half (which makes Telegram reject the message).
+    # Telegram caps messages at 4096 chars. Split between blank-line-separated
+    # blocks (then lines, if one block is too long) so an HTML tag or table is
+    # never cut in half, which makes Telegram reject the message.
+    parts = []  # (separator before it, text)
+    for block in text.split("\n\n"):
+        lines = [block] if len(block) <= 4000 else block.split("\n")
+        parts += [("\n\n", lines[0])] + [("\n", ln) for ln in lines[1:]]
     chunks, cur = [], ""
-    for line in text.split("\n"):
-        if cur and len(cur) + len(line) + 1 > 4000:
+    for sep, part in parts:
+        if cur and len(cur) + len(sep) + len(part) > 4000:
             chunks.append(cur)
             cur = ""
-        cur = f"{cur}\n{line}" if cur else line
+        cur = f"{cur}{sep}{part}" if cur else part
     chunks.append(cur)
     for chunk in chunks:
         r = requests.post(url, data={
@@ -721,39 +726,55 @@ def format_report(now, slot, snap, crucial, r):
     """r is Claude's analysis of the crucial stocks, or None when Claude wasn't used."""
     e = lambda v: html.escape(str(v))
     icon = {"Bullish": "🟢", "Bearish": "🔴", "Neutral": "⚪"}
+    rule = "━━━━━━━━━━━━━━━━━━━━"
 
-    def price(sym, full=False):
+    def price_line(sym):
+        """Monospace line with price, day, week and (if unusual) volume, e.g.
+        ₹612.30 │ +6.1% day │ +8.0% wk │ vol 3.1x"""
         p = snap.get(sym)
         if not p:
             return ""
-        txt = f" ₹{p['close']:,.2f} · {p['day_pct']:+.1f}%"
-        if full:
-            txt += f" day · {p['week_pct']:+.1f}% wk"
+        parts = [f"₹{p['close']:,.2f}", f"{p['day_pct']:+.1f}% day", f"{p['week_pct']:+.1f}% wk"]
         if p["vol_x"] >= VOLUME_SPIKE_X:
-            txt += f" · vol {p['vol_x']:.1f}x"
-        return txt
+            parts.append(f"vol {p['vol_x']:.1f}x")
+        return f"<code>{e(' │ '.join(parts))}</code>"
 
-    lines = [f"📈 <b>Stock report — {now:%I:%M %p} · {e(slot)}</b>", f"{now:%a %d %b %Y}", ""]
+    # Blank lines separate blocks; send_telegram never splits a message inside one.
+    blocks = [f"📈 <b>STOCK REPORT</b>\n🕒 {now:%I:%M %p} · {e(slot)}\n📅 {now:%a, %d %b %Y}\n{rule}"]
+
     if r:
-        lines += ["🧠 <b>What matters</b>", f"<i>{e(r['headline'])}</i>"]
+        blocks.append(f"🧠 <b>WHAT MATTERS</b>\n<i>{e(r['headline'])}</i>")
         for s in r["stocks"]:
             sym = s["symbol"]
-            lines += ["", f"{icon.get(s['view'], '⚪')} <b>{e(sym)}</b>{e(price(sym, True))} — {e(s['view'])}",
-                      e(s["summary"]), f"👀 {e(s['watch'])}"]
+            block = [f"{icon.get(s['view'], '⚪')} <b>{e(sym)}</b>  ·  {e(s['view'])}"]
+            if price_line(sym):
+                block.append(price_line(sym))
+            block += [f"📝 {e(s['summary'])}", f"👀 <i>{e(s['watch'])}</i>"]
+            blocks.append("\n".join(block))
     elif crucial:
-        lines.append("⚠️ <b>Flagged since last report</b>")
-        lines += [f"• <b>{e(sym)}</b>: {e('; '.join(c['reasons']))}" for sym, c in crucial.items()]
+        blocks.append("⚠️ <b>FLAGGED SINCE LAST REPORT</b>")
+        for sym, c in crucial.items():
+            block = [f"🔸 <b>{e(sym)}</b>"]
+            if price_line(sym):
+                block.append(price_line(sym))
+            block += [f"• {e(reason)}" for reason in c["reasons"]]
+            blocks.append("\n".join(block))
     else:
-        lines.append("✅ Nothing crucial since the last report.")
+        blocks.append("✅ <b>Nothing crucial since the last report.</b>")
 
-    lines += ["", "<b>Watchlist</b>"]
     if snap:
+        # Fixed-width table so the columns line up on the phone.
+        rows = [f"{'STOCK':<10}  {'PRICE':>9}  {'DAY':>6}", "─" * 29]
         for sym in sorted(snap, key=lambda x: snap[x]["day_pct"], reverse=True):
-            lines.append(f"• {e(sym)}{e(price(sym))}")
-        lines.append(f"<i>Prices as of {e(max(p['date'] for p in snap.values()))} close or latest.</i>")
+            p = snap[sym]
+            mark = " ⚡" if p["vol_x"] >= VOLUME_SPIKE_X else ""
+            rows.append(f"{sym[:10]:<10}  {p['close']:>9,.2f}  {p['day_pct']:>+5.1f}%{mark}")
+        as_of = dt.date.fromisoformat(max(p["date"] for p in snap.values()))
+        blocks.append(f"{rule}\n📊 <b>WATCHLIST</b>\n<pre>{e(chr(10).join(rows))}</pre>\n"
+                      f"<i>Prices in ₹ as of {as_of:%d %b}. ⚡ = volume {VOLUME_SPIKE_X:g}x+ average.</i>")
     else:
-        lines.append("No price data available.")
-    return "\n".join(lines)
+        blocks.append(f"{rule}\n📊 <b>WATCHLIST</b>\nNo price data available.")
+    return "\n\n".join(blocks)
 
 
 def send_report(state, today, news):
