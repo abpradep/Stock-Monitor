@@ -2,7 +2,8 @@
 """
 Stock monitor -> Telegram alerts.
 
-  python monitor.py scan     check news + price/volume, alert on new material events
+  python monitor.py scan     check news, NSE/BSE filings and price/volume, alert on new
+                             material events
   python monitor.py report   scan, then send the 3-hourly report (7 AM to 7 PM IST). Claude
                              is only called when something crucial happened since the last report
   python monitor.py summary  send the plain daily summary (no Claude needed)
@@ -76,6 +77,15 @@ JUNK = re.compile(
     r"festive|diwali|dhanteras|gift|best buy|price list|horoscope|recipe|"
     r"credit card|fd rates|fixed deposit|savings account|loan offer|"
     r"cricket|ipl|bollywood|movie|box office|weather",
+    re.I,
+)
+
+# Routine exchange filings that are never worth an alert.
+ROUTINE_FILING = re.compile(
+    r"trading window|loss of (share )?certificate|duplicate (share )?certificate|reg(ulation)?\.? ?74|"
+    r"74 ?\(5\)|newspaper|publication|investor (meet|conference)|analysts?(/| and )?(institutional )?investor|"
+    r"\bmeet\b|\bkyc\b|transfer of shares|transmission of shares|compliance certificate|certificate under|"
+    r"reg(ulation)?\.? ?(7|40|39)\b|esop|esos|allotment of (equity )?shares under",
     re.I,
 )
 
@@ -160,7 +170,7 @@ def format_alert(symbol, a, link=""):
         f"<b>Importance:</b> {e(a.get('importance', '-'))}/10",
     ]
     if link:
-        lines.append(f'<a href="{e(link)}">Read the news</a>')
+        lines.append(f'<a href="{e(link)}">{"Open the filing" if "nseindia.com" in link or "bseindia.com" in link else "Read the news"}</a>')
     return "\n".join(lines)
 
 
@@ -181,8 +191,116 @@ def fetch_news(name):
     return items
 
 
+# ---------- exchange filings (NSE + BSE corporate announcements) ----------
+
+BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.5",
+}
+
+
+def filing_item(source, subject, text, link):
+    text = re.sub(r"\s+", " ", text or "").strip()
+    if len(text) > 300:
+        text = text[:300] + "…"
+    title = f"[{source} filing] {subject}" + (f": {text}" if text and text != subject else "")
+    return {"title": title, "link": link, "filing": True}
+
+
+def fetch_nse_filings(today):
+    """All NSE announcements from yesterday and today, main board and SME,
+    for the watchlist. NSE needs a browser-like session cookie first."""
+    s = requests.Session()
+    s.headers.update(BROWSER_HEADERS)
+    s.headers["Referer"] = "https://www.nseindia.com/companies-listing/corporate-filings-announcements"
+    s.get("https://www.nseindia.com/companies-listing/corporate-filings-announcements", timeout=20)
+    params = {"from_date": f"{today - dt.timedelta(days=1):%d-%m-%Y}", "to_date": f"{today:%d-%m-%Y}"}
+    out = {}
+    for index in ("equities", "sme"):
+        r = s.get("https://www.nseindia.com/api/corporate-announcements",
+                  params={"index": index, **params}, timeout=30)
+        r.raise_for_status()
+        for a in r.json():
+            sym = a.get("symbol", "")
+            if sym in WATCHLIST:
+                out.setdefault(sym, []).append(filing_item(
+                    "NSE", a.get("desc", ""), a.get("attchmntText", ""), a.get("attchmntFile", "")))
+    return out
+
+
+def bse_code(session, state, symbol):
+    """BSE scrip code for an NSE symbol, looked up once and remembered in state."""
+    codes = state.setdefault("bse_codes", {})
+    if symbol not in codes:
+        r = session.get("https://api.bseindia.com/BseIndiaAPI/api/PeerSmartSearch/w",
+                        params={"Type": "SS", "text": symbol}, timeout=20)
+        r.raise_for_status()
+        # The response is HTML like "<strong>LAURUSLABS</strong>  INE947Q01028  540222"
+        m = re.search(rf"<\w+>{re.escape(symbol)}</\w+>\s+\w+\s+(\d{{6}})",
+                      r.text.replace("&nbsp;", " "), re.I)
+        if not m:
+            return None  # not listed on BSE (e.g. NSE SME stocks); tried again next run
+        codes[symbol] = m.group(1)
+    return codes[symbol]
+
+
+def fetch_bse_filings(state, today):
+    s = requests.Session()
+    s.headers.update(BROWSER_HEADERS)
+    s.headers.update({"Origin": "https://www.bseindia.com", "Referer": "https://www.bseindia.com/"})
+    out = {}
+    for sym in WATCHLIST:
+        try:
+            code = bse_code(s, state, sym)
+            if not code:
+                continue
+            r = s.get("https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w", params={
+                "pageno": 1, "strCat": -1, "subcategory": -1, "strSearch": "P", "strType": "C",
+                "strPrevDate": f"{today - dt.timedelta(days=1):%Y%m%d}", "strToDate": f"{today:%Y%m%d}",
+                "strScrip": code,
+            }, timeout=20)
+            r.raise_for_status()
+        except Exception as ex:
+            print(f"BSE filings failed for {sym}: {ex}")
+            continue
+        for a in r.json().get("Table", []):
+            att = (a.get("ATTACHMENTNAME") or "").strip()
+            link = (f"https://www.bseindia.com/xml-data/corpfiling/AttachLive/{att}" if att
+                    else a.get("NSURL", ""))
+            subject = (a.get("NEWSSUB") or "").split(" - ")[-1].strip() or a.get("SUBCATNAME") or ""
+            out.setdefault(sym, []).append(filing_item("BSE", subject, a.get("HEADLINE", ""), link))
+    return out
+
+
+def fetch_filings(state, today):
+    """symbol -> list of filing items from NSE and BSE. A failure on one exchange
+    (they sometimes block cloud servers) doesn't stop the other."""
+    filings = {}
+    for name, fetch in (("NSE", lambda: fetch_nse_filings(today)),
+                        ("BSE", lambda: fetch_bse_filings(state, today))):
+        try:
+            for sym, items in fetch().items():
+                filings.setdefault(sym, []).extend(items)
+        except Exception as ex:
+            print(f"{name} filings fetch failed: {ex}")
+    return filings
+
+
+def is_relevant(item, mentions):
+    """Filings are always about the company; news headlines must name it."""
+    if item.get("filing"):
+        return not ROUTINE_FILING.search(item["title"])
+    return bool(mentions.search(item["title"])) and not JUNK.search(item["title"])
+
+
+def is_material(item):
+    return bool(item.get("filing") or KEYWORDS.search(item["title"]))
+
+
 CLAUDE_PROMPT = """You are a stock monitoring analyst for Indian equities.
-Below are new news headlines about {name} (NSE: {symbol}).
+Below are new news headlines and stock exchange filings about {name} (NSE: {symbol}).
 
 Decide whether any of them is a material event for this stock: earnings results, corporate
 announcements, dividends/bonus/buyback, management changes, analyst upgrades/downgrades,
@@ -299,18 +417,21 @@ def scan_news(state, today, collected=None):
     """Alert on new material news. If `collected` is a dict, it is filled with
     symbol -> all of today's relevant headlines (new or already seen) for the report."""
     priming = "seen" not in state  # first run: remember existing news without alerting
+    # Filings were added later: the first run with them only remembers what's already there.
+    filings_priming = not state.get("filings_primed")
     seen = state.setdefault("seen", {})
+    filings = fetch_filings(state, today)
     for symbol, (name, aliases) in WATCHLIST.items():
         mentions = re.compile(r"\b(" + "|".join(re.escape(a) for a in aliases) + r")\b", re.I)
         try:
-            items = fetch_news(name)
+            news = fetch_news(name)
         except Exception as ex:
             print(f"News fetch failed for {symbol}: {ex}")
-            continue
+            news = []
+        items = filings.get(symbol, []) + news
 
         if collected is not None:
-            collected[symbol] = [it for it in items
-                                 if mentions.search(it["title"]) and not JUNK.search(it["title"])][:6]
+            collected[symbol] = [it for it in items if is_relevant(it, mentions)][:8]
 
         new = []
         for it in items:
@@ -318,8 +439,9 @@ def scan_news(state, today, collected=None):
             if key in seen:
                 continue
             seen[key] = today.isoformat()
-            t = it["title"]
-            if mentions.search(t) and KEYWORDS.search(t) and not JUNK.search(t):
+            if filings_priming and it.get("filing"):
+                continue
+            if is_relevant(it, mentions) and is_material(it):
                 new.append(it)
         if priming or not new:
             continue
@@ -348,6 +470,7 @@ def scan_news(state, today, collected=None):
 
         send_telegram(format_alert(symbol, a, link))
         record_event(state, today, symbol, a)
+    state["filings_primed"] = True
     if priming:
         print("First run: existing news recorded, no alerts sent.")
 
@@ -505,7 +628,7 @@ def report_slot(now):
 
 REPORT_SYSTEM = """You are an equity research analyst covering Indian small and mid caps for
 one investor. You are shown only the stocks where something crucial happened since the last
-report (a sharp move, a volume spike, an alert or new company news).
+report (a sharp move, a volume spike, an alert, new company news or a stock exchange filing).
 
 Rules:
 - Be specific. Cite the numbers you were given (price change, volume multiple, distance from
@@ -556,9 +679,9 @@ def find_crucial(state, today, news):
         reasons = [f"alert at {e['time']}: {e['event']}" for e in events
                    if e["symbol"] == sym and f"{today.isoformat()}T{e['time']}" > last]
         fresh = [news_key(h["title"]) for h in news.get(sym, [])
-                 if KEYWORDS.search(h["title"]) and news_key(h["title"]) not in reported]
+                 if is_material(h) and news_key(h["title"]) not in reported]
         if fresh:
-            reasons.append(f"{len(fresh)} new material headline(s)")
+            reasons.append(f"{len(fresh)} new filing(s) or material headline(s)")
         if reasons:
             crucial[sym] = {"reasons": reasons, "fresh": fresh}
     return crucial
@@ -572,7 +695,7 @@ def claude_report(now, slot, snap, news, events, crucial):
             "name": WATCHLIST[sym][0],
             "why_flagged": c["reasons"],
             "price": snap.get(sym, "no price data"),
-            "headlines_last_24h": [h["title"] for h in news.get(sym, [])],
+            "news_and_filings_last_24h": [h["title"] for h in news.get(sym, [])],
             "alerts_sent_today": [f"{e['time']} {e['event']} ({e['impact']})"
                                   for e in events if e["symbol"] == sym],
         })
