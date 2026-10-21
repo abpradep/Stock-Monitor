@@ -67,6 +67,38 @@ WATCHLIST = {
     "JMFINANCIL": ("JM Financial", ["JM Financial"]),
     "BIRLANU": ("BirlaNu", ["BirlaNu", "Birla Nu"]),
     "FDC": ("FDC Limited", ["FDC Ltd", "FDC Limited", "FDC share", "FDC Q"]),
+    "JUBLPHARMA": ("Jubilant Pharmova", ["Jubilant Pharmova"]),
+    "VOEPL": ("Virtuoso Optoelectronics", ["Virtuoso Optoelectronics", "Virtuoso Opto", "VOEPL"]),
+    "PPLPHARMA": ("Piramal Pharma", ["Piramal Pharma"]),
+    "UNIPARTS": ("Uniparts India", ["Uniparts"]),
+    "CYIENT": ("Cyient", ["Cyient"]),
+    "DENTA": ("Denta Water and Infra Solutions", ["Denta Water"]),
+    "ENTERO": ("Entero Healthcare Solutions", ["Entero Healthcare", "Entero"]),
+    "CARBORUNIV": ("Carborundum Universal", ["Carborundum", "CUMI"]),
+    "NATCOPHARM": ("Natco Pharma", ["Natco"]),
+    "HINDWAREAP": ("Hindware Home Innovation", ["Hindware Home"]),
+    "KARBON": ("Karbonsteel Engineering", ["Karbonsteel"]),
+    "AARTIPHARM": ("Aarti Pharmalabs", ["Aarti Pharmalabs"]),
+    "KPITTECH": ("KPIT Technologies", ["KPIT"]),
+    "CONCORDBIO": ("Concord Biotech", ["Concord Biotech"]),
+    "SONACOMS": ("Sona BLW Precision Forgings", ["Sona BLW", "Sona Comstar"]),
+    "EUREKAFORB": ("Eureka Forbes", ["Eureka Forbes"]),
+}
+
+# Stocks not on NSE: Yahoo Finance ticker to use instead of SYMBOL.NS.
+YAHOO_TICKERS = {
+    "KARBON": "544511.BO",  # Karbonsteel Engineering, BSE SME only
+}
+
+
+def yahoo_ticker(symbol):
+    return YAHOO_TICKERS.get(symbol, symbol + ".NS")
+
+
+# Other listed companies whose names contain a watched company's name. These
+# phrases are ignored when checking whether a headline mentions the company.
+NOT_THIS_COMPANY = {
+    "CYIENT": re.compile(r"Cyient DLM", re.I),
 }
 
 # BSE scrip codes, used to fetch BSE filings. None = not listed on BSE (NSE SME
@@ -77,6 +109,10 @@ BSE_CODES = {
     "PRAJIND": "522205", "BAJAJHCARE": "539872", "ALIVUS": "543322", "PDSL": "538730",
     "GREAVESCOT": "501455", "RAYMOND": "500330", "RBA": "543248", "ARMANFIN": "531179",
     "PENIND": "513228", "JMFINANCIL": "523405", "BIRLANU": "509675", "FDC": "531599",
+    "JUBLPHARMA": "530019", "VOEPL": "543597", "PPLPHARMA": "543635", "UNIPARTS": "543689",
+    "CYIENT": "532175", "DENTA": "544345", "ENTERO": "544122", "CARBORUNIV": "513375",
+    "NATCOPHARM": "524816", "HINDWAREAP": "542905", "KARBON": "544511", "AARTIPHARM": "543748",
+    "KPITTECH": "542651", "CONCORDBIO": "543960", "SONACOMS": "543300", "EUREKAFORB": "543482",
 }
 
 # Headlines matching these are skipped even if they mention a watched company.
@@ -368,6 +404,8 @@ def is_relevant(item, mentions, symbol=None):
         as_broker, about_itself = BROKER_ONLY[symbol]
         if as_broker.search(t) and not about_itself.search(t):
             return False
+    if symbol in NOT_THIS_COMPANY:
+        t = NOT_THIS_COMPANY[symbol].sub("", t)
     return bool(mentions.search(t)) and not JUNK.search(t)
 
 
@@ -554,13 +592,13 @@ def scan_news(state, today, collected=None):
 # ---------- price & volume ----------
 
 def get_price_moves(today):
-    tickers = [s + ".NS" for s in WATCHLIST]
+    tickers = [yahoo_ticker(s) for s in WATCHLIST]
     data = yf.download(tickers, period="40d", interval="1d", group_by="ticker",
                        auto_adjust=False, progress=False, threads=True)
     moves = []
     for sym in WATCHLIST:
         try:
-            df = data[sym + ".NS"].dropna(subset=["Close"])
+            df = data[yahoo_ticker(sym)].dropna(subset=["Close"])
         except KeyError:
             continue
         if len(df) < 5 or df.index[-1].date() != today:
@@ -659,13 +697,13 @@ def daily_summary(state, today):
 def get_snapshot():
     """Latest price picture for every stock: day / week / month change, volume and
     52-week range. Uses the most recent candle, so it also works before the open."""
-    tickers = [s + ".NS" for s in WATCHLIST]
+    tickers = [yahoo_ticker(s) for s in WATCHLIST]
     data = yf.download(tickers, period="1y", interval="1d", group_by="ticker",
                        auto_adjust=False, progress=False, threads=True)
     snap = {}
     for sym in WATCHLIST:
         try:
-            df = data[sym + ".NS"].dropna(subset=["Close"])
+            df = data[yahoo_ticker(sym)].dropna(subset=["Close"])
         except KeyError:
             continue
         if len(df) < 22:
