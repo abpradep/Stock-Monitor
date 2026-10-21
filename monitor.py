@@ -69,6 +69,16 @@ WATCHLIST = {
     "FDC": ("FDC Limited", ["FDC Ltd", "FDC Limited", "FDC share", "FDC Q"]),
 }
 
+# BSE scrip codes, used to fetch BSE filings. None = not listed on BSE (NSE SME
+# stocks). A stock missing here is looked up on BSE's site automatically.
+BSE_CODES = {
+    "LAURUSLABS": "540222", "SOLARA": "541540", "NORTHARC": "544260", "SHIVALIK": "539148",
+    "SYNGENE": "539268", "ALLETEC": None, "INFOBEAN": "543644", "JAYBEE": None,
+    "PRAJIND": "522205", "BAJAJHCARE": "539872", "ALIVUS": "543322", "PDSL": "538730",
+    "GREAVESCOT": "501455", "RAYMOND": "500330", "RBA": "543248", "ARMANFIN": "531179",
+    "PENIND": "513228", "JMFINANCIL": "523405", "BIRLANU": "509675", "FDC": "531599",
+}
+
 # Headlines matching these are skipped even if they mention a watched company.
 JUNK = re.compile(
     r"stocks? to (watch|buy|sell)|shares? to buy|top (gainers|losers)|live updates|market live|"
@@ -249,7 +259,10 @@ def fetch_nse_filings(today):
 
 
 def bse_code(session, state, symbol):
-    """BSE scrip code for an NSE symbol, looked up once and remembered in state."""
+    """BSE scrip code for an NSE symbol: from BSE_CODES, otherwise looked up once
+    and remembered in state."""
+    if symbol in BSE_CODES:
+        return BSE_CODES[symbol]
     codes = state.setdefault("bse_codes", {})
     if symbol not in codes:
         r = session.get("https://api.bseindia.com/BseIndiaAPI/api/PeerSmartSearch/w",
