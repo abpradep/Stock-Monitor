@@ -424,9 +424,9 @@
   "1183601ab46dd76b": "2026-10-21",
   "f9cfccb91fc2c65c": "2026-10-21"
  },
- "last_report": "2026-10-21T23:07",
+ "last_report": "2026-10-21T23:17",
  "filing_sources": {
-  "checked": "2026-10-21 23:14",
+  "checked": "2026-10-21 23:17",
   "NSE": "ok: 5 filings for 3 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  }
