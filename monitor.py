@@ -534,6 +534,10 @@ def scan_news(state, today, collected=None):
     # Filings were added later: the first run with them only remembers what's already there.
     filings_priming = not state.get("filings_primed")
     seen = state.setdefault("seen", {})
+    # Stocks added to the watchlist since the last run: remember their current news
+    # without alerting, so adding a stock doesn't trigger a burst of old alerts.
+    known = state.get("known_symbols")
+    new_symbols = set() if known is None else set(WATCHLIST) - set(known)
     filings = fetch_filings(state, today)
     for symbol, (name, aliases) in WATCHLIST.items():
         mentions = re.compile(r"\b(" + "|".join(re.escape(a) for a in aliases) + r")\b", re.I)
@@ -557,7 +561,7 @@ def scan_news(state, today, collected=None):
                 continue
             if is_relevant(it, mentions, symbol) and is_material(it):
                 new.append(it)
-        if priming or not new:
+        if priming or symbol in new_symbols or not new:
             continue
 
         a, link = None, new[0]["link"]
@@ -585,6 +589,7 @@ def scan_news(state, today, collected=None):
         send_telegram(format_alert(symbol, a, link))
         record_event(state, today, symbol, a)
     state["filings_primed"] = True
+    state["known_symbols"] = sorted(WATCHLIST)
     if priming:
         print("First run: existing news recorded, no alerts sent.")
 

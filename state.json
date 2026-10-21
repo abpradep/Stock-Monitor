@@ -429,5 +429,27 @@
   "checked": "2026-10-21 23:17",
   "NSE": "ok: 5 filings for 3 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
- }
+ },
+ "known_symbols": [
+  "ALIVUS",
+  "ALLETEC",
+  "ARMANFIN",
+  "BAJAJHCARE",
+  "BIRLANU",
+  "FDC",
+  "GREAVESCOT",
+  "INFOBEAN",
+  "JAYBEE",
+  "JMFINANCIL",
+  "LAURUSLABS",
+  "NORTHARC",
+  "PDSL",
+  "PENIND",
+  "PRAJIND",
+  "RAYMOND",
+  "RBA",
+  "SHIVALIK",
+  "SOLARA",
+  "SYNGENE"
+ ]
 }
