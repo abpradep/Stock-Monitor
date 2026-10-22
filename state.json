@@ -349,7 +349,46 @@
   "d5894c29397efe19": "2026-10-22",
   "b7f466148cacfd0e": "2026-10-22",
   "2f892234e7e7f7c5": "2026-10-22",
-  "db54ea893ad791f4": "2026-10-22"
+  "db54ea893ad791f4": "2026-10-22",
+  "cb6facf66ffe5d13": "2026-10-22",
+  "5caa8d7d62e37e1f": "2026-10-22",
+  "3a3dfc814b77cc7e": "2026-10-22",
+  "d68d7e71f68bb606": "2026-10-22",
+  "3c43b48c4438b93d": "2026-10-22",
+  "b3e5824df4c60ba9": "2026-10-22",
+  "83609dc9661ef061": "2026-10-22",
+  "62e03064a0f5c538": "2026-10-22",
+  "b94b763821549cf4": "2026-10-22",
+  "999edef6d35da055": "2026-10-22",
+  "13b6f37533b8430f": "2026-10-22",
+  "7e4370be2e163df1": "2026-10-22",
+  "a855197175e8f981": "2026-10-22",
+  "d1fc467cd080992d": "2026-10-22",
+  "63a99cc86b557bb4": "2026-10-22",
+  "e7df6050604a25ac": "2026-10-22",
+  "9e261441cdad6a1a": "2026-10-22",
+  "5508f1380fe6a576": "2026-10-22",
+  "6d492b6983a66212": "2026-10-22",
+  "8c98a65b776df367": "2026-10-22",
+  "d70d0583cdb8d6c2": "2026-10-22",
+  "09bf6784d8346d8b": "2026-10-22",
+  "66d0a5d65d21ba23": "2026-10-22",
+  "cd8bd51b967fca91": "2026-10-22",
+  "50344df92fe691c4": "2026-10-22",
+  "2656f1cfe0fcd426": "2026-10-22",
+  "40e5e0c5a41927bb": "2026-10-22",
+  "1093937b8bb3c152": "2026-10-22",
+  "816aae16dfd903b6": "2026-10-22",
+  "790da4f84de19796": "2026-10-22",
+  "6cf065094261cf93": "2026-10-22",
+  "6246d54fa738f3fb": "2026-10-22",
+  "98314e00d233e095": "2026-10-22",
+  "ec94ed2ebd58215f": "2026-10-22",
+  "0781c51d85765e85": "2026-10-22",
+  "68c4810af1fa1e6b": "2026-10-22",
+  "cf070ae4466ef2e3": "2026-10-22",
+  "56e0cf512ff65f03": "2026-10-22",
+  "e89bd2468a14a264": "2026-10-22"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -609,6 +648,34 @@
     "impact": "Neutral",
     "importance": 6,
     "time": "16:35"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Earnings / results: Alivus Life Sciences Q2 FY27 Earnings Call Date and Details",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "19:38"
+   },
+   {
+    "symbol": "VOEPL",
+    "event": "Earnings / results: Virtuoso Optoelectronics targets 35-40% CAGR post FY26 results",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "19:38"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Earnings / results: Earnings call transcript: Cyient posts strong Q2 FY 2027 margins, stock slips (+22 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "19:38"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Earnings / results: AARTI PHARMALABS LIMITED (AARTIPHARM.NS) Q2 25/26 earnings call transcript",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "19:38"
    }
   ]
  },
@@ -646,12 +713,21 @@
   "82287e82445e38b6": "2026-10-22",
   "d5894c29397efe19": "2026-10-22",
   "b7f466148cacfd0e": "2026-10-22",
-  "2f892234e7e7f7c5": "2026-10-22"
+  "2f892234e7e7f7c5": "2026-10-22",
+  "3c43b48c4438b93d": "2026-10-22",
+  "83609dc9661ef061": "2026-10-22",
+  "7e4370be2e163df1": "2026-10-22",
+  "d1fc467cd080992d": "2026-10-22",
+  "63a99cc86b557bb4": "2026-10-22",
+  "e7df6050604a25ac": "2026-10-22",
+  "9e261441cdad6a1a": "2026-10-22",
+  "5508f1380fe6a576": "2026-10-22",
+  "e89bd2468a14a264": "2026-10-22"
  },
- "last_report": "2026-10-22T16:35",
+ "last_report": "2026-10-22T19:38",
  "filing_sources": {
-  "checked": "2026-10-22 16:34",
-  "NSE": "ok: 12 filings for 10 stocks",
+  "checked": "2026-10-22 19:38",
+  "NSE": "ok: 22 filings for 10 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
