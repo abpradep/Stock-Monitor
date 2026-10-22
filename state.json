@@ -291,13 +291,29 @@
   "807ba9cfb1960bca": "2026-10-22",
   "579f50ae4f2b58ea": "2026-10-22",
   "86c5cb31e932ac85": "2026-10-22",
-  "d236e0f2ba79d629": "2026-10-22"
+  "d236e0f2ba79d629": "2026-10-22",
+  "6b3c67c651fcb5d3": "2026-10-22",
+  "3f17c480bbb9be4f": "2026-10-22",
+  "99f9ae6feeb0325c": "2026-10-22",
+  "c1b5428288b3028a": "2026-10-22",
+  "ee14674eba20b0d2": "2026-10-22",
+  "efe6311b2f6cffc1": "2026-10-22",
+  "fd62d1d63b6cf405": "2026-10-22",
+  "010a8422dccbfffc": "2026-10-22",
+  "2e6a85d8ba27e01e": "2026-10-22",
+  "36213bdf5021564c": "2026-10-22",
+  "e0a09b6908198e84": "2026-10-22",
+  "1651e7f107b3ebbd": "2026-10-22",
+  "913da17d8f28ee25": "2026-10-22"
  },
  "price_alerted": {
   "2026-10-21": [
    "SYNGENE:price"
   ],
-  "2026-10-22": []
+  "2026-10-22": [
+   "SYNGENE:price",
+   "RAYMOND:price"
+  ]
  },
  "events": {
   "2026-10-21": [
@@ -470,6 +486,41 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "07:35"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Earnings / results: Cancer drug margin caps can cut hospital EBITDA by 1.5-3%, JM Financial",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "10:36"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Earnings / results: Top Q2 results today: Swiggy, Havells India, HPCL, Adani Energy, Cyient among companies to announce earnings",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:36"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Earnings / results: AARTI PHARMALABS LIMITED (AARTIPHARM.NS) Q4 25/26 earnings call transcript",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:36"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Price -5.8% today at \u20b9374.25 (volume 0.2x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "10:36"
+   },
+   {
+    "symbol": "RAYMOND",
+    "event": "Price -6.1% today at \u20b91,061.10 (volume 0.1x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "10:36"
    }
   ]
  },
@@ -492,11 +543,14 @@
   "872bc429b43ea101": "2026-10-21",
   "8aa051e44b4a72e4": "2026-10-21",
   "3f0f1c2e42eabb6f": "2026-10-22",
-  "86c5cb31e932ac85": "2026-10-22"
+  "86c5cb31e932ac85": "2026-10-22",
+  "c1b5428288b3028a": "2026-10-22",
+  "efe6311b2f6cffc1": "2026-10-22",
+  "e0a09b6908198e84": "2026-10-22"
  },
- "last_report": "2026-10-22T07:35",
+ "last_report": "2026-10-22T10:36",
  "filing_sources": {
-  "checked": "2026-10-22 07:35",
+  "checked": "2026-10-22 10:36",
   "NSE": "ok: 6 filings for 5 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
