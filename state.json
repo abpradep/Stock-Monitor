@@ -304,7 +304,26 @@
   "36213bdf5021564c": "2026-10-22",
   "e0a09b6908198e84": "2026-10-22",
   "1651e7f107b3ebbd": "2026-10-22",
-  "913da17d8f28ee25": "2026-10-22"
+  "913da17d8f28ee25": "2026-10-22",
+  "094e9b71fa6b843c": "2026-10-22",
+  "6cbdf5930bc98968": "2026-10-22",
+  "e6fe8aed15965ab0": "2026-10-22",
+  "aef19e533da8cc9e": "2026-10-22",
+  "23bde29edffa5f62": "2026-10-22",
+  "6f490344c389d33a": "2026-10-22",
+  "4179fa30cb4001c3": "2026-10-22",
+  "fb68a9b55a07ae3b": "2026-10-22",
+  "238b8ec769f87942": "2026-10-22",
+  "1397ede32c7a6a1d": "2026-10-22",
+  "09593e2a58bb2160": "2026-10-22",
+  "911cbadd2029be6a": "2026-10-22",
+  "1bd0e19d1d054473": "2026-10-22",
+  "08b979540ce58cb2": "2026-10-22",
+  "c203ee3472a53a0a": "2026-10-22",
+  "e0714152eaba6a3c": "2026-10-22",
+  "199040eebf65f194": "2026-10-22",
+  "11c8bf1919682f7b": "2026-10-22",
+  "5d4fc1dc568dae33": "2026-10-22"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -312,7 +331,8 @@
   ],
   "2026-10-22": [
    "SYNGENE:price",
-   "RAYMOND:price"
+   "RAYMOND:price",
+   "PENIND:price"
   ]
  },
  "events": {
@@ -521,6 +541,34 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "10:36"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Sharp price move: What Laurus Labs Buyers Were Betting On Before A 118% Rally",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "13:41"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Earnings / results: Adani Green Energy shares fall 4% after Q2 results. What are Jefferies, JM Financial saying?",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "13:41"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Fund raising: [NSE filing] General Updates: Natco Pharma Limited has informed the Exchange regarding Intimation of closure of the Issue period of the Rights Issue of NATCO Pharma Limited (the Company ) (+3 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:41"
+   },
+   {
+    "symbol": "PENIND",
+    "event": "Price -6.4% today at \u20b9156.41 (volume 0.6x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "13:42"
    }
   ]
  },
@@ -546,12 +594,19 @@
   "86c5cb31e932ac85": "2026-10-22",
   "c1b5428288b3028a": "2026-10-22",
   "efe6311b2f6cffc1": "2026-10-22",
-  "e0a09b6908198e84": "2026-10-22"
+  "e0a09b6908198e84": "2026-10-22",
+  "094e9b71fa6b843c": "2026-10-22",
+  "23bde29edffa5f62": "2026-10-22",
+  "1397ede32c7a6a1d": "2026-10-22",
+  "09593e2a58bb2160": "2026-10-22",
+  "08b979540ce58cb2": "2026-10-22",
+  "c203ee3472a53a0a": "2026-10-22",
+  "5d4fc1dc568dae33": "2026-10-22"
  },
- "last_report": "2026-10-22T10:36",
+ "last_report": "2026-10-22T13:42",
  "filing_sources": {
-  "checked": "2026-10-22 10:36",
-  "NSE": "ok: 6 filings for 5 stocks",
+  "checked": "2026-10-22 13:41",
+  "NSE": "ok: 9 filings for 8 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
