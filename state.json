@@ -424,7 +424,33 @@
   "299dc49584e4159b": "2026-10-23",
   "ab75ebf80dd2de4b": "2026-10-23",
   "30cd9ded091a573d": "2026-10-23",
-  "b9de8a903c017c67": "2026-10-23"
+  "b9de8a903c017c67": "2026-10-23",
+  "0669eda00f19d7cb": "2026-10-23",
+  "27b703fe63a15883": "2026-10-23",
+  "73882618f57db049": "2026-10-23",
+  "017af48407fae9ad": "2026-10-23",
+  "b4a846f22214fe70": "2026-10-23",
+  "a7425f1ada885e71": "2026-10-23",
+  "4cbc940caab78453": "2026-10-23",
+  "6e0a0c44a5dd18bb": "2026-10-23",
+  "c00a14091da5320d": "2026-10-23",
+  "36b9863b513b22c3": "2026-10-23",
+  "4b3d80f814eb1644": "2026-10-23",
+  "57747d15a8dd5b70": "2026-10-23",
+  "d66de36256afa56d": "2026-10-23",
+  "17dd6371c53cc81a": "2026-10-23",
+  "dba3e4c403da900c": "2026-10-23",
+  "9d4959067c4f0777": "2026-10-23",
+  "50493b376a966228": "2026-10-23",
+  "ee37746908ffbd51": "2026-10-23",
+  "d40d62335a5d3956": "2026-10-23",
+  "ad37cdd1da6c2cd4": "2026-10-23",
+  "db56cb39a9bbf0d1": "2026-10-23",
+  "6b519d57fe2e371a": "2026-10-23",
+  "a974e37125786f10": "2026-10-23",
+  "cd01bee24a9dbb77": "2026-10-23",
+  "e0488f3635fdbaa8": "2026-10-23",
+  "d015181bf728cd44": "2026-10-23"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -444,7 +470,10 @@
    "ARMANFIN:price",
    "JMFINANCIL:price",
    "CYIENT:price",
-   "CARBORUNIV:price"
+   "CARBORUNIV:price",
+   "CYIENT:volume",
+   "HINDWAREAP:price",
+   "KARBON:price"
   ]
  },
  "events": {
@@ -809,6 +838,41 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "10:33"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Earnings / results: HPCL shares slide 3% post Q2 numbers; JM Financial flags concerns over earnings quality",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:39"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Earnings / results: Cyient shares snap 3-day losing streak, jump 10% post Q2, \u20b912 dividend (+5 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "13:39"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Unusual volume: 19.2x 20-day avg (price +4.8%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "13:39"
+   },
+   {
+    "symbol": "HINDWAREAP",
+    "event": "Price -5.7% today at \u20b9161.36 (volume 1.2x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "13:39"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Price -6.3% today at \u20b996.60 (volume 0.1x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "13:39"
    }
   ]
  },
@@ -856,12 +920,14 @@
   "9e261441cdad6a1a": "2026-10-22",
   "5508f1380fe6a576": "2026-10-22",
   "e89bd2468a14a264": "2026-10-22",
-  "ab75ebf80dd2de4b": "2026-10-23"
+  "ab75ebf80dd2de4b": "2026-10-23",
+  "a7425f1ada885e71": "2026-10-23",
+  "6b519d57fe2e371a": "2026-10-23"
  },
- "last_report": "2026-10-23T10:33",
+ "last_report": "2026-10-23T13:39",
  "filing_sources": {
-  "checked": "2026-10-23 10:33",
-  "NSE": "ok: 17 filings for 7 stocks",
+  "checked": "2026-10-23 13:39",
+  "NSE": "ok: 19 filings for 9 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
