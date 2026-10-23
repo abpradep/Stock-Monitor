@@ -465,7 +465,17 @@
   "59adae97e2357b7f": "2026-10-23",
   "a446de68d20d3dfa": "2026-10-23",
   "287d44c7b576802d": "2026-10-23",
-  "5f6ef542499dffaa": "2026-10-23"
+  "5f6ef542499dffaa": "2026-10-23",
+  "1dc408a2c0df7f5c": "2026-10-23",
+  "7324de644e41c9ba": "2026-10-23",
+  "99dae584d4c80e1e": "2026-10-23",
+  "ded909cf9da16abc": "2026-10-23",
+  "f37ac5eddf6d3a28": "2026-10-23",
+  "e8e604dcf4de4026": "2026-10-23",
+  "4b106807f77a0e65": "2026-10-23",
+  "0b46967dc9537594": "2026-10-23",
+  "180ccdd59331502b": "2026-10-23",
+  "2eb565d362ab8765": "2026-10-23"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -903,6 +913,13 @@
     "impact": "Neutral",
     "importance": 5,
     "time": "16:31"
+   },
+   {
+    "symbol": "SOLARA",
+    "event": "Earnings / results: Solara Active Pharma NSE:SOLARA Q2 FY27 Earnings Call Key Highlights",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "19:42"
    }
   ]
  },
@@ -952,12 +969,13 @@
   "e89bd2468a14a264": "2026-10-22",
   "ab75ebf80dd2de4b": "2026-10-23",
   "a7425f1ada885e71": "2026-10-23",
-  "6b519d57fe2e371a": "2026-10-23"
+  "6b519d57fe2e371a": "2026-10-23",
+  "99dae584d4c80e1e": "2026-10-23"
  },
- "last_report": "2026-10-23T16:31",
+ "last_report": "2026-10-23T19:42",
  "filing_sources": {
-  "checked": "2026-10-23 16:31",
-  "NSE": "ok: 20 filings for 9 stocks",
+  "checked": "2026-10-23 19:42",
+  "NSE": "ok: 21 filings for 10 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
