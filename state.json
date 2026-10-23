@@ -450,7 +450,22 @@
   "a974e37125786f10": "2026-10-23",
   "cd01bee24a9dbb77": "2026-10-23",
   "e0488f3635fdbaa8": "2026-10-23",
-  "d015181bf728cd44": "2026-10-23"
+  "d015181bf728cd44": "2026-10-23",
+  "25bbc595f1dd2fe5": "2026-10-23",
+  "2f7c2a537d7da808": "2026-10-23",
+  "0d207e3f35954510": "2026-10-23",
+  "728546717cc4b5ef": "2026-10-23",
+  "9d9fbfaa746432f0": "2026-10-23",
+  "d9c8fc66580fb6a1": "2026-10-23",
+  "7abdee56e25ddfb4": "2026-10-23",
+  "692bcbf10f12d388": "2026-10-23",
+  "3c3a7c1f9219983f": "2026-10-23",
+  "0de4642ffecc5100": "2026-10-23",
+  "12a92ad7d2a3beac": "2026-10-23",
+  "59adae97e2357b7f": "2026-10-23",
+  "a446de68d20d3dfa": "2026-10-23",
+  "287d44c7b576802d": "2026-10-23",
+  "5f6ef542499dffaa": "2026-10-23"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -473,7 +488,8 @@
    "CARBORUNIV:price",
    "CYIENT:volume",
    "HINDWAREAP:price",
-   "KARBON:price"
+   "KARBON:price",
+   "ARMANFIN:volume"
   ]
  },
  "events": {
@@ -873,6 +889,20 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "13:39"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Order win: Cyient's Technology Order Intake Rises 39.7% as It Expands AI Capabilities",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "16:31"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Unusual volume: 2.5x 20-day avg (price -2.8%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:31"
    }
   ]
  },
@@ -924,10 +954,10 @@
   "a7425f1ada885e71": "2026-10-23",
   "6b519d57fe2e371a": "2026-10-23"
  },
- "last_report": "2026-10-23T13:39",
+ "last_report": "2026-10-23T16:31",
  "filing_sources": {
-  "checked": "2026-10-23 13:39",
-  "NSE": "ok: 19 filings for 9 stocks",
+  "checked": "2026-10-23 16:31",
+  "NSE": "ok: 20 filings for 9 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
