@@ -407,7 +407,24 @@
   "bf14d9edfeb31b34": "2026-10-23",
   "31b4ad72d100c94a": "2026-10-23",
   "47e00be4cdb44d39": "2026-10-23",
-  "e93a70ade7fb43f6": "2026-10-23"
+  "e93a70ade7fb43f6": "2026-10-23",
+  "80b38cddaf93ecdf": "2026-10-23",
+  "ae744b72d28b68a4": "2026-10-23",
+  "36645497833e8493": "2026-10-23",
+  "1500e2593f7eddb4": "2026-10-23",
+  "26a842485a4f4844": "2026-10-23",
+  "b3503da37434f9c2": "2026-10-23",
+  "a2d5aa34276ed67d": "2026-10-23",
+  "73f4c092d32c6e1e": "2026-10-23",
+  "b7997775860ad618": "2026-10-23",
+  "f4a9795c168c6a8a": "2026-10-23",
+  "3f9d3eb1a33039f9": "2026-10-23",
+  "11e93bccdd61822d": "2026-10-23",
+  "0afeceaa7fe89fc7": "2026-10-23",
+  "299dc49584e4159b": "2026-10-23",
+  "ab75ebf80dd2de4b": "2026-10-23",
+  "30cd9ded091a573d": "2026-10-23",
+  "b9de8a903c017c67": "2026-10-23"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -418,7 +435,17 @@
    "RAYMOND:price",
    "PENIND:price"
   ],
-  "2026-10-23": []
+  "2026-10-23": [
+   "SOLARA:price",
+   "NORTHARC:price",
+   "INFOBEAN:price",
+   "PRAJIND:price",
+   "GREAVESCOT:price",
+   "ARMANFIN:price",
+   "JMFINANCIL:price",
+   "CYIENT:price",
+   "CARBORUNIV:price"
+  ]
  },
  "events": {
   "2026-10-21": [
@@ -705,6 +732,83 @@
     "impact": "Bullish",
     "importance": 8,
     "time": "07:36"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Earnings / results: From Havells To Cyient Q2 Results Review: HDFC Securities Sees Up To 74% Upside; Check Target Prices (+3 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "10:33"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Fund raising: Natco Pharma opens trading window Oct 23-28 for rights issue credit",
+    "impact": "Neutral",
+    "importance": 6,
+    "time": "10:33"
+   },
+   {
+    "symbol": "SOLARA",
+    "event": "Price -8.3% today at \u20b9594.70 (volume 0.4x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 7,
+    "time": "10:33"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Price -7.0% today at \u20b9244.50 (volume 0.6x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "10:33"
+   },
+   {
+    "symbol": "INFOBEAN",
+    "event": "Price -7.0% today at \u20b9148.80 (volume 0.4x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "10:33"
+   },
+   {
+    "symbol": "PRAJIND",
+    "event": "Price -6.0% today at \u20b9249.00 (volume 0.5x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "10:33"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Price -5.2% today at \u20b9182.16 (volume 0.1x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "10:33"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Price -6.6% today at \u20b91,386.80 (volume 0.4x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "10:33"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Price -7.1% today at \u20b9105.92 (volume 0.4x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "10:33"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Price +6.4% today at \u20b91,244.00 (volume 12.5x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:33"
+   },
+   {
+    "symbol": "CARBORUNIV",
+    "event": "Price -6.4% today at \u20b9992.00 (volume 0.3x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "10:33"
    }
   ]
  },
@@ -751,12 +855,13 @@
   "e7df6050604a25ac": "2026-10-22",
   "9e261441cdad6a1a": "2026-10-22",
   "5508f1380fe6a576": "2026-10-22",
-  "e89bd2468a14a264": "2026-10-22"
+  "e89bd2468a14a264": "2026-10-22",
+  "ab75ebf80dd2de4b": "2026-10-23"
  },
- "last_report": "2026-10-23T07:37",
+ "last_report": "2026-10-23T10:33",
  "filing_sources": {
-  "checked": "2026-10-23 07:36",
-  "NSE": "ok: 16 filings for 7 stocks",
+  "checked": "2026-10-23 10:33",
+  "NSE": "ok: 17 filings for 7 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
