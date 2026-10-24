@@ -547,7 +547,23 @@
   "68f6f21c68d61a64": "2026-10-24",
   "4726a452c83b3c0f": "2026-10-24",
   "8aa6c75e8fc2dacd": "2026-10-24",
-  "f0252f6028aa4c91": "2026-10-24"
+  "f0252f6028aa4c91": "2026-10-24",
+  "419b7d9cf95a36ca": "2026-10-24",
+  "69b32835b0feae57": "2026-10-24",
+  "d4f0574eec66b00b": "2026-10-24",
+  "d3ab280d14c04c21": "2026-10-24",
+  "e20a23b12f4946cf": "2026-10-24",
+  "b48540545db26977": "2026-10-24",
+  "689d3f7f6a953d8d": "2026-10-24",
+  "197a73e8e9ba710b": "2026-10-24",
+  "863bfcbefb0e6685": "2026-10-24",
+  "c85581d2f8ac4c3b": "2026-10-24",
+  "d95d7336bf2adf3d": "2026-10-24",
+  "d90760c4e983f131": "2026-10-24",
+  "c95a58a0e9380d94": "2026-10-24",
+  "aa3b4b47488f568e": "2026-10-24",
+  "30a680fc454db571": "2026-10-24",
+  "f6ce47e23565d891": "2026-10-24"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -1043,6 +1059,20 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "13:30"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Fund raising: Piramal Pharma Limited Rights Issue 2023-16.08.23 For Shares Estimates \u2013 BSE:PLPHAR_RE",
+    "impact": "Neutral",
+    "importance": 6,
+    "time": "16:27"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Fund raising: Dividend, split, rights issue, buyback next week: Hexaware Tech, Cyient, RailTel to Sagility - Check record dates",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "16:27"
    }
   ]
  },
@@ -1113,11 +1143,13 @@
   "804e5b9f0c27b1df": "2026-10-24",
   "fbd1a81a3aaff537": "2026-10-24",
   "a974e37125786f10": "2026-10-24",
-  "8aa6c75e8fc2dacd": "2026-10-24"
+  "8aa6c75e8fc2dacd": "2026-10-24",
+  "197a73e8e9ba710b": "2026-10-24",
+  "863bfcbefb0e6685": "2026-10-24"
  },
- "last_report": "2026-10-24T13:30",
+ "last_report": "2026-10-24T16:27",
  "filing_sources": {
-  "checked": "2026-10-24 13:30",
+  "checked": "2026-10-24 16:27",
   "NSE": "ok: 7 filings for 6 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
