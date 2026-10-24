@@ -529,7 +529,25 @@
   "874d42b5aa2b75e6": "2026-10-24",
   "d456615b24cdd5c3": "2026-10-24",
   "2b11b5cf89a754cb": "2026-10-24",
-  "e56c688df005d7d0": "2026-10-24"
+  "e56c688df005d7d0": "2026-10-24",
+  "cc657c2229a8e950": "2026-10-24",
+  "1a9e849183532fa9": "2026-10-24",
+  "6263afc037ffe043": "2026-10-24",
+  "edac935bf5f9b667": "2026-10-24",
+  "577d02b82a705e4b": "2026-10-24",
+  "c1a3c965044c67af": "2026-10-24",
+  "b86809d0b6f143c5": "2026-10-24",
+  "eee47b7ed25b0899": "2026-10-24",
+  "d64fe934beba357e": "2026-10-24",
+  "fbd1a81a3aaff537": "2026-10-24",
+  "f7f4c0e502daab57": "2026-10-24",
+  "f0542aa6bc0975d9": "2026-10-24",
+  "82505c9b1d6bbb76": "2026-10-24",
+  "895b6456068e1bf9": "2026-10-24",
+  "68f6f21c68d61a64": "2026-10-24",
+  "4726a452c83b3c0f": "2026-10-24",
+  "8aa6c75e8fc2dacd": "2026-10-24",
+  "f0252f6028aa4c91": "2026-10-24"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -1011,6 +1029,20 @@
     "impact": "Bullish",
     "importance": 7,
     "time": "10:30"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Sharp price move: Eternal to Cyient: 5 stocks defy market crash, jump up to 9% in falling market",
+    "impact": "Bearish",
+    "importance": 6,
+    "time": "13:30"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Earnings / results: Aarti Pharmalabs Limited (AARTIPHARM.BO) Q3 25/26 earnings call transcript",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:30"
    }
   ]
  },
@@ -1078,11 +1110,14 @@
   "189a0854c8ada158": "2026-10-24",
   "ccce549021982b8f": "2026-10-24",
   "fc955f5b8f573e60": "2026-10-24",
-  "804e5b9f0c27b1df": "2026-10-24"
+  "804e5b9f0c27b1df": "2026-10-24",
+  "fbd1a81a3aaff537": "2026-10-24",
+  "a974e37125786f10": "2026-10-24",
+  "8aa6c75e8fc2dacd": "2026-10-24"
  },
- "last_report": "2026-10-24T10:30",
+ "last_report": "2026-10-24T13:30",
  "filing_sources": {
-  "checked": "2026-10-24 10:30",
+  "checked": "2026-10-24 13:30",
   "NSE": "ok: 7 filings for 6 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
