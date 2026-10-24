@@ -563,7 +563,16 @@
   "c95a58a0e9380d94": "2026-10-24",
   "aa3b4b47488f568e": "2026-10-24",
   "30a680fc454db571": "2026-10-24",
-  "f6ce47e23565d891": "2026-10-24"
+  "f6ce47e23565d891": "2026-10-24",
+  "e06e643e7e5a8540": "2026-10-24",
+  "6100337cfbc8aabf": "2026-10-24",
+  "a9f14a12d66125a3": "2026-10-24",
+  "fa7639b42df7642f": "2026-10-24",
+  "8e3281d12e819cb1": "2026-10-24",
+  "e307174d46a7ee9a": "2026-10-24",
+  "bd61e5546d2761cf": "2026-10-24",
+  "7d1e18467ef39497": "2026-10-24",
+  "ce65f10e36257c03": "2026-10-24"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -1073,6 +1082,13 @@
     "impact": "Bullish",
     "importance": 6,
     "time": "16:27"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Analyst action: [NSE filing] Credit Rating- Others: Arman Financial Services Limited has informed the Exchange about Credit Rating",
+    "impact": "Neutral",
+    "importance": 6,
+    "time": "19:27"
    }
   ]
  },
@@ -1145,12 +1161,13 @@
   "a974e37125786f10": "2026-10-24",
   "8aa6c75e8fc2dacd": "2026-10-24",
   "197a73e8e9ba710b": "2026-10-24",
-  "863bfcbefb0e6685": "2026-10-24"
+  "863bfcbefb0e6685": "2026-10-24",
+  "6100337cfbc8aabf": "2026-10-24"
  },
- "last_report": "2026-10-24T16:27",
+ "last_report": "2026-10-24T19:27",
  "filing_sources": {
-  "checked": "2026-10-24 16:27",
-  "NSE": "ok: 7 filings for 6 stocks",
+  "checked": "2026-10-24 19:27",
+  "NSE": "ok: 8 filings for 7 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
