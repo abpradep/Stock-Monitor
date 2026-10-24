@@ -475,7 +475,44 @@
   "4b106807f77a0e65": "2026-10-23",
   "0b46967dc9537594": "2026-10-23",
   "180ccdd59331502b": "2026-10-23",
-  "2eb565d362ab8765": "2026-10-23"
+  "2eb565d362ab8765": "2026-10-23",
+  "865956709c3edf13": "2026-10-24",
+  "b47533655102e8d5": "2026-10-24",
+  "914f5e130bd60ccc": "2026-10-24",
+  "aeb843c9e14a4e7c": "2026-10-24",
+  "edfa06c5a0b6507c": "2026-10-24",
+  "99bec4d89443c932": "2026-10-24",
+  "49a713c15ea03d10": "2026-10-24",
+  "aca034a73c7b73c6": "2026-10-24",
+  "e60506c83a6fa387": "2026-10-24",
+  "19ec3e478fa71bdc": "2026-10-24",
+  "a2ff869f59d5b922": "2026-10-24",
+  "35b00649da0d3208": "2026-10-24",
+  "ffe415bcc2f09dc9": "2026-10-24",
+  "c433895a38abce09": "2026-10-24",
+  "95d4b747f9e498c3": "2026-10-24",
+  "b6584b7af56d1e6a": "2026-10-24",
+  "c7a31ec8ed1866ad": "2026-10-24",
+  "1b783ea8298e14e8": "2026-10-24",
+  "15b236073be9e8b1": "2026-10-24",
+  "804e5b9f0c27b1df": "2026-10-24",
+  "342242fe8b67c6df": "2026-10-24",
+  "78605ed5347a29b2": "2026-10-24",
+  "e5e1f6aac5ac348a": "2026-10-24",
+  "01a3bbd26d4114ff": "2026-10-24",
+  "c98532629be92907": "2026-10-24",
+  "041101007f0796fd": "2026-10-24",
+  "cd667c0a577df1c3": "2026-10-24",
+  "b46baf13f2bcf968": "2026-10-24",
+  "189a0854c8ada158": "2026-10-24",
+  "1509f1b3d80506ec": "2026-10-24",
+  "230db90461eab500": "2026-10-24",
+  "0e09b3bba893b34d": "2026-10-24",
+  "4b6c0fed160342cb": "2026-10-24",
+  "4b8b860e7376975a": "2026-10-24",
+  "ccce549021982b8f": "2026-10-24",
+  "7ce571dab138655f": "2026-10-24",
+  "fc955f5b8f573e60": "2026-10-24"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -921,6 +958,36 @@
     "importance": 7,
     "time": "19:42"
    }
+  ],
+  "2026-10-24": [
+   {
+    "symbol": "PENIND",
+    "event": "Analyst action: Pennar Industries Ltd Downgraded to Sell Amid Weak Financials and Technical Signals",
+    "impact": "Bearish",
+    "importance": 6,
+    "time": "07:36"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Price move: Sensex Retreats Amid Broad Market Weakness; Cyient and Eternal Lead Gains",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "07:36"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Fund raising: [NSE filing] Allotment of Securities: Natco Pharma Limited has informed the Exchange regarding the approval of allotment of 17058082 Equity shares pursuant to Rights Issue by the Fund-Raising Committee at its meeting held on October 23, 2026 (+5 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "07:36"
+   },
+   {
+    "symbol": "EUREKAFORB",
+    "event": "Sharp price move: Eureka Forbes Ltd Falls to 52-Week Low of Rs 304.85 as Sell-Off Deepens",
+    "impact": "Bearish",
+    "importance": 6,
+    "time": "07:36"
+   }
   ]
  },
  "bse_codes": {},
@@ -970,12 +1037,28 @@
   "ab75ebf80dd2de4b": "2026-10-23",
   "a7425f1ada885e71": "2026-10-23",
   "6b519d57fe2e371a": "2026-10-23",
-  "99dae584d4c80e1e": "2026-10-23"
+  "99dae584d4c80e1e": "2026-10-23",
+  "e60506c83a6fa387": "2026-10-24",
+  "59adae97e2357b7f": "2026-10-24",
+  "4b3d80f814eb1644": "2026-10-24",
+  "d66de36256afa56d": "2026-10-24",
+  "57747d15a8dd5b70": "2026-10-24",
+  "36b9863b513b22c3": "2026-10-24",
+  "dba3e4c403da900c": "2026-10-24",
+  "9d4959067c4f0777": "2026-10-24",
+  "78605ed5347a29b2": "2026-10-24",
+  "e5e1f6aac5ac348a": "2026-10-24",
+  "01a3bbd26d4114ff": "2026-10-24",
+  "c98532629be92907": "2026-10-24",
+  "b46baf13f2bcf968": "2026-10-24",
+  "189a0854c8ada158": "2026-10-24",
+  "ccce549021982b8f": "2026-10-24",
+  "fc955f5b8f573e60": "2026-10-24"
  },
- "last_report": "2026-10-23T19:42",
+ "last_report": "2026-10-24T07:36",
  "filing_sources": {
-  "checked": "2026-10-23 19:42",
-  "NSE": "ok: 21 filings for 10 stocks",
+  "checked": "2026-10-24 07:36",
+  "NSE": "ok: 7 filings for 6 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
