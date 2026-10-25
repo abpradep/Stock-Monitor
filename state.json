@@ -620,7 +620,21 @@
   "1af88b1e164996c3": "2026-10-25",
   "34d741cfc4485c65": "2026-10-25",
   "9ab47036c518d8e9": "2026-10-25",
-  "2315952ba1d9fb4a": "2026-10-25"
+  "2315952ba1d9fb4a": "2026-10-25",
+  "64965f3553c579c5": "2026-10-25",
+  "7aa290be6ce483af": "2026-10-25",
+  "8716ff67d3bab495": "2026-10-25",
+  "4d10d7f92f21335f": "2026-10-25",
+  "22277ba40268e52c": "2026-10-25",
+  "f680751309abf5ad": "2026-10-25",
+  "90dfeb568b0a8e41": "2026-10-25",
+  "8e41ddbc92e1424f": "2026-10-25",
+  "59f8a0300b161eb9": "2026-10-25",
+  "6237c0e31122d8ec": "2026-10-25",
+  "508d0392926eca42": "2026-10-25",
+  "11116356c0c57a4a": "2026-10-25",
+  "55ab58767bfec231": "2026-10-25",
+  "56b2edaa5fe1ea6e": "2026-10-25"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -1153,6 +1167,13 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "07:31"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Corporate action: Crisil, Hexaware Tech, Cyient, Shriram Finance: Dividend stocks, stock splits, buybacks in focus this week; check list",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "16:27"
    }
   ]
  },
@@ -1230,11 +1251,12 @@
   "8c6ec5536f047bee": "2026-10-25",
   "d1a8a6c670c1342a": "2026-10-25",
   "6c25328b0863eb71": "2026-10-25",
-  "ae426c91305c08d0": "2026-10-25"
+  "ae426c91305c08d0": "2026-10-25",
+  "8e41ddbc92e1424f": "2026-10-25"
  },
- "last_report": "2026-10-25T13:31",
+ "last_report": "2026-10-25T16:27",
  "filing_sources": {
-  "checked": "2026-10-25 13:31",
+  "checked": "2026-10-25 16:27",
   "NSE": "ok: 3 filings for 2 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
