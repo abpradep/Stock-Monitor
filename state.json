@@ -572,7 +572,33 @@
   "e307174d46a7ee9a": "2026-10-24",
   "bd61e5546d2761cf": "2026-10-24",
   "7d1e18467ef39497": "2026-10-24",
-  "ce65f10e36257c03": "2026-10-24"
+  "ce65f10e36257c03": "2026-10-24",
+  "7eb09deb2bf89445": "2026-10-25",
+  "dc98243aa9ad6f49": "2026-10-25",
+  "6a6b173177d2dc81": "2026-10-25",
+  "c8be959669e50c10": "2026-10-25",
+  "4d41a35058f49e65": "2026-10-25",
+  "8c6ec5536f047bee": "2026-10-25",
+  "5aa2b069a28b7fc1": "2026-10-25",
+  "9c5f29ba849ec6d6": "2026-10-25",
+  "732581f5baa48057": "2026-10-25",
+  "cb4202d81acacc0e": "2026-10-25",
+  "4f7cbd1990e8f096": "2026-10-25",
+  "6b030684de8877f8": "2026-10-25",
+  "8d999b459ba23406": "2026-10-25",
+  "2f0600756db35aa0": "2026-10-25",
+  "f3ccb81af4783ef6": "2026-10-25",
+  "1e61913205e9002b": "2026-10-25",
+  "d1a8a6c670c1342a": "2026-10-25",
+  "6c25328b0863eb71": "2026-10-25",
+  "6d98ba194b6166e9": "2026-10-25",
+  "9ca791a7efd97968": "2026-10-25",
+  "58d9c17c7aa0a3f6": "2026-10-25",
+  "750c172addc40d5f": "2026-10-25",
+  "d1cfb27bf290a02b": "2026-10-25",
+  "ae426c91305c08d0": "2026-10-25",
+  "872dab68fdf8b439": "2026-10-25",
+  "f6be411d3d3b4847": "2026-10-25"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -1090,6 +1116,22 @@
     "importance": 6,
     "time": "19:27"
    }
+  ],
+  "2026-10-25": [
+   {
+    "symbol": "CYIENT",
+    "event": "Corporate action: Dividend Stocks This Week: Chennai Petroleum, L&T Tech, Cyient, Nippon Life AMC, Among 15 Companies In Focus (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "07:31"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Earnings / results: Aarti Pharmalabs Limited (AARTIPHARM.BO) Q2 24/25 earnings call transcript",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "07:31"
+   }
   ]
  },
  "bse_codes": {},
@@ -1162,12 +1204,16 @@
   "8aa6c75e8fc2dacd": "2026-10-24",
   "197a73e8e9ba710b": "2026-10-24",
   "863bfcbefb0e6685": "2026-10-24",
-  "6100337cfbc8aabf": "2026-10-24"
+  "6100337cfbc8aabf": "2026-10-24",
+  "8c6ec5536f047bee": "2026-10-25",
+  "d1a8a6c670c1342a": "2026-10-25",
+  "6c25328b0863eb71": "2026-10-25",
+  "ae426c91305c08d0": "2026-10-25"
  },
- "last_report": "2026-10-24T19:27",
+ "last_report": "2026-10-25T07:31",
  "filing_sources": {
-  "checked": "2026-10-24 19:27",
-  "NSE": "ok: 8 filings for 7 stocks",
+  "checked": "2026-10-25 07:31",
+  "NSE": "ok: 3 filings for 2 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
