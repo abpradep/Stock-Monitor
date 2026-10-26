@@ -695,7 +695,23 @@
   "aa847ddafa86f845": "2026-10-26",
   "d930f6b92651afb0": "2026-10-26",
   "dc9afe469870f41a": "2026-10-26",
-  "d4bf20de07ac77d7": "2026-10-26"
+  "d4bf20de07ac77d7": "2026-10-26",
+  "6f5463108293c982": "2026-10-26",
+  "29e879917ecbc9f8": "2026-10-26",
+  "6a55b63c43a3e8ae": "2026-10-26",
+  "a0bcd61195f8fa02": "2026-10-26",
+  "8e699d2a157edc22": "2026-10-26",
+  "82c71ae6c26935f1": "2026-10-26",
+  "813bf6b25bf682b7": "2026-10-26",
+  "e29d327e4d777ffa": "2026-10-26",
+  "079c9fefcc54864b": "2026-10-26",
+  "d7c9e9a4f2930c59": "2026-10-26",
+  "b4bd35a6893b3d19": "2026-10-26",
+  "b5f92b90790aae43": "2026-10-26",
+  "3cc0eb8fbd8a6f1f": "2026-10-26",
+  "acd9c91223e68168": "2026-10-26",
+  "6e392bf949ee1ae4": "2026-10-26",
+  "6c43422a8f45fa82": "2026-10-26"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -722,7 +738,9 @@
    "ARMANFIN:volume"
   ],
   "2026-10-26": [
-   "KARBON:price"
+   "KARBON:price",
+   "HINDWAREAP:volume",
+   "CONCORDBIO:price"
   ]
  },
  "events": {
@@ -1268,6 +1286,20 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "10:40"
+   },
+   {
+    "symbol": "HINDWAREAP",
+    "event": "Unusual volume: 4.1x 20-day avg (price -1.1%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "13:48"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Price +5.4% today at \u20b91,295.60 (volume 1.2x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "13:48"
    }
   ]
  },
@@ -1353,9 +1385,9 @@
   "a6bd0acbbc3eace2": "2026-10-26",
   "275f596126ddc4f7": "2026-10-26"
  },
- "last_report": "2026-10-26T10:40",
+ "last_report": "2026-10-26T13:48",
  "filing_sources": {
-  "checked": "2026-10-26 10:39",
+  "checked": "2026-10-26 13:48",
   "NSE": "ok: 0 filings for 0 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
