@@ -711,7 +711,27 @@
   "3cc0eb8fbd8a6f1f": "2026-10-26",
   "acd9c91223e68168": "2026-10-26",
   "6e392bf949ee1ae4": "2026-10-26",
-  "6c43422a8f45fa82": "2026-10-26"
+  "6c43422a8f45fa82": "2026-10-26",
+  "63696a7d88ba8f04": "2026-10-26",
+  "da3c34228078ed7f": "2026-10-26",
+  "a1e8abcc80757827": "2026-10-26",
+  "97f4aba6b778eb7e": "2026-10-26",
+  "fe35d011d96c23c2": "2026-10-26",
+  "9184c9ef2774e5bd": "2026-10-26",
+  "5147c61c2db114c1": "2026-10-26",
+  "5af651e89c6b2c34": "2026-10-26",
+  "350baeb9a517d998": "2026-10-26",
+  "2b1f0204cdfd3216": "2026-10-26",
+  "ad2b4a39869c6b86": "2026-10-26",
+  "cde41dff65584f3d": "2026-10-26",
+  "7688628232fbe599": "2026-10-26",
+  "66b3eee52db88917": "2026-10-26",
+  "f18414fa51c9a8a5": "2026-10-26",
+  "9afbeeff56905ecd": "2026-10-26",
+  "325a2931811bca1b": "2026-10-26",
+  "595617bd6bda189f": "2026-10-26",
+  "81e22a5a9d227bae": "2026-10-26",
+  "84bdfc85aaeacb38": "2026-10-26"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -740,7 +760,8 @@
   "2026-10-26": [
    "KARBON:price",
    "HINDWAREAP:volume",
-   "CONCORDBIO:price"
+   "CONCORDBIO:price",
+   "CARBORUNIV:price"
   ]
  },
  "events": {
@@ -1300,6 +1321,27 @@
     "impact": "Bullish (price action)",
     "importance": 6,
     "time": "13:48"
+   },
+   {
+    "symbol": "RAYMOND",
+    "event": "Price move: Raymond Board Approves Name Change, Shares Gain 151% YTD",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "16:41"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Earnings / results: Cyient NSE:CYIENT Q2 FY27 Results: Key Figures",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:41"
+   },
+   {
+    "symbol": "CARBORUNIV",
+    "event": "Price +9.8% today at \u20b91,129.20 (volume 1.6x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "16:41"
    }
   ]
  },
@@ -1383,12 +1425,15 @@
   "7825586c3e98ce82": "2026-10-26",
   "c2d5e5721b20739e": "2026-10-26",
   "a6bd0acbbc3eace2": "2026-10-26",
-  "275f596126ddc4f7": "2026-10-26"
+  "275f596126ddc4f7": "2026-10-26",
+  "5147c61c2db114c1": "2026-10-26",
+  "7688628232fbe599": "2026-10-26",
+  "81e22a5a9d227bae": "2026-10-26"
  },
- "last_report": "2026-10-26T13:48",
+ "last_report": "2026-10-26T16:41",
  "filing_sources": {
-  "checked": "2026-10-26 13:48",
-  "NSE": "ok: 0 filings for 0 stocks",
+  "checked": "2026-10-26 16:41",
+  "NSE": "ok: 3 filings for 3 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
