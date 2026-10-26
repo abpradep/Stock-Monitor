@@ -670,7 +670,32 @@
   "7565e80f1737e437": "2026-10-26",
   "b21a93f1fccf7ac4": "2026-10-26",
   "b73c1050aaf7b6f2": "2026-10-26",
-  "d8988f91d793ebc7": "2026-10-26"
+  "d8988f91d793ebc7": "2026-10-26",
+  "bf65fb04b0b3021c": "2026-10-26",
+  "20e3b1b797d9d687": "2026-10-26",
+  "8c1579629edd2dc1": "2026-10-26",
+  "28a87b3532d517ea": "2026-10-26",
+  "1b1670b37c1b59cc": "2026-10-26",
+  "497df29cc5653ac3": "2026-10-26",
+  "c2d5e5721b20739e": "2026-10-26",
+  "a6bd0acbbc3eace2": "2026-10-26",
+  "e8fe49e3ed3dabb2": "2026-10-26",
+  "12b22359e36a0b78": "2026-10-26",
+  "26eeeaf7821e2289": "2026-10-26",
+  "850357d177ccbf28": "2026-10-26",
+  "f316366788c9a114": "2026-10-26",
+  "13890af7c72ce8d4": "2026-10-26",
+  "275f596126ddc4f7": "2026-10-26",
+  "d642ad1d2791ba80": "2026-10-26",
+  "ee4a94a67ebaced6": "2026-10-26",
+  "05ae9a65a7d245f0": "2026-10-26",
+  "12818bf86b268604": "2026-10-26",
+  "90c08346b4d5d750": "2026-10-26",
+  "2b6aa8cce0750fdc": "2026-10-26",
+  "aa847ddafa86f845": "2026-10-26",
+  "d930f6b92651afb0": "2026-10-26",
+  "dc9afe469870f41a": "2026-10-26",
+  "d4bf20de07ac77d7": "2026-10-26"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -696,7 +721,9 @@
    "KARBON:price",
    "ARMANFIN:volume"
   ],
-  "2026-10-26": []
+  "2026-10-26": [
+   "KARBON:price"
+  ]
  },
  "events": {
   "2026-10-21": [
@@ -1220,6 +1247,27 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "07:40"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Analyst action: Accumulate Cyient; target of Rs 1310: Prabhudas Lilladher (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 6,
+    "time": "10:40"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Earnings / results: Q2 Results, Oct 26: Paytm, Tata Consumer, Ather Energy, Mankind Pharma, REC, Bank of Maharashtra, Sona BLW Precision, others to post earnings",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:40"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Price -6.6% today at \u20b990.55 (volume 0.3x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "10:40"
    }
   ]
  },
@@ -1300,11 +1348,14 @@
   "ae426c91305c08d0": "2026-10-25",
   "8e41ddbc92e1424f": "2026-10-25",
   "213940dd8f085be6": "2026-10-26",
-  "7825586c3e98ce82": "2026-10-26"
+  "7825586c3e98ce82": "2026-10-26",
+  "c2d5e5721b20739e": "2026-10-26",
+  "a6bd0acbbc3eace2": "2026-10-26",
+  "275f596126ddc4f7": "2026-10-26"
  },
- "last_report": "2026-10-26T07:40",
+ "last_report": "2026-10-26T10:40",
  "filing_sources": {
-  "checked": "2026-10-26 07:40",
+  "checked": "2026-10-26 10:39",
   "NSE": "ok: 0 filings for 0 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
