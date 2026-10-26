@@ -731,7 +731,48 @@
   "325a2931811bca1b": "2026-10-26",
   "595617bd6bda189f": "2026-10-26",
   "81e22a5a9d227bae": "2026-10-26",
-  "84bdfc85aaeacb38": "2026-10-26"
+  "84bdfc85aaeacb38": "2026-10-26",
+  "998a7d4768ee8146": "2026-10-26",
+  "745e11bcd24b80ac": "2026-10-26",
+  "7c240b4fa1085d65": "2026-10-26",
+  "f8fd6ae95776d67d": "2026-10-26",
+  "9527a7a00cc242ca": "2026-10-26",
+  "649bb030e037327f": "2026-10-26",
+  "304e75586a910b98": "2026-10-26",
+  "61136662f367d2ea": "2026-10-26",
+  "53fd5d9e8305fa75": "2026-10-26",
+  "641aea20da9bc6f1": "2026-10-26",
+  "ea82deb550f3fdc4": "2026-10-26",
+  "6ace3f798dc00c8f": "2026-10-26",
+  "0300e85b176a9caf": "2026-10-26",
+  "17e2b727944be658": "2026-10-26",
+  "bb57c93812743404": "2026-10-26",
+  "ff7de26e5d7b941d": "2026-10-26",
+  "a1e6cdd3487c4952": "2026-10-26",
+  "c4e8ad26889309cd": "2026-10-26",
+  "8ac645e7584247aa": "2026-10-26",
+  "b8cd3e338b39666f": "2026-10-26",
+  "8a1459f577afa3ca": "2026-10-26",
+  "1ab747e5dcac16d9": "2026-10-26",
+  "b09dbf0135fa9ffe": "2026-10-26",
+  "ccffb66a7df18f79": "2026-10-26",
+  "16a2dec7a1773e50": "2026-10-26",
+  "14ae3d769ba958a2": "2026-10-26",
+  "0c6f1977870828fa": "2026-10-26",
+  "94c556a3894cdd6f": "2026-10-26",
+  "e03d7cb7e1e8d643": "2026-10-26",
+  "875c98982b681889": "2026-10-26",
+  "2bd9c722b2e6b61b": "2026-10-26",
+  "01e4a54d792e46e5": "2026-10-26",
+  "aeee0971d32b4273": "2026-10-26",
+  "ec09758557ba771d": "2026-10-26",
+  "58078151f528c30e": "2026-10-26",
+  "e38297bcaf4c4d45": "2026-10-26",
+  "b2eea7270750cae2": "2026-10-26",
+  "c3184e1033383bd8": "2026-10-26",
+  "2272d32543891de2": "2026-10-26",
+  "fef4eb380c40df1f": "2026-10-26",
+  "70ed2befa903a263": "2026-10-26"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -1342,6 +1383,34 @@
     "impact": "Bullish (price action)",
     "importance": 7,
     "time": "16:41"
+   },
+   {
+    "symbol": "SHIVALIK",
+    "event": "M&A / stake change: Shivalik Rasayan lifts Medicamen Biotech stake to 42.57% via warrant conversion",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "20:47"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Earnings / results: Cyient Q2FY27 Results: EBIT up 20% QoQ, net profit misses estimates",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "20:47"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Earnings / results: [NSE filing] Shareholders meeting: Concord Biotech Limited has submitted the Exchange a copy Srutinizers report of Postal Ballot. Further, the company has informed the Exchange regarding voting results. (+2 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "20:47"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Earnings / results: [NSE filing] Press Release: Sona Blw Precision Forgings Limited has informed the Exchange regarding a press release dated October 26, 2026, titled \"Press Release for Q2 financial results\". (+11 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "20:47"
    }
   ]
  },
@@ -1428,12 +1497,24 @@
   "275f596126ddc4f7": "2026-10-26",
   "5147c61c2db114c1": "2026-10-26",
   "7688628232fbe599": "2026-10-26",
-  "81e22a5a9d227bae": "2026-10-26"
+  "81e22a5a9d227bae": "2026-10-26",
+  "61136662f367d2ea": "2026-10-26",
+  "c4e8ad26889309cd": "2026-10-26",
+  "8ac645e7584247aa": "2026-10-26",
+  "b8cd3e338b39666f": "2026-10-26",
+  "8a1459f577afa3ca": "2026-10-26",
+  "1ab747e5dcac16d9": "2026-10-26",
+  "b09dbf0135fa9ffe": "2026-10-26",
+  "ccffb66a7df18f79": "2026-10-26",
+  "16a2dec7a1773e50": "2026-10-26",
+  "14ae3d769ba958a2": "2026-10-26",
+  "0c6f1977870828fa": "2026-10-26",
+  "94c556a3894cdd6f": "2026-10-26"
  },
- "last_report": "2026-10-26T16:41",
+ "last_report": "2026-10-26T20:47",
  "filing_sources": {
-  "checked": "2026-10-26 16:41",
-  "NSE": "ok: 3 filings for 3 stocks",
+  "checked": "2026-10-26 20:47",
+  "NSE": "ok: 7 filings for 5 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
