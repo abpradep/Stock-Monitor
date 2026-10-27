@@ -857,7 +857,27 @@
   "78dd79f4c3ca07a1": "2026-10-27",
   "64c9156529321d52": "2026-10-27",
   "4d93e9e46d25773a": "2026-10-27",
-  "cbe384a21bfbfd93": "2026-10-27"
+  "cbe384a21bfbfd93": "2026-10-27",
+  "050fc71f1ea8acb0": "2026-10-27",
+  "13ca3de103092a81": "2026-10-27",
+  "6e44c0463a0fdde9": "2026-10-27",
+  "03e4a234331bc83d": "2026-10-27",
+  "0d79688edc92a4be": "2026-10-27",
+  "b984af5cde6ec6c4": "2026-10-27",
+  "f62198dd4dbce836": "2026-10-27",
+  "4e831cdd363c2854": "2026-10-27",
+  "7177e8df83c086ee": "2026-10-27",
+  "385d8c3987ae980f": "2026-10-27",
+  "cfc0bcaafec8150f": "2026-10-27",
+  "bdd66244ee7f38e1": "2026-10-27",
+  "8af523d004bee128": "2026-10-27",
+  "07522c1c153f97c7": "2026-10-27",
+  "f9133388c55584cf": "2026-10-27",
+  "fb6577c080dc1d7f": "2026-10-27",
+  "76ebd965a834d73b": "2026-10-27",
+  "a6c4c6346f9f6c5e": "2026-10-27",
+  "d57bbd8aa585a71f": "2026-10-27",
+  "2522c4684e953e82": "2026-10-27"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -1621,6 +1641,27 @@
     "impact": "Neutral",
     "importance": 5,
     "time": "13:44"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Sharp price move: Laurus Labs rallies 4% for 2nd straight day; stock hits new high",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "16:40"
+   },
+   {
+    "symbol": "RAYMOND",
+    "event": "Earnings / results: [NSE filing] Outcome of Board Meeting: Raymond Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:40"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Earnings / results: Sona BLW Precision shares hit 52 week high after Q2 results; is more upside left? (+2 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "16:40"
    }
   ]
  },
@@ -1732,12 +1773,16 @@
   "bf3367f0bebacc4d": "2026-10-27",
   "e41c2237e392c092": "2026-10-27",
   "34dec63157e75bc0": "2026-10-27",
-  "59919e2239bd88d5": "2026-10-27"
+  "59919e2239bd88d5": "2026-10-27",
+  "050fc71f1ea8acb0": "2026-10-27",
+  "0d79688edc92a4be": "2026-10-27",
+  "b984af5cde6ec6c4": "2026-10-27",
+  "f9133388c55584cf": "2026-10-27"
  },
- "last_report": "2026-10-27T13:44",
+ "last_report": "2026-10-27T16:40",
  "filing_sources": {
-  "checked": "2026-10-27 13:43",
-  "NSE": "ok: 9 filings for 5 stocks",
+  "checked": "2026-10-27 16:40",
+  "NSE": "ok: 11 filings for 7 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
