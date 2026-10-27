@@ -801,7 +801,32 @@
   "f8e5a4526fe415f9": "2026-10-27",
   "9ec14c590a52b807": "2026-10-27",
   "d901c3d91668f164": "2026-10-27",
-  "df5c994fb450a005": "2026-10-27"
+  "df5c994fb450a005": "2026-10-27",
+  "81dd3f43871a4855": "2026-10-27",
+  "e011925d6c44a1d0": "2026-10-27",
+  "609bf92d54027b32": "2026-10-27",
+  "2fa2691590bd4176": "2026-10-27",
+  "934b59f350a1f637": "2026-10-27",
+  "52c37a7cb65c176b": "2026-10-27",
+  "6bf8e57f56ad5a8d": "2026-10-27",
+  "b680e617b2a3a3e6": "2026-10-27",
+  "4ac62cc2494e485e": "2026-10-27",
+  "f30204005325f4c9": "2026-10-27",
+  "04d338ef72c597dd": "2026-10-27",
+  "18a8cad9509e5b39": "2026-10-27",
+  "f89e6d6f0831866c": "2026-10-27",
+  "6134e589c57feb57": "2026-10-27",
+  "e1c3d85a3234beed": "2026-10-27",
+  "0d7396d23b3f584b": "2026-10-27",
+  "a5af803fb0933559": "2026-10-27",
+  "374c0a3a86616c8f": "2026-10-27",
+  "f084da4cee1de645": "2026-10-27",
+  "cf3167ec815a2787": "2026-10-27",
+  "a3ec0b268f3a8f63": "2026-10-27",
+  "0a24d8de23156d1a": "2026-10-27",
+  "41db9526fbe77dfa": "2026-10-27",
+  "26cac1c28a1e1985": "2026-10-27",
+  "8a7e6e4b47030fc1": "2026-10-27"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -833,7 +858,13 @@
    "CONCORDBIO:price",
    "CARBORUNIV:price"
   ],
-  "2026-10-27": []
+  "2026-10-27": [
+   "SOLARA:price",
+   "PPLPHARMA:price",
+   "CONCORDBIO:price",
+   "SONACOMS:price",
+   "EUREKAFORB:volume"
+  ]
  },
  "events": {
   "2026-10-21": [
@@ -1464,6 +1495,48 @@
     "impact": "Bullish",
     "importance": 7,
     "time": "07:38"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Earnings / results: Sona BLW Shares Jump Over 6% After Q2 Profit Rises 29%; BEV Revenue Surges 129% (+3 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "10:36"
+   },
+   {
+    "symbol": "SOLARA",
+    "event": "Price +5.5% today at \u20b9645.00 (volume 0.1x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:36"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Price +5.1% today at \u20b9200.84 (volume 0.3x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:36"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Price +7.5% today at \u20b91,322.10 (volume 0.2x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:36"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Price +8.8% today at \u20b9850.45 (volume 3.3x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "10:36"
+   },
+   {
+    "symbol": "EUREKAFORB",
+    "event": "Unusual volume: 2.9x 20-day avg (price +0.0%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "10:36"
    }
   ]
  },
@@ -1566,12 +1639,14 @@
   "ad492fa94ed31209": "2026-10-27",
   "f5de54455f9fbc37": "2026-10-27",
   "0987ed00f00fa80c": "2026-10-27",
-  "284682fb129efe85": "2026-10-27"
+  "284682fb129efe85": "2026-10-27",
+  "f084da4cee1de645": "2026-10-27",
+  "a3ec0b268f3a8f63": "2026-10-27"
  },
- "last_report": "2026-10-27T07:38",
+ "last_report": "2026-10-27T10:36",
  "filing_sources": {
-  "checked": "2026-10-27 07:38",
-  "NSE": "ok: 8 filings for 5 stocks",
+  "checked": "2026-10-27 10:36",
+  "NSE": "ok: 9 filings for 5 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
