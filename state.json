@@ -772,7 +772,36 @@
   "c3184e1033383bd8": "2026-10-26",
   "2272d32543891de2": "2026-10-26",
   "fef4eb380c40df1f": "2026-10-26",
-  "70ed2befa903a263": "2026-10-26"
+  "70ed2befa903a263": "2026-10-26",
+  "bbb3cac725d485c6": "2026-10-27",
+  "ad492fa94ed31209": "2026-10-27",
+  "bb4fbb3784d59fd8": "2026-10-27",
+  "25ea1f55c49358ab": "2026-10-27",
+  "502cb0b011c84f6a": "2026-10-27",
+  "9f50331a190ce9cb": "2026-10-27",
+  "3e524e347f824055": "2026-10-27",
+  "acfc55b3e0db6042": "2026-10-27",
+  "a82dae0a54f94c00": "2026-10-27",
+  "31fad7743b0d437f": "2026-10-27",
+  "0244b6961a1eef71": "2026-10-27",
+  "03d1eb0e1171e9bc": "2026-10-27",
+  "69a35eb380d4759d": "2026-10-27",
+  "f5de54455f9fbc37": "2026-10-27",
+  "0987ed00f00fa80c": "2026-10-27",
+  "f4169091c983c11a": "2026-10-27",
+  "0f5aaf4738971d23": "2026-10-27",
+  "7ab5f41b750949ad": "2026-10-27",
+  "a37f3c59a3d69036": "2026-10-27",
+  "4cd87f64aba38d49": "2026-10-27",
+  "a9f4c0dab3229ae4": "2026-10-27",
+  "284682fb129efe85": "2026-10-27",
+  "a06256976aa29731": "2026-10-27",
+  "c96323569f0fbbef": "2026-10-27",
+  "92c64408f7eb691c": "2026-10-27",
+  "f8e5a4526fe415f9": "2026-10-27",
+  "9ec14c590a52b807": "2026-10-27",
+  "d901c3d91668f164": "2026-10-27",
+  "df5c994fb450a005": "2026-10-27"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -803,7 +832,8 @@
    "HINDWAREAP:volume",
    "CONCORDBIO:price",
    "CARBORUNIV:price"
-  ]
+  ],
+  "2026-10-27": []
  },
  "events": {
   "2026-10-21": [
@@ -1412,6 +1442,29 @@
     "importance": 8,
     "time": "20:47"
    }
+  ],
+  "2026-10-27": [
+   {
+    "symbol": "SHIVALIK",
+    "event": "M&A / stake change: Shivalik Rasayan lifts Medicamen Biotech stake to 42.57% with $3M warrant conversion",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "07:38"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Earnings / results: Buy, Sell Or Hold: Zydus Lifesciences, Cyient, BEL, Shriram Finance, IOB, Avanti Feeds \u2014 Ask Profit (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "07:38"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Earnings / results: Sona Comstar Q2 net profit rises 29% to \u20b9223 crore (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "07:38"
+   }
   ]
  },
  "bse_codes": {},
@@ -1509,12 +1562,16 @@
   "16a2dec7a1773e50": "2026-10-26",
   "14ae3d769ba958a2": "2026-10-26",
   "0c6f1977870828fa": "2026-10-26",
-  "94c556a3894cdd6f": "2026-10-26"
+  "94c556a3894cdd6f": "2026-10-26",
+  "ad492fa94ed31209": "2026-10-27",
+  "f5de54455f9fbc37": "2026-10-27",
+  "0987ed00f00fa80c": "2026-10-27",
+  "284682fb129efe85": "2026-10-27"
  },
- "last_report": "2026-10-26T20:47",
+ "last_report": "2026-10-27T07:38",
  "filing_sources": {
-  "checked": "2026-10-26 20:47",
-  "NSE": "ok: 7 filings for 5 stocks",
+  "checked": "2026-10-27 07:38",
+  "NSE": "ok: 8 filings for 5 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
