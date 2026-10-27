@@ -877,7 +877,53 @@
   "76ebd965a834d73b": "2026-10-27",
   "a6c4c6346f9f6c5e": "2026-10-27",
   "d57bbd8aa585a71f": "2026-10-27",
-  "2522c4684e953e82": "2026-10-27"
+  "2522c4684e953e82": "2026-10-27",
+  "19af6a829c97d44a": "2026-10-27",
+  "8a538d8cdd14e656": "2026-10-27",
+  "3bf45558c35194cb": "2026-10-27",
+  "3dc0688b9e92cd42": "2026-10-27",
+  "8b535afad01c6c27": "2026-10-27",
+  "238a3c8a84c4497f": "2026-10-27",
+  "1b8a5ed9da6934fd": "2026-10-27",
+  "bf18653c91b9a388": "2026-10-27",
+  "d3be3071b06bf60d": "2026-10-27",
+  "f77939afc7c8cfcd": "2026-10-27",
+  "4eb075da55dc258d": "2026-10-27",
+  "0a45e3f4c89d32cf": "2026-10-27",
+  "b261046d7ac852e3": "2026-10-27",
+  "e4d2866430e779d5": "2026-10-27",
+  "654b2bbbbce93089": "2026-10-27",
+  "2badc4efbec9410b": "2026-10-27",
+  "774654b65619c445": "2026-10-27",
+  "3a6c54596ce1f319": "2026-10-27",
+  "a2932ea5fb109e23": "2026-10-27",
+  "ac328908e7970788": "2026-10-27",
+  "12647679b78a04a4": "2026-10-27",
+  "df71b8f51a08beb6": "2026-10-27",
+  "e754896b5c52ee32": "2026-10-27",
+  "555b0f99eeedb853": "2026-10-27",
+  "092b701ecb1ada41": "2026-10-27",
+  "914ad34b639358b8": "2026-10-27",
+  "d03ea06a037b2753": "2026-10-27",
+  "caad5de49beaf1fd": "2026-10-27",
+  "268745d1d557437e": "2026-10-27",
+  "d9992dfde55bf060": "2026-10-27",
+  "9cff2ab48328c994": "2026-10-27",
+  "0556eec431047286": "2026-10-27",
+  "8dd94a42ab6a5b83": "2026-10-27",
+  "6bca58e6dbd377c1": "2026-10-27",
+  "6467287d978d365c": "2026-10-27",
+  "20216d4a9ce82bc2": "2026-10-27",
+  "9e6af403639136ce": "2026-10-27",
+  "6de889c83e583545": "2026-10-27",
+  "7b724d66968699b4": "2026-10-27",
+  "0fa783925d28b103": "2026-10-27",
+  "1cd164165e527e48": "2026-10-27",
+  "37764dfc814869f2": "2026-10-27",
+  "e52d2a4e3430c9b3": "2026-10-27",
+  "7caf9140b2d2f548": "2026-10-27",
+  "e54e3998eeb75fa3": "2026-10-27",
+  "9b62f8bf318eb2cb": "2026-10-27"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -1662,6 +1708,55 @@
     "impact": "Neutral",
     "importance": 8,
     "time": "16:40"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Earnings / results: [NSE filing] Outcome of Board Meeting: Syngene International Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "19:50"
+   },
+   {
+    "symbol": "BAJAJHCARE",
+    "event": "Earnings / results: Bajaj Healthcare Q2FY27 Results: Net profit rises 27% YoY to \u20b914.1 crore",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "19:50"
+   },
+   {
+    "symbol": "RAYMOND",
+    "event": "Earnings / results: [NSE filing] Monitoring Agency Report: Please find enclosed report by Monitoring Agency for the Quarter ended September 30, 2026 (+6 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "19:50"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Analyst action: Newly listed stock has 27% upside potential! JM Financial issues buy call; Check target price and key triggers",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "19:50"
+   },
+   {
+    "symbol": "FDC",
+    "event": "Earnings / results: [NSE filing] Press Release: FDC Limited has informed the Exchange regarding a press release dated October 27, 2026, titled \"Press Release Q2 - FY 2026-2027\". (+4 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "19:50"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Earnings / results: [NSE filing] Outcome of Board Meeting: Concord Biotech Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. (+6 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "19:50"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Sharp price move: Sona BLW Precision Forgings Ltd Surges 5.88% to Day's Hig...",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "19:50"
    }
   ]
  },
@@ -1777,12 +1872,33 @@
   "050fc71f1ea8acb0": "2026-10-27",
   "0d79688edc92a4be": "2026-10-27",
   "b984af5cde6ec6c4": "2026-10-27",
-  "f9133388c55584cf": "2026-10-27"
+  "f9133388c55584cf": "2026-10-27",
+  "238a3c8a84c4497f": "2026-10-27",
+  "1b8a5ed9da6934fd": "2026-10-27",
+  "f77939afc7c8cfcd": "2026-10-27",
+  "4eb075da55dc258d": "2026-10-27",
+  "0a45e3f4c89d32cf": "2026-10-27",
+  "b261046d7ac852e3": "2026-10-27",
+  "e4d2866430e779d5": "2026-10-27",
+  "654b2bbbbce93089": "2026-10-27",
+  "774654b65619c445": "2026-10-27",
+  "ac328908e7970788": "2026-10-27",
+  "12647679b78a04a4": "2026-10-27",
+  "df71b8f51a08beb6": "2026-10-27",
+  "555b0f99eeedb853": "2026-10-27",
+  "092b701ecb1ada41": "2026-10-27",
+  "6bca58e6dbd377c1": "2026-10-27",
+  "9e6af403639136ce": "2026-10-27",
+  "6de889c83e583545": "2026-10-27",
+  "7b724d66968699b4": "2026-10-27",
+  "0fa783925d28b103": "2026-10-27",
+  "1cd164165e527e48": "2026-10-27",
+  "914ad34b639358b8": "2026-10-27"
  },
- "last_report": "2026-10-27T16:40",
+ "last_report": "2026-10-27T19:50",
  "filing_sources": {
-  "checked": "2026-10-27 16:40",
-  "NSE": "ok: 11 filings for 7 stocks",
+  "checked": "2026-10-27 19:50",
+  "NSE": "ok: 22 filings for 10 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
