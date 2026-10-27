@@ -826,7 +826,38 @@
   "0a24d8de23156d1a": "2026-10-27",
   "41db9526fbe77dfa": "2026-10-27",
   "26cac1c28a1e1985": "2026-10-27",
-  "8a7e6e4b47030fc1": "2026-10-27"
+  "8a7e6e4b47030fc1": "2026-10-27",
+  "5e58b0d0b1da2eb8": "2026-10-27",
+  "f7c785194c209f72": "2026-10-27",
+  "ff8004b4f297264a": "2026-10-27",
+  "351a23fd8f37a4af": "2026-10-27",
+  "279e1bd49c8f20de": "2026-10-27",
+  "5d59e9db57445aba": "2026-10-27",
+  "7d841d47a70bd260": "2026-10-27",
+  "f1e982d6a47edd52": "2026-10-27",
+  "6ae21e85f5dfc2be": "2026-10-27",
+  "697070fbe56f8848": "2026-10-27",
+  "bc8c8444ab1c6c67": "2026-10-27",
+  "45ca8d95f75728b0": "2026-10-27",
+  "db30a46170417347": "2026-10-27",
+  "4e1c83bd12c86b69": "2026-10-27",
+  "491f63448540add7": "2026-10-27",
+  "869d78e8498f9feb": "2026-10-27",
+  "9b689a1af81cf5ab": "2026-10-27",
+  "362a68ea43e78a8d": "2026-10-27",
+  "1736b716758189fd": "2026-10-27",
+  "bf3367f0bebacc4d": "2026-10-27",
+  "9f234e0721bc9fc9": "2026-10-27",
+  "e41c2237e392c092": "2026-10-27",
+  "34dec63157e75bc0": "2026-10-27",
+  "59919e2239bd88d5": "2026-10-27",
+  "f6238daed8de7f47": "2026-10-27",
+  "d960fb69a350eb1d": "2026-10-27",
+  "904c0a9c6e78c9a5": "2026-10-27",
+  "78dd79f4c3ca07a1": "2026-10-27",
+  "64c9156529321d52": "2026-10-27",
+  "4d93e9e46d25773a": "2026-10-27",
+  "cbe384a21bfbfd93": "2026-10-27"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -863,7 +894,11 @@
    "PPLPHARMA:price",
    "CONCORDBIO:price",
    "SONACOMS:price",
-   "EUREKAFORB:volume"
+   "EUREKAFORB:volume",
+   "ALIVUS:price",
+   "ENTERO:price",
+   "AARTIPHARM:price",
+   "SONACOMS:volume"
   ]
  },
  "events": {
@@ -1537,6 +1572,55 @@
     "impact": "Neutral",
     "importance": 5,
     "time": "10:36"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Price move: IT sector stocks today, October 27: Cyient falls 3.15%, Newgen Software down 2.25%, Infosys declines 2.83%",
+    "impact": "Bearish",
+    "importance": 5,
+    "time": "13:44"
+   },
+   {
+    "symbol": "CARBORUNIV",
+    "event": "Sharp price move: Carborundum Universal Ltd Surges 9.09% to Day's High of R...",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "13:44"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Earnings / results: Sona BLW Precision Forgings shares rally 6% after Q2 profit rises 29%, revenue jumps 35% (+7 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "13:44"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Price +5.9% today at \u20b91,324.60 (volume 0.7x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "13:44"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Price +5.4% today at \u20b91,555.10 (volume 1.3x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "13:44"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Price +6.6% today at \u20b9875.25 (volume 0.6x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "13:44"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Unusual volume: 6.9x 20-day avg (price +9.0%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "13:44"
    }
   ]
  },
@@ -1641,11 +1725,18 @@
   "0987ed00f00fa80c": "2026-10-27",
   "284682fb129efe85": "2026-10-27",
   "f084da4cee1de645": "2026-10-27",
-  "a3ec0b268f3a8f63": "2026-10-27"
+  "a3ec0b268f3a8f63": "2026-10-27",
+  "6ae21e85f5dfc2be": "2026-10-27",
+  "bc8c8444ab1c6c67": "2026-10-27",
+  "1736b716758189fd": "2026-10-27",
+  "bf3367f0bebacc4d": "2026-10-27",
+  "e41c2237e392c092": "2026-10-27",
+  "34dec63157e75bc0": "2026-10-27",
+  "59919e2239bd88d5": "2026-10-27"
  },
- "last_report": "2026-10-27T10:36",
+ "last_report": "2026-10-27T13:44",
  "filing_sources": {
-  "checked": "2026-10-27 10:36",
+  "checked": "2026-10-27 13:43",
   "NSE": "ok: 9 filings for 5 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
