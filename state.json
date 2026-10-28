@@ -1140,7 +1140,51 @@
   "651ffcaa7c65694c": "2026-10-28",
   "6ac55a186f461771": "2026-10-28",
   "95f3182039a69115": "2026-10-28",
-  "7af4dd118bd62c6a": "2026-10-28"
+  "7af4dd118bd62c6a": "2026-10-28",
+  "500bbd65a4006bbc": "2026-10-28",
+  "74ba4a18a3a751a7": "2026-10-28",
+  "48b559662fab0568": "2026-10-28",
+  "6b16fff360a896b5": "2026-10-28",
+  "4c1191bc2f0a7700": "2026-10-28",
+  "1c6dc39a369d3c3f": "2026-10-28",
+  "cc08ecd9536f100d": "2026-10-28",
+  "04004859e3e17c33": "2026-10-28",
+  "27fc42d2a78cbbb0": "2026-10-28",
+  "81c0d4ddc9ead8da": "2026-10-28",
+  "030aeccc64b9288c": "2026-10-28",
+  "d5b41797974e6fa1": "2026-10-28",
+  "41f292b6d3563d84": "2026-10-28",
+  "d6390f872d00893d": "2026-10-28",
+  "a87128d141028317": "2026-10-28",
+  "dc9e7591b5be297d": "2026-10-28",
+  "6470f6ee46d15610": "2026-10-28",
+  "b4e9b786885cf72e": "2026-10-28",
+  "f56a407ff2fa90ec": "2026-10-28",
+  "6f77a138b4dd9cd8": "2026-10-28",
+  "d5a5923e31c208fb": "2026-10-28",
+  "f13cc84490989d56": "2026-10-28",
+  "27b0520e1c92d837": "2026-10-28",
+  "2c677900f22dbc07": "2026-10-28",
+  "1ea546d48e40973e": "2026-10-28",
+  "b9d053cfcb698bf0": "2026-10-28",
+  "1d21d0d133cb11cc": "2026-10-28",
+  "b119bdbddafe858b": "2026-10-28",
+  "18c398c05b831bc1": "2026-10-28",
+  "6ac613de1adceca8": "2026-10-28",
+  "1b2551be232e698d": "2026-10-28",
+  "8776525ec71a8a22": "2026-10-28",
+  "1aa31e8ce31741d2": "2026-10-28",
+  "6465f16b5580ee44": "2026-10-28",
+  "d1e561e3412bb766": "2026-10-28",
+  "08b812e2bee24115": "2026-10-28",
+  "ca662711cb6b912a": "2026-10-28",
+  "4d569b162ec49853": "2026-10-28",
+  "f9ddc6b7eff6668b": "2026-10-28",
+  "d0070d6366352c0f": "2026-10-28",
+  "ffd9c7f278f89215": "2026-10-28",
+  "8ef5df498778e8b6": "2026-10-28",
+  "9e31729cccb55a0e": "2026-10-28",
+  "f159a5577cd56a69": "2026-10-28"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -2277,6 +2321,69 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "16:45"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Earnings / results: Syngene International shares surge 12%, biggest 1-day gain in 6 years; what drove the rally despite a Q2 profit drop? (+2 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "19:53"
+   },
+   {
+    "symbol": "RAYMOND",
+    "event": "Earnings / results: Raymond Q2 FY27: Engineering business EBITDA up 30% to \u20b9103 crore, net cash of \u20b977 crore, R&D expensing costs about 400 bps of margin (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "19:53"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Management change: JM Financial AMC announces resignation of CFO cum COO",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "19:53"
+   },
+   {
+    "symbol": "FDC",
+    "event": "Corporate action: [NSE filing] Updates: FDC Limited has informed the Exchange regarding 'Board Resolution For Buyback Of Fully Paid-Up Equity Shares Of The Company.",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "19:53"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Earnings / results: Piramal Pharma surges 18% to 18-month high as Q2 results beat estimates; brokerage upgrades to Add, check... (+2 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "19:53"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "Earnings / results: Earnings call transcript: KPIT Technologies posts steady Q2 2026 growth By Investing.com (+7 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "19:53"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Earnings / results: Concord Biotech Q2 FY27 slides: 25% revenue growth amid margin pressure (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "19:54"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Earnings / results: Sona BLW Q2FY27 Results: PAT up 29% to \u20b9223 crore, beats estimates",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "19:54"
+   },
+   {
+    "symbol": "EUREKAFORB",
+    "event": "Earnings / results: [NSE filing] Updates: Eureka Forbes Limited has informed the Exchange regarding 'Earnings Call'. (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "19:54"
    }
   ]
  },
@@ -2474,12 +2581,25 @@
   "56388867d60ce022": "2026-10-28",
   "13d7b64aba0b74ce": "2026-10-28",
   "7b46a5460a9ffc16": "2026-10-28",
-  "76a3d80cfa4edea9": "2026-10-28"
+  "76a3d80cfa4edea9": "2026-10-28",
+  "6b16fff360a896b5": "2026-10-28",
+  "4c1191bc2f0a7700": "2026-10-28",
+  "1c6dc39a369d3c3f": "2026-10-28",
+  "af506b7c5346f8f6": "2026-10-28",
+  "d6390f872d00893d": "2026-10-28",
+  "dc9e7591b5be297d": "2026-10-28",
+  "b4e9b786885cf72e": "2026-10-28",
+  "8f70380f11873f39": "2026-10-28",
+  "d1e561e3412bb766": "2026-10-28",
+  "08b812e2bee24115": "2026-10-28",
+  "ca662711cb6b912a": "2026-10-28",
+  "8ef5df498778e8b6": "2026-10-28",
+  "9e31729cccb55a0e": "2026-10-28"
  },
- "last_report": "2026-10-28T16:45",
+ "last_report": "2026-10-28T19:54",
  "filing_sources": {
-  "checked": "2026-10-28 16:44",
-  "NSE": "ok: 39 filings for 10 stocks",
+  "checked": "2026-10-28 19:53",
+  "NSE": "ok: 46 filings for 13 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
