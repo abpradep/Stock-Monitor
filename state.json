@@ -1006,7 +1006,30 @@
   "e5e02a692a0353b9": "2026-10-28",
   "10793f4d1646820e": "2026-10-28",
   "946bfb5110843af6": "2026-10-28",
-  "516049e6f8ed371a": "2026-10-28"
+  "516049e6f8ed371a": "2026-10-28",
+  "d32b37dbcfeb0f4f": "2026-10-28",
+  "fd9cafa31a1d4ab4": "2026-10-28",
+  "fe8b9106b490d557": "2026-10-28",
+  "bff64343fdc6298c": "2026-10-28",
+  "1e8b3ee45d3c44a9": "2026-10-28",
+  "225cca608616f740": "2026-10-28",
+  "4e5b2ab5abd7a0fd": "2026-10-28",
+  "10996554f9a5ab70": "2026-10-28",
+  "dfe81e45970267bc": "2026-10-28",
+  "83ab666af125caa9": "2026-10-28",
+  "ee3c31c1e997af79": "2026-10-28",
+  "aaf3f66c6f6e90f4": "2026-10-28",
+  "e98d8ab98e95eaf3": "2026-10-28",
+  "5a78cb52df111fc0": "2026-10-28",
+  "75457206c145000c": "2026-10-28",
+  "13b73c67478c39ef": "2026-10-28",
+  "d773985c8067d3e6": "2026-10-28",
+  "06203c580a4aba6c": "2026-10-28",
+  "9902397e76a95cae": "2026-10-28",
+  "d69432f7656c6a7c": "2026-10-28",
+  "c038b7a94edeab12": "2026-10-28",
+  "691488fe7820c610": "2026-10-28",
+  "1540e4536f136ce7": "2026-10-28"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -1049,7 +1072,13 @@
    "AARTIPHARM:price",
    "SONACOMS:volume"
   ],
-  "2026-10-28": []
+  "2026-10-28": [
+   "SYNGENE:price",
+   "FDC:price",
+   "PPLPHARMA:price",
+   "ENTERO:price",
+   "AARTIPHARM:price"
+  ]
  },
  "events": {
   "2026-10-21": [
@@ -1920,6 +1949,69 @@
     "impact": "Bullish",
     "importance": 6,
     "time": "07:47"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Analyst action: Laurus Labs Ltd Upgraded to Buy by MarketsMOJO on Strong Fundamentals and Technicals",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "10:44"
+   },
+   {
+    "symbol": "RAYMOND",
+    "event": "Earnings / results: Raymond Ltd Reports Mixed Quarterly Results Amid Negative Financial Trend",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:44"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Earnings / results: Piramal Pharma shares surge 14% as Q2 profitability improves, FY27 outlook raised (+4 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "10:44"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Earnings / results: Sona BLW Precision Forgings Ltd (BOM:543300) (Q2 2027) Earnings Call Highlights: Record Revenue ... (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:44"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Price +6.2% today at \u20b9382.05 (volume 6.0x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:44"
+   },
+   {
+    "symbol": "FDC",
+    "event": "Price +8.2% today at \u20b9374.80 (volume 9.4x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "10:44"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Price +13.1% today at \u20b9224.82 (volume 21.8x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "10:44"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Price +5.6% today at \u20b91,557.80 (volume 0.2x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:44"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Price +7.9% today at \u20b9888.40 (volume 0.3x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:44"
    }
   ]
  },
@@ -2085,11 +2177,17 @@
   "185d8a3e781a7bd6": "2026-10-28",
   "801b00edb82f0a09": "2026-10-28",
   "3b4dee96a3712ebf": "2026-10-28",
-  "b5f3b036da401b36": "2026-10-28"
+  "b5f3b036da401b36": "2026-10-28",
+  "fd9cafa31a1d4ab4": "2026-10-28",
+  "ee3c31c1e997af79": "2026-10-28",
+  "aaf3f66c6f6e90f4": "2026-10-28",
+  "e98d8ab98e95eaf3": "2026-10-28",
+  "75457206c145000c": "2026-10-28",
+  "c038b7a94edeab12": "2026-10-28"
  },
- "last_report": "2026-10-28T07:47",
+ "last_report": "2026-10-28T10:44",
  "filing_sources": {
-  "checked": "2026-10-28 07:47",
+  "checked": "2026-10-28 10:44",
   "NSE": "ok: 26 filings for 8 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
