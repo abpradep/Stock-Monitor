@@ -1029,7 +1029,71 @@
   "d69432f7656c6a7c": "2026-10-28",
   "c038b7a94edeab12": "2026-10-28",
   "691488fe7820c610": "2026-10-28",
-  "1540e4536f136ce7": "2026-10-28"
+  "1540e4536f136ce7": "2026-10-28",
+  "d859753c83ccb638": "2026-10-28",
+  "71db62f2431ccb9c": "2026-10-28",
+  "2d22d17562867bcc": "2026-10-28",
+  "1bf61e524e1a7528": "2026-10-28",
+  "81f26269f0e72d5a": "2026-10-28",
+  "d1709528f4320d42": "2026-10-28",
+  "61f929b575adeb7e": "2026-10-28",
+  "1237491cbc435b9c": "2026-10-28",
+  "59a908f44695585b": "2026-10-28",
+  "a55fc240f1c7306b": "2026-10-28",
+  "a2ffcc1fc90ed50f": "2026-10-28",
+  "80ab0cac6a3ff22c": "2026-10-28",
+  "0e54c5ef06e2880c": "2026-10-28",
+  "d961446849282f57": "2026-10-28",
+  "621fa294559055c3": "2026-10-28",
+  "73c5788b5be20dd7": "2026-10-28",
+  "db97f58ef33e3785": "2026-10-28",
+  "8f70380f11873f39": "2026-10-28",
+  "8a4b86e2e6c4611b": "2026-10-28",
+  "7d9e79555119795f": "2026-10-28",
+  "e3467d5b2b8b44c0": "2026-10-28",
+  "eb69d38780277750": "2026-10-28",
+  "e513c04501a0a8a1": "2026-10-28",
+  "246536024e6a6c22": "2026-10-28",
+  "2b204c085d3f6c0b": "2026-10-28",
+  "56e28bf864509c64": "2026-10-28",
+  "d06710fa02880d5d": "2026-10-28",
+  "b548ce243f77b29d": "2026-10-28",
+  "3a2a48fc36ff40e7": "2026-10-28",
+  "da37d4e38f5379eb": "2026-10-28",
+  "8b335887e0aaa7ad": "2026-10-28",
+  "da98a85cda1e36a9": "2026-10-28",
+  "c38ec0c82464a822": "2026-10-28",
+  "08572fede9d6f246": "2026-10-28",
+  "764244c6f97522cd": "2026-10-28",
+  "e43e16ff0ddc5cb9": "2026-10-28",
+  "d273ab7ca1befbd0": "2026-10-28",
+  "56388867d60ce022": "2026-10-28",
+  "e62c394aff815a5f": "2026-10-28",
+  "a2a60d6a97eba507": "2026-10-28",
+  "6046cfa4c88eefb9": "2026-10-28",
+  "2a46cf70ced6d42c": "2026-10-28",
+  "9eae3d7d35e3bd19": "2026-10-28",
+  "081bcee1b840a9d1": "2026-10-28",
+  "cb867617127078a4": "2026-10-28",
+  "ae028cc0b9d56161": "2026-10-28",
+  "0143b3cc7fc77f3e": "2026-10-28",
+  "5cef5e87ef638bfa": "2026-10-28",
+  "c3a22ce7c51f23fa": "2026-10-28",
+  "5440edb2bb9a0b60": "2026-10-28",
+  "f6dbec4f364dc2ca": "2026-10-28",
+  "7fc1e7fd8dcb3c97": "2026-10-28",
+  "9ed61962ca269315": "2026-10-28",
+  "dd5544e7af11fbac": "2026-10-28",
+  "af0d66c9bab19657": "2026-10-28",
+  "a0009b4a1272a5ff": "2026-10-28",
+  "d1fed4d7acd16643": "2026-10-28",
+  "54948f8026093483": "2026-10-28",
+  "29b582986e4b7b5d": "2026-10-28",
+  "6c88e62d9e67f81a": "2026-10-28",
+  "a0db861e252fd1a5": "2026-10-28",
+  "836f45c0cdca6b85": "2026-10-28",
+  "4d320a0f74776fac": "2026-10-28",
+  "703812c6918ba858": "2026-10-28"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -1077,7 +1141,11 @@
    "FDC:price",
    "PPLPHARMA:price",
    "ENTERO:price",
-   "AARTIPHARM:price"
+   "AARTIPHARM:price",
+   "SYNGENE:volume",
+   "FDC:volume",
+   "PPLPHARMA:volume",
+   "CONCORDBIO:volume"
   ]
  },
  "events": {
@@ -2012,6 +2080,69 @@
     "impact": "Bullish (price action)",
     "importance": 6,
     "time": "10:44"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Earnings / results: Syngene International (NSE:SYNGENE) Q2 FY27 Results and Business Update (+2 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "13:50"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Earnings / results: Piramal Pharma Back in Black, Posts Rs 5-Crore Profit in Q2 (+8 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "13:50"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "M&A / stake change: [NSE filing] Acquisition: KPIT Technologies Limited has informed the Exchange that the Board of Directors of the Company approved the proposal of incorporation of a wholly owned subsidiary of the Company in Vietnam. (+15 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "13:50"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Earnings / results: Concord Biotech (NSE:CONCORDBIO) Q2 FY27 Results, Inspira Launch and ANDA Approvals (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "13:50"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Earnings / results: Sona BLW shines on reporting 29% growth in Q2 consolidated net profit (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "13:50"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Unusual volume: 21.4x 20-day avg (price +12.9%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "13:50"
+   },
+   {
+    "symbol": "FDC",
+    "event": "Unusual volume: 12.5x 20-day avg (price +6.6%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "13:50"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Unusual volume: 42.3x 20-day avg (price +17.4%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "13:51"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Unusual volume: 3.3x 20-day avg (price -1.8%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "13:51"
    }
   ]
  },
@@ -2183,12 +2314,29 @@
   "aaf3f66c6f6e90f4": "2026-10-28",
   "e98d8ab98e95eaf3": "2026-10-28",
   "75457206c145000c": "2026-10-28",
-  "c038b7a94edeab12": "2026-10-28"
+  "c038b7a94edeab12": "2026-10-28",
+  "0e54c5ef06e2880c": "2026-10-28",
+  "d961446849282f57": "2026-10-28",
+  "621fa294559055c3": "2026-10-28",
+  "73c5788b5be20dd7": "2026-10-28",
+  "db97f58ef33e3785": "2026-10-28",
+  "246536024e6a6c22": "2026-10-28",
+  "da37d4e38f5379eb": "2026-10-28",
+  "8b335887e0aaa7ad": "2026-10-28",
+  "da98a85cda1e36a9": "2026-10-28",
+  "c38ec0c82464a822": "2026-10-28",
+  "764244c6f97522cd": "2026-10-28",
+  "e43e16ff0ddc5cb9": "2026-10-28",
+  "d273ab7ca1befbd0": "2026-10-28",
+  "9ed61962ca269315": "2026-10-28",
+  "dd5544e7af11fbac": "2026-10-28",
+  "a0009b4a1272a5ff": "2026-10-28",
+  "fb6577c080dc1d7f": "2026-10-28"
  },
- "last_report": "2026-10-28T10:44",
+ "last_report": "2026-10-28T13:51",
  "filing_sources": {
-  "checked": "2026-10-28 10:44",
-  "NSE": "ok: 26 filings for 8 stocks",
+  "checked": "2026-10-28 13:50",
+  "NSE": "ok: 35 filings for 9 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
