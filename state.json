@@ -1093,7 +1093,54 @@
   "a0db861e252fd1a5": "2026-10-28",
   "836f45c0cdca6b85": "2026-10-28",
   "4d320a0f74776fac": "2026-10-28",
-  "703812c6918ba858": "2026-10-28"
+  "703812c6918ba858": "2026-10-28",
+  "1b893a222ef68999": "2026-10-28",
+  "746a3e6bd7fe297a": "2026-10-28",
+  "e3f0526991e84903": "2026-10-28",
+  "0a1970bdac7e37e8": "2026-10-28",
+  "4558a2081bee97e6": "2026-10-28",
+  "d798b246443b02f8": "2026-10-28",
+  "af506b7c5346f8f6": "2026-10-28",
+  "99f21d6addf2ed2d": "2026-10-28",
+  "529e913947f95c92": "2026-10-28",
+  "cbf770b55922f17f": "2026-10-28",
+  "e38d28d2c9aa193a": "2026-10-28",
+  "f94d978e9e5ee8be": "2026-10-28",
+  "072eb89445e6d4c4": "2026-10-28",
+  "6a1732818b52f4a3": "2026-10-28",
+  "8239ac2b4912f70f": "2026-10-28",
+  "592017b5151f2c8c": "2026-10-28",
+  "a6b41a2e32a307d2": "2026-10-28",
+  "7cb0b533beba0ab7": "2026-10-28",
+  "9a1c44513969e1fe": "2026-10-28",
+  "f98fcd671ad50781": "2026-10-28",
+  "d9e7d80aa3000443": "2026-10-28",
+  "7bd88bdcb53f5a32": "2026-10-28",
+  "4784d63df1edfcf7": "2026-10-28",
+  "2b8778b60fd8f2a6": "2026-10-28",
+  "e8ed76776e61b5da": "2026-10-28",
+  "ab3b163027df0e8f": "2026-10-28",
+  "9730b5ee9433ba12": "2026-10-28",
+  "9b75ec9230ff97a0": "2026-10-28",
+  "06852fe42705bd8d": "2026-10-28",
+  "99b05f59ca467f84": "2026-10-28",
+  "96d0764268beddee": "2026-10-28",
+  "13d7b64aba0b74ce": "2026-10-28",
+  "2d4f5b591cf2fd6d": "2026-10-28",
+  "7b46a5460a9ffc16": "2026-10-28",
+  "c5d4eca19fdc8b82": "2026-10-28",
+  "affda1be1eb61501": "2026-10-28",
+  "76a3d80cfa4edea9": "2026-10-28",
+  "8ab6dbff62a11853": "2026-10-28",
+  "4995e09497863b1f": "2026-10-28",
+  "bd286554ae9da093": "2026-10-28",
+  "c0a5b738fd43795b": "2026-10-28",
+  "b6bd094a2d0d759c": "2026-10-28",
+  "77bd9dcd2167fde3": "2026-10-28",
+  "651ffcaa7c65694c": "2026-10-28",
+  "6ac55a186f461771": "2026-10-28",
+  "95f3182039a69115": "2026-10-28",
+  "7af4dd118bd62c6a": "2026-10-28"
  },
  "price_alerted": {
   "2026-10-21": [
@@ -1145,7 +1192,10 @@
    "SYNGENE:volume",
    "FDC:volume",
    "PPLPHARMA:volume",
-   "CONCORDBIO:volume"
+   "CONCORDBIO:volume",
+   "KARBON:price",
+   "KPITTECH:volume",
+   "CONCORDBIO:price"
   ]
  },
  "events": {
@@ -2143,6 +2193,90 @@
     "impact": "Neutral",
     "importance": 5,
     "time": "13:51"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Sharp price move: Laurus Labs Ltd Sees Sharp Open Interest Surge Signalling Strong Market Positioning",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "16:44"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Earnings / results: Syngene Q2 Profit Falls 52% To \u20b932 Crore As Lower Zoetis Revenue, Forex Losses Hit Margins (+1 more stories)",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "16:44"
+   },
+   {
+    "symbol": "RAYMOND",
+    "event": "Earnings / results: Raymond Q2FY27 Results: Net profit up 131% YoY, EBITDA margin expands to 11.49%",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:44"
+   },
+   {
+    "symbol": "FDC",
+    "event": "Earnings / results: FDC Limited (NSE:FDC) Q2 FY27 Results: Revenue, Profit and Segment Update",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:44"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Earnings / results: Piramal Pharma raises FY27 growth guidance to 19-20%, expects profitability to improve (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:44"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Earnings / results: Cyient: Q2 FY27 Revenue Up 7.5% QoQ, EBIT Margin Hits 10-Quarter High",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:44"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "Earnings / results: KPIT Tech Q2 Results: Stock jumps 5% after Co says on track for margin expansion, losses to narrow (+4 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "16:44"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Earnings / results: Concord Biotech Q2 2027 Earnings Call Is Live (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:44"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Sharp price move: Sona BLW shares surge 85% in 2026, hit record high for second straight session: What\u2019s driving the rally? Buy or hold?",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "16:44"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Price +10.9% today at \u20b9102.00 (volume 0.7x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "16:45"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "Unusual volume: 3.0x 20-day avg (price +3.9%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:45"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Price -7.8% today at \u20b91,268.50 (volume 4.0x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "16:45"
    }
   ]
  },
@@ -2331,12 +2465,21 @@
   "9ed61962ca269315": "2026-10-28",
   "dd5544e7af11fbac": "2026-10-28",
   "a0009b4a1272a5ff": "2026-10-28",
-  "fb6577c080dc1d7f": "2026-10-28"
+  "fb6577c080dc1d7f": "2026-10-28",
+  "746a3e6bd7fe297a": "2026-10-28",
+  "0a1970bdac7e37e8": "2026-10-28",
+  "529e913947f95c92": "2026-10-28",
+  "6a1732818b52f4a3": "2026-10-28",
+  "401cfa9258baedd7": "2026-10-28",
+  "56388867d60ce022": "2026-10-28",
+  "13d7b64aba0b74ce": "2026-10-28",
+  "7b46a5460a9ffc16": "2026-10-28",
+  "76a3d80cfa4edea9": "2026-10-28"
  },
- "last_report": "2026-10-28T13:51",
+ "last_report": "2026-10-28T16:45",
  "filing_sources": {
-  "checked": "2026-10-28 13:50",
-  "NSE": "ok: 35 filings for 9 stocks",
+  "checked": "2026-10-28 16:44",
+  "NSE": "ok: 39 filings for 10 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
