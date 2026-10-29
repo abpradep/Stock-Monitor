@@ -984,7 +984,38 @@
   "8fdeec87895e48e4": "2026-10-29",
   "ad84a28810a2c334": "2026-10-29",
   "6085c8ad08c0228d": "2026-10-29",
-  "260cd25baad73a10": "2026-10-29"
+  "260cd25baad73a10": "2026-10-29",
+  "e8d751272c096def": "2026-10-29",
+  "774913174aa18179": "2026-10-29",
+  "ec6e0632c4a00beb": "2026-10-29",
+  "b0f7984bb362517c": "2026-10-29",
+  "b2baa344bd05e520": "2026-10-29",
+  "e05cecb6c9e0cde1": "2026-10-29",
+  "53a16241073cf2de": "2026-10-29",
+  "7a7496952c80d358": "2026-10-29",
+  "acdf900ddf8e9723": "2026-10-29",
+  "db55da200f006583": "2026-10-29",
+  "865c1b84d8632bbd": "2026-10-29",
+  "44143fb021421146": "2026-10-29",
+  "42b873390c992c1e": "2026-10-29",
+  "80ae2b6c3e571ba1": "2026-10-29",
+  "b5bc9ec19a6813b8": "2026-10-29",
+  "1d687bea0e32b7ca": "2026-10-29",
+  "cbc132aa3588efa7": "2026-10-29",
+  "b8206ecd78c63744": "2026-10-29",
+  "0dae9d0c2aca838f": "2026-10-29",
+  "3b0472a67d5d2e12": "2026-10-29",
+  "2f5976b7073c6422": "2026-10-29",
+  "215d28b0711fe41b": "2026-10-29",
+  "595543869531f7ca": "2026-10-29",
+  "cec08f1e89a2951a": "2026-10-29",
+  "2627c0d856fb4a33": "2026-10-29",
+  "3ed920823b075f37": "2026-10-29",
+  "0b9ec9fe46ac8120": "2026-10-29",
+  "a675d6446459f3c7": "2026-10-29",
+  "7b99ad440986d3d7": "2026-10-29",
+  "1596bb3e68fb3570": "2026-10-29",
+  "6ab2b566c4b68cff": "2026-10-29"
  },
  "price_alerted": {
   "2026-10-22": [
@@ -1038,7 +1069,10 @@
    "KPITTECH:volume",
    "CONCORDBIO:price"
   ],
-  "2026-10-29": []
+  "2026-10-29": [
+   "NORTHARC:price",
+   "AARTIPHARM:volume"
+  ]
  },
  "events": {
   "2026-10-22": [
@@ -2105,6 +2139,55 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "07:50"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Earnings / results: Earnings call transcript: Syngene Q2 2026 profit miss offsets revenue beat By Investing.com",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:46"
+   },
+   {
+    "symbol": "INFOBEAN",
+    "event": "Earnings / results: InfoBeans Technologies Reports Strong Q2: PAT Up 16% To \u20b926.3 Crore, Half-Year Revenue Crosses \u20b9322 Crore (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:46"
+   },
+   {
+    "symbol": "RAYMOND",
+    "event": "Management change: Raymond Realty Auditor Chaturvedi & Shah LLP Resigns Over Fee Dispute",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "10:46"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Earnings / results: Aarti Pharmalabs shares rally over 4% on solid Q2 results",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:46"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "Earnings / results: KPIT Q2 Profit Falls 29% to \u20b9121 Cr; Revenue Up 6.5% (+3 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "10:46"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Price +6.0% today at \u20b9270.40 (volume 0.7x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:46"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Unusual volume: 2.5x 20-day avg (price +3.9%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "10:46"
    }
   ]
  },
@@ -2332,11 +2415,16 @@
   "c4dfe06fecc1d883": "2026-10-29",
   "8fe1e3edc56dbc8f": "2026-10-29",
   "d6525d13a7783d90": "2026-10-29",
-  "8fdeec87895e48e4": "2026-10-29"
+  "8fdeec87895e48e4": "2026-10-29",
+  "44143fb021421146": "2026-10-29",
+  "42b873390c992c1e": "2026-10-29",
+  "b8206ecd78c63744": "2026-10-29",
+  "0b9ec9fe46ac8120": "2026-10-29",
+  "a675d6446459f3c7": "2026-10-29"
  },
- "last_report": "2026-10-29T07:50",
+ "last_report": "2026-10-29T10:46",
  "filing_sources": {
-  "checked": "2026-10-29 07:49",
+  "checked": "2026-10-29 10:46",
   "NSE": "ok: 31 filings for 13 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
