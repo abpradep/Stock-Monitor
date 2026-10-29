@@ -1015,7 +1015,43 @@
   "a675d6446459f3c7": "2026-10-29",
   "7b99ad440986d3d7": "2026-10-29",
   "1596bb3e68fb3570": "2026-10-29",
-  "6ab2b566c4b68cff": "2026-10-29"
+  "6ab2b566c4b68cff": "2026-10-29",
+  "ac099e55849074c8": "2026-10-29",
+  "b6abda3fe21a29fe": "2026-10-29",
+  "18f32e2fc310f535": "2026-10-29",
+  "028cc20a4b16b189": "2026-10-29",
+  "c20076386eb1c8fa": "2026-10-29",
+  "cabaf9037e3e3acf": "2026-10-29",
+  "37239d486ab34a39": "2026-10-29",
+  "db7d94c31e362f56": "2026-10-29",
+  "8fc662bdea5aa530": "2026-10-29",
+  "384b2baaa69a57c1": "2026-10-29",
+  "cdfa096ae9a85661": "2026-10-29",
+  "ff87eb4bcbf3829b": "2026-10-29",
+  "d12b4821fdcf1141": "2026-10-29",
+  "9b2a2b81fba7d154": "2026-10-29",
+  "431f8bc8b31a9cac": "2026-10-29",
+  "f85aad8b15455492": "2026-10-29",
+  "6b1219aa00f2daca": "2026-10-29",
+  "073db53f930f585d": "2026-10-29",
+  "5e673cbad87784bd": "2026-10-29",
+  "bf05e3411caaf9c8": "2026-10-29",
+  "e1424de2d499a2f5": "2026-10-29",
+  "3838cba22da61f7c": "2026-10-29",
+  "ff35080d35f0060d": "2026-10-29",
+  "7bef48a7487cd12e": "2026-10-29",
+  "d788d9bc55477ddb": "2026-10-29",
+  "379bc5d7e36ffa70": "2026-10-29",
+  "b5b75ea2b435df1b": "2026-10-29",
+  "81dcacb8e28cd2c6": "2026-10-29",
+  "6c9e2f658092d5a1": "2026-10-29",
+  "04933e1fc8eb6a34": "2026-10-29",
+  "df8b7c73c60b9464": "2026-10-29",
+  "8f52b5d4417d3921": "2026-10-29",
+  "7863fd2151e45d77": "2026-10-29",
+  "7f5094bc96621cad": "2026-10-29",
+  "08bf3e293dcd48d5": "2026-10-29",
+  "3d7aae477185b440": "2026-10-29"
  },
  "price_alerted": {
   "2026-10-22": [
@@ -1071,7 +1107,10 @@
   ],
   "2026-10-29": [
    "NORTHARC:price",
-   "AARTIPHARM:volume"
+   "AARTIPHARM:volume",
+   "INFOBEAN:price",
+   "PPLPHARMA:volume",
+   "KARBON:price"
   ]
  },
  "events": {
@@ -2188,6 +2227,69 @@
     "impact": "Neutral",
     "importance": 5,
     "time": "10:46"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Earnings / results: stock insights biocon share recovery syngene q2 results impact",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:52"
+   },
+   {
+    "symbol": "INFOBEAN",
+    "event": "Earnings / results: InfoBeans Technologies reports \u20b9539 crore revenue for H1 FY27 (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:52"
+   },
+   {
+    "symbol": "FDC",
+    "event": "Corporate action: [NSE filing] Public Announcement - Buyback of Shares: FDC Limited has informed the Exchange about public Announcement - Buyback of Shares",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "13:52"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Earnings / results: Piramal Pharma PPLPHARMA Q2 FY27 Earnings Call Recording (+3 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "13:52"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Earnings / results: Aarti Pharmalabs shares surge 8.8% as Q2 revenue rises 45.93% YoY to \u20b9610.45 Cr and net profit jumps 156% to \u20b971.47 Cr (+4 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "13:52"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "Earnings / results: JSW Energy, KPIT Tech Among Five Stocks In ICICI Securities' Q2 Review; Check Target Prices (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:52"
+   },
+   {
+    "symbol": "INFOBEAN",
+    "event": "Price -6.3% today at \u20b9140.51 (volume 1.1x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "13:52"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Unusual volume: 2.8x 20-day avg (price -1.3%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "13:52"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Price +12.5% today at \u20b9103.50 (volume 0.1x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "13:52"
    }
   ]
  },
@@ -2420,12 +2522,19 @@
   "42b873390c992c1e": "2026-10-29",
   "b8206ecd78c63744": "2026-10-29",
   "0b9ec9fe46ac8120": "2026-10-29",
-  "a675d6446459f3c7": "2026-10-29"
+  "a675d6446459f3c7": "2026-10-29",
+  "c20076386eb1c8fa": "2026-10-29",
+  "cabaf9037e3e3acf": "2026-10-29",
+  "431f8bc8b31a9cac": "2026-10-29",
+  "f56a407ff2fa90ec": "2026-10-29",
+  "8a4b86e2e6c4611b": "2026-10-29",
+  "b5b75ea2b435df1b": "2026-10-29",
+  "8f52b5d4417d3921": "2026-10-29"
  },
- "last_report": "2026-10-29T10:46",
+ "last_report": "2026-10-29T13:52",
  "filing_sources": {
-  "checked": "2026-10-29 10:46",
-  "NSE": "ok: 31 filings for 13 stocks",
+  "checked": "2026-10-29 13:51",
+  "NSE": "ok: 35 filings for 13 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
