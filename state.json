@@ -1176,7 +1176,50 @@
   "39e259db90293387": "2026-10-30",
   "2e7a4160b23ad1a2": "2026-10-30",
   "5bba5e7c3bf5bfa1": "2026-10-30",
-  "29ad1c7abb194732": "2026-10-30"
+  "29ad1c7abb194732": "2026-10-30",
+  "4ed56e0383f3a38a": "2026-10-30",
+  "66d5e24e3616a201": "2026-10-30",
+  "56a39856ee322449": "2026-10-30",
+  "45a7af5e982cd3c0": "2026-10-30",
+  "299eb87675e96f51": "2026-10-30",
+  "2441bbe30edd9309": "2026-10-30",
+  "ba893f2f9f9b83ca": "2026-10-30",
+  "bd8a41a3e604a16c": "2026-10-30",
+  "e3a47f32f90226fc": "2026-10-30",
+  "6f7ca4d43ec4d9f3": "2026-10-30",
+  "2dc272fd82190591": "2026-10-30",
+  "8a58254a041914c6": "2026-10-30",
+  "b6102c0deb2af60e": "2026-10-30",
+  "b3aacb40a36d47d0": "2026-10-30",
+  "1b37d4bc3de6c0ca": "2026-10-30",
+  "e9a5c5e72eca1352": "2026-10-30",
+  "048a4f02fc6335b1": "2026-10-30",
+  "85635420d74a0f55": "2026-10-30",
+  "21845ea1d0a1b37c": "2026-10-30",
+  "f2ffc03746527509": "2026-10-30",
+  "201b342d95df3360": "2026-10-30",
+  "b090cff72a6a184f": "2026-10-30",
+  "f1dd36d7e1c027b2": "2026-10-30",
+  "46edcce37340152b": "2026-10-30",
+  "58a230e01fb82e18": "2026-10-30",
+  "090f7a5330faf52b": "2026-10-30",
+  "fff1af5b439a14bf": "2026-10-30",
+  "132502c6955c47b9": "2026-10-30",
+  "34edd5077153c03e": "2026-10-30",
+  "8742eb0167f06992": "2026-10-30",
+  "56616182d74387c4": "2026-10-30",
+  "e9f9ee5f7f2081ef": "2026-10-30",
+  "14d79d9974ab099e": "2026-10-30",
+  "63fd46cc96b438ea": "2026-10-30",
+  "250dcf337d4f2ef4": "2026-10-30",
+  "b0bc0621beec5893": "2026-10-30",
+  "8116c8a808c0f4af": "2026-10-30",
+  "fbc4ea8bb901a762": "2026-10-30",
+  "d6f404f642cf684c": "2026-10-30",
+  "2fe449360f2677c6": "2026-10-30",
+  "75c84dc87eef56d2": "2026-10-30",
+  "0100e1a262850029": "2026-10-30",
+  "e694a061ea9ade53": "2026-10-30"
  },
  "price_alerted": {
   "2026-10-23": [
@@ -1241,7 +1284,10 @@
    "ALIVUS:volume",
    "GREAVESCOT:price",
    "RBA:volume",
-   "KARBON:price"
+   "KARBON:price",
+   "LAURUSLABS:price",
+   "NORTHARC:price",
+   "GREAVESCOT:volume"
   ]
  },
  "events": {
@@ -2624,6 +2670,97 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "10:45"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Earnings / results: Laurus Labs Shares Rise 5% After Q2 FY27 Net Profit Jumps 126% (+4 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "13:53"
+   },
+   {
+    "symbol": "PRAJIND",
+    "event": "Earnings / results: Praj Industries Q2 2027 Earnings Call Is Live (+2 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "13:53"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Earnings / results: Alivus Life Sciences Q2 2027 Earnings Call Is Live (+5 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "13:53"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Earnings / results: Greaves Cotton Q2 Revenue Rises 44% To Rs 1,176 Cr, EBITDA Up 43% (+2 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "13:53"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Earnings / results: Burger King India reports first-ever quarterly profit; delivers 14% SSSG in Q2 FY27 (+4 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "13:53"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Earnings / results: Piramal Pharma Ltd (BOM:543635) (Q2 2027) Earnings Call Highlights: 28% Revenue Surge, 72% ... (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "13:53"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Earnings / results: Cyient Is Betting On Semiconductors And AI. When Will Earnings Follow?",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:53"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "M&A / stake change: Natco Pharma promoter group acquires shares via rights issue allotment (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:53"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "Earnings / results: KPIT Technologies Ltd (BOM:542651) (Q2 2027) Earnings Call Highlights: Off-Highway Surge and AI ...",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "13:53"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "M&A / stake change: ICICI Prudential MF reduces Sona BLW stake to 5.05% after selling 1.22 crore shares (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:53"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Price +6.1% today at \u20b92,382.00 (volume 3.9x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "13:53"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Price -5.2% today at \u20b9252.45 (volume 0.5x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "13:53"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Unusual volume: 18.3x 20-day avg (price +10.8%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "13:53"
    }
   ]
  },
@@ -2931,12 +3068,29 @@
   "74838196445bda5c": "2026-10-30",
   "cce720bbd874c6d2": "2026-10-30",
   "fb2d89abcc3da0bd": "2026-10-30",
-  "5bba5e7c3bf5bfa1": "2026-10-30"
+  "5bba5e7c3bf5bfa1": "2026-10-30",
+  "4ed56e0383f3a38a": "2026-10-30",
+  "ba893f2f9f9b83ca": "2026-10-30",
+  "6f7ca4d43ec4d9f3": "2026-10-30",
+  "2dc272fd82190591": "2026-10-30",
+  "8a58254a041914c6": "2026-10-30",
+  "e9a5c5e72eca1352": "2026-10-30",
+  "048a4f02fc6335b1": "2026-10-30",
+  "34edd5077153c03e": "2026-10-30",
+  "8742eb0167f06992": "2026-10-30",
+  "56616182d74387c4": "2026-10-30",
+  "14d79d9974ab099e": "2026-10-30",
+  "250dcf337d4f2ef4": "2026-10-30",
+  "04933e1fc8eb6a34": "2026-10-30",
+  "df8b7c73c60b9464": "2026-10-30",
+  "d6f404f642cf684c": "2026-10-30",
+  "2fe449360f2677c6": "2026-10-30",
+  "0100e1a262850029": "2026-10-30"
  },
- "last_report": "2026-10-30T10:45",
+ "last_report": "2026-10-30T13:53",
  "filing_sources": {
-  "checked": "2026-10-30 10:45",
-  "NSE": "ok: 48 filings for 16 stocks",
+  "checked": "2026-10-30 13:53",
+  "NSE": "ok: 49 filings for 16 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
