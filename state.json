@@ -1242,7 +1242,32 @@
   "7eb3bd1143a6d3f6": "2026-10-30",
   "7004a5490e5fdf81": "2026-10-30",
   "82f8c802f7970522": "2026-10-30",
-  "a213606cf7152b8b": "2026-10-30"
+  "a213606cf7152b8b": "2026-10-30",
+  "8a00bd82064bbf4c": "2026-10-30",
+  "618745f2cf00d7aa": "2026-10-30",
+  "83449d9b18bef68c": "2026-10-30",
+  "5743c5e84dd4bd06": "2026-10-30",
+  "41363c8fce338127": "2026-10-30",
+  "ef4c3d88030bbf3d": "2026-10-30",
+  "b060d7b37cf49909": "2026-10-30",
+  "8e23ab2470bea507": "2026-10-30",
+  "15b582e5b492cbe1": "2026-10-30",
+  "ea2d686ebc9b415c": "2026-10-30",
+  "2d8a4605e3e1aa31": "2026-10-30",
+  "8fae525683f6de6d": "2026-10-30",
+  "a372abe33bacbcf3": "2026-10-30",
+  "939db060545c6510": "2026-10-30",
+  "88c45e85cd5d63b8": "2026-10-30",
+  "be5657405f3a5a00": "2026-10-30",
+  "522af0be53eb68f9": "2026-10-30",
+  "668bd2484c0df5d7": "2026-10-30",
+  "fe834585141a65d9": "2026-10-30",
+  "5971af045461089b": "2026-10-30",
+  "c54c3cbc17fb3ede": "2026-10-30",
+  "f783c3895287f929": "2026-10-30",
+  "8a021602bfa2a354": "2026-10-30",
+  "0e627392931e98be": "2026-10-30",
+  "17dd9a823e7ede8e": "2026-10-30"
  },
  "price_alerted": {
   "2026-10-23": [
@@ -2873,6 +2898,34 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "16:41"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Earnings / results: Laurus Labs share price at record high after Q2 results 20\u206026, dividend announcement - Should you buy pharma stock? (+2 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "19:56"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Management change: [NSE filing] Appointment: Northern Arc Capital Limited has informed the Exchange regarding Appointment of Mr Anuradha Rao as Non- Executive Director of the company w.e.f. October 31, 2026. (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "19:56"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Earnings / results: Alivus Life Sciences ALIVUS Q2 FY2027 Earnings Call Recording",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "19:56"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Earnings / results: Restaurant Brands Asia Ltd (BOM:543248) (Q2 2027) Earnings Call Highlights: 20% Revenue Surge, ... (+3 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "19:56"
    }
   ]
  },
@@ -3204,12 +3257,17 @@
   "1f7566534f0d4517": "2026-10-30",
   "c5d24e2495b210c0": "2026-10-30",
   "7eb3bd1143a6d3f6": "2026-10-30",
-  "7004a5490e5fdf81": "2026-10-30"
+  "7004a5490e5fdf81": "2026-10-30",
+  "5743c5e84dd4bd06": "2026-10-30",
+  "41363c8fce338127": "2026-10-30",
+  "bd8a41a3e604a16c": "2026-10-30",
+  "8e23ab2470bea507": "2026-10-30",
+  "15b582e5b492cbe1": "2026-10-30"
  },
- "last_report": "2026-10-30T16:41",
+ "last_report": "2026-10-30T19:56",
  "filing_sources": {
-  "checked": "2026-10-30 16:40",
-  "NSE": "ok: 55 filings for 17 stocks",
+  "checked": "2026-10-30 19:56",
+  "NSE": "ok: 60 filings for 17 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
