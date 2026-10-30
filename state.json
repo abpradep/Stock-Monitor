@@ -1219,7 +1219,30 @@
   "2fe449360f2677c6": "2026-10-30",
   "75c84dc87eef56d2": "2026-10-30",
   "0100e1a262850029": "2026-10-30",
-  "e694a061ea9ade53": "2026-10-30"
+  "e694a061ea9ade53": "2026-10-30",
+  "632995f8d3a62bba": "2026-10-30",
+  "59c15ee7c8713a55": "2026-10-30",
+  "a0142f0b092a5da7": "2026-10-30",
+  "4e844f1ad3d79ec2": "2026-10-30",
+  "a6e2dc8f8ec068b8": "2026-10-30",
+  "239ad69929e3512a": "2026-10-30",
+  "e0ec1d1ea31e5a1f": "2026-10-30",
+  "b84b91e5511f9bdf": "2026-10-30",
+  "fc0d4be361fc8fb2": "2026-10-30",
+  "509e63e450c699de": "2026-10-30",
+  "6767f02f2e14b286": "2026-10-30",
+  "d2009ba6389e2f37": "2026-10-30",
+  "bc519cef3ec00aee": "2026-10-30",
+  "e8bf24d73e079705": "2026-10-30",
+  "226abfb400aef47f": "2026-10-30",
+  "c14983e73ae347fe": "2026-10-30",
+  "41a8d86c8c17f4be": "2026-10-30",
+  "6d2397c8ce8163bc": "2026-10-30",
+  "c5d24e2495b210c0": "2026-10-30",
+  "7eb3bd1143a6d3f6": "2026-10-30",
+  "7004a5490e5fdf81": "2026-10-30",
+  "82f8c802f7970522": "2026-10-30",
+  "a213606cf7152b8b": "2026-10-30"
  },
  "price_alerted": {
   "2026-10-23": [
@@ -1287,7 +1310,12 @@
    "KARBON:price",
    "LAURUSLABS:price",
    "NORTHARC:price",
-   "GREAVESCOT:volume"
+   "GREAVESCOT:volume",
+   "LAURUSLABS:volume",
+   "JMFINANCIL:price",
+   "PPLPHARMA:volume",
+   "CARBORUNIV:price",
+   "AARTIPHARM:price"
   ]
  },
  "events": {
@@ -2761,6 +2789,90 @@
     "impact": "Neutral",
     "importance": 5,
     "time": "13:53"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Earnings / results: Laurus Labs Q2 profit surges 126% to Rs 441 crore; revenue jumps 33% to Rs 2,206 crore (+2 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "16:40"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Earnings / results: Syngene Q2 FY27 Revenue Grows 13% Sequentially",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:40"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Earnings / results: Greaves Cotton Share Price Jumps 10% Despite 81% Fall in Q2 Profit: What Is Driving the Rally? (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:40"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Management change: Restaurant Brands Asia Elevates Group CFO Sumit Zaveri To India CEO",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:40"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Sharp price move: Broad-Based Technical Strength Lifts Piramal Pharma Ltd to 52-Week High of Rs 239.5",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "16:41"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Management change: Aarti Pharmalabs Appoints Vibha Thakkar as Chief Financial Officer (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:41"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "Earnings / results: Why Is KPIT Technologies (NSE:KPITTECH) Margin Expansion Outpacing Revenue Growth?",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:41"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Unusual volume: 4.8x 20-day avg (price +7.2%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:41"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Price -5.5% today at \u20b9107.78 (volume 1.0x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "16:41"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Unusual volume: 2.9x 20-day avg (price +3.5%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:41"
+   },
+   {
+    "symbol": "CARBORUNIV",
+    "event": "Price -5.1% today at \u20b91,030.30 (volume 0.7x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "16:41"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Price -5.9% today at \u20b9872.70 (volume 0.9x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "16:41"
    }
   ]
  },
@@ -3085,12 +3197,19 @@
   "df8b7c73c60b9464": "2026-10-30",
   "d6f404f642cf684c": "2026-10-30",
   "2fe449360f2677c6": "2026-10-30",
-  "0100e1a262850029": "2026-10-30"
+  "0100e1a262850029": "2026-10-30",
+  "a6e2dc8f8ec068b8": "2026-10-30",
+  "41a8d86c8c17f4be": "2026-10-30",
+  "4c41b96e077f902b": "2026-10-30",
+  "1f7566534f0d4517": "2026-10-30",
+  "c5d24e2495b210c0": "2026-10-30",
+  "7eb3bd1143a6d3f6": "2026-10-30",
+  "7004a5490e5fdf81": "2026-10-30"
  },
- "last_report": "2026-10-30T13:53",
+ "last_report": "2026-10-30T16:41",
  "filing_sources": {
-  "checked": "2026-10-30 13:53",
-  "NSE": "ok: 49 filings for 16 stocks",
+  "checked": "2026-10-30 16:40",
+  "NSE": "ok: 55 filings for 17 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
