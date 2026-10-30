@@ -1147,7 +1147,36 @@
   "68cbc06fb4f58555": "2026-10-30",
   "574a1bb3afcb8970": "2026-10-30",
   "f079de4a84372ee0": "2026-10-30",
-  "1403c3267529e481": "2026-10-30"
+  "1403c3267529e481": "2026-10-30",
+  "74e427bf64d4e66d": "2026-10-30",
+  "faa5186a9b80e047": "2026-10-30",
+  "841152d80c2e6c1b": "2026-10-30",
+  "5244e3c568976599": "2026-10-30",
+  "12761bac0025c726": "2026-10-30",
+  "55a363b0122dff16": "2026-10-30",
+  "a5f86ceb75e3b95c": "2026-10-30",
+  "b56b313d6ecd3809": "2026-10-30",
+  "630b4cf07f12c665": "2026-10-30",
+  "4b58a5e7ce668e02": "2026-10-30",
+  "09672c3d20d5affb": "2026-10-30",
+  "8767e4d66dd3d6a9": "2026-10-30",
+  "3307bc3b56201340": "2026-10-30",
+  "e7f7f8c682de5220": "2026-10-30",
+  "a5547fb75d447fa4": "2026-10-30",
+  "a2ac3ed35139a137": "2026-10-30",
+  "4b91c2060059405d": "2026-10-30",
+  "22c665e28747264e": "2026-10-30",
+  "ecbe9aa7786411b4": "2026-10-30",
+  "74838196445bda5c": "2026-10-30",
+  "ac557ae725aed017": "2026-10-30",
+  "51efe9b9fe874f72": "2026-10-30",
+  "55dd0db34729bf84": "2026-10-30",
+  "cce720bbd874c6d2": "2026-10-30",
+  "fb2d89abcc3da0bd": "2026-10-30",
+  "39e259db90293387": "2026-10-30",
+  "2e7a4160b23ad1a2": "2026-10-30",
+  "5bba5e7c3bf5bfa1": "2026-10-30",
+  "29ad1c7abb194732": "2026-10-30"
  },
  "price_alerted": {
   "2026-10-23": [
@@ -1207,7 +1236,13 @@
    "FDC:volume",
    "AARTIPHARM:price"
   ],
-  "2026-10-30": []
+  "2026-10-30": [
+   "SHIVALIK:price",
+   "ALIVUS:volume",
+   "GREAVESCOT:price",
+   "RBA:volume",
+   "KARBON:price"
+  ]
  },
  "events": {
   "2026-10-23": [
@@ -2491,6 +2526,104 @@
     "impact": "Bullish",
     "importance": 7,
     "time": "07:49"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Earnings / results: Laurus Labs hits 52-week high as strong Q2 results fuel buying (+2 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "10:45"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Earnings / results: Syngene posts 13% sequential revenue growth in Q2",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:45"
+   },
+   {
+    "symbol": "PRAJIND",
+    "event": "Earnings / results: Praj Industries Q2 Profit Up 20% to \u20b923.16 Cr; Income Rises (+4 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "10:45"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Earnings / results: Greaves Cotton Reports 44% Revenue Growth in Q2 FY27 as Core Businesses Expand",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:45"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Management change: Sumit Zaveri named Restaurant Brands Asia India CEO",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:45"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Sharp price move: Suzlon Energy Shares Crash 10%: Why JM Financial Turned Cautious While UBS Stays Bullish",
+    "impact": "Bearish",
+    "importance": 6,
+    "time": "10:45"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Earnings / results: Strong CDMO & healthcare performance lifts Piramal Pharma H1 revenue 23%",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:45"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "Earnings / results: KPIT Technologies Ltd (BOM:542651) (Q2 2027) Earnings Call Highlights: Off-Highway Surge and AI ... By GuruFocus (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:45"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Sharp price move: Sona BLW Precision Forgings (SONACOMS) Share Price Hits Fresh 52-Week High of Rs 885.35",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "10:45"
+   },
+   {
+    "symbol": "SHIVALIK",
+    "event": "Price -5.9% today at \u20b9296.60 (volume 0.4x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "10:45"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Unusual volume: 6.9x 20-day avg (price +1.8%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "10:45"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Price +14.4% today at \u20b9207.10 (volume 9.4x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "10:45"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Unusual volume: 3.5x 20-day avg (price -0.1%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "10:45"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Price -6.4% today at \u20b995.50 (volume 0.1x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "10:45"
    }
   ]
  },
@@ -2787,12 +2920,23 @@
   "a8afdd06c53444c1": "2026-10-30",
   "cd781beded6ec658": "2026-10-30",
   "7b99ad440986d3d7": "2026-10-30",
-  "ed2ca29a968c2c57": "2026-10-30"
+  "ed2ca29a968c2c57": "2026-10-30",
+  "74e427bf64d4e66d": "2026-10-30",
+  "12761bac0025c726": "2026-10-30",
+  "b56b313d6ecd3809": "2026-10-30",
+  "630b4cf07f12c665": "2026-10-30",
+  "4b58a5e7ce668e02": "2026-10-30",
+  "e7f7f8c682de5220": "2026-10-30",
+  "22c665e28747264e": "2026-10-30",
+  "74838196445bda5c": "2026-10-30",
+  "cce720bbd874c6d2": "2026-10-30",
+  "fb2d89abcc3da0bd": "2026-10-30",
+  "5bba5e7c3bf5bfa1": "2026-10-30"
  },
- "last_report": "2026-10-30T07:49",
+ "last_report": "2026-10-30T10:45",
  "filing_sources": {
-  "checked": "2026-10-30 07:48",
-  "NSE": "ok: 47 filings for 16 stocks",
+  "checked": "2026-10-30 10:45",
+  "NSE": "ok: 48 filings for 16 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
