@@ -1257,7 +1257,33 @@
   "d93d7ea25e5c6d4b": "2026-10-31",
   "e3b09c80ca88fc62": "2026-10-31",
   "b99ad3a0d665bcdd": "2026-10-31",
-  "30cf26f14bcbaf7b": "2026-10-31"
+  "30cf26f14bcbaf7b": "2026-10-31",
+  "7996817afd66a282": "2026-10-31",
+  "23ed92eaa78b0d74": "2026-10-31",
+  "8153862e57b4c25c": "2026-10-31",
+  "43bf808f97ab98b6": "2026-10-31",
+  "0a371992a83dd705": "2026-10-31",
+  "f0f97a55195946cb": "2026-10-31",
+  "e436fa40cc619c84": "2026-10-31",
+  "2276ee649d5dfbd8": "2026-10-31",
+  "76ccaef0aac54edd": "2026-10-31",
+  "ca9a0f05a8a9904f": "2026-10-31",
+  "45543e3a71776891": "2026-10-31",
+  "b68cc38d48fd5e46": "2026-10-31",
+  "19a78e6429e133a7": "2026-10-31",
+  "a344f05a9b5bad1e": "2026-10-31",
+  "ac72e03d33de134a": "2026-10-31",
+  "5c96c12a76a46e7f": "2026-10-31",
+  "f41013b2edbf3f5d": "2026-10-31",
+  "cf8880e8e7fe0724": "2026-10-31",
+  "18612c43e6f0cbb8": "2026-10-31",
+  "7baf4fcd3e32b86f": "2026-10-31",
+  "9f87168abc93dbfb": "2026-10-31",
+  "64cb53da8c9de571": "2026-10-31",
+  "57303f428d4b093d": "2026-10-31",
+  "1b434f7a046d42ba": "2026-10-31",
+  "725a0688f6db0d21": "2026-10-31",
+  "99e438a14afec1dc": "2026-10-31"
  },
  "price_alerted": {
   "2026-10-26": [
@@ -2859,6 +2885,20 @@
     "impact": "Bearish",
     "importance": 7,
     "time": "10:44"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "M&A / stake change: HDFC Mutual Fund stake in Piramal Pharma decreases",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:46"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Sharp price move: Broad-Based Technical Strength Lifts Sona BLW Precision Forgings Ltd to 52-Week High of Rs 888.65",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "13:46"
    }
   ]
  },
@@ -3233,11 +3273,15 @@
   "a318bd53a32afa69": "2026-10-31",
   "9b4a884b721cfee7": "2026-10-31",
   "d93d7ea25e5c6d4b": "2026-10-31",
-  "e3b09c80ca88fc62": "2026-10-31"
+  "e3b09c80ca88fc62": "2026-10-31",
+  "a0142f0b092a5da7": "2026-10-31",
+  "4a511229f4f5cb62": "2026-10-31",
+  "64cb53da8c9de571": "2026-10-31",
+  "99e438a14afec1dc": "2026-10-31"
  },
- "last_report": "2026-10-31T10:44",
+ "last_report": "2026-10-31T13:46",
  "filing_sources": {
-  "checked": "2026-10-31 10:44",
+  "checked": "2026-10-31 13:46",
   "NSE": "ok: 14 filings for 10 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
