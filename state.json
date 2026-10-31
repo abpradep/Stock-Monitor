@@ -1283,7 +1283,21 @@
   "57303f428d4b093d": "2026-10-31",
   "1b434f7a046d42ba": "2026-10-31",
   "725a0688f6db0d21": "2026-10-31",
-  "99e438a14afec1dc": "2026-10-31"
+  "99e438a14afec1dc": "2026-10-31",
+  "2e05931ff68c3d31": "2026-10-31",
+  "3bd7b3a571dd72a0": "2026-10-31",
+  "81135fb4b5b84b15": "2026-10-31",
+  "4bb7207fc1546903": "2026-10-31",
+  "f71439524f810863": "2026-10-31",
+  "db66775f1c5a34be": "2026-10-31",
+  "2cd9c7eda5a2cd81": "2026-10-31",
+  "f47ec20198f82e67": "2026-10-31",
+  "cc0ef83b80a8fc74": "2026-10-31",
+  "167c902a687a6574": "2026-10-31",
+  "d41d3511677cdd6f": "2026-10-31",
+  "b4fb43fdb489da5a": "2026-10-31",
+  "b6c64eaad7f2be83": "2026-10-31",
+  "1dd30dcfceb182b1": "2026-10-31"
  },
  "price_alerted": {
   "2026-10-26": [
@@ -2899,6 +2913,20 @@
     "impact": "Bullish",
     "importance": 6,
     "time": "13:46"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Management change: Sumit Zaveri appointed CEO of Burger King India",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:34"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Earnings / results: Piramal Pharma Q2FY27 Results: Profit turns positive, margins to rise in H2 (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:34"
    }
   ]
  },
@@ -3277,11 +3305,13 @@
   "a0142f0b092a5da7": "2026-10-31",
   "4a511229f4f5cb62": "2026-10-31",
   "64cb53da8c9de571": "2026-10-31",
-  "99e438a14afec1dc": "2026-10-31"
+  "99e438a14afec1dc": "2026-10-31",
+  "cc0ef83b80a8fc74": "2026-10-31",
+  "167c902a687a6574": "2026-10-31"
  },
- "last_report": "2026-10-31T13:46",
+ "last_report": "2026-10-31T16:34",
  "filing_sources": {
-  "checked": "2026-10-31 13:46",
+  "checked": "2026-10-31 16:34",
   "NSE": "ok: 14 filings for 10 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
