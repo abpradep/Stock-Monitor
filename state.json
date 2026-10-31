@@ -1297,7 +1297,43 @@
   "d41d3511677cdd6f": "2026-10-31",
   "b4fb43fdb489da5a": "2026-10-31",
   "b6c64eaad7f2be83": "2026-10-31",
-  "1dd30dcfceb182b1": "2026-10-31"
+  "1dd30dcfceb182b1": "2026-10-31",
+  "91fd0c513637bab5": "2026-10-31",
+  "fc32026b556cc0f8": "2026-10-31",
+  "0fa2982948d25eff": "2026-10-31",
+  "a780fb33fb49d180": "2026-10-31",
+  "8ead4789301f64f4": "2026-10-31",
+  "e91fcadbd8aa384a": "2026-10-31",
+  "c65dda6a1a3aff5a": "2026-10-31",
+  "49a270c28b9a4916": "2026-10-31",
+  "7ed23eb3f9bd1ae4": "2026-10-31",
+  "35c10c8592108f23": "2026-10-31",
+  "9f9deecd9e56fa28": "2026-10-31",
+  "33245bd07b4324eb": "2026-10-31",
+  "f3710ed667151a1c": "2026-10-31",
+  "7fdcc42033f801d4": "2026-10-31",
+  "dc9bb1c05febef93": "2026-10-31",
+  "40c5a66298373075": "2026-10-31",
+  "e41c460ac709dd69": "2026-10-31",
+  "4ebe87b5e82ed625": "2026-10-31",
+  "b99d4b6a5ab72a2a": "2026-10-31",
+  "19c3b05e55766833": "2026-10-31",
+  "fc276d5bf3017b3c": "2026-10-31",
+  "9cb1f35e910f884e": "2026-10-31",
+  "7168adbefede44a6": "2026-10-31",
+  "011b4a67286518cb": "2026-10-31",
+  "241e33396dac591c": "2026-10-31",
+  "87b19f89d3ed04e2": "2026-10-31",
+  "13b5b03955059ff1": "2026-10-31",
+  "01e94de247a17b5b": "2026-10-31",
+  "1fd0e48cf919946f": "2026-10-31",
+  "8e4a30ea0a03e80f": "2026-10-31",
+  "d835d20ed7b45785": "2026-10-31",
+  "16bc53ecd5c2b455": "2026-10-31",
+  "f776418fdc236980": "2026-10-31",
+  "0d61bef51668cad1": "2026-10-31",
+  "db0c01e4ce4360e2": "2026-10-31",
+  "08355c0e84f8f97d": "2026-10-31"
  },
  "price_alerted": {
   "2026-10-26": [
@@ -2927,6 +2963,20 @@
     "impact": "Bullish",
     "importance": 7,
     "time": "16:34"
+   },
+   {
+    "symbol": "INFOBEAN",
+    "event": "Earnings / results: InfoBeans Technologies Ltd (NSE:INFOBEAN) (Q2 2027) Earnings Call Highlights: 22% Constant ...",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "19:39"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "M&A / stake change: HDFC Mutual Fund reduces Piramal Pharma stake by 2.027%",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "19:39"
    }
   ]
  },
@@ -3307,12 +3357,14 @@
   "64cb53da8c9de571": "2026-10-31",
   "99e438a14afec1dc": "2026-10-31",
   "cc0ef83b80a8fc74": "2026-10-31",
-  "167c902a687a6574": "2026-10-31"
+  "167c902a687a6574": "2026-10-31",
+  "33245bd07b4324eb": "2026-10-31",
+  "16bc53ecd5c2b455": "2026-10-31"
  },
- "last_report": "2026-10-31T16:34",
+ "last_report": "2026-10-31T19:39",
  "filing_sources": {
-  "checked": "2026-10-31 16:34",
-  "NSE": "ok: 14 filings for 10 stocks",
+  "checked": "2026-10-31 19:38",
+  "NSE": "failed: HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=20)",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
