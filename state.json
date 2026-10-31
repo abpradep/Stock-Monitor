@@ -1232,7 +1232,32 @@
   "8df498b245000e44": "2026-10-31",
   "16dc3a6b15b021f0": "2026-10-31",
   "f6d1b7854c06d2d1": "2026-10-31",
-  "debda60daf98d0a6": "2026-10-31"
+  "debda60daf98d0a6": "2026-10-31",
+  "c85b655c49fdd934": "2026-10-31",
+  "f2b00dcc8c2836b1": "2026-10-31",
+  "18bd9eb78c0780c9": "2026-10-31",
+  "974ca036f74520b7": "2026-10-31",
+  "fd4fec6d5e413ad1": "2026-10-31",
+  "263e9c23fa6673ea": "2026-10-31",
+  "ac44bf073040a56c": "2026-10-31",
+  "91842b41dc3318aa": "2026-10-31",
+  "859a721e7e496cc7": "2026-10-31",
+  "77dd3e737d8d7790": "2026-10-31",
+  "5cac650f8609d033": "2026-10-31",
+  "1f2fc4220b5815e7": "2026-10-31",
+  "f2f44555c9fc60ec": "2026-10-31",
+  "1067532a79fe8ae9": "2026-10-31",
+  "7e93a9469200900f": "2026-10-31",
+  "8d4b2574deb5ee36": "2026-10-31",
+  "5a273cc65f7a9067": "2026-10-31",
+  "18aaa810226dcb44": "2026-10-31",
+  "a318bd53a32afa69": "2026-10-31",
+  "9b4a884b721cfee7": "2026-10-31",
+  "6a3825bdf704b5e4": "2026-10-31",
+  "d93d7ea25e5c6d4b": "2026-10-31",
+  "e3b09c80ca88fc62": "2026-10-31",
+  "b99ad3a0d665bcdd": "2026-10-31",
+  "30cf26f14bcbaf7b": "2026-10-31"
  },
  "price_alerted": {
   "2026-10-26": [
@@ -2806,6 +2831,34 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "07:50"
+   },
+   {
+    "symbol": "INFOBEAN",
+    "event": "Earnings / results: InfoBeans Q2FY27 Results: Net profit up 16%, revenue grows 28% YoY",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:44"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Management change: Restaurant Brands Asia names Sumit Zaveri as CEO of Burger King India (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:44"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Earnings / results: Aarti Pharmalabs Ltd (BOM:543748) (Q2 2027) Earnings Call Highlights: Record Revenue of Rs. ... (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:44"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "Earnings / results: KPIT Technologies Limited Just Missed Earnings - But Analysts Have Updated Their Models (+1 more stories)",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "10:44"
    }
   ]
  },
@@ -3169,11 +3222,22 @@
   "099a1bcb26624629": "2026-10-31",
   "b1ddba7b82b962a3": "2026-10-31",
   "8df498b245000e44": "2026-10-31",
-  "debda60daf98d0a6": "2026-10-31"
+  "debda60daf98d0a6": "2026-10-31",
+  "4e844f1ad3d79ec2": "2026-10-31",
+  "59c15ee7c8713a55": "2026-10-31",
+  "263e9c23fa6673ea": "2026-10-31",
+  "e3a47f32f90226fc": "2026-10-31",
+  "1b37d4bc3de6c0ca": "2026-10-31",
+  "1f2fc4220b5815e7": "2026-10-31",
+  "f2f44555c9fc60ec": "2026-10-31",
+  "a318bd53a32afa69": "2026-10-31",
+  "9b4a884b721cfee7": "2026-10-31",
+  "d93d7ea25e5c6d4b": "2026-10-31",
+  "e3b09c80ca88fc62": "2026-10-31"
  },
- "last_report": "2026-10-31T07:50",
+ "last_report": "2026-10-31T10:44",
  "filing_sources": {
-  "checked": "2026-10-31 07:50",
+  "checked": "2026-10-31 10:44",
   "NSE": "ok: 14 filings for 10 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
