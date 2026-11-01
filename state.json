@@ -1293,7 +1293,38 @@
   "113d4210d1cfda33": "2026-11-01",
   "c69ad2bc3b1bed6d": "2026-11-01",
   "0987969f734a910c": "2026-11-01",
-  "0037cb522a937591": "2026-11-01"
+  "0037cb522a937591": "2026-11-01",
+  "d496e36dade91449": "2026-11-01",
+  "3bfbf40556da876a": "2026-11-01",
+  "3e9600604e24af61": "2026-11-01",
+  "eb76eb0684c8399f": "2026-11-01",
+  "5803a5edb673bb29": "2026-11-01",
+  "701f00c03fb2a1b8": "2026-11-01",
+  "847805bf7fa9eee8": "2026-11-01",
+  "fd5297adebdac228": "2026-11-01",
+  "f5a882cc7b642b60": "2026-11-01",
+  "9de2342866b3bba0": "2026-11-01",
+  "e286a32832362834": "2026-11-01",
+  "d46072ece9ee408f": "2026-11-01",
+  "771944129007c13e": "2026-11-01",
+  "d03ae2c8ffb16b91": "2026-11-01",
+  "6e3dfcd9fa6a51c0": "2026-11-01",
+  "21b65036e3aaf9f0": "2026-11-01",
+  "d8617c64b2da14cc": "2026-11-01",
+  "ca59913815e1caeb": "2026-11-01",
+  "9e9219dc1d07df59": "2026-11-01",
+  "959037397b3cf60a": "2026-11-01",
+  "e1d56578e29f4fa3": "2026-11-01",
+  "59d655bcefbcb80b": "2026-11-01",
+  "cde6470783e621d0": "2026-11-01",
+  "07d5f61439240b6d": "2026-11-01",
+  "cfec2347c64ec0a2": "2026-11-01",
+  "9df12c23e9a218cf": "2026-11-01",
+  "88e99b8eaa785f04": "2026-11-01",
+  "7ef236aa8e179ad0": "2026-11-01",
+  "f21dfaf899c186a7": "2026-11-01",
+  "a45fd7bdabfcc11a": "2026-11-01",
+  "21dfbc6f0a2cfcd1": "2026-11-01"
  },
  "price_alerted": {
   "2026-10-26": [
@@ -2902,6 +2933,27 @@
     "impact": "Bullish",
     "importance": 7,
     "time": "10:48"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Sharp price move: Broader markets outperform; Ather Energy, Piramal Pharma, Laurus Labs surge over 20% each",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "13:48"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "M&A / stake change: Greaves Cotton takes full control of Excel Controllinkage as acquisition completes",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:48"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Corporate action: Concord Biotech Bonus Issue 2026: Company fixes record date for 1:1 bonus shares",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "13:48"
    }
   ]
  },
@@ -3268,11 +3320,14 @@
   "ffa57ee879b171de": "2026-11-01",
   "bcaffcc9349284b3": "2026-11-01",
   "c69ad2bc3b1bed6d": "2026-11-01",
-  "0037cb522a937591": "2026-11-01"
+  "0037cb522a937591": "2026-11-01",
+  "d496e36dade91449": "2026-11-01",
+  "9de2342866b3bba0": "2026-11-01",
+  "cfec2347c64ec0a2": "2026-11-01"
  },
- "last_report": "2026-11-01T10:48",
+ "last_report": "2026-11-01T13:48",
  "filing_sources": {
-  "checked": "2026-11-01 10:48",
+  "checked": "2026-11-01 13:48",
   "NSE": "ok: 5 filings for 5 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
