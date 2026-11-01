@@ -1278,7 +1278,22 @@
   "ee6672b2c9f83307": "2026-11-01",
   "49baf53add29412f": "2026-11-01",
   "60bcc38756b26911": "2026-11-01",
-  "65b0839f40f8e378": "2026-11-01"
+  "65b0839f40f8e378": "2026-11-01",
+  "5486cd986e5d4884": "2026-11-01",
+  "7a69d39ce3611f6f": "2026-11-01",
+  "d056fe57c898f088": "2026-11-01",
+  "38eca64527880495": "2026-11-01",
+  "ffa57ee879b171de": "2026-11-01",
+  "f205ad848458d013": "2026-11-01",
+  "bcaffcc9349284b3": "2026-11-01",
+  "a64756a198b69a96": "2026-11-01",
+  "41d0e649d37cf1f2": "2026-11-01",
+  "cf197906f8acd8af": "2026-11-01",
+  "2905b5a51a2507bd": "2026-11-01",
+  "113d4210d1cfda33": "2026-11-01",
+  "c69ad2bc3b1bed6d": "2026-11-01",
+  "0987969f734a910c": "2026-11-01",
+  "0037cb522a937591": "2026-11-01"
  },
  "price_alerted": {
   "2026-10-26": [
@@ -2859,6 +2874,34 @@
     "impact": "Neutral",
     "importance": 8,
     "time": "07:51"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Earnings / results: Alivus Life Sciences Limited Just Recorded A 6.2% Revenue Beat: Here's What Analysts Think",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:48"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Earnings / results: \u20b9106 - That's What Analysts Think Restaurant Brands Asia Limited (NSE:RBA) Is Worth After These Results",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:48"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Earnings / results: Aarti Pharmalabs Ltd Reports Strong Quarterly Growth, Upgrades Financial Outlook",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:48"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Management change: Sona Comstar expects annual investments to rise from Rs 500-600 cr as business grows: MD",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:48"
    }
   ]
  },
@@ -3221,11 +3264,15 @@
   "16bc53ecd5c2b455": "2026-10-31",
   "b4d744f8d3c2025f": "2026-11-01",
   "739dc050d05851fa": "2026-11-01",
-  "561faf3e087602ec": "2026-11-01"
+  "561faf3e087602ec": "2026-11-01",
+  "ffa57ee879b171de": "2026-11-01",
+  "bcaffcc9349284b3": "2026-11-01",
+  "c69ad2bc3b1bed6d": "2026-11-01",
+  "0037cb522a937591": "2026-11-01"
  },
- "last_report": "2026-11-01T07:51",
+ "last_report": "2026-11-01T10:48",
  "filing_sources": {
-  "checked": "2026-11-01 07:51",
+  "checked": "2026-11-01 10:48",
   "NSE": "ok: 5 filings for 5 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
