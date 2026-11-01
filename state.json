@@ -1324,7 +1324,26 @@
   "7ef236aa8e179ad0": "2026-11-01",
   "f21dfaf899c186a7": "2026-11-01",
   "a45fd7bdabfcc11a": "2026-11-01",
-  "21dfbc6f0a2cfcd1": "2026-11-01"
+  "21dfbc6f0a2cfcd1": "2026-11-01",
+  "e264295356de4168": "2026-11-01",
+  "16a4f47954d9d2f2": "2026-11-01",
+  "f2acf5bc495ea255": "2026-11-01",
+  "6df192ba29e70eac": "2026-11-01",
+  "db7ee4d5d2b70da0": "2026-11-01",
+  "060ec19fbfbed41b": "2026-11-01",
+  "fac7a8a551a6eaef": "2026-11-01",
+  "2f63df3bf819b438": "2026-11-01",
+  "1a33cc24d5159de0": "2026-11-01",
+  "904f9eb7a519f158": "2026-11-01",
+  "0ac9f125706d46d0": "2026-11-01",
+  "c6538acb6b930316": "2026-11-01",
+  "eee47b7ed25b0899": "2026-11-01",
+  "926b8f61c7a4bcb0": "2026-11-01",
+  "87c1e8f55c8670cc": "2026-11-01",
+  "71dc6f69751a4088": "2026-11-01",
+  "1a9619acc2d0359f": "2026-11-01",
+  "18e1c8af63b943d3": "2026-11-01",
+  "71ccbd254c117d7a": "2026-11-01"
  },
  "price_alerted": {
   "2026-10-26": [
@@ -2954,6 +2973,13 @@
     "impact": "Bullish",
     "importance": 5,
     "time": "13:48"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Earnings / results: Sona BLW Q1 revenue rises 54% to \u20b91,310 crore, unveils Robotics vertical",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:38"
    }
   ]
  },
@@ -3323,11 +3349,12 @@
   "0037cb522a937591": "2026-11-01",
   "d496e36dade91449": "2026-11-01",
   "9de2342866b3bba0": "2026-11-01",
-  "cfec2347c64ec0a2": "2026-11-01"
+  "cfec2347c64ec0a2": "2026-11-01",
+  "71ccbd254c117d7a": "2026-11-01"
  },
- "last_report": "2026-11-01T13:48",
+ "last_report": "2026-11-01T16:38",
  "filing_sources": {
-  "checked": "2026-11-01 13:48",
+  "checked": "2026-11-01 16:38",
   "NSE": "ok: 5 filings for 5 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
