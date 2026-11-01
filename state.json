@@ -1343,7 +1343,22 @@
   "71dc6f69751a4088": "2026-11-01",
   "1a9619acc2d0359f": "2026-11-01",
   "18e1c8af63b943d3": "2026-11-01",
-  "71ccbd254c117d7a": "2026-11-01"
+  "71ccbd254c117d7a": "2026-11-01",
+  "4bb092ae2d10276a": "2026-11-01",
+  "100810cf3f670cc8": "2026-11-01",
+  "e772bb2ba88e9f34": "2026-11-01",
+  "ccec9c9bec28e571": "2026-11-01",
+  "0fee9e3ea10e00d6": "2026-11-01",
+  "cd31783b7650bc6b": "2026-11-01",
+  "c4712b10766eeb84": "2026-11-01",
+  "1b4108bf20077574": "2026-11-01",
+  "d54fa4bbc539a1ca": "2026-11-01",
+  "0a7fc3570d2a7896": "2026-11-01",
+  "f2e10ef90a45c9f4": "2026-11-01",
+  "6513cf5a9f5c93ff": "2026-11-01",
+  "ce966cf1cdb89708": "2026-11-01",
+  "3e8a54570db2a89f": "2026-11-01",
+  "0d54a03d2da82628": "2026-11-01"
  },
  "price_alerted": {
   "2026-10-26": [
@@ -2980,6 +2995,20 @@
     "impact": "Bullish",
     "importance": 7,
     "time": "16:38"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Order win: Syngene expects stronger H2 on order book, Zoetis supplies; retains outlook",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "19:41"
+   },
+   {
+    "symbol": "PENIND",
+    "event": "Large deal / pledge: Pennar Industries allotment of warrants and promoter pledge",
+    "impact": "Bearish",
+    "importance": 6,
+    "time": "19:41"
    }
   ]
  },
@@ -3350,11 +3379,13 @@
   "d496e36dade91449": "2026-11-01",
   "9de2342866b3bba0": "2026-11-01",
   "cfec2347c64ec0a2": "2026-11-01",
-  "71ccbd254c117d7a": "2026-11-01"
+  "71ccbd254c117d7a": "2026-11-01",
+  "0fee9e3ea10e00d6": "2026-11-01",
+  "1b4108bf20077574": "2026-11-01"
  },
- "last_report": "2026-11-01T16:38",
+ "last_report": "2026-11-01T19:41",
  "filing_sources": {
-  "checked": "2026-11-01 16:38",
+  "checked": "2026-11-01 19:41",
   "NSE": "ok: 5 filings for 5 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
