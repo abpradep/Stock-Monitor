@@ -1315,7 +1315,30 @@
   "f96d236705f4f225": "2026-11-02",
   "611a05b81a67357e": "2026-11-02",
   "fccb71de6d545d63": "2026-11-02",
-  "6850c69e10f838ab": "2026-11-02"
+  "6850c69e10f838ab": "2026-11-02",
+  "cbd539a10b3415d9": "2026-11-02",
+  "f3691750c42217af": "2026-11-02",
+  "b81963c168673f80": "2026-11-02",
+  "5b92949b0688474f": "2026-11-02",
+  "a8b8694779096a8d": "2026-11-02",
+  "e2cb810fbe33cda9": "2026-11-02",
+  "3da5fabe69552911": "2026-11-02",
+  "5a4876997d39e783": "2026-11-02",
+  "4ecdffb9ad33951f": "2026-11-02",
+  "3e681be2f3e45fb3": "2026-11-02",
+  "d5dc95e201ea05a2": "2026-11-02",
+  "1455cbd878d85839": "2026-11-02",
+  "da6d965e3e979fc9": "2026-11-02",
+  "3835cc2702845764": "2026-11-02",
+  "561a1eb6abb48aa6": "2026-11-02",
+  "9e036530dfb43325": "2026-11-02",
+  "54346f8ae9b3e8e8": "2026-11-02",
+  "a9ff26f44e688545": "2026-11-02",
+  "2e4e95370687cfee": "2026-11-02",
+  "b352e2515642992e": "2026-11-02",
+  "dc91bc1069e6f1c0": "2026-11-02",
+  "f40399e98e437098": "2026-11-02",
+  "dda949bbb5fe42c4": "2026-11-02"
  },
  "price_alerted": {
   "2026-10-26": [
@@ -1375,7 +1398,11 @@
    "CARBORUNIV:price",
    "AARTIPHARM:price"
   ],
-  "2026-11-02": []
+  "2026-11-02": [
+   "INFOBEAN:price",
+   "PRAJIND:price",
+   "EUREKAFORB:price"
+  ]
  },
  "events": {
   "2026-10-26": [
@@ -2967,6 +2994,27 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "07:54"
+   },
+   {
+    "symbol": "INFOBEAN",
+    "event": "Price +6.7% today at \u20b9146.50 (volume 0.6x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:59"
+   },
+   {
+    "symbol": "PRAJIND",
+    "event": "Price +9.4% today at \u20b9264.50 (volume 2.6x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "10:59"
+   },
+   {
+    "symbol": "EUREKAFORB",
+    "event": "Price +7.3% today at \u20b9335.85 (volume 0.6x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:59"
    }
   ]
  },
@@ -3339,9 +3387,9 @@
   "819a10f3e35e092a": "2026-11-02",
   "6850c69e10f838ab": "2026-11-02"
  },
- "last_report": "2026-11-02T07:54",
+ "last_report": "2026-11-02T10:59",
  "filing_sources": {
-  "checked": "2026-11-02 07:54",
+  "checked": "2026-11-02 10:59",
   "NSE": "ok: 0 filings for 0 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
