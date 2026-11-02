@@ -1,71 +1,5 @@
 {
  "seen": {
-  "7eb09deb2bf89445": "2026-10-25",
-  "dc98243aa9ad6f49": "2026-10-25",
-  "6a6b173177d2dc81": "2026-10-25",
-  "c8be959669e50c10": "2026-10-25",
-  "4d41a35058f49e65": "2026-10-25",
-  "8c6ec5536f047bee": "2026-10-25",
-  "5aa2b069a28b7fc1": "2026-10-25",
-  "9c5f29ba849ec6d6": "2026-10-25",
-  "732581f5baa48057": "2026-10-25",
-  "cb4202d81acacc0e": "2026-10-25",
-  "4f7cbd1990e8f096": "2026-10-25",
-  "6b030684de8877f8": "2026-10-25",
-  "8d999b459ba23406": "2026-10-25",
-  "2f0600756db35aa0": "2026-10-25",
-  "f3ccb81af4783ef6": "2026-10-25",
-  "1e61913205e9002b": "2026-10-25",
-  "d1a8a6c670c1342a": "2026-10-25",
-  "6c25328b0863eb71": "2026-10-25",
-  "6d98ba194b6166e9": "2026-10-25",
-  "9ca791a7efd97968": "2026-10-25",
-  "58d9c17c7aa0a3f6": "2026-10-25",
-  "750c172addc40d5f": "2026-10-25",
-  "d1cfb27bf290a02b": "2026-10-25",
-  "ae426c91305c08d0": "2026-10-25",
-  "872dab68fdf8b439": "2026-10-25",
-  "f6be411d3d3b4847": "2026-10-25",
-  "0621b76c885a22c2": "2026-10-25",
-  "191d87af4987ad6e": "2026-10-25",
-  "450a85e0d4f1f7bb": "2026-10-25",
-  "fd6e0d08d636e65a": "2026-10-25",
-  "b6a19265feb9b242": "2026-10-25",
-  "147125398d7b3a10": "2026-10-25",
-  "a297776dc6b4b6db": "2026-10-25",
-  "97461ad6ac667371": "2026-10-25",
-  "57933cc98cb3cefc": "2026-10-25",
-  "1960849e8dffd7af": "2026-10-25",
-  "62fa4507b73a0851": "2026-10-25",
-  "4b43993214fd5f05": "2026-10-25",
-  "d6aea23a9ef08d8e": "2026-10-25",
-  "c8d8922f907d2ed2": "2026-10-25",
-  "a67e2d0cb5394486": "2026-10-25",
-  "e9ae5e939065f3ca": "2026-10-25",
-  "96c1adbd2e11df68": "2026-10-25",
-  "551d48f1b9235b64": "2026-10-25",
-  "1af88b1e164996c3": "2026-10-25",
-  "34d741cfc4485c65": "2026-10-25",
-  "9ab47036c518d8e9": "2026-10-25",
-  "2315952ba1d9fb4a": "2026-10-25",
-  "64965f3553c579c5": "2026-10-25",
-  "7aa290be6ce483af": "2026-10-25",
-  "8716ff67d3bab495": "2026-10-25",
-  "4d10d7f92f21335f": "2026-10-25",
-  "22277ba40268e52c": "2026-10-25",
-  "f680751309abf5ad": "2026-10-25",
-  "90dfeb568b0a8e41": "2026-10-25",
-  "8e41ddbc92e1424f": "2026-10-25",
-  "59f8a0300b161eb9": "2026-10-25",
-  "6237c0e31122d8ec": "2026-10-25",
-  "508d0392926eca42": "2026-10-25",
-  "11116356c0c57a4a": "2026-10-25",
-  "55ab58767bfec231": "2026-10-25",
-  "56b2edaa5fe1ea6e": "2026-10-25",
-  "76dd5df05f8f6854": "2026-10-25",
-  "3a5ddfab5341ae85": "2026-10-25",
-  "b6df9c2bf26fea86": "2026-10-25",
-  "826c43cc4a25a118": "2026-10-25",
   "98f0ba1dea39d589": "2026-10-26",
   "fc27f5909be3ef9f": "2026-10-26",
   "d6fd76179bdf815c": "2026-10-26",
@@ -1358,7 +1292,30 @@
   "6513cf5a9f5c93ff": "2026-11-01",
   "ce966cf1cdb89708": "2026-11-01",
   "3e8a54570db2a89f": "2026-11-01",
-  "0d54a03d2da82628": "2026-11-01"
+  "0d54a03d2da82628": "2026-11-01",
+  "049efcd7099c11d2": "2026-11-02",
+  "f244c99ef1548d08": "2026-11-02",
+  "96ca533143e4c2ab": "2026-11-02",
+  "f33dec44bfcff157": "2026-11-02",
+  "3951f77e34e23e31": "2026-11-02",
+  "a468aa3b20d706c3": "2026-11-02",
+  "e957d46704446536": "2026-11-02",
+  "819a10f3e35e092a": "2026-11-02",
+  "385de0e05a57bfc6": "2026-11-02",
+  "cfa0018f99a78603": "2026-11-02",
+  "fecab20d23735037": "2026-11-02",
+  "bf8ca3ee30e51b9b": "2026-11-02",
+  "add062d60942c57a": "2026-11-02",
+  "4d282b12d3b45c60": "2026-11-02",
+  "6e1fbf08cf9fb6cd": "2026-11-02",
+  "4bf2c22e59ce485e": "2026-11-02",
+  "750f9213c5d9e8c4": "2026-11-02",
+  "875819a881bf6bf8": "2026-11-02",
+  "ce4ced709e6a2b8f": "2026-11-02",
+  "f96d236705f4f225": "2026-11-02",
+  "611a05b81a67357e": "2026-11-02",
+  "fccb71de6d545d63": "2026-11-02",
+  "6850c69e10f838ab": "2026-11-02"
  },
  "price_alerted": {
   "2026-10-26": [
@@ -1417,32 +1374,10 @@
    "PPLPHARMA:volume",
    "CARBORUNIV:price",
    "AARTIPHARM:price"
-  ]
+  ],
+  "2026-11-02": []
  },
  "events": {
-  "2026-10-25": [
-   {
-    "symbol": "CYIENT",
-    "event": "Corporate action: Dividend Stocks This Week: Chennai Petroleum, L&T Tech, Cyient, Nippon Life AMC, Among 15 Companies In Focus (+1 more stories)",
-    "impact": "Bullish",
-    "importance": 5,
-    "time": "07:31"
-   },
-   {
-    "symbol": "AARTIPHARM",
-    "event": "Earnings / results: Aarti Pharmalabs Limited (AARTIPHARM.BO) Q2 24/25 earnings call transcript",
-    "impact": "Neutral",
-    "importance": 7,
-    "time": "07:31"
-   },
-   {
-    "symbol": "CYIENT",
-    "event": "Corporate action: Crisil, Hexaware Tech, Cyient, Shriram Finance: Dividend stocks, stock splits, buybacks in focus this week; check list",
-    "impact": "Bullish",
-    "importance": 5,
-    "time": "16:27"
-   }
-  ],
   "2026-10-26": [
    {
     "symbol": "CYIENT",
@@ -3010,16 +2945,34 @@
     "importance": 6,
     "time": "19:41"
    }
+  ],
+  "2026-11-02": [
+   {
+    "symbol": "SYNGENE",
+    "event": "Earnings / results: Syngene stock looks to stronger second half as revenue outlook holds",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "07:54"
+   },
+   {
+    "symbol": "BAJAJHCARE",
+    "event": "Earnings / results: Bajaj Healthcare guides 10-15% FY27 revenue growth on API strength",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "07:54"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "M&A / stake change: Natco Pharma stock: Promoters acquire 2.21 million rights shares",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "07:54"
+   }
   ]
  },
  "bse_codes": {},
  "filings_primed": true,
  "reported_news": {
-  "8c6ec5536f047bee": "2026-10-25",
-  "d1a8a6c670c1342a": "2026-10-25",
-  "6c25328b0863eb71": "2026-10-25",
-  "ae426c91305c08d0": "2026-10-25",
-  "8e41ddbc92e1424f": "2026-10-25",
   "213940dd8f085be6": "2026-10-26",
   "7825586c3e98ce82": "2026-10-26",
   "c2d5e5721b20739e": "2026-10-26",
@@ -3381,12 +3334,15 @@
   "cfec2347c64ec0a2": "2026-11-01",
   "71ccbd254c117d7a": "2026-11-01",
   "0fee9e3ea10e00d6": "2026-11-01",
-  "1b4108bf20077574": "2026-11-01"
+  "1b4108bf20077574": "2026-11-01",
+  "3951f77e34e23e31": "2026-11-02",
+  "819a10f3e35e092a": "2026-11-02",
+  "6850c69e10f838ab": "2026-11-02"
  },
- "last_report": "2026-11-01T19:41",
+ "last_report": "2026-11-02T07:54",
  "filing_sources": {
-  "checked": "2026-11-01 19:41",
-  "NSE": "ok: 5 filings for 5 stocks",
+  "checked": "2026-11-02 07:54",
+  "NSE": "ok: 0 filings for 0 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
