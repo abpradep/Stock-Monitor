@@ -1387,7 +1387,39 @@
   "6da25da6980ea067": "2026-11-02",
   "703edf9281d5685f": "2026-11-02",
   "5f743a776d95d511": "2026-11-02",
-  "69f6a4cd720b117f": "2026-11-02"
+  "69f6a4cd720b117f": "2026-11-02",
+  "bfa7c4234dfe7b1d": "2026-11-02",
+  "6c3861960c8921f6": "2026-11-02",
+  "0e6d38a982b7786c": "2026-11-02",
+  "84dd18a16229f0ea": "2026-11-02",
+  "7aba8c9db4db87c2": "2026-11-02",
+  "363c5862664916f5": "2026-11-02",
+  "9329e7953e3ef753": "2026-11-02",
+  "a84d801f75305727": "2026-11-02",
+  "68d29f599de3adfe": "2026-11-02",
+  "a325a322627bf909": "2026-11-02",
+  "03f2f612f5a6755b": "2026-11-02",
+  "e6fe8aed15965ab0": "2026-11-02",
+  "c3b88fed3b5a6384": "2026-11-02",
+  "1328ce1864aab170": "2026-11-02",
+  "bad5ebcecf387b36": "2026-11-02",
+  "11c136244f6928dc": "2026-11-02",
+  "66aa7ff8c7ab8105": "2026-11-02",
+  "761ef212bef1d3bb": "2026-11-02",
+  "195071ce3d875312": "2026-11-02",
+  "09faacdcfb76fee5": "2026-11-02",
+  "991126c1f6a8226d": "2026-11-02",
+  "b73aac41198c87d1": "2026-11-02",
+  "8d0ee1c1063dc7f7": "2026-11-02",
+  "69d3514b12e90d6d": "2026-11-02",
+  "dafa8f8cee4becfa": "2026-11-02",
+  "ee466ae0e544d152": "2026-11-02",
+  "71827f3318e2f169": "2026-11-02",
+  "e3b8fe4366104743": "2026-11-02",
+  "e413bad0f163abb6": "2026-11-02",
+  "fe0372fd2193fad0": "2026-11-02",
+  "96a522da1ecfd1dd": "2026-11-02",
+  "376a63693ff8b5bf": "2026-11-02"
  },
  "price_alerted": {
   "2026-10-26": [
@@ -1456,7 +1488,10 @@
    "ALIVUS:volume",
    "KARBON:price",
    "CONCORDBIO:price",
-   "EUREKAFORB:volume"
+   "EUREKAFORB:volume",
+   "PDSL:price",
+   "KARBON:volume",
+   "CONCORDBIO:volume"
   ]
  },
  "events": {
@@ -3154,6 +3189,48 @@
     "impact": "Neutral",
     "importance": 5,
     "time": "14:10"
+   },
+   {
+    "symbol": "PRAJIND",
+    "event": "Analyst action: Buy Praj Industries Ltd for the Target Rs 353 by Prabhudas Liladhar Ltd",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "16:53"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Earnings / results: Reliance Industries sees upside towards \u20b91,300-1,325 after earnings-led rally: JM Financial\u2019s Rahul Sharma",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:53"
+   },
+   {
+    "symbol": "EUREKAFORB",
+    "event": "Earnings / results: Eureka Forbes shares jump 12% after Q2 results; here's what drove the rally - CNBC TV18 (+5 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "16:53"
+   },
+   {
+    "symbol": "PDSL",
+    "event": "Price +5.8% today at \u20b9349.70 (volume 1.5x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "16:54"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Unusual volume: 7.0x 20-day avg (price +6.3%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:54"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Unusual volume: 3.7x 20-day avg (price -6.6%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:54"
    }
   ]
  },
@@ -3537,12 +3614,17 @@
   "8205bd254692efca": "2026-11-02",
   "cf6f68a2a8c524bc": "2026-11-02",
   "6da25da6980ea067": "2026-11-02",
-  "703edf9281d5685f": "2026-11-02"
+  "703edf9281d5685f": "2026-11-02",
+  "68d29f599de3adfe": "2026-11-02",
+  "1328ce1864aab170": "2026-11-02",
+  "71827f3318e2f169": "2026-11-02",
+  "e3b8fe4366104743": "2026-11-02",
+  "e413bad0f163abb6": "2026-11-02"
  },
- "last_report": "2026-11-02T14:10",
+ "last_report": "2026-11-02T16:54",
  "filing_sources": {
-  "checked": "2026-11-02 14:09",
-  "NSE": "ok: 7 filings for 3 stocks",
+  "checked": "2026-11-02 16:53",
+  "NSE": "ok: 8 filings for 4 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
