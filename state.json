@@ -1396,7 +1396,38 @@
   "24c6817958bed16e": "2026-11-03",
   "a727cdf128f48efe": "2026-11-03",
   "d2a2beed618032c6": "2026-11-03",
-  "b99816eb97c72832": "2026-11-03"
+  "b99816eb97c72832": "2026-11-03",
+  "600f496b01793341": "2026-11-03",
+  "3233defb54281067": "2026-11-03",
+  "239be3b02b0604d6": "2026-11-03",
+  "fb01b1d7f3bcfe30": "2026-11-03",
+  "64e50909125e776c": "2026-11-03",
+  "7bae583787cf1800": "2026-11-03",
+  "d0ca4cf03afb5305": "2026-11-03",
+  "96b7392def0fbd0f": "2026-11-03",
+  "7f16c7f42c7f03f6": "2026-11-03",
+  "38bf40831de8eec8": "2026-11-03",
+  "62b197cb10207165": "2026-11-03",
+  "e9684d8f1bc82e54": "2026-11-03",
+  "57830634d92692ab": "2026-11-03",
+  "bf6b6d531e0912d1": "2026-11-03",
+  "7027433c8e112e65": "2026-11-03",
+  "2eae9bbbab03a49e": "2026-11-03",
+  "3b76367950902b3d": "2026-11-03",
+  "04fce80e147da257": "2026-11-03",
+  "2f9d8b9aefe39efd": "2026-11-03",
+  "040ba6693206ddc8": "2026-11-03",
+  "cd6f7fa31b1a8564": "2026-11-03",
+  "a442587cac87bbc1": "2026-11-03",
+  "0681a97a4edfd515": "2026-11-03",
+  "65ed14917511508f": "2026-11-03",
+  "a81a19d57e339755": "2026-11-03",
+  "2794cf38e5e0374f": "2026-11-03",
+  "d55941770c2cc8d9": "2026-11-03",
+  "9f37dbf277b08909": "2026-11-03",
+  "87192be0872696e5": "2026-11-03",
+  "d5ba51e78526af00": "2026-11-03",
+  "86171cca3676b2e9": "2026-11-03"
  },
  "price_alerted": {
   "2026-10-27": [
@@ -1469,7 +1500,12 @@
    "PDSL:price",
    "RAYMOND:price",
    "CARBORUNIV:price",
-   "AARTIPHARM:price"
+   "AARTIPHARM:price",
+   "PRAJIND:price",
+   "ARMANFIN:price",
+   "CARBORUNIV:volume",
+   "KARBON:price",
+   "CONCORDBIO:price"
   ]
  },
  "events": {
@@ -3223,6 +3259,76 @@
     "impact": "Bullish (price action)",
     "importance": 6,
     "time": "10:56"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Earnings / results: Laurus Labs Limited Q2 Revenue Rises 33% to \u20b92,206 Crore (+2 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "14:00"
+   },
+   {
+    "symbol": "JAYBEE",
+    "event": "Price move: Jay Bee Laminations Limited IPO GMP Today, Expected Listing Gain & Price Band",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "14:00"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Management change: Burger King India Names Sumit Zaveri As CEO \u2013 Business",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "14:00"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Price move: Entero Healthcare Solutions Limited IPO GMP Today, Expected Listing Gain & Price Band",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "14:00"
+   },
+   {
+    "symbol": "CARBORUNIV",
+    "event": "Earnings / results: Carborundum Universal Q2 2027 Earnings Call Is Live",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "14:00"
+   },
+   {
+    "symbol": "PRAJIND",
+    "event": "Price -5.1% today at \u20b9257.23 (volume 1.7x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "14:01"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Price +5.7% today at \u20b91,498.30 (volume 1.1x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:01"
+   },
+   {
+    "symbol": "CARBORUNIV",
+    "event": "Unusual volume: 4.6x 20-day avg (price +9.3%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "14:01"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Price +13.9% today at \u20b9105.00 (volume 0.3x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "14:01"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Price +6.3% today at \u20b91,236.30 (volume 1.6x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:01"
    }
   ]
  },
@@ -3617,12 +3723,19 @@
   "a6e0863a717a0c83": "2026-11-03",
   "95d2f513367d2dc4": "2026-11-03",
   "94f23423858bb00f": "2026-11-03",
-  "47c0b3a9efcb30d7": "2026-11-03"
+  "47c0b3a9efcb30d7": "2026-11-03",
+  "3233defb54281067": "2026-11-03",
+  "239be3b02b0604d6": "2026-11-03",
+  "d0ca4cf03afb5305": "2026-11-03",
+  "7f16c7f42c7f03f6": "2026-11-03",
+  "62b197cb10207165": "2026-11-03",
+  "65ed14917511508f": "2026-11-03",
+  "a81a19d57e339755": "2026-11-03"
  },
- "last_report": "2026-11-03T10:56",
+ "last_report": "2026-11-03T14:01",
  "filing_sources": {
-  "checked": "2026-11-03 10:56",
-  "NSE": "ok: 20 filings for 9 stocks",
+  "checked": "2026-11-03 14:00",
+  "NSE": "ok: 23 filings for 11 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
