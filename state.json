@@ -1427,7 +1427,39 @@
   "9f37dbf277b08909": "2026-11-03",
   "87192be0872696e5": "2026-11-03",
   "d5ba51e78526af00": "2026-11-03",
-  "86171cca3676b2e9": "2026-11-03"
+  "86171cca3676b2e9": "2026-11-03",
+  "76d4dfc1e4046752": "2026-11-03",
+  "e16f2798901b389c": "2026-11-03",
+  "99159d7ec52e7aeb": "2026-11-03",
+  "dcbe90f672df10e1": "2026-11-03",
+  "83e188a6492f0b79": "2026-11-03",
+  "96b668c5fa1ef996": "2026-11-03",
+  "2cf455ed9a9c0f9f": "2026-11-03",
+  "d69630b161560734": "2026-11-03",
+  "dbe970da9bc813f2": "2026-11-03",
+  "cb839ff040761b29": "2026-11-03",
+  "3e8e538d57399025": "2026-11-03",
+  "01737d045bfcb920": "2026-11-03",
+  "5818c77e9c303c0c": "2026-11-03",
+  "69e5d13512362f04": "2026-11-03",
+  "a3b55c38dcc71943": "2026-11-03",
+  "bce25da68e6198b0": "2026-11-03",
+  "5519d87303dc5fda": "2026-11-03",
+  "b7926142c44b6d26": "2026-11-03",
+  "04d67b25bf4a33f5": "2026-11-03",
+  "2cd19d4f6fca65a5": "2026-11-03",
+  "c0491c31e6945ed2": "2026-11-03",
+  "7aa2245eee3eaea4": "2026-11-03",
+  "2f453312cc34e8f7": "2026-11-03",
+  "3695df9ec2c18de9": "2026-11-03",
+  "50fef3855fede08c": "2026-11-03",
+  "810ba03911d78de2": "2026-11-03",
+  "8748775e665926b7": "2026-11-03",
+  "d5378356129b4ad4": "2026-11-03",
+  "98a67746490d432b": "2026-11-03",
+  "7be52b77fe42a397": "2026-11-03",
+  "04935d9778cf6323": "2026-11-03",
+  "0d6ecc6ff67b5323": "2026-11-03"
  },
  "price_alerted": {
   "2026-10-27": [
@@ -1505,7 +1537,15 @@
    "ARMANFIN:price",
    "CARBORUNIV:volume",
    "KARBON:price",
-   "CONCORDBIO:price"
+   "CONCORDBIO:price",
+   "SHIVALIK:volume",
+   "INFOBEAN:price",
+   "ALIVUS:volume",
+   "RBA:volume",
+   "BIRLANU:price",
+   "UNIPARTS:price",
+   "KARBON:volume",
+   "CONCORDBIO:volume"
   ]
  },
  "events": {
@@ -3329,6 +3369,76 @@
     "impact": "Bullish (price action)",
     "importance": 6,
     "time": "14:01"
+   },
+   {
+    "symbol": "CARBORUNIV",
+    "event": "Earnings / results: Earnings call transcript: Carborundum Universal Q2 2026 misses estimates",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "16:53"
+   },
+   {
+    "symbol": "EUREKAFORB",
+    "event": "Earnings / results: Eureka Forbes Q2 FY27 slides: record margins amid 15% revenue growth By Investing.com (+3 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "16:53"
+   },
+   {
+    "symbol": "SHIVALIK",
+    "event": "Unusual volume: 3.7x 20-day avg (price +2.4%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:53"
+   },
+   {
+    "symbol": "INFOBEAN",
+    "event": "Price +7.4% today at \u20b9165.98 (volume 1.5x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "16:53"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Unusual volume: 2.9x 20-day avg (price +2.3%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:53"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Unusual volume: 2.6x 20-day avg (price +2.1%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:53"
+   },
+   {
+    "symbol": "BIRLANU",
+    "event": "Price -8.7% today at \u20b91,155.20 (volume 5.9x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 7,
+    "time": "16:53"
+   },
+   {
+    "symbol": "UNIPARTS",
+    "event": "Price +6.1% today at \u20b9749.15 (volume 1.9x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "16:53"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Unusual volume: 5.3x 20-day avg (price +6.3%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:53"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Unusual volume: 2.7x 20-day avg (price +5.5%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:53"
    }
   ]
  },
@@ -3730,12 +3840,19 @@
   "7f16c7f42c7f03f6": "2026-11-03",
   "62b197cb10207165": "2026-11-03",
   "65ed14917511508f": "2026-11-03",
-  "a81a19d57e339755": "2026-11-03"
+  "a81a19d57e339755": "2026-11-03",
+  "dcbe90f672df10e1": "2026-11-03",
+  "bce25da68e6198b0": "2026-11-03",
+  "7aa2245eee3eaea4": "2026-11-03",
+  "b100a4cfcae6fa40": "2026-11-03",
+  "98a67746490d432b": "2026-11-03",
+  "7be52b77fe42a397": "2026-11-03",
+  "04935d9778cf6323": "2026-11-03"
  },
- "last_report": "2026-11-03T14:01",
+ "last_report": "2026-11-03T16:53",
  "filing_sources": {
-  "checked": "2026-11-03 14:00",
-  "NSE": "ok: 23 filings for 11 stocks",
+  "checked": "2026-11-03 16:53",
+  "NSE": "ok: 26 filings for 14 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
