@@ -1369,7 +1369,34 @@
   "507c1db7aefea70a": "2026-11-03",
   "6643abc9523ee953": "2026-11-03",
   "d499a0c5dba6747b": "2026-11-03",
-  "dab4fb65cd7b89ca": "2026-11-03"
+  "dab4fb65cd7b89ca": "2026-11-03",
+  "1c20865ca246e08a": "2026-11-03",
+  "7d3a6256f094aaaf": "2026-11-03",
+  "33972483af7d8cc4": "2026-11-03",
+  "ba979a08c56a1f26": "2026-11-03",
+  "2d4beb751444cae5": "2026-11-03",
+  "ddfdcc12222b2571": "2026-11-03",
+  "559c95fa972b4ce8": "2026-11-03",
+  "23f172097553fbe2": "2026-11-03",
+  "baa122abeb2c9e26": "2026-11-03",
+  "922c20359f04280a": "2026-11-03",
+  "61265b01623b1fda": "2026-11-03",
+  "f9aedf278661b444": "2026-11-03",
+  "d1be1513233ce859": "2026-11-03",
+  "94f23423858bb00f": "2026-11-03",
+  "d245ec90c1125950": "2026-11-03",
+  "30f6dddf9b93a470": "2026-11-03",
+  "266d29561ac6bc33": "2026-11-03",
+  "47c0b3a9efcb30d7": "2026-11-03",
+  "0270aa40426991dd": "2026-11-03",
+  "262414957b4f6aa5": "2026-11-03",
+  "fbb22b29baa57a47": "2026-11-03",
+  "87b95e9f643d2ecd": "2026-11-03",
+  "fb9e11c1163d76fb": "2026-11-03",
+  "24c6817958bed16e": "2026-11-03",
+  "a727cdf128f48efe": "2026-11-03",
+  "d2a2beed618032c6": "2026-11-03",
+  "b99816eb97c72832": "2026-11-03"
  },
  "price_alerted": {
   "2026-10-27": [
@@ -1437,7 +1464,13 @@
    "KARBON:volume",
    "CONCORDBIO:volume"
   ],
-  "2026-11-03": []
+  "2026-11-03": [
+   "ALIVUS:price",
+   "PDSL:price",
+   "RAYMOND:price",
+   "CARBORUNIV:price",
+   "AARTIPHARM:price"
+  ]
  },
  "events": {
   "2026-10-27": [
@@ -3141,6 +3174,55 @@
     "impact": "Bullish",
     "importance": 7,
     "time": "07:52"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Management change: Burger King India Appoints Sumit Zaveri As CEO Of India Business",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:56"
+   },
+   {
+    "symbol": "BIRLANU",
+    "event": "Earnings / results: BirlaNu\u2019s net loss widens 34% to \u20b957.37 crore in Q2 FY27",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "10:56"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Price +5.3% today at \u20b91,490.70 (volume 1.4x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:56"
+   },
+   {
+    "symbol": "PDSL",
+    "event": "Price +5.5% today at \u20b9348.70 (volume 0.3x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:56"
+   },
+   {
+    "symbol": "RAYMOND",
+    "event": "Price +6.8% today at \u20b91,175.00 (volume 0.4x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:56"
+   },
+   {
+    "symbol": "CARBORUNIV",
+    "event": "Price +7.5% today at \u20b91,107.40 (volume 3.7x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:56"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Price +6.2% today at \u20b9927.15 (volume 0.3x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:56"
    }
   ]
  },
@@ -3533,11 +3615,13 @@
   "47f5d4fec8b2970f": "2026-11-03",
   "9bd82adae0062b2d": "2026-11-03",
   "a6e0863a717a0c83": "2026-11-03",
-  "95d2f513367d2dc4": "2026-11-03"
+  "95d2f513367d2dc4": "2026-11-03",
+  "94f23423858bb00f": "2026-11-03",
+  "47c0b3a9efcb30d7": "2026-11-03"
  },
- "last_report": "2026-11-03T07:52",
+ "last_report": "2026-11-03T10:56",
  "filing_sources": {
-  "checked": "2026-11-03 07:52",
+  "checked": "2026-11-03 10:56",
   "NSE": "ok: 20 filings for 9 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
