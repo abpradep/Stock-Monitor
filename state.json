@@ -1477,7 +1477,54 @@
   "cefe3840e7caa317": "2026-11-04",
   "64321dfe1c07b6d4": "2026-11-04",
   "f46079ec2a968549": "2026-11-04",
-  "69ca509d33ee3795": "2026-11-04"
+  "69ca509d33ee3795": "2026-11-04",
+  "e9dd89e842226277": "2026-11-04",
+  "b852f2e25ba97fbc": "2026-11-04",
+  "4f37ab5df946031d": "2026-11-04",
+  "b527c4d4a16b5486": "2026-11-04",
+  "f551f8dba0443b88": "2026-11-04",
+  "e772595e89f1892b": "2026-11-04",
+  "0214031d89e6c6e8": "2026-11-04",
+  "bf631c04618e4f07": "2026-11-04",
+  "f6b73c4130869471": "2026-11-04",
+  "ec3728dd3a3c9dda": "2026-11-04",
+  "717d9d7d4a98cb35": "2026-11-04",
+  "557ba54a03d09f1d": "2026-11-04",
+  "5e2c83585738077c": "2026-11-04",
+  "a69b0273c3642cb9": "2026-11-04",
+  "77b40819fd06805e": "2026-11-04",
+  "69af8adfdcc5ba2a": "2026-11-04",
+  "3ac105dc0aa2300a": "2026-11-04",
+  "7c2c74a35652529d": "2026-11-04",
+  "4ac26ced71fffd92": "2026-11-04",
+  "82740eecd519951e": "2026-11-04",
+  "b2d3c6c51a1173b5": "2026-11-04",
+  "1095c69509156e6f": "2026-11-04",
+  "7fa6dd2353b52133": "2026-11-04",
+  "c7936d118c01413a": "2026-11-04",
+  "6b9ca3ffca923845": "2026-11-04",
+  "88ba2dd61054acfc": "2026-11-04",
+  "4c3071bbdc6f16c1": "2026-11-04",
+  "7e742688986c11a6": "2026-11-04",
+  "fa813d3318790f65": "2026-11-04",
+  "01887f1b08666b36": "2026-11-04",
+  "139fd64076b45346": "2026-11-04",
+  "28add59b791a8093": "2026-11-04",
+  "f615143f27f53d3b": "2026-11-04",
+  "2bbedafe0caea64c": "2026-11-04",
+  "bd4fc870cb0aadd8": "2026-11-04",
+  "6c6537a46b6f6f32": "2026-11-04",
+  "e409a313aef75844": "2026-11-04",
+  "9cf974ebbfc3a434": "2026-11-04",
+  "00c79418fc791cc2": "2026-11-04",
+  "a52e407ac750be93": "2026-11-04",
+  "e69d2e3222b321c4": "2026-11-04",
+  "bd6105a82c395c11": "2026-11-04",
+  "e0847c10e1e065a1": "2026-11-04",
+  "5e5031d9ed915693": "2026-11-04",
+  "4de3d2c8da46ee8e": "2026-11-04",
+  "198b548c32b117a5": "2026-11-04",
+  "7fba74312c633b91": "2026-11-04"
  },
  "price_alerted": {
   "2026-10-28": [
@@ -1564,7 +1611,11 @@
    "ARMANFIN:volume",
    "ENTERO:price",
    "KARBON:price",
-   "CONCORDBIO:price"
+   "CONCORDBIO:price",
+   "NORTHARC:volume",
+   "PDSL:volume",
+   "DENTA:price",
+   "KARBON:volume"
   ]
  },
  "events": {
@@ -3500,6 +3551,90 @@
     "impact": "Bullish (price action)",
     "importance": 6,
     "time": "14:02"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Sharp price move: Laurus Labs - 12 BSE 500 stocks defy market trend, rally up to 65% in 3 months",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "17:02"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Earnings / results: Northern Arc Capital Q2 Results: Total Income Rises 39%, Net Profit Jumps 41% to \u20b9129 Crore",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "17:02"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Earnings / results: [NSE filing] Press Release: Arman Financial Services Limited has informed the Exchange regarding a press release dated November 04, 2026, titled \"Press Release on Q2 FY 2026-27\". (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "17:02"
+   },
+   {
+    "symbol": "FDC",
+    "event": "Regulatory / legal: [NSE filing] General Updates: Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015.",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "17:02"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Fund raising: Natco Pharma promoter V.C. Nannapaneni pledges 8.5 lakh shares for rights issue",
+    "impact": "Bearish",
+    "importance": 6,
+    "time": "17:02"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Earnings / results: Aarti Pharmalabs Q2 FY27 Earnings Call Key Highlights (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "17:02"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Sharp price move: Concord Biotech Ltd Surges 7.02% to Day's High of Rs 661.9 \u2014 Outperforms Sector by 6.83 Percentage Points",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "17:02"
+   },
+   {
+    "symbol": "EUREKAFORB",
+    "event": "Analyst action: Buy Eureka Forbes; target of Rs 450: Emkay Global Financial",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "17:02"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Unusual volume: 3.2x 20-day avg (price +6.3%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "17:02"
+   },
+   {
+    "symbol": "PDSL",
+    "event": "Unusual volume: 2.7x 20-day avg (price +3.6%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "17:02"
+   },
+   {
+    "symbol": "DENTA",
+    "event": "Price +6.2% today at \u20b9240.29 (volume 1.6x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "17:02"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Unusual volume: 4.1x 20-day avg (price +1.0%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "17:02"
    }
   ]
  },
@@ -3908,12 +4043,22 @@
   "6f5ba0383ec27cd2": "2026-11-04",
   "392ed8e881b17e71": "2026-11-04",
   "04424d76295c22d1": "2026-11-04",
-  "c56da730c9c69e1a": "2026-11-04"
+  "c56da730c9c69e1a": "2026-11-04",
+  "e9dd89e842226277": "2026-11-04",
+  "5e2c83585738077c": "2026-11-04",
+  "a69b0273c3642cb9": "2026-11-04",
+  "3ac105dc0aa2300a": "2026-11-04",
+  "88ba2dd61054acfc": "2026-11-04",
+  "bd4fc870cb0aadd8": "2026-11-04",
+  "00c79418fc791cc2": "2026-11-04",
+  "a52e407ac750be93": "2026-11-04",
+  "e0847c10e1e065a1": "2026-11-04",
+  "5e5031d9ed915693": "2026-11-04"
  },
- "last_report": "2026-11-04T14:02",
+ "last_report": "2026-11-04T17:02",
  "filing_sources": {
-  "checked": "2026-11-04 14:02",
-  "NSE": "ok: 24 filings for 14 stocks",
+  "checked": "2026-11-04 17:01",
+  "NSE": "ok: 30 filings for 19 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
