@@ -1448,7 +1448,36 @@
   "da8a6f83c45b2bbe": "2026-11-04",
   "846f944bb4336dc4": "2026-11-04",
   "2b411451626bc073": "2026-11-04",
-  "3bbb5f2ccbbce285": "2026-11-04"
+  "3bbb5f2ccbbce285": "2026-11-04",
+  "b3e72c76220fef93": "2026-11-04",
+  "b427a533cb2c5771": "2026-11-04",
+  "2f1c61acaf75411e": "2026-11-04",
+  "c3cc107aeb373c8c": "2026-11-04",
+  "54bf12d257c5744e": "2026-11-04",
+  "7eb09deb2bf89445": "2026-11-04",
+  "ef7974d49cdbdc3f": "2026-11-04",
+  "9eee1bf520a09028": "2026-11-04",
+  "a7232ca81d6c4833": "2026-11-04",
+  "dd1df7676800959c": "2026-11-04",
+  "6f5ba0383ec27cd2": "2026-11-04",
+  "814305ad8e6ab5b3": "2026-11-04",
+  "3a9cbed23ce5dbcf": "2026-11-04",
+  "6439e34dfbc0d6c6": "2026-11-04",
+  "392ed8e881b17e71": "2026-11-04",
+  "436e5a23ca4d6b3f": "2026-11-04",
+  "38ca9ce6eeab6eff": "2026-11-04",
+  "42e6bef4b48768e2": "2026-11-04",
+  "04424d76295c22d1": "2026-11-04",
+  "57c10d123d795812": "2026-11-04",
+  "2b80dba2615ba0e8": "2026-11-04",
+  "b2c19a7076f794ad": "2026-11-04",
+  "9086de3796f58c8d": "2026-11-04",
+  "c56da730c9c69e1a": "2026-11-04",
+  "01ffd15911614f06": "2026-11-04",
+  "cefe3840e7caa317": "2026-11-04",
+  "64321dfe1c07b6d4": "2026-11-04",
+  "f46079ec2a968549": "2026-11-04",
+  "69ca509d33ee3795": "2026-11-04"
  },
  "price_alerted": {
   "2026-10-28": [
@@ -1529,7 +1558,13 @@
   "2026-11-04": [
    "ARMANFIN:price",
    "BIRLANU:price",
-   "UNIPARTS:price"
+   "UNIPARTS:price",
+   "NORTHARC:price",
+   "ALIVUS:price",
+   "ARMANFIN:volume",
+   "ENTERO:price",
+   "KARBON:price",
+   "CONCORDBIO:price"
   ]
  },
  "events": {
@@ -3395,6 +3430,76 @@
     "impact": "Bullish (price action)",
     "importance": 6,
     "time": "10:58"
+   },
+   {
+    "symbol": "INFOBEAN",
+    "event": "Analyst action: InfoBeans Technologies Upgraded to Hold as Technicals Improve and Financials Strengthen (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "14:02"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Earnings / results: [NSE filing] Outcome of Board Meeting: Arman Financial Services Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "14:02"
+   },
+   {
+    "symbol": "BIRLANU",
+    "event": "Earnings / results: BirlaNu Ltd Reports Sharp Decline in Quarterly Performance Amid Negative Financial Trend",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "14:02"
+   },
+   {
+    "symbol": "CARBORUNIV",
+    "event": "Analyst action: Accumulate Carborundum Universal; target of Rs 1178: Prabhudas Lilladher",
+    "impact": "Neutral",
+    "importance": 6,
+    "time": "14:02"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Price +6.0% today at \u20b9276.50 (volume 2.8x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:02"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Price +5.0% today at \u20b91,520.00 (volume 2.2x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:02"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Unusual volume: 5.4x 20-day avg (price +8.8%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "14:02"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Price +5.6% today at \u20b91,660.00 (volume 0.9x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:02"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Price +7.4% today at \u20b9102.00 (volume 5.0x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:02"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Price +7.0% today at \u20b9656.80 (volume 1.0x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:02"
    }
   ]
  },
@@ -3797,12 +3902,18 @@
   "3055660f2295f363": "2026-11-04",
   "ecd25c13dfc0021c": "2026-11-04",
   "709db1883592e3f5": "2026-11-04",
-  "200e361f2cc3747b": "2026-11-04"
+  "200e361f2cc3747b": "2026-11-04",
+  "a7232ca81d6c4833": "2026-11-04",
+  "dd1df7676800959c": "2026-11-04",
+  "6f5ba0383ec27cd2": "2026-11-04",
+  "392ed8e881b17e71": "2026-11-04",
+  "04424d76295c22d1": "2026-11-04",
+  "c56da730c9c69e1a": "2026-11-04"
  },
- "last_report": "2026-11-04T10:58",
+ "last_report": "2026-11-04T14:02",
  "filing_sources": {
-  "checked": "2026-11-04 10:58",
-  "NSE": "ok: 22 filings for 13 stocks",
+  "checked": "2026-11-04 14:02",
+  "NSE": "ok: 24 filings for 14 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
