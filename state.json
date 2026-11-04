@@ -1414,7 +1414,41 @@
   "1b153968b3776361": "2026-11-04",
   "098de71f6ce45c3c": "2026-11-04",
   "b550fde2f03a1801": "2026-11-04",
-  "ecd25c13dfc0021c": "2026-11-04"
+  "ecd25c13dfc0021c": "2026-11-04",
+  "d745870d58513d6a": "2026-11-04",
+  "5e0777d90702e712": "2026-11-04",
+  "1b60e75e6b103c21": "2026-11-04",
+  "31da62e5e2c6804c": "2026-11-04",
+  "05117a52efc667c4": "2026-11-04",
+  "5a3dbc771fd4b57e": "2026-11-04",
+  "f7c785194c209f72": "2026-11-04",
+  "709db1883592e3f5": "2026-11-04",
+  "73e110f05d853b9b": "2026-11-04",
+  "a78c1e717ea3d22b": "2026-11-04",
+  "defd1ba41f98e6d6": "2026-11-04",
+  "99feb7372c69d2f2": "2026-11-04",
+  "5c26c69a0300248e": "2026-11-04",
+  "200e361f2cc3747b": "2026-11-04",
+  "a3195a3fa08fa414": "2026-11-04",
+  "ebc1152318dabca6": "2026-11-04",
+  "dc263b2f2f55a81b": "2026-11-04",
+  "c991f7f47972a531": "2026-11-04",
+  "1fca68fdde28a93c": "2026-11-04",
+  "9ab92f45aec77abe": "2026-11-04",
+  "406bc0994e62ee57": "2026-11-04",
+  "b30d3c774da54ba2": "2026-11-04",
+  "23274257beca6cbe": "2026-11-04",
+  "6b5ed599a457fee4": "2026-11-04",
+  "99bed8af52c046b2": "2026-11-04",
+  "f0ff54bbcc6d18e1": "2026-11-04",
+  "7d671948a32cdbd7": "2026-11-04",
+  "8b8412b1b1422315": "2026-11-04",
+  "440eb1ddafaf6601": "2026-11-04",
+  "d8352b5738fd80d7": "2026-11-04",
+  "da8a6f83c45b2bbe": "2026-11-04",
+  "846f944bb4336dc4": "2026-11-04",
+  "2b411451626bc073": "2026-11-04",
+  "3bbb5f2ccbbce285": "2026-11-04"
  },
  "price_alerted": {
   "2026-10-28": [
@@ -1492,7 +1526,11 @@
    "CONCORDBIO:volume",
    "BIRLANU:volume"
   ],
-  "2026-11-04": []
+  "2026-11-04": [
+   "ARMANFIN:price",
+   "BIRLANU:price",
+   "UNIPARTS:price"
+  ]
  },
  "events": {
   "2026-10-28": [
@@ -3322,6 +3360,41 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "07:50"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Earnings / results: Northern Arc Q2 Profit Jumps 41% to \u20b9129 Cr on Strong Income",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:58"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Earnings / results: Alivus Life Sciences Ltd (BOM:543322) (Q2 2027) Earnings Call Highlights: Margin Surge, CDMO ...",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:58"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Price +7.8% today at \u20b91,536.80 (volume 0.5x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:58"
+   },
+   {
+    "symbol": "BIRLANU",
+    "event": "Price -8.4% today at \u20b91,160.00 (volume 0.7x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 7,
+    "time": "10:58"
+   },
+   {
+    "symbol": "UNIPARTS",
+    "event": "Price +6.5% today at \u20b9752.45 (volume 0.6x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:58"
    }
   ]
  },
@@ -3722,11 +3795,13 @@
   "ee0cd0c499fc3b61": "2026-11-04",
   "4fd02bc1afab58e2": "2026-11-04",
   "3055660f2295f363": "2026-11-04",
-  "ecd25c13dfc0021c": "2026-11-04"
+  "ecd25c13dfc0021c": "2026-11-04",
+  "709db1883592e3f5": "2026-11-04",
+  "200e361f2cc3747b": "2026-11-04"
  },
- "last_report": "2026-11-04T07:50",
+ "last_report": "2026-11-04T10:58",
  "filing_sources": {
-  "checked": "2026-11-04 07:50",
+  "checked": "2026-11-04 10:58",
   "NSE": "ok: 22 filings for 13 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
