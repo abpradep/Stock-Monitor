@@ -1466,7 +1466,48 @@
   "5a27eb28f58da832": "2026-11-05",
   "c470dc9a10d08ef8": "2026-11-05",
   "d85ac65bb2081f17": "2026-11-05",
-  "afe95865967f7e63": "2026-11-05"
+  "afe95865967f7e63": "2026-11-05",
+  "f2198e3ad5218238": "2026-11-05",
+  "1ab3768e4ed265ac": "2026-11-05",
+  "a6636f03e905ac74": "2026-11-05",
+  "65addbed65d6d447": "2026-11-05",
+  "950fc88a126728bd": "2026-11-05",
+  "e1d6e930e40a9eec": "2026-11-05",
+  "e35e00014f380d4b": "2026-11-05",
+  "2115f72ebeb5b301": "2026-11-05",
+  "9db65ff467810301": "2026-11-05",
+  "2e4a8cd797739dda": "2026-11-05",
+  "c3b905aed1652267": "2026-11-05",
+  "3952ab262f0e6059": "2026-11-05",
+  "555411ebb4dfc27a": "2026-11-05",
+  "05d27f9430419f41": "2026-11-05",
+  "231da4805db72ec7": "2026-11-05",
+  "761828db390d385f": "2026-11-05",
+  "2f36c9d415173477": "2026-11-05",
+  "4166f8046d9dd286": "2026-11-05",
+  "e6440df0dbad4a31": "2026-11-05",
+  "2558acda1869d4e8": "2026-11-05",
+  "623e91a91ba2dace": "2026-11-05",
+  "7043bea489368d90": "2026-11-05",
+  "70cf1212cb558413": "2026-11-05",
+  "c4b54ccac8efce79": "2026-11-05",
+  "ba7e7633566726e2": "2026-11-05",
+  "1f678a704763d92a": "2026-11-05",
+  "41f293ac5d4997f2": "2026-11-05",
+  "b188edbf3c2fd85a": "2026-11-05",
+  "95d4b747f9e498c3": "2026-11-05",
+  "94de193f4ffe851d": "2026-11-05",
+  "b878ecc6e3674595": "2026-11-05",
+  "d4e797526570a5cf": "2026-11-05",
+  "e05e286e4639f6db": "2026-11-05",
+  "2e8ee6663f796656": "2026-11-05",
+  "f1177675677b1418": "2026-11-05",
+  "d6d1a7c55cedbd3c": "2026-11-05",
+  "2cce1a7d8a07630b": "2026-11-05",
+  "022c652d1490120a": "2026-11-05",
+  "c46e176f3a4d85b0": "2026-11-05",
+  "6368f886e3e1d737": "2026-11-05",
+  "405dd8af36825bda": "2026-11-05"
  },
  "price_alerted": {
   "2026-10-29": [
@@ -1558,7 +1599,10 @@
    "PDSL:volume",
    "ENTERO:volume",
    "KARBON:volume",
-   "KPITTECH:price"
+   "KPITTECH:price",
+   "INFOBEAN:price",
+   "RBA:price",
+   "UNIPARTS:price"
   ]
  },
  "events": {
@@ -3564,6 +3608,76 @@
     "impact": "Bullish (price action)",
     "importance": 6,
     "time": "14:04"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Management change: Northern Arc Capital Posts Record Profit: Why CEO Says It Won't Need Fresh Capital For 2.5 Years",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:56"
+   },
+   {
+    "symbol": "PDSL",
+    "event": "Earnings / results: PDS Limited (NSE:PDSL) Q2 FY27 Results: Revenue, EBITDA, PAT and Dividend",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:56"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Earnings / results: Greaves Electric Mobility cuts two-wheeler EBITDA loss 70% (+1 more stories)",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "16:56"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Earnings / results: Arman Financial Q2 profit rises sixfold as impairment falls (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:56"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Earnings / results: JM Financial Q2FY27 profit falls 11% despite fourfold banking gain (+5 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "16:56"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "M&A / stake change: 3P Managers Ups Entero Healthcare Stake to 5.13%",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:56"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Sharp price move: Coforge, Nykaa, Sona BLW, Gland Pharma: Check midcap and smallcap stocks at 52-week highs (+2 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:56"
+   },
+   {
+    "symbol": "INFOBEAN",
+    "event": "Price +5.0% today at \u20b9168.14 (volume 0.9x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "16:56"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Price +5.2% today at \u20b994.27 (volume 5.1x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "16:56"
+   },
+   {
+    "symbol": "UNIPARTS",
+    "event": "Price -5.6% today at \u20b9717.15 (volume 4.0x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "16:56"
    }
   ]
  },
@@ -3976,12 +4090,22 @@
   "f7b5415fd03555c5": "2026-11-05",
   "535bec4ce0b00c3a": "2026-11-05",
   "2ad44a3f72eff3a1": "2026-11-05",
-  "400c6ec2b41e273b": "2026-11-05"
+  "400c6ec2b41e273b": "2026-11-05",
+  "a6636f03e905ac74": "2026-11-05",
+  "c3b905aed1652267": "2026-11-05",
+  "3952ab262f0e6059": "2026-11-05",
+  "05d27f9430419f41": "2026-11-05",
+  "231da4805db72ec7": "2026-11-05",
+  "2558acda1869d4e8": "2026-11-05",
+  "b878ecc6e3674595": "2026-11-05",
+  "2cce1a7d8a07630b": "2026-11-05",
+  "022c652d1490120a": "2026-11-05",
+  "405dd8af36825bda": "2026-11-05"
  },
- "last_report": "2026-11-05T14:04",
+ "last_report": "2026-11-05T16:56",
  "filing_sources": {
-  "checked": "2026-11-05 14:04",
-  "NSE": "ok: 34 filings for 14 stocks",
+  "checked": "2026-11-05 16:56",
+  "NSE": "ok: 35 filings for 14 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
