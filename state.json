@@ -1397,7 +1397,35 @@
   "4bb2a624187a56e7": "2026-11-05",
   "d171486a2b12b78c": "2026-11-05",
   "31fbc19eb74f8490": "2026-11-05",
-  "96a01a6c4e518c26": "2026-11-05"
+  "96a01a6c4e518c26": "2026-11-05",
+  "0454981f0b095ee6": "2026-11-05",
+  "f99721ccddbea984": "2026-11-05",
+  "455246902735a5e1": "2026-11-05",
+  "bd5b06d8116a01dd": "2026-11-05",
+  "58b0fa6faf9ae808": "2026-11-05",
+  "a476c7fb993fc6ed": "2026-11-05",
+  "348467d65934e21e": "2026-11-05",
+  "f52a1525eda9d85b": "2026-11-05",
+  "bf0740816c68f6e2": "2026-11-05",
+  "17cb4415ba391f53": "2026-11-05",
+  "02029d1a6091c213": "2026-11-05",
+  "5b0660250233f792": "2026-11-05",
+  "965855eb7d1dac74": "2026-11-05",
+  "539834598c8a261f": "2026-11-05",
+  "611259a6c2f92d1a": "2026-11-05",
+  "54f809b4fad60683": "2026-11-05",
+  "05caf275ac4df5a8": "2026-11-05",
+  "8e96513890ff8c7a": "2026-11-05",
+  "b1dc76ef66778e5a": "2026-11-05",
+  "3492637671421549": "2026-11-05",
+  "b22472844807d1b7": "2026-11-05",
+  "c7d13c0a46a0a5f9": "2026-11-05",
+  "b957dfb6d782d0ad": "2026-11-05",
+  "22d90d717b3c10ad": "2026-11-05",
+  "f731c4d8b7fc9f00": "2026-11-05",
+  "d2de0d0b9bf70e7b": "2026-11-05",
+  "9dded99ce1d0484a": "2026-11-05",
+  "43a7c8a14f7a6262": "2026-11-05"
  },
  "price_alerted": {
   "2026-10-29": [
@@ -1476,7 +1504,17 @@
    "DENTA:price",
    "KARBON:volume"
   ],
-  "2026-11-05": []
+  "2026-11-05": [
+   "NORTHARC:price",
+   "PDSL:price",
+   "RBA:volume",
+   "ARMANFIN:price",
+   "JMFINANCIL:volume",
+   "BIRLANU:price",
+   "VOEPL:price",
+   "ENTERO:price",
+   "CONCORDBIO:price"
+  ]
  },
  "events": {
   "2026-10-29": [
@@ -3306,6 +3344,118 @@
     "impact": "Bullish",
     "importance": 6,
     "time": "07:59"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Price move: Northern Arc banks regained share as funding cost held 8.8% (+2 more stories)",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "10:59"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Sharp price move: Broad-Based Technical Strength Lifts Alivus Life Sciences Ltd to 52-Week High of Rs 1532.95",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "10:59"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Sharp price move: Restaurant Brands Asia Ltd Surges 7.04% to Day's High of Rs 95.15 \u2014 Outperforms Sector by 4.02 Percentage Points",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "10:59"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Earnings / results: JM Financial Q2 FY27: profit \u20b9240 crore, shares fall 2.8%",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "10:59"
+   },
+   {
+    "symbol": "FDC",
+    "event": "Order win: FDC Limited receives \u20b920.71 crore tax refund order",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "10:59"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Earnings / results: Entero Healthcare Presents Q2 FY27 Results",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:59"
+   },
+   {
+    "symbol": "EUREKAFORB",
+    "event": "Earnings / results: Eureka Forbes Ltd (BOM:543482) (Q2 2027) Earnings Call Highlights: Record Profit, 15% Revenue ...",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:59"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Price +7.8% today at \u20b9281.35 (volume 0.8x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:59"
+   },
+   {
+    "symbol": "PDSL",
+    "event": "Price +18.8% today at \u20b9412.05 (volume 85.0x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "10:59"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Unusual volume: 3.3x 20-day avg (price +4.8%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "10:59"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Price +7.7% today at \u20b91,606.50 (volume 1.0x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "11:00"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Unusual volume: 2.6x 20-day avg (price -3.4%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "11:00"
+   },
+   {
+    "symbol": "BIRLANU",
+    "event": "Price +5.4% today at \u20b91,218.10 (volume 0.3x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "11:00"
+   },
+   {
+    "symbol": "VOEPL",
+    "event": "Price +5.7% today at \u20b9497.45 (volume 0.6x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "11:00"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Price +9.5% today at \u20b91,823.20 (volume 4.4x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "11:00"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Price +10.3% today at \u20b9677.10 (volume 0.6x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "11:00"
    }
   ]
  },
@@ -3702,11 +3852,18 @@
   "577f31bd7be46e22": "2026-11-05",
   "89adc3bf2ffeba38": "2026-11-05",
   "e2d2ace7633cf2a2": "2026-11-05",
-  "31fbc19eb74f8490": "2026-11-05"
+  "31fbc19eb74f8490": "2026-11-05",
+  "455246902735a5e1": "2026-11-05",
+  "02029d1a6091c213": "2026-11-05",
+  "5b0660250233f792": "2026-11-05",
+  "54f809b4fad60683": "2026-11-05",
+  "b957dfb6d782d0ad": "2026-11-05",
+  "8156e76052ee7faf": "2026-11-05",
+  "43a7c8a14f7a6262": "2026-11-05"
  },
- "last_report": "2026-11-05T07:59",
+ "last_report": "2026-11-05T11:00",
  "filing_sources": {
-  "checked": "2026-11-05 07:59",
+  "checked": "2026-11-05 10:59",
   "NSE": "ok: 32 filings for 13 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
