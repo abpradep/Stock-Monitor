@@ -1425,7 +1425,48 @@
   "f731c4d8b7fc9f00": "2026-11-05",
   "d2de0d0b9bf70e7b": "2026-11-05",
   "9dded99ce1d0484a": "2026-11-05",
-  "43a7c8a14f7a6262": "2026-11-05"
+  "43a7c8a14f7a6262": "2026-11-05",
+  "3c0bcf2a75716dc2": "2026-11-05",
+  "ba6c5caaf3033f2c": "2026-11-05",
+  "4e8017cf16a0919d": "2026-11-05",
+  "3f744c5464e550fc": "2026-11-05",
+  "8987a97b2e523be7": "2026-11-05",
+  "82268610fb285bb7": "2026-11-05",
+  "30d3f7da2bdcab70": "2026-11-05",
+  "272112cb40b7c740": "2026-11-05",
+  "b257dfda8bbbda94": "2026-11-05",
+  "690332a72341fc8c": "2026-11-05",
+  "5223c6cd30d364eb": "2026-11-05",
+  "4db506c542772a77": "2026-11-05",
+  "af7aa4f9ce7839e8": "2026-11-05",
+  "5350f3dc5ad638a3": "2026-11-05",
+  "f07832455af4b5ae": "2026-11-05",
+  "d2e6a7de3ca890cf": "2026-11-05",
+  "293edb0a6ca36f6d": "2026-11-05",
+  "a7d1b1ba6fb3ffa4": "2026-11-05",
+  "cadf6808867bd6a2": "2026-11-05",
+  "d292acbb158bee2e": "2026-11-05",
+  "6e6711728f6f5feb": "2026-11-05",
+  "d282e84ac27eaa35": "2026-11-05",
+  "1a2b5e443512c8a0": "2026-11-05",
+  "5dc8e986fff0eb8e": "2026-11-05",
+  "21d6e23834e22d51": "2026-11-05",
+  "f7b5415fd03555c5": "2026-11-05",
+  "7181219ada73eb18": "2026-11-05",
+  "fadfe952a72128ee": "2026-11-05",
+  "db418434fb110f78": "2026-11-05",
+  "535bec4ce0b00c3a": "2026-11-05",
+  "2ad44a3f72eff3a1": "2026-11-05",
+  "760d55e0be484da3": "2026-11-05",
+  "5823bdc56176efab": "2026-11-05",
+  "9737876ce42f6b3d": "2026-11-05",
+  "400c6ec2b41e273b": "2026-11-05",
+  "1c2af580cfb26db2": "2026-11-05",
+  "9dc893b3f552ba00": "2026-11-05",
+  "5a27eb28f58da832": "2026-11-05",
+  "c470dc9a10d08ef8": "2026-11-05",
+  "d85ac65bb2081f17": "2026-11-05",
+  "afe95865967f7e63": "2026-11-05"
  },
  "price_alerted": {
   "2026-10-29": [
@@ -1513,7 +1554,11 @@
    "BIRLANU:price",
    "VOEPL:price",
    "ENTERO:price",
-   "CONCORDBIO:price"
+   "CONCORDBIO:price",
+   "PDSL:volume",
+   "ENTERO:volume",
+   "KARBON:volume",
+   "KPITTECH:price"
   ]
  },
  "events": {
@@ -3456,6 +3501,69 @@
     "impact": "Bullish (price action)",
     "importance": 7,
     "time": "11:00"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Earnings / results: Northern Arc Capital Q2 profit rises 41% to Rs 133.98 crore (+3 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "14:04"
+   },
+   {
+    "symbol": "PDSL",
+    "event": "Earnings / results: PDS Limited Records 28.7% Revenue Growth in Q2 FY27, PAT Rises 43.8% to \u20b998 Crore (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "14:04"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Earnings / results: Burger King India sees 15% EBITDA margin route in volumes",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "14:04"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Earnings / results: Entero Healthcare Solutions Q2 2027 Earnings Call Is Live",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "14:04"
+   },
+   {
+    "symbol": "CARBORUNIV",
+    "event": "Earnings / results: Carborundum Universal Ltd (BOM:513375) (Q2 2027) Earnings Call Highlights: Record Standalone ...",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "14:04"
+   },
+   {
+    "symbol": "PDSL",
+    "event": "Unusual volume: 151.9x 20-day avg (price +12.6%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "14:04"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Unusual volume: 14.1x 20-day avg (price +5.4%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "14:04"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Unusual volume: 4.0x 20-day avg (price +0.5%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "14:04"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "Price +5.0% today at \u20b9546.00 (volume 0.6x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:04"
    }
   ]
  },
@@ -3859,12 +3967,21 @@
   "54f809b4fad60683": "2026-11-05",
   "b957dfb6d782d0ad": "2026-11-05",
   "8156e76052ee7faf": "2026-11-05",
-  "43a7c8a14f7a6262": "2026-11-05"
+  "43a7c8a14f7a6262": "2026-11-05",
+  "3f744c5464e550fc": "2026-11-05",
+  "8987a97b2e523be7": "2026-11-05",
+  "82268610fb285bb7": "2026-11-05",
+  "4db506c542772a77": "2026-11-05",
+  "cadf6808867bd6a2": "2026-11-05",
+  "f7b5415fd03555c5": "2026-11-05",
+  "535bec4ce0b00c3a": "2026-11-05",
+  "2ad44a3f72eff3a1": "2026-11-05",
+  "400c6ec2b41e273b": "2026-11-05"
  },
- "last_report": "2026-11-05T11:00",
+ "last_report": "2026-11-05T14:04",
  "filing_sources": {
-  "checked": "2026-11-05 10:59",
-  "NSE": "ok: 32 filings for 13 stocks",
+  "checked": "2026-11-05 14:04",
+  "NSE": "ok: 34 filings for 14 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
