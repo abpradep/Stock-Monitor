@@ -1405,7 +1405,43 @@
   "da54a6ebde8364d7": "2026-11-06",
   "e8df14edc0048e61": "2026-11-06",
   "eb56b53611b44860": "2026-11-06",
-  "9937e219405d959d": "2026-11-06"
+  "9937e219405d959d": "2026-11-06",
+  "a4d5f5dbb10db7de": "2026-11-06",
+  "ca551b03899605d8": "2026-11-06",
+  "986a7c1d6ebd742f": "2026-11-06",
+  "6d4f9ef30372795b": "2026-11-06",
+  "b3efc00e6398b66f": "2026-11-06",
+  "63d9d695ecdf297a": "2026-11-06",
+  "3473b15b859342c3": "2026-11-06",
+  "ecf9c590b6586aa2": "2026-11-06",
+  "ae748866ed0914ff": "2026-11-06",
+  "c3d1b116ff581779": "2026-11-06",
+  "f96db5d2aee774bf": "2026-11-06",
+  "9fddd39fc3560ee7": "2026-11-06",
+  "e26be01081676837": "2026-11-06",
+  "eba8936ab0e4224a": "2026-11-06",
+  "2e7dbe4de86160f1": "2026-11-06",
+  "7abf1e5847230a61": "2026-11-06",
+  "24a0ae6ee1173351": "2026-11-06",
+  "842dfc09e25cf1c1": "2026-11-06",
+  "10c6282336beb724": "2026-11-06",
+  "6d29c032670c7857": "2026-11-06",
+  "36df45ba2daa5d2b": "2026-11-06",
+  "51d7e2fa5bedb722": "2026-11-06",
+  "bebc8068b70b8bac": "2026-11-06",
+  "a9b0bde71fe3e987": "2026-11-06",
+  "da932a0a01a952a3": "2026-11-06",
+  "30222165987e85ec": "2026-11-06",
+  "3ff776fb164d99aa": "2026-11-06",
+  "37b7336d8b2ba550": "2026-11-06",
+  "b0a0b96f21c97b8a": "2026-11-06",
+  "9aa8ff0a5df0b75f": "2026-11-06",
+  "a77d9662795a5586": "2026-11-06",
+  "73540c28de673d8a": "2026-11-06",
+  "2a79c7c6ad9f469b": "2026-11-06",
+  "6f752789adf27d0d": "2026-11-06",
+  "5df28f2e2ba7d133": "2026-11-06",
+  "d50808e84d491ab9": "2026-11-06"
  },
  "price_alerted": {
   "2026-10-30": [
@@ -3515,6 +3551,20 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "16:54"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Earnings / results: Arman Financial Q2FY27 Results: Net profit jumps 544% YoY to \u20b951.5 crore",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "20:01"
+   },
+   {
+    "symbol": "CARBORUNIV",
+    "event": "Earnings / results: CUMI targets Rhodius break-even in Q1 FY28 after costs ease (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "20:01"
    }
   ]
  },
@@ -3885,12 +3935,16 @@
   "122587e6a9b6f661": "2026-11-06",
   "62171a98e5d5ce9b": "2026-11-06",
   "31acf10b5a6f8cd4": "2026-11-06",
-  "2af5d69506181039": "2026-11-06"
+  "2af5d69506181039": "2026-11-06",
+  "ae748866ed0914ff": "2026-11-06",
+  "d4ab072a1c1593dd": "2026-11-06",
+  "a9b0bde71fe3e987": "2026-11-06",
+  "3ff776fb164d99aa": "2026-11-06"
  },
- "last_report": "2026-11-06T16:54",
+ "last_report": "2026-11-06T20:01",
  "filing_sources": {
-  "checked": "2026-11-06 16:54",
-  "NSE": "ok: 29 filings for 16 stocks",
+  "checked": "2026-11-06 20:00",
+  "NSE": "failed: HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=20)",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
