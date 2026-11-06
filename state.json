@@ -1371,7 +1371,41 @@
   "e7b63a1dc9f474ea": "2026-11-06",
   "f4f768ba63507b95": "2026-11-06",
   "dbc3c1668355de14": "2026-11-06",
-  "670312bb60c0fbdb": "2026-11-06"
+  "670312bb60c0fbdb": "2026-11-06",
+  "4e5311e820107e63": "2026-11-06",
+  "4112cfd085a7be74": "2026-11-06",
+  "5cdc3210cbfe4661": "2026-11-06",
+  "2e793d3add392b6f": "2026-11-06",
+  "73a84216e32fa64e": "2026-11-06",
+  "f88a75cb1d553076": "2026-11-06",
+  "f9f2b9a9a066c184": "2026-11-06",
+  "ab14c82c6e20e07e": "2026-11-06",
+  "6cd0258a7e9331ca": "2026-11-06",
+  "16b40d2bf42890e3": "2026-11-06",
+  "0d7e41beeb51d9d3": "2026-11-06",
+  "1884483f0f5b2d31": "2026-11-06",
+  "9edeae3a3da381b1": "2026-11-06",
+  "7cb6efcaf1d7c070": "2026-11-06",
+  "122587e6a9b6f661": "2026-11-06",
+  "a1513ca0c22d7262": "2026-11-06",
+  "5f7ad6cfb712022b": "2026-11-06",
+  "8e2499df3c423a43": "2026-11-06",
+  "2a8bf80cb43d1487": "2026-11-06",
+  "31acf10b5a6f8cd4": "2026-11-06",
+  "6a8dc1e47ba26ff9": "2026-11-06",
+  "d4ab072a1c1593dd": "2026-11-06",
+  "288e4d3314305678": "2026-11-06",
+  "dd2a5e1371dfb9f0": "2026-11-06",
+  "5db54a52ccca6c5c": "2026-11-06",
+  "2af5d69506181039": "2026-11-06",
+  "3adfa1f0353cd11a": "2026-11-06",
+  "3e0e3e33784d66d8": "2026-11-06",
+  "3fc65089bf90ce43": "2026-11-06",
+  "ba59c25b326e3a46": "2026-11-06",
+  "da54a6ebde8364d7": "2026-11-06",
+  "e8df14edc0048e61": "2026-11-06",
+  "eb56b53611b44860": "2026-11-06",
+  "9937e219405d959d": "2026-11-06"
  },
  "price_alerted": {
   "2026-10-30": [
@@ -1465,7 +1499,10 @@
    "ALIVUS:volume",
    "VOEPL:volume",
    "ENTERO:volume",
-   "KARBON:price"
+   "KARBON:price",
+   "SHIVALIK:price",
+   "RBA:price",
+   "CONCORDBIO:price"
   ]
  },
  "events": {
@@ -3422,6 +3459,62 @@
     "impact": "Bearish (price action)",
     "importance": 7,
     "time": "13:59"
+   },
+   {
+    "symbol": "JAYBEE",
+    "event": "Earnings / results: [NSE filing] Press Release: Jay Bee Laminations Limited has informed the Exchange regarding a press release dated November 06, 2026, for the \"Financial Results For The Half Year Ended September 30, 2026\".",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:54"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Earnings / results: Alivus Life Sciences Ltd Q2 Revenue Rises 16% to \u20b9682 Crore (+2 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "16:54"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Earnings / results: Arman Financial Services ARMANFIN Q2 FY27 Results Ad Filing",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:54"
+   },
+   {
+    "symbol": "VOEPL",
+    "event": "Earnings / results: Virtuoso Optoelectronics Posts Q2 Consolidated Net Profit of \u20b92.7 Crore vs Loss of \u20b93.9 Crore YoY (+1 more stories)",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "16:54"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Sharp price move: Broad-Based Technical Strength Lifts Entero Healthcare Solutions Ltd to 52-Week High of Rs 1924",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "16:54"
+   },
+   {
+    "symbol": "SHIVALIK",
+    "event": "Price +7.0% today at \u20b9318.80 (volume 1.4x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "16:54"
+   },
+   {
+    "symbol": "RBA",
+    "event": "Price -6.0% today at \u20b988.62 (volume 1.0x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "16:54"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Price -6.0% today at \u20b9632.60 (volume 0.9x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "16:54"
    }
   ]
  },
@@ -3784,12 +3877,20 @@
   "8e34fad8e6513320": "2026-11-06",
   "078d8dce011865c4": "2026-11-06",
   "d85e0ff3edd41aca": "2026-11-06",
-  "a5aaae85f4208b56": "2026-11-06"
+  "a5aaae85f4208b56": "2026-11-06",
+  "ab14c82c6e20e07e": "2026-11-06",
+  "0d7e41beeb51d9d3": "2026-11-06",
+  "1884483f0f5b2d31": "2026-11-06",
+  "9edeae3a3da381b1": "2026-11-06",
+  "122587e6a9b6f661": "2026-11-06",
+  "62171a98e5d5ce9b": "2026-11-06",
+  "31acf10b5a6f8cd4": "2026-11-06",
+  "2af5d69506181039": "2026-11-06"
  },
- "last_report": "2026-11-06T13:59",
+ "last_report": "2026-11-06T16:54",
  "filing_sources": {
-  "checked": "2026-11-06 13:59",
-  "NSE": "ok: 24 filings for 14 stocks",
+  "checked": "2026-11-06 16:54",
+  "NSE": "ok: 29 filings for 16 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
