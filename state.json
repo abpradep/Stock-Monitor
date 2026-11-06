@@ -1333,7 +1333,45 @@
   "cde75e2ba3ca91ec": "2026-11-06",
   "42bcedc81d2d259c": "2026-11-06",
   "24949b2632bc8881": "2026-11-06",
-  "77670bbe25c7148a": "2026-11-06"
+  "77670bbe25c7148a": "2026-11-06",
+  "ef62466a88f1d527": "2026-11-06",
+  "4b3d54b333c1407b": "2026-11-06",
+  "2dfadb83004a20bf": "2026-11-06",
+  "529f1581d80ca97c": "2026-11-06",
+  "4d860cab7c3a154a": "2026-11-06",
+  "6798060faa928352": "2026-11-06",
+  "9bb350e66cf3335c": "2026-11-06",
+  "f36cc64f3abb3583": "2026-11-06",
+  "0eab2608b8debeba": "2026-11-06",
+  "5ba4034a1d092c39": "2026-11-06",
+  "c309402aaf3b3135": "2026-11-06",
+  "e73be00f0987efea": "2026-11-06",
+  "bc752d6a4c1e9560": "2026-11-06",
+  "cdc49f8d85c3e2a4": "2026-11-06",
+  "8e6ec8e7eb07bff2": "2026-11-06",
+  "28a07e1af73d40fd": "2026-11-06",
+  "51963c8abacc3310": "2026-11-06",
+  "8e34fad8e6513320": "2026-11-06",
+  "078d8dce011865c4": "2026-11-06",
+  "8b2844a87c5bc249": "2026-11-06",
+  "c6db1157ee536f22": "2026-11-06",
+  "61918145c9408dbb": "2026-11-06",
+  "d1e89c3bca396893": "2026-11-06",
+  "564a9a759461acbd": "2026-11-06",
+  "eadef5b737e63b1c": "2026-11-06",
+  "418cac49c5e83d68": "2026-11-06",
+  "4dc64e60473eedcb": "2026-11-06",
+  "a08c87083eb23145": "2026-11-06",
+  "82a5bbd5775b02a5": "2026-11-06",
+  "d85e0ff3edd41aca": "2026-11-06",
+  "a5aaae85f4208b56": "2026-11-06",
+  "42847a270c51e7c4": "2026-11-06",
+  "d5c434aafe50306d": "2026-11-06",
+  "da1d5f9ec0d42b8d": "2026-11-06",
+  "e7b63a1dc9f474ea": "2026-11-06",
+  "f4f768ba63507b95": "2026-11-06",
+  "dbc3c1668355de14": "2026-11-06",
+  "670312bb60c0fbdb": "2026-11-06"
  },
  "price_alerted": {
   "2026-10-30": [
@@ -1423,7 +1461,11 @@
   "2026-11-06": [
    "ALIVUS:price",
    "VOEPL:price",
-   "ENTERO:price"
+   "ENTERO:price",
+   "ALIVUS:volume",
+   "VOEPL:volume",
+   "ENTERO:volume",
+   "KARBON:price"
   ]
  },
  "events": {
@@ -3310,6 +3352,76 @@
     "impact": "Bullish (price action)",
     "importance": 7,
     "time": "10:58"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Earnings / results: Laurus Labs: Record Margins, Bigger Capex and a Lofty Valuation",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "13:59"
+   },
+   {
+    "symbol": "JAYBEE",
+    "event": "Earnings / results: [NSE filing] Outcome of Board Meeting: Jay Bee Laminations Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:59"
+   },
+   {
+    "symbol": "BIRLANU",
+    "event": "Earnings / results: BirlaNu Ltd (BOM:509675) (Q2 2027) Earnings Call Highlights: India Business Delivers Third ...",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:59"
+   },
+   {
+    "symbol": "VOEPL",
+    "event": "Earnings / results: [NSE filing] Outcome of Board Meeting: Virtuoso Optoelectronics Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. (+4 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "13:59"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Regulatory / legal: Cyient Limited files compliance certificate for SEBI regulations",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "13:59"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Sharp price move: Entero Healthcare Solutions Ltd Surges 7.13% to Day's Hig...",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "13:59"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Unusual volume: 5.1x 20-day avg (price -6.5%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "13:59"
+   },
+   {
+    "symbol": "VOEPL",
+    "event": "Unusual volume: 6.8x 20-day avg (price +2.2%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "13:59"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Unusual volume: 10.6x 20-day avg (price +13.7%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "13:59"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Price -9.1% today at \u20b992.68 (volume 0.3x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 7,
+    "time": "13:59"
    }
   ]
  },
@@ -3662,12 +3774,22 @@
   "38d75a980ce32b53": "2026-11-06",
   "de0e594b7eb07376": "2026-11-06",
   "a65fe4052ae2b49d": "2026-11-06",
-  "29c90d2651ee228a": "2026-11-06"
+  "29c90d2651ee228a": "2026-11-06",
+  "ef62466a88f1d527": "2026-11-06",
+  "9bb350e66cf3335c": "2026-11-06",
+  "e73be00f0987efea": "2026-11-06",
+  "8e6ec8e7eb07bff2": "2026-11-06",
+  "28a07e1af73d40fd": "2026-11-06",
+  "51963c8abacc3310": "2026-11-06",
+  "8e34fad8e6513320": "2026-11-06",
+  "078d8dce011865c4": "2026-11-06",
+  "d85e0ff3edd41aca": "2026-11-06",
+  "a5aaae85f4208b56": "2026-11-06"
  },
- "last_report": "2026-11-06T10:58",
+ "last_report": "2026-11-06T13:59",
  "filing_sources": {
-  "checked": "2026-11-06 10:58",
-  "NSE": "ok: 15 filings for 10 stocks",
+  "checked": "2026-11-06 13:59",
+  "NSE": "ok: 24 filings for 14 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
