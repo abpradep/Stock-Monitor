@@ -1345,7 +1345,25 @@
   "56b9e2c5920bcba2": "2026-11-07",
   "0084e10703d62bfb": "2026-11-07",
   "6ba4c6100ee30eeb": "2026-11-07",
-  "e69adc34ab172089": "2026-11-07"
+  "e69adc34ab172089": "2026-11-07",
+  "632995f8d3a62bba": "2026-11-07",
+  "2f3a63959ccb7043": "2026-11-07",
+  "11cbe0c02ca6df80": "2026-11-07",
+  "b03349319b7a2a3c": "2026-11-07",
+  "df117916a5e0b059": "2026-11-07",
+  "91eff804457a822b": "2026-11-07",
+  "2c58937be4de9db4": "2026-11-07",
+  "ee5b463b0213f979": "2026-11-07",
+  "b26345b02d0bab96": "2026-11-07",
+  "d67900d077d8a2a1": "2026-11-07",
+  "dedf3d6a404e3701": "2026-11-07",
+  "68f20d9ed4ad9e31": "2026-11-07",
+  "55afde4ac799a4fa": "2026-11-07",
+  "ee07228cabe15ffd": "2026-11-07",
+  "c72613f44f19ebd6": "2026-11-07",
+  "658a3d7af37b4320": "2026-11-07",
+  "b43c557aef1f193e": "2026-11-07",
+  "002217b2ec81e565": "2026-11-07"
  },
  "price_alerted": {
   "2026-11-02": [
@@ -3167,6 +3185,27 @@
     "impact": "Neutral",
     "importance": 6,
     "time": "07:50"
+   },
+   {
+    "symbol": "PDSL",
+    "event": "Corporate action: PDS Limited (NSE:PDSL) Looks Interesting, And It's About To Pay A Dividend",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "10:48"
+   },
+   {
+    "symbol": "DENTA",
+    "event": "Earnings / results: Denta Water Reports Q2 FY27 Results as Order Book Reaches \u20b97,824 Million",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:48"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Earnings / results: Earnings Miss: Entero Healthcare Solutions Limited Missed EPS By 29% And Analysts Are Revising Their Forecasts (+1 more stories)",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "10:48"
    }
   ]
  },
@@ -3498,11 +3537,15 @@
   "800af66cbe992659": "2026-11-07",
   "e7333ba7323b653e": "2026-11-07",
   "a58b2d6d737eb3b6": "2026-11-07",
-  "bafe8bcd7b4f3d41": "2026-11-07"
+  "bafe8bcd7b4f3d41": "2026-11-07",
+  "b03349319b7a2a3c": "2026-11-07",
+  "68f20d9ed4ad9e31": "2026-11-07",
+  "55afde4ac799a4fa": "2026-11-07",
+  "ee07228cabe15ffd": "2026-11-07"
  },
- "last_report": "2026-11-07T07:50",
+ "last_report": "2026-11-07T10:49",
  "filing_sources": {
-  "checked": "2026-11-07 07:49",
+  "checked": "2026-11-07 10:48",
   "NSE": "ok: 17 filings for 12 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
