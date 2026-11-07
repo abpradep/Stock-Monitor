@@ -1363,7 +1363,22 @@
   "c72613f44f19ebd6": "2026-11-07",
   "658a3d7af37b4320": "2026-11-07",
   "b43c557aef1f193e": "2026-11-07",
-  "002217b2ec81e565": "2026-11-07"
+  "002217b2ec81e565": "2026-11-07",
+  "914dd09245c9bedb": "2026-11-07",
+  "b8c5082d67cfece1": "2026-11-07",
+  "7c7b668444fc2c2d": "2026-11-07",
+  "ec5a7659f664e2d6": "2026-11-07",
+  "f22399fade155426": "2026-11-07",
+  "c10538d93352cdfd": "2026-11-07",
+  "bc50e1b5ec95193e": "2026-11-07",
+  "f54caa3dfeaf3493": "2026-11-07",
+  "c945abe8e73172da": "2026-11-07",
+  "f14ce483e6ffbd6e": "2026-11-07",
+  "7809ff7647ff3b71": "2026-11-07",
+  "1928b80b6791ae38": "2026-11-07",
+  "824d258380621f83": "2026-11-07",
+  "26d2b5a3c64da40c": "2026-11-07",
+  "474295295bc8c3f5": "2026-11-07"
  },
  "price_alerted": {
   "2026-11-02": [
@@ -3206,6 +3221,27 @@
     "impact": "Bearish",
     "importance": 7,
     "time": "10:48"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Earnings / results: JM Financial Ltd (BOM:523405) (Q2 2027) Earnings Call Highlights: Dominant IPO Franchise and a ...",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:52"
+   },
+   {
+    "symbol": "VOEPL",
+    "event": "Earnings / results: Virtuoso Optoelectronics Publishes Unaudited September Financial Results",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:52"
+   },
+   {
+    "symbol": "UNIPARTS",
+    "event": "Earnings / results: Uniparts India Q2FY27 results: Cons net profit up 38% to \u20b9544 mn",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "13:52"
    }
   ]
  },
@@ -3541,12 +3577,16 @@
   "b03349319b7a2a3c": "2026-11-07",
   "68f20d9ed4ad9e31": "2026-11-07",
   "55afde4ac799a4fa": "2026-11-07",
-  "ee07228cabe15ffd": "2026-11-07"
+  "ee07228cabe15ffd": "2026-11-07",
+  "f22399fade155426": "2026-11-07",
+  "bc50e1b5ec95193e": "2026-11-07",
+  "c945abe8e73172da": "2026-11-07",
+  "f14ce483e6ffbd6e": "2026-11-07"
  },
- "last_report": "2026-11-07T10:49",
+ "last_report": "2026-11-07T13:52",
  "filing_sources": {
-  "checked": "2026-11-07 10:48",
-  "NSE": "ok: 17 filings for 12 stocks",
+  "checked": "2026-11-07 13:52",
+  "NSE": "ok: 20 filings for 13 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
