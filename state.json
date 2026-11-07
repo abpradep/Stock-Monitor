@@ -1378,7 +1378,26 @@
   "1928b80b6791ae38": "2026-11-07",
   "824d258380621f83": "2026-11-07",
   "26d2b5a3c64da40c": "2026-11-07",
-  "474295295bc8c3f5": "2026-11-07"
+  "474295295bc8c3f5": "2026-11-07",
+  "8d43d9a52dcd662a": "2026-11-07",
+  "66b6b144fc74a978": "2026-11-07",
+  "fc6dde7256db0102": "2026-11-07",
+  "053818de5fa090e7": "2026-11-07",
+  "aa836b20f638f241": "2026-11-07",
+  "7761803221be20a1": "2026-11-07",
+  "1414cba554a27a3b": "2026-11-07",
+  "5e25699f5f61db8c": "2026-11-07",
+  "db858cd17984627f": "2026-11-07",
+  "f2ce4641e73a3a4c": "2026-11-07",
+  "2028d5aab1aa50c8": "2026-11-07",
+  "fbd5b5272adb256b": "2026-11-07",
+  "e4e3c8b85a2da0bc": "2026-11-07",
+  "b5437b2709fdc910": "2026-11-07",
+  "4543f211236ab9fb": "2026-11-07",
+  "659ba881fc878bff": "2026-11-07",
+  "7066b46a7d1fdd40": "2026-11-07",
+  "f99a3b484583a4fb": "2026-11-07",
+  "66677d272f1ec72d": "2026-11-07"
  },
  "price_alerted": {
   "2026-11-02": [
@@ -3242,6 +3261,27 @@
     "impact": "Bullish",
     "importance": 7,
     "time": "13:52"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "M&A / stake change: Nirma Limited sells 3.01% stake in Alivus Life Sciences Limited",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:42"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Earnings / results: JM Financial Q2FY27 Results: Net profit falls 13% YoY to \u20b9228 crore",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "16:42"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Analyst action: Buy Entero Healthcare Solutions; target of Rs 2100: ICICI Securities",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "16:42"
    }
   ]
  },
@@ -3581,11 +3621,14 @@
   "f22399fade155426": "2026-11-07",
   "bc50e1b5ec95193e": "2026-11-07",
   "c945abe8e73172da": "2026-11-07",
-  "f14ce483e6ffbd6e": "2026-11-07"
+  "f14ce483e6ffbd6e": "2026-11-07",
+  "fc6dde7256db0102": "2026-11-07",
+  "5e25699f5f61db8c": "2026-11-07",
+  "2028d5aab1aa50c8": "2026-11-07"
  },
- "last_report": "2026-11-07T13:52",
+ "last_report": "2026-11-07T16:42",
  "filing_sources": {
-  "checked": "2026-11-07 13:52",
+  "checked": "2026-11-07 16:42",
   "NSE": "ok: 20 filings for 13 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
