@@ -1276,7 +1276,14 @@
   "a5328052c559b785": "2026-11-08",
   "dc63a057d727c572": "2026-11-08",
   "fe9fc5415bac1e68": "2026-11-08",
-  "e34237a3b3f3b5d0": "2026-11-08"
+  "e34237a3b3f3b5d0": "2026-11-08",
+  "8f8ee0bd511201b9": "2026-11-08",
+  "98f95e3e12384556": "2026-11-08",
+  "ffcd166c6791f45d": "2026-11-08",
+  "d63e4ec642163151": "2026-11-08",
+  "a352e3b90093dca7": "2026-11-08",
+  "68a329566668e778": "2026-11-08",
+  "7e5328a0aca0142a": "2026-11-08"
  },
  "price_alerted": {
   "2026-11-02": [
@@ -3056,6 +3063,20 @@
     "impact": "Bullish",
     "importance": 7,
     "time": "07:54"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Earnings / results: JM Financial Ltd (BOM:523405) (Q2 2027) Earnings Call Highlights",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:51"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Earnings / results: Entero Healthcare Solutions Ltd (NSE:ENTERO) (Q2 2027) Earnings",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:51"
    }
   ]
  },
@@ -3354,11 +3375,13 @@
   "5031943849c3786a": "2026-11-07",
   "363faf37593bb37c": "2026-11-08",
   "7595aa25f23a64ce": "2026-11-08",
-  "02383b19b6270a20": "2026-11-08"
+  "02383b19b6270a20": "2026-11-08",
+  "98f95e3e12384556": "2026-11-08",
+  "68a329566668e778": "2026-11-08"
  },
- "last_report": "2026-11-08T07:54",
+ "last_report": "2026-11-08T10:51",
  "filing_sources": {
-  "checked": "2026-11-08 07:54",
+  "checked": "2026-11-08 10:51",
   "NSE": "ok: 3 filings for 3 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
