@@ -1283,7 +1283,18 @@
   "d63e4ec642163151": "2026-11-08",
   "a352e3b90093dca7": "2026-11-08",
   "68a329566668e778": "2026-11-08",
-  "7e5328a0aca0142a": "2026-11-08"
+  "7e5328a0aca0142a": "2026-11-08",
+  "b7bb21a7a806d0cb": "2026-11-08",
+  "15facee6c75f4b7f": "2026-11-08",
+  "99021b91efe1051d": "2026-11-08",
+  "5969e64bd756a08e": "2026-11-08",
+  "263e9c23fa6673ea": "2026-11-08",
+  "5b1f3ddbf5fb4951": "2026-11-08",
+  "d8ceceeb1960e368": "2026-11-08",
+  "bbe8f68de48e3115": "2026-11-08",
+  "ab386abe0bfc87d7": "2026-11-08",
+  "1a12855182afd22e": "2026-11-08",
+  "edf891648fd0bdd2": "2026-11-08"
  },
  "price_alerted": {
   "2026-11-02": [
@@ -3077,6 +3088,20 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "10:51"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Earnings / results: Laurus Labs\u2019 \u20b93,000 Crore Capex Plan: Reviewing its Asset Turnover, Cash Generation, and Long Term Profitability",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:50"
+   },
+   {
+    "symbol": "INFOBEAN",
+    "event": "Earnings / results: InfoBeans Q2FY27 Results: Net profit up 16%, revenue grows 28% YoY",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "13:50"
    }
   ]
  },
@@ -3377,11 +3402,13 @@
   "7595aa25f23a64ce": "2026-11-08",
   "02383b19b6270a20": "2026-11-08",
   "98f95e3e12384556": "2026-11-08",
-  "68a329566668e778": "2026-11-08"
+  "68a329566668e778": "2026-11-08",
+  "15facee6c75f4b7f": "2026-11-08",
+  "263e9c23fa6673ea": "2026-11-08"
  },
- "last_report": "2026-11-08T10:51",
+ "last_report": "2026-11-08T13:50",
  "filing_sources": {
-  "checked": "2026-11-08 10:51",
+  "checked": "2026-11-08 13:50",
   "NSE": "ok: 3 filings for 3 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
