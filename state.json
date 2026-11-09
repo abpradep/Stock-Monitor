@@ -1216,7 +1216,17 @@
   "a1039d0ac0e6de68": "2026-11-09",
   "25c3dd697c05b6ef": "2026-11-09",
   "2f39e52d263c7ca6": "2026-11-09",
-  "8c2380ed2215affb": "2026-11-09"
+  "8c2380ed2215affb": "2026-11-09",
+  "79470f382f4872f3": "2026-11-09",
+  "80d1c1d297c5caeb": "2026-11-09",
+  "2013b5419150572e": "2026-11-09",
+  "eb554188b54f930f": "2026-11-09",
+  "dfac6ea9c9bf137e": "2026-11-09",
+  "f44eaecb209502c0": "2026-11-09",
+  "4bb092ae2d10276a": "2026-11-09",
+  "f676f901172884fe": "2026-11-09",
+  "2868618cd80df0f4": "2026-11-09",
+  "1e76a312be711e5e": "2026-11-09"
  },
  "price_alerted": {
   "2026-11-02": [
@@ -1300,7 +1310,12 @@
    "RBA:price",
    "CONCORDBIO:price"
   ],
-  "2026-11-09": []
+  "2026-11-09": [
+   "LAURUSLABS:price",
+   "SYNGENE:price",
+   "ENTERO:price",
+   "CONCORDBIO:price"
+  ]
  },
  "events": {
   "2026-11-02": [
@@ -2955,6 +2970,41 @@
     "impact": "Bullish",
     "importance": 7,
     "time": "07:59"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "M&A / stake change: Natco Pharma completes 13.25% stake buy in Adcock Ingram for \u20b91,060 crore",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "11:03"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Price +5.7% today at \u20b92,474.00 (volume 1.0x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "11:03"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Price +6.1% today at \u20b9442.55 (volume 0.2x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "11:03"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Price +6.4% today at \u20b92,022.50 (volume 1.5x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "11:03"
+   },
+   {
+    "symbol": "CONCORDBIO",
+    "event": "Price -5.3% today at \u20b9598.90 (volume 0.6x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "11:03"
    }
   ]
  },
@@ -3245,11 +3295,12 @@
   "68a329566668e778": "2026-11-08",
   "15facee6c75f4b7f": "2026-11-08",
   "263e9c23fa6673ea": "2026-11-08",
-  "65564ed8287d5b02": "2026-11-09"
+  "65564ed8287d5b02": "2026-11-09",
+  "dfac6ea9c9bf137e": "2026-11-09"
  },
- "last_report": "2026-11-09T07:59",
+ "last_report": "2026-11-09T11:03",
  "filing_sources": {
-  "checked": "2026-11-09 07:59",
+  "checked": "2026-11-09 11:03",
   "NSE": "ok: 0 filings for 0 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
