@@ -1251,7 +1251,30 @@
   "6330725023bb0246": "2026-11-09",
   "a627b3ef78f58ccb": "2026-11-09",
   "8e4337b1424fd017": "2026-11-09",
-  "01cdf7de69a35c22": "2026-11-09"
+  "01cdf7de69a35c22": "2026-11-09",
+  "c75a5092eea79c2b": "2026-11-09",
+  "8f0999fcecd7d45a": "2026-11-09",
+  "c9cba4c8f3ebe5d4": "2026-11-09",
+  "aec6619268838b5d": "2026-11-09",
+  "bed7fa877cc9140b": "2026-11-09",
+  "b2b0444622565dcf": "2026-11-09",
+  "e3c2c291c24c8245": "2026-11-09",
+  "f121fc6e05981ac1": "2026-11-09",
+  "31b11b43c5b5c6cb": "2026-11-09",
+  "9ee179f2d65ab77d": "2026-11-09",
+  "9d5cd39bb717bfb1": "2026-11-09",
+  "a65b860006e44e4e": "2026-11-09",
+  "ac3f3f191f202419": "2026-11-09",
+  "25127b3b86aa6039": "2026-11-09",
+  "467fadf1a3bb4c34": "2026-11-09",
+  "af2e96a6a2d9459f": "2026-11-09",
+  "e36f2e24bea161e9": "2026-11-09",
+  "ab1ec8c3c1913965": "2026-11-09",
+  "acc4a13cab0725a9": "2026-11-09",
+  "add2252e05084b0c": "2026-11-09",
+  "b03eb906ce9a6d68": "2026-11-09",
+  "d2c9fe2b9d1b0313": "2026-11-09",
+  "2ec3d2e950b85ef8": "2026-11-09"
  },
  "price_alerted": {
   "2026-11-02": [
@@ -1341,7 +1364,8 @@
    "ENTERO:price",
    "CONCORDBIO:price",
    "ENTERO:volume",
-   "KARBON:price"
+   "KARBON:price",
+   "ALIVUS:volume"
   ]
  },
  "events": {
@@ -3067,6 +3091,34 @@
     "impact": "Bullish (price action)",
     "importance": 6,
     "time": "14:16"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Earnings / results: Northern Arc Capital Discloses Q2 FY2026-27 Earnings Call Transcript",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:55"
+   },
+   {
+    "symbol": "BIRLANU",
+    "event": "Earnings / results: BirlaNu Limited Q2 Revenue Rises 9.2% as Loss Widens (+2 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "16:55"
+   },
+   {
+    "symbol": "EUREKAFORB",
+    "event": "Earnings / results: Eureka Forbes Q2 FY27 Earnings Call: Key Highlights",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:55"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Unusual volume: 2.8x 20-day avg (price -0.4%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:55"
    }
   ]
  },
@@ -3362,12 +3414,17 @@
   "ccfa18e04c09bb85": "2026-11-09",
   "7b564824a3728ed9": "2026-11-09",
   "a627b3ef78f58ccb": "2026-11-09",
-  "8e4337b1424fd017": "2026-11-09"
+  "8e4337b1424fd017": "2026-11-09",
+  "bed7fa877cc9140b": "2026-11-09",
+  "9d5cd39bb717bfb1": "2026-11-09",
+  "a65b860006e44e4e": "2026-11-09",
+  "ac3f3f191f202419": "2026-11-09",
+  "d2c9fe2b9d1b0313": "2026-11-09"
  },
- "last_report": "2026-11-09T14:16",
+ "last_report": "2026-11-09T16:55",
  "filing_sources": {
-  "checked": "2026-11-09 14:15",
-  "NSE": "ok: 3 filings for 3 stocks",
+  "checked": "2026-11-09 16:55",
+  "NSE": "ok: 5 filings for 5 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
