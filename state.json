@@ -1274,7 +1274,32 @@
   "add2252e05084b0c": "2026-11-09",
   "b03eb906ce9a6d68": "2026-11-09",
   "d2c9fe2b9d1b0313": "2026-11-09",
-  "2ec3d2e950b85ef8": "2026-11-09"
+  "2ec3d2e950b85ef8": "2026-11-09",
+  "3cb19cc0a135588c": "2026-11-09",
+  "5c25b8291fcd80ac": "2026-11-09",
+  "7fe84757c472109a": "2026-11-09",
+  "b75a60eda8ad1077": "2026-11-09",
+  "2fd7f033bd9ab7aa": "2026-11-09",
+  "5edd51f14f2bfcb0": "2026-11-09",
+  "63aa36e6b6c1f430": "2026-11-09",
+  "34db2f8646d0d209": "2026-11-09",
+  "4adc18c41290c3ef": "2026-11-09",
+  "428163952cd784a7": "2026-11-09",
+  "a6b9c223f559edf8": "2026-11-09",
+  "83f1a9e80598dd72": "2026-11-09",
+  "e4ecee5225b565f6": "2026-11-09",
+  "51be2644bce17820": "2026-11-09",
+  "bbe0ac1acfb1ac9c": "2026-11-09",
+  "fb37f65ed17235d4": "2026-11-09",
+  "f483e42e6d45578e": "2026-11-09",
+  "ea48a0b363644aaf": "2026-11-09",
+  "fff1ff39c76bcc2f": "2026-11-09",
+  "a0134e989a88c5a8": "2026-11-09",
+  "602a4dab16449259": "2026-11-09",
+  "40642327468badb1": "2026-11-09",
+  "07e302084f7d39fe": "2026-11-09",
+  "4c32146b046d4c27": "2026-11-09",
+  "ee127326360065b5": "2026-11-09"
  },
  "price_alerted": {
   "2026-11-02": [
@@ -3119,6 +3144,27 @@
     "impact": "Neutral",
     "importance": 5,
     "time": "16:55"
+   },
+   {
+    "symbol": "NORTHARC",
+    "event": "Earnings / results: [NSE filing] Monitoring Agency Report: Monitoring agency report for the quarter ended September 30, 2026 (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "20:00"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Earnings / results: JM Financial Anticipates 20% Revenue Increase And 20%-25% Profit Growth (+4 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "20:00"
+   },
+   {
+    "symbol": "VOEPL",
+    "event": "Earnings / results: Virtuoso Optoelectronics Returns to Profit as Q2 Revenue Rises 81% (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "20:00"
    }
   ]
  },
@@ -3419,12 +3465,19 @@
   "9d5cd39bb717bfb1": "2026-11-09",
   "a65b860006e44e4e": "2026-11-09",
   "ac3f3f191f202419": "2026-11-09",
-  "d2c9fe2b9d1b0313": "2026-11-09"
+  "d2c9fe2b9d1b0313": "2026-11-09",
+  "b75a60eda8ad1077": "2026-11-09",
+  "2fd7f033bd9ab7aa": "2026-11-09",
+  "428163952cd784a7": "2026-11-09",
+  "83f1a9e80598dd72": "2026-11-09",
+  "e4ecee5225b565f6": "2026-11-09",
+  "fff1ff39c76bcc2f": "2026-11-09",
+  "a0134e989a88c5a8": "2026-11-09"
  },
- "last_report": "2026-11-09T16:55",
+ "last_report": "2026-11-09T20:00",
  "filing_sources": {
-  "checked": "2026-11-09 16:55",
-  "NSE": "ok: 5 filings for 5 stocks",
+  "checked": "2026-11-09 20:00",
+  "NSE": "ok: 7 filings for 6 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
