@@ -1226,7 +1226,32 @@
   "4bb092ae2d10276a": "2026-11-09",
   "f676f901172884fe": "2026-11-09",
   "2868618cd80df0f4": "2026-11-09",
-  "1e76a312be711e5e": "2026-11-09"
+  "1e76a312be711e5e": "2026-11-09",
+  "ccfa18e04c09bb85": "2026-11-09",
+  "74a31d1402b438a8": "2026-11-09",
+  "9bd4f5789786a631": "2026-11-09",
+  "9f7650f14eac912f": "2026-11-09",
+  "93fd0f1cbac9e9f5": "2026-11-09",
+  "a8a3686a68755a1c": "2026-11-09",
+  "a43ffda42e7cef37": "2026-11-09",
+  "f06fe49507917732": "2026-11-09",
+  "31dbb6a960c57dbe": "2026-11-09",
+  "220a5506432385b3": "2026-11-09",
+  "ff354b927cc0c459": "2026-11-09",
+  "02110f7e7847279f": "2026-11-09",
+  "1781094a9b6ceeb7": "2026-11-09",
+  "cbb39d7a14a99973": "2026-11-09",
+  "661bcb6578e735a2": "2026-11-09",
+  "7b564824a3728ed9": "2026-11-09",
+  "ca923c3e5980390a": "2026-11-09",
+  "7c4b9423d0e6b69a": "2026-11-09",
+  "6eaabd675219f80e": "2026-11-09",
+  "788fec6242e3c2e0": "2026-11-09",
+  "d613df62720c0e42": "2026-11-09",
+  "6330725023bb0246": "2026-11-09",
+  "a627b3ef78f58ccb": "2026-11-09",
+  "8e4337b1424fd017": "2026-11-09",
+  "01cdf7de69a35c22": "2026-11-09"
  },
  "price_alerted": {
   "2026-11-02": [
@@ -1314,7 +1339,9 @@
    "LAURUSLABS:price",
    "SYNGENE:price",
    "ENTERO:price",
-   "CONCORDBIO:price"
+   "CONCORDBIO:price",
+   "ENTERO:volume",
+   "KARBON:price"
   ]
  },
  "events": {
@@ -3005,6 +3032,41 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "11:03"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Sharp price move: Pharma shares shine: Sai, Gland, Divi's, Laurus, Glenmark surge up to 9%",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "14:16"
+   },
+   {
+    "symbol": "BIRLANU",
+    "event": "Earnings / results: BirlaNu India revenue up 17% in Q2FY27, Parador weighs on consolidated profit",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "14:16"
+   },
+   {
+    "symbol": "EUREKAFORB",
+    "event": "Earnings / results: Eureka Forbes plans 3%-4% hike as Q3 margins face near-term lag (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "14:16"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Unusual volume: 2.6x 20-day avg (price +9.6%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "14:16"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Price +5.7% today at \u20b9103.50 (volume 0.3x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:16"
    }
   ]
  },
@@ -3296,12 +3358,16 @@
   "15facee6c75f4b7f": "2026-11-08",
   "263e9c23fa6673ea": "2026-11-08",
   "65564ed8287d5b02": "2026-11-09",
-  "dfac6ea9c9bf137e": "2026-11-09"
+  "dfac6ea9c9bf137e": "2026-11-09",
+  "ccfa18e04c09bb85": "2026-11-09",
+  "7b564824a3728ed9": "2026-11-09",
+  "a627b3ef78f58ccb": "2026-11-09",
+  "8e4337b1424fd017": "2026-11-09"
  },
- "last_report": "2026-11-09T11:03",
+ "last_report": "2026-11-09T14:16",
  "filing_sources": {
-  "checked": "2026-11-09 11:03",
-  "NSE": "ok: 0 filings for 0 stocks",
+  "checked": "2026-11-09 14:15",
+  "NSE": "ok: 3 filings for 3 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
