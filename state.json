@@ -1084,7 +1084,22 @@
   "331ab06c8ac49993": "2026-11-11",
   "5990c9754422eb75": "2026-11-11",
   "1f05d673f2eb41d7": "2026-11-11",
-  "2bd1e0ce27e586c5": "2026-11-11"
+  "2bd1e0ce27e586c5": "2026-11-11",
+  "2b8292840c79bbf3": "2026-11-11",
+  "97cd199d8ce8b765": "2026-11-11",
+  "c4deba3741b99499": "2026-11-11",
+  "458f684fa02497e8": "2026-11-11",
+  "89de67dbcf0942eb": "2026-11-11",
+  "5ab4e3302320d231": "2026-11-11",
+  "956bf09e05c872bd": "2026-11-11",
+  "becad45ba8f45991": "2026-11-11",
+  "75a830f4a7c96d43": "2026-11-11",
+  "8e556fbc5f269afe": "2026-11-11",
+  "252dcb87bec24305": "2026-11-11",
+  "b2baf01d3c837824": "2026-11-11",
+  "967755313995d718": "2026-11-11",
+  "1282e4185f8a137d": "2026-11-11",
+  "8a6c0ce7969562c6": "2026-11-11"
  },
  "price_alerted": {
   "2026-11-04": [
@@ -2493,6 +2508,13 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "10:58"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "Analyst action: Syngene International Ltd Upgraded to Sell on Technical Improvements Despite Weak Financials",
+    "impact": "Neutral",
+    "importance": 6,
+    "time": "14:00"
    }
   ]
  },
@@ -2734,12 +2756,13 @@
   "51673d5052d0c5c8": "2026-11-11",
   "4d3547eaa4897441": "2026-11-11",
   "732c3b65e272cea3": "2026-11-11",
-  "bcf9c115e5038898": "2026-11-11"
+  "bcf9c115e5038898": "2026-11-11",
+  "c4deba3741b99499": "2026-11-11"
  },
- "last_report": "2026-11-11T10:58",
+ "last_report": "2026-11-11T14:01",
  "filing_sources": {
-  "checked": "2026-11-11 10:58",
-  "NSE": "ok: 4 filings for 4 stocks",
+  "checked": "2026-11-11 14:00",
+  "NSE": "ok: 6 filings for 6 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
