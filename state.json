@@ -1075,7 +1075,16 @@
   "90f11571e4789cc9": "2026-11-11",
   "820f2b9e8acfd9ee": "2026-11-11",
   "4b2f4edd7600fe67": "2026-11-11",
-  "c7eeeccfd0ed8282": "2026-11-11"
+  "c7eeeccfd0ed8282": "2026-11-11",
+  "c62890faf3071bee": "2026-11-11",
+  "61aa9104666b8f13": "2026-11-11",
+  "52ae4c4dc16e8be6": "2026-11-11",
+  "bcf9c115e5038898": "2026-11-11",
+  "5519d87303dc5fda": "2026-11-11",
+  "331ab06c8ac49993": "2026-11-11",
+  "5990c9754422eb75": "2026-11-11",
+  "1f05d673f2eb41d7": "2026-11-11",
+  "2bd1e0ce27e586c5": "2026-11-11"
  },
  "price_alerted": {
   "2026-11-04": [
@@ -1134,7 +1143,10 @@
    "ALIVUS:volume"
   ],
   "2026-11-10": [],
-  "2026-11-11": []
+  "2026-11-11": [
+   "GREAVESCOT:price",
+   "ENTERO:price"
+  ]
  },
  "events": {
   "2026-11-04": [
@@ -2460,6 +2472,27 @@
     "impact": "Bearish",
     "importance": 6,
     "time": "07:52"
+   },
+   {
+    "symbol": "JUBLPHARMA",
+    "event": "Fund raising: Jubilant Pharmova clears \u20b9800 crore NCD fundraise | Tap to know more | Inshorts",
+    "impact": "Neutral",
+    "importance": 6,
+    "time": "10:58"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Price +6.2% today at \u20b9216.69 (volume 0.6x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:58"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Price -6.2% today at \u20b91,983.50 (volume 0.6x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "10:58"
    }
   ]
  },
@@ -2700,11 +2733,12 @@
   "2d6fcaf08ea25843": "2026-11-10",
   "51673d5052d0c5c8": "2026-11-11",
   "4d3547eaa4897441": "2026-11-11",
-  "732c3b65e272cea3": "2026-11-11"
+  "732c3b65e272cea3": "2026-11-11",
+  "bcf9c115e5038898": "2026-11-11"
  },
- "last_report": "2026-11-11T07:52",
+ "last_report": "2026-11-11T10:58",
  "filing_sources": {
-  "checked": "2026-11-11 07:52",
+  "checked": "2026-11-11 10:58",
   "NSE": "ok: 4 filings for 4 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
