@@ -1118,7 +1118,39 @@
   "e6970994da159194": "2026-11-11",
   "0de81182a8ed4ee4": "2026-11-11",
   "07a2b10e00ae8f2c": "2026-11-11",
-  "8064cc9b7371b911": "2026-11-11"
+  "8064cc9b7371b911": "2026-11-11",
+  "7e29cabd4b6f9afd": "2026-11-11",
+  "98ad20a3831c0a06": "2026-11-11",
+  "5d61930a76fc2ecb": "2026-11-11",
+  "00338b2c87d2acbc": "2026-11-11",
+  "fa58af2126a472e9": "2026-11-11",
+  "371b71c5623adb88": "2026-11-11",
+  "7d5696b42962bf47": "2026-11-11",
+  "40483acba179b8d8": "2026-11-11",
+  "a959f0795d77867f": "2026-11-11",
+  "afd6d5aba238e667": "2026-11-11",
+  "5a38b5f20b0dd37c": "2026-11-11",
+  "83f2a747b536c9c6": "2026-11-11",
+  "b74aeccacf9eebd5": "2026-11-11",
+  "5b524e6331d9560e": "2026-11-11",
+  "d1dce89a3542c046": "2026-11-11",
+  "e6fe8aed15965ab0": "2026-11-11",
+  "8a6a1c1e58e318b0": "2026-11-11",
+  "94daebf04482ca79": "2026-11-11",
+  "22a6fe9efec744d6": "2026-11-11",
+  "6bda6497f6f271f8": "2026-11-11",
+  "217c50e0942edef1": "2026-11-11",
+  "b1023dcb019f5ba1": "2026-11-11",
+  "870782e49aabdc69": "2026-11-11",
+  "7cc34b3dbdfe00d6": "2026-11-11",
+  "f152ec016f32bc52": "2026-11-11",
+  "0b974f736d19df65": "2026-11-11",
+  "ee71b40a8748884a": "2026-11-11",
+  "3a594a377d5d3988": "2026-11-11",
+  "be9d48087658e6e2": "2026-11-11",
+  "042bd6fec96fba6c": "2026-11-11",
+  "980b2f6f9f79905d": "2026-11-11",
+  "c545e23e3cc9ffa6": "2026-11-11"
  },
  "price_alerted": {
   "2026-11-04": [
@@ -2542,6 +2574,20 @@
     "impact": "Neutral",
     "importance": 5,
     "time": "16:55"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Sharp price move: Laurus Labs - These 12 midcap stocks rally up to 30% in just one month",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "20:00"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Regulatory / legal: [NSE filing] General Updates: Alivus Life Sciences Limited has informed the Exchange about disclosure under Regulation 30 of SEBI (LODR), 2015 (+4 more stories)",
+    "impact": "Neutral",
+    "importance": 9,
+    "time": "20:00"
    }
   ]
  },
@@ -2785,12 +2831,17 @@
   "732c3b65e272cea3": "2026-11-11",
   "bcf9c115e5038898": "2026-11-11",
   "c4deba3741b99499": "2026-11-11",
-  "55a3822f0e9308a5": "2026-11-11"
+  "55a3822f0e9308a5": "2026-11-11",
+  "7e29cabd4b6f9afd": "2026-11-11",
+  "371b71c5623adb88": "2026-11-11",
+  "7d5696b42962bf47": "2026-11-11",
+  "afd6d5aba238e667": "2026-11-11",
+  "5a38b5f20b0dd37c": "2026-11-11"
  },
- "last_report": "2026-11-11T16:55",
+ "last_report": "2026-11-11T20:00",
  "filing_sources": {
-  "checked": "2026-11-11 16:55",
-  "NSE": "ok: 7 filings for 7 stocks",
+  "checked": "2026-11-11 20:00",
+  "NSE": "ok: 10 filings for 9 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
