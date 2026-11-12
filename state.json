@@ -969,7 +969,29 @@
   "17f5052af94956d6": "2026-11-12",
   "3fc3085f03075fdc": "2026-11-12",
   "c1b7a2ec0bc49240": "2026-11-12",
-  "633c9dcbe40cafac": "2026-11-12"
+  "633c9dcbe40cafac": "2026-11-12",
+  "0bada617b61a28a0": "2026-11-12",
+  "3fe6ac3e13eb9273": "2026-11-12",
+  "d843addefb48b511": "2026-11-12",
+  "1d4289dea2389396": "2026-11-12",
+  "bd8b6b1062f40b48": "2026-11-12",
+  "3fb89add46dc333e": "2026-11-12",
+  "5d62e4e5f20063ad": "2026-11-12",
+  "4704d321815768c2": "2026-11-12",
+  "2e86c9fc2e895c26": "2026-11-12",
+  "eed78ef9f0ea4ec6": "2026-11-12",
+  "fe2b08379d629321": "2026-11-12",
+  "2335b6f59f0f3023": "2026-11-12",
+  "b56f69c716b5ae70": "2026-11-12",
+  "f99a13bafe780430": "2026-11-12",
+  "2791a0c54ea976e1": "2026-11-12",
+  "cf468d129a89da58": "2026-11-12",
+  "08c9e828151b8c89": "2026-11-12",
+  "563729dc9dc90f27": "2026-11-12",
+  "80f365c9dc4fd510": "2026-11-12",
+  "3f3b490932412d93": "2026-11-12",
+  "b56b4c00829d48fa": "2026-11-12",
+  "96149b0bb29c1325": "2026-11-12"
  },
  "price_alerted": {
   "2026-11-05": [
@@ -1019,7 +1041,9 @@
    "ALIVUS:volume"
   ],
   "2026-11-12": [
-   "ENTERO:price"
+   "ENTERO:price",
+   "PENIND:price",
+   "AARTIPHARM:price"
   ]
  },
  "events": {
@@ -2073,6 +2097,27 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "11:00"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "Price move: KPIT Technologies Ltd Valuation Shifts Signal Price Attractiveness Decline",
+    "impact": "Bearish",
+    "importance": 5,
+    "time": "14:06"
+   },
+   {
+    "symbol": "PENIND",
+    "event": "Price +5.6% today at \u20b9170.75 (volume 0.9x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:06"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Price +7.6% today at \u20b9993.80 (volume 1.4x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:06"
    }
   ]
  },
@@ -2262,11 +2307,12 @@
   "afd6d5aba238e667": "2026-11-11",
   "5a38b5f20b0dd37c": "2026-11-11",
   "639a630d35215893": "2026-11-12",
-  "c71493115fa81a65": "2026-11-12"
+  "c71493115fa81a65": "2026-11-12",
+  "b56b4c00829d48fa": "2026-11-12"
  },
- "last_report": "2026-11-12T11:00",
+ "last_report": "2026-11-12T14:06",
  "filing_sources": {
-  "checked": "2026-11-12 11:00",
+  "checked": "2026-11-12 14:05",
   "NSE": "ok: 7 filings for 6 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
