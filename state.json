@@ -991,7 +991,38 @@
   "80f365c9dc4fd510": "2026-11-12",
   "3f3b490932412d93": "2026-11-12",
   "b56b4c00829d48fa": "2026-11-12",
-  "96149b0bb29c1325": "2026-11-12"
+  "96149b0bb29c1325": "2026-11-12",
+  "b56c7c9100f86a13": "2026-11-12",
+  "96ef90ca24f50330": "2026-11-12",
+  "883abbd1a124f13b": "2026-11-12",
+  "b8c790e4882eff32": "2026-11-12",
+  "d09808660ceb41a4": "2026-11-12",
+  "4e8b3cf4ad89ddc5": "2026-11-12",
+  "87cdd0aaaa9a3b55": "2026-11-12",
+  "f2cf4d0be2ad4e26": "2026-11-12",
+  "88ed27cbfebcbc04": "2026-11-12",
+  "b031550c9ffbc14c": "2026-11-12",
+  "1ae0b20202cc553b": "2026-11-12",
+  "77cd9bedab4fde2c": "2026-11-12",
+  "b67f539e0ee2f5b1": "2026-11-12",
+  "32e519f52d0ff0a1": "2026-11-12",
+  "84ca389c13e2a405": "2026-11-12",
+  "418d236c72ec89a9": "2026-11-12",
+  "481275c58dbd1e10": "2026-11-12",
+  "5b933561947321bf": "2026-11-12",
+  "050f105c63faec8c": "2026-11-12",
+  "dbac3e7f759fc6e9": "2026-11-12",
+  "ddc2ae4336ed58c0": "2026-11-12",
+  "3ae62d426f751bb3": "2026-11-12",
+  "018adb2d97d7be8b": "2026-11-12",
+  "c4406c6ceb058275": "2026-11-12",
+  "5b695bb2aa59a41f": "2026-11-12",
+  "d524a3385fe38f5e": "2026-11-12",
+  "d76365fea5396e5e": "2026-11-12",
+  "9d0fc1df0acbe5d0": "2026-11-12",
+  "eece4c154ebeebe1": "2026-11-12",
+  "bfb53823c09cb1b1": "2026-11-12",
+  "323cb29e34a5946b": "2026-11-12"
  },
  "price_alerted": {
   "2026-11-05": [
@@ -1043,7 +1074,8 @@
   "2026-11-12": [
    "ENTERO:price",
    "PENIND:price",
-   "AARTIPHARM:price"
+   "AARTIPHARM:price",
+   "AARTIPHARM:volume"
   ]
  },
  "events": {
@@ -2118,6 +2150,27 @@
     "impact": "Bullish (price action)",
     "importance": 6,
     "time": "14:06"
+   },
+   {
+    "symbol": "ALLETEC",
+    "event": "Management change: [NSE filing] Appointment: All E Technologies Limited has informed the Exchange regarding Appointment of Mr Rahul Gupta as Non- Executive Independent Director of the company w.e.f. November 12, 2026. (+2 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "16:57"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "M&A / stake change: Alivus Life Sciences acquires 65.01% stake in IQGEN-X Pharma",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:57"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Unusual volume: 2.9x 20-day avg (price +9.4%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:57"
    }
   ]
  },
@@ -2308,12 +2361,16 @@
   "5a38b5f20b0dd37c": "2026-11-11",
   "639a630d35215893": "2026-11-12",
   "c71493115fa81a65": "2026-11-12",
-  "b56b4c00829d48fa": "2026-11-12"
+  "b56b4c00829d48fa": "2026-11-12",
+  "b67f539e0ee2f5b1": "2026-11-12",
+  "32e519f52d0ff0a1": "2026-11-12",
+  "84ca389c13e2a405": "2026-11-12",
+  "481275c58dbd1e10": "2026-11-12"
  },
- "last_report": "2026-11-12T14:06",
+ "last_report": "2026-11-12T16:57",
  "filing_sources": {
-  "checked": "2026-11-12 14:05",
-  "NSE": "ok: 7 filings for 6 stocks",
+  "checked": "2026-11-12 16:57",
+  "NSE": "ok: 14 filings for 8 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
