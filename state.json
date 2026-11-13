@@ -877,7 +877,47 @@
   "00f22e8522406030": "2026-11-13",
   "38e80202b6202022": "2026-11-13",
   "90bdced7c832a3e6": "2026-11-13",
-  "2e64a3ce69fe9c41": "2026-11-13"
+  "2e64a3ce69fe9c41": "2026-11-13",
+  "a7fc1589ea6912fb": "2026-11-13",
+  "da7e760c13b149ce": "2026-11-13",
+  "8eafb765fc0388cb": "2026-11-13",
+  "a47aba0c1c58163d": "2026-11-13",
+  "a8d493d207b25463": "2026-11-13",
+  "053a2cbc6963ed92": "2026-11-13",
+  "dd0567c6454189a2": "2026-11-13",
+  "0300e85b176a9caf": "2026-11-13",
+  "a59bb91c02895c4d": "2026-11-13",
+  "47d4557fb4e2a163": "2026-11-13",
+  "d581347fa86dcc41": "2026-11-13",
+  "d3c72cad72895380": "2026-11-13",
+  "a9f14a12d66125a3": "2026-11-13",
+  "21662e96a4f394bf": "2026-11-13",
+  "3a419466e659bab8": "2026-11-13",
+  "c10bc928fa4888ab": "2026-11-13",
+  "c34c45ef800864b0": "2026-11-13",
+  "4ee6ea7176f729df": "2026-11-13",
+  "01887f1b08666b36": "2026-11-13",
+  "ccd29d67f5f6db69": "2026-11-13",
+  "2cef7a3828580059": "2026-11-13",
+  "8bf10f2dcc78d090": "2026-11-13",
+  "4230a824266d13df": "2026-11-13",
+  "552648120447192f": "2026-11-13",
+  "26a557a02fce2471": "2026-11-13",
+  "39d33f26316e56c7": "2026-11-13",
+  "0a5a1235f024b779": "2026-11-13",
+  "0a05ae500c96755b": "2026-11-13",
+  "953080e2dfe3d342": "2026-11-13",
+  "0ff6fb2637b63be8": "2026-11-13",
+  "0e0344423d2e8bd5": "2026-11-13",
+  "f24bf026b8e02a57": "2026-11-13",
+  "7f8f64afd71c3bbd": "2026-11-13",
+  "30ae03587184a532": "2026-11-13",
+  "f2c2d5c0af000243": "2026-11-13",
+  "387fde2e9cbd74d8": "2026-11-13",
+  "8fd8b43ffa51d8c6": "2026-11-13",
+  "22ef9b0f61418e45": "2026-11-13",
+  "b90ed3d5934c9e24": "2026-11-13",
+  "21d2847cda49eeb5": "2026-11-13"
  },
  "price_alerted": {
   "2026-11-06": [
@@ -914,7 +954,10 @@
    "AARTIPHARM:volume"
   ],
   "2026-11-13": [
-   "FDC:price"
+   "FDC:price",
+   "ARMANFIN:price",
+   "PENIND:price",
+   "NATCOPHARM:volume"
   ]
  },
  "events": {
@@ -1702,6 +1745,41 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "14:02"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Corporate action: Zee Entertainment: CLSA Rs 110, JM Financial Rs 67 on a Rs 91 buyback price",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "16:55"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Earnings / results: [NSE filing] Outcome of Board Meeting: Natco Pharma Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026 and declaration of 2nd Interim Dividend for FY 2026-27 (+17 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "16:55"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Price -5.4% today at \u20b91,562.80 (volume 1.3x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "16:55"
+   },
+   {
+    "symbol": "PENIND",
+    "event": "Price -5.1% today at \u20b9162.67 (volume 2.8x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "16:55"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Unusual volume: 6.2x 20-day avg (price +0.2%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:55"
    }
   ]
  },
@@ -1847,12 +1925,20 @@
   "93f3486664ad3e74": "2026-11-13",
   "5f5a79dfdaa73ef0": "2026-11-13",
   "2d8aa56db1500bb3": "2026-11-13",
-  "38e80202b6202022": "2026-11-13"
+  "38e80202b6202022": "2026-11-13",
+  "ccd29d67f5f6db69": "2026-11-13",
+  "2cef7a3828580059": "2026-11-13",
+  "8bf10f2dcc78d090": "2026-11-13",
+  "4230a824266d13df": "2026-11-13",
+  "552648120447192f": "2026-11-13",
+  "26a557a02fce2471": "2026-11-13",
+  "39d33f26316e56c7": "2026-11-13",
+  "0a5a1235f024b779": "2026-11-13"
  },
- "last_report": "2026-11-13T14:02",
+ "last_report": "2026-11-13T16:55",
  "filing_sources": {
-  "checked": "2026-11-13 14:02",
-  "NSE": "ok: 17 filings for 10 stocks",
+  "checked": "2026-11-13 16:55",
+  "NSE": "ok: 22 filings for 12 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
