@@ -917,7 +917,44 @@
   "8fd8b43ffa51d8c6": "2026-11-13",
   "22ef9b0f61418e45": "2026-11-13",
   "b90ed3d5934c9e24": "2026-11-13",
-  "21d2847cda49eeb5": "2026-11-13"
+  "21d2847cda49eeb5": "2026-11-13",
+  "59484c07c81000d1": "2026-11-13",
+  "dfe9cec12b2e9b6f": "2026-11-13",
+  "8d407c73db038118": "2026-11-13",
+  "8260adbc6e32a586": "2026-11-13",
+  "2c6d5a6abe5aa0fb": "2026-11-13",
+  "b0384c02eecea103": "2026-11-13",
+  "bab8f3bf0b83808d": "2026-11-13",
+  "d9538d6bec692a17": "2026-11-13",
+  "a437e0c068a6ad1a": "2026-11-13",
+  "329906580838af75": "2026-11-13",
+  "89aaadad02233113": "2026-11-13",
+  "55b897791dcb920a": "2026-11-13",
+  "b3cfc38adbe67563": "2026-11-13",
+  "71c948d4ff0b2e5f": "2026-11-13",
+  "1bb758fc6c3d0ac3": "2026-11-13",
+  "25b47d30e5093049": "2026-11-13",
+  "8bb111e81df499bc": "2026-11-13",
+  "6edbdfe0e8e9fd3d": "2026-11-13",
+  "5d33fd8c6b8f19eb": "2026-11-13",
+  "29085918dbba1ec2": "2026-11-13",
+  "c55cfed10267510f": "2026-11-13",
+  "8ef218903409f2e3": "2026-11-13",
+  "8e896272adfe9a55": "2026-11-13",
+  "af42a0d0516501a6": "2026-11-13",
+  "07f5632083622c2b": "2026-11-13",
+  "abd78de6c3056068": "2026-11-13",
+  "a5da77739626a9ff": "2026-11-13",
+  "09d5fc115a2b3988": "2026-11-13",
+  "ac2cab6497ea0eea": "2026-11-13",
+  "b82d7f9ba029f621": "2026-11-13",
+  "ddafc98e725ea3d9": "2026-11-13",
+  "39455c756a3b57db": "2026-11-13",
+  "3217e19a1c892a75": "2026-11-13",
+  "e3785c9ff83356fd": "2026-11-13",
+  "71ccbd254c117d7a": "2026-11-13",
+  "75bfc677f7fc364c": "2026-11-13",
+  "8c52c615eb03900a": "2026-11-13"
  },
  "price_alerted": {
   "2026-11-06": [
@@ -957,7 +994,8 @@
    "FDC:price",
    "ARMANFIN:price",
    "PENIND:price",
-   "NATCOPHARM:volume"
+   "NATCOPHARM:volume",
+   "PENIND:volume"
   ]
  },
  "events": {
@@ -1780,6 +1818,41 @@
     "impact": "Neutral",
     "importance": 5,
     "time": "16:55"
+   },
+   {
+    "symbol": "SHIVALIK",
+    "event": "Earnings / results: [NSE filing] Outcome of Board Meeting: Shivalik Rasayan Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "19:59"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Earnings / results: Earnings call transcript: NATCO Pharma lifts FY27 PAT outlook after Q2 rebound By Investing.com (+4 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "19:59"
+   },
+   {
+    "symbol": "HINDWAREAP",
+    "event": "Earnings / results: [NSE filing] General Updates: Hindware Home Innovation Limited has informed the Exchange about Presentation on Business wise update for Q2 FY2026-27 (+8 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "19:59"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Earnings / results: Sona BLW Q1 revenue rises 54% to \u20b91,310 crore, unveils Robotics vertical",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "19:59"
+   },
+   {
+    "symbol": "PENIND",
+    "event": "Unusual volume: 2.8x 20-day avg (price -5.1%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "19:59"
    }
   ]
  },
@@ -1933,12 +2006,25 @@
   "552648120447192f": "2026-11-13",
   "26a557a02fce2471": "2026-11-13",
   "39d33f26316e56c7": "2026-11-13",
-  "0a5a1235f024b779": "2026-11-13"
+  "0a5a1235f024b779": "2026-11-13",
+  "8260adbc6e32a586": "2026-11-13",
+  "d17f1cd6162a0ed8": "2026-11-13",
+  "25b47d30e5093049": "2026-11-13",
+  "8bb111e81df499bc": "2026-11-13",
+  "8ef218903409f2e3": "2026-11-13",
+  "8e896272adfe9a55": "2026-11-13",
+  "af42a0d0516501a6": "2026-11-13",
+  "07f5632083622c2b": "2026-11-13",
+  "abd78de6c3056068": "2026-11-13",
+  "a5da77739626a9ff": "2026-11-13",
+  "09d5fc115a2b3988": "2026-11-13",
+  "ac2cab6497ea0eea": "2026-11-13",
+  "71ccbd254c117d7a": "2026-11-13"
  },
- "last_report": "2026-11-13T16:55",
+ "last_report": "2026-11-13T19:59",
  "filing_sources": {
-  "checked": "2026-11-13 16:55",
-  "NSE": "ok: 22 filings for 12 stocks",
+  "checked": "2026-11-13 19:59",
+  "NSE": "ok: 29 filings for 14 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
