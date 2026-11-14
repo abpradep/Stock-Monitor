@@ -872,7 +872,28 @@
   "a21b99ddf5ddcbff": "2026-11-14",
   "e52941cb776806b2": "2026-11-14",
   "4fbd07e135e4ccff": "2026-11-14",
-  "20714f15508688a0": "2026-11-14"
+  "20714f15508688a0": "2026-11-14",
+  "347d606c113488ef": "2026-11-14",
+  "dcf96622d1be168c": "2026-11-14",
+  "36769c396c288932": "2026-11-14",
+  "24b6c5bed608e2df": "2026-11-14",
+  "f1533610461025e5": "2026-11-14",
+  "e95d80b2cd184781": "2026-11-14",
+  "c078f65e215e10b0": "2026-11-14",
+  "cebe56ac8d15fe79": "2026-11-14",
+  "216beabdbf6b656b": "2026-11-14",
+  "a6bc8e2ffcaee587": "2026-11-14",
+  "0e31a7fdca3b0cd8": "2026-11-14",
+  "00a23a719e40d2b5": "2026-11-14",
+  "f04cae673cd0f757": "2026-11-14",
+  "26fd88fa94021661": "2026-11-14",
+  "babe8e7c83e1cb4d": "2026-11-14",
+  "0003991b1f13bdf2": "2026-11-14",
+  "7e1bc918ba4a28b7": "2026-11-14",
+  "eaa645a0bbb3fe8a": "2026-11-14",
+  "16da8f1a49517664": "2026-11-14",
+  "b1e7e3641cde3539": "2026-11-14",
+  "3fe5a6102a048b3a": "2026-11-14"
  },
  "price_alerted": {
   "2026-11-09": [
@@ -1591,6 +1612,27 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "13:51"
+   },
+   {
+    "symbol": "PENIND",
+    "event": "Earnings / results: Pennar Industries PENIND Q2 FY27 Results Newspaper Filing",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:43"
+   },
+   {
+    "symbol": "JUBLPHARMA",
+    "event": "Earnings / results: Jubilant Pharmova Q2 PAT drops 74% YoY to Rs 31 cr",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "16:43"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Sharp price move: S Naren\u2019s art of contra investing: HDFC Bank, Natco Pharma, other 7 top picks down up to 39% from 52-week",
+    "impact": "Neutral",
+    "importance": 6,
+    "time": "16:43"
    }
   ]
  },
@@ -1740,11 +1782,15 @@
   "934c9f48f92d4760": "2026-11-14",
   "3df314181bca3a19": "2026-11-14",
   "7b108cf11dd3f4d2": "2026-11-14",
-  "4042bd77d39fc17c": "2026-11-14"
+  "4042bd77d39fc17c": "2026-11-14",
+  "c078f65e215e10b0": "2026-11-14",
+  "f04cae673cd0f757": "2026-11-14",
+  "29085918dbba1ec2": "2026-11-14",
+  "3fe5a6102a048b3a": "2026-11-14"
  },
- "last_report": "2026-11-14T13:51",
+ "last_report": "2026-11-14T16:43",
  "filing_sources": {
-  "checked": "2026-11-14 13:51",
+  "checked": "2026-11-14 16:43",
   "NSE": "ok: 23 filings for 10 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
