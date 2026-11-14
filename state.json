@@ -851,7 +851,28 @@
   "6c0d8ddb0e4d7ec1": "2026-11-14",
   "cd3c1a303e8c5146": "2026-11-14",
   "37e38656b3f2fe92": "2026-11-14",
-  "24949b2632bc8881": "2026-11-14"
+  "24949b2632bc8881": "2026-11-14",
+  "dca253d2c0a59336": "2026-11-14",
+  "4042bd77d39fc17c": "2026-11-14",
+  "421c815d9fc9e589": "2026-11-14",
+  "6f6a3a76e60c422d": "2026-11-14",
+  "c40048dc54a1749d": "2026-11-14",
+  "f395bf7b613b3119": "2026-11-14",
+  "48b48e19b384c272": "2026-11-14",
+  "3d3c69a2f162ed96": "2026-11-14",
+  "8884ea075147fa2c": "2026-11-14",
+  "527a908b3628c95d": "2026-11-14",
+  "5b211ffe64a025d2": "2026-11-14",
+  "3db8f174839cd521": "2026-11-14",
+  "a549398f95a91dae": "2026-11-14",
+  "844a9f7f45fbf812": "2026-11-14",
+  "d494f9f9faec71a0": "2026-11-14",
+  "06dbde4c15bc93e1": "2026-11-14",
+  "37d34f83f044ba54": "2026-11-14",
+  "a21b99ddf5ddcbff": "2026-11-14",
+  "e52941cb776806b2": "2026-11-14",
+  "4fbd07e135e4ccff": "2026-11-14",
+  "20714f15508688a0": "2026-11-14"
  },
  "price_alerted": {
   "2026-11-09": [
@@ -1556,6 +1577,20 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "10:52"
+   },
+   {
+    "symbol": "ALLETEC",
+    "event": "Earnings / results: All E Technologies Q2 Results FY27: Revenue Up 20.24%, PAT Rs 5.54 Cr",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "13:51"
+   },
+   {
+    "symbol": "JUBLPHARMA",
+    "event": "Earnings / results: Jubilant Pharmova Q2 FY27 Results Board Meeting Set Today",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "13:51"
    }
   ]
  },
@@ -1704,12 +1739,13 @@
   "e3fe22bffaf3f3d1": "2026-11-14",
   "934c9f48f92d4760": "2026-11-14",
   "3df314181bca3a19": "2026-11-14",
-  "7b108cf11dd3f4d2": "2026-11-14"
+  "7b108cf11dd3f4d2": "2026-11-14",
+  "4042bd77d39fc17c": "2026-11-14"
  },
- "last_report": "2026-11-14T10:52",
+ "last_report": "2026-11-14T13:51",
  "filing_sources": {
-  "checked": "2026-11-14 10:52",
-  "NSE": "ok: 21 filings for 10 stocks",
+  "checked": "2026-11-14 13:51",
+  "NSE": "ok: 23 filings for 10 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
