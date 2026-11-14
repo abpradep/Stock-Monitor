@@ -893,7 +893,20 @@
   "eaa645a0bbb3fe8a": "2026-11-14",
   "16da8f1a49517664": "2026-11-14",
   "b1e7e3641cde3539": "2026-11-14",
-  "3fe5a6102a048b3a": "2026-11-14"
+  "3fe5a6102a048b3a": "2026-11-14",
+  "b08b40797f761103": "2026-11-14",
+  "2f18e9dbb9d2e284": "2026-11-14",
+  "694b0e453f32936b": "2026-11-14",
+  "d2ed36b44b6bf7a8": "2026-11-14",
+  "4b399460ce66fd95": "2026-11-14",
+  "7a593d9ae41e1543": "2026-11-14",
+  "890f3224b0dac145": "2026-11-14",
+  "5d8a6bfaff5bf885": "2026-11-14",
+  "a86e656548f8d9b2": "2026-11-14",
+  "c3172860949911da": "2026-11-14",
+  "d2420953224e773f": "2026-11-14",
+  "e5bd34382ec1735d": "2026-11-14",
+  "f5297a7675a33805": "2026-11-14"
  },
  "price_alerted": {
   "2026-11-09": [
@@ -1633,6 +1646,27 @@
     "impact": "Neutral",
     "importance": 6,
     "time": "16:43"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Sharp price move: Laurus Labs - Mutlibaggers: 7 stocks held by 100+ MF schemes in October rally up to 300% in FY27",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "19:46"
+   },
+   {
+    "symbol": "JUBLPHARMA",
+    "event": "Earnings / results: Jubilant Pharmova revenue rises 21% as profit falls 74%",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "19:46"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Earnings / results: Karbonsteel Engineering Ltd to Consider H1 FY27 Results November 14",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "19:46"
    }
   ]
  },
@@ -1786,12 +1820,17 @@
   "c078f65e215e10b0": "2026-11-14",
   "f04cae673cd0f757": "2026-11-14",
   "29085918dbba1ec2": "2026-11-14",
-  "3fe5a6102a048b3a": "2026-11-14"
+  "3fe5a6102a048b3a": "2026-11-14",
+  "b08b40797f761103": "2026-11-14",
+  "7a593d9ae41e1543": "2026-11-14",
+  "7188d703517cb24a": "2026-11-14",
+  "e2a9df9ce82cc8c1": "2026-11-14",
+  "f5297a7675a33805": "2026-11-14"
  },
- "last_report": "2026-11-14T16:43",
+ "last_report": "2026-11-14T19:46",
  "filing_sources": {
-  "checked": "2026-11-14 16:43",
-  "NSE": "ok: 23 filings for 10 stocks",
+  "checked": "2026-11-14 19:46",
+  "NSE": "ok: 24 filings for 10 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
