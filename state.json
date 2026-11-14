@@ -837,7 +837,21 @@
   "6db308ff5c7f6b71": "2026-11-14",
   "95260c95fe5ed20e": "2026-11-14",
   "34d8931751c2f937": "2026-11-14",
-  "f2acbca0498809c9": "2026-11-14"
+  "f2acbca0498809c9": "2026-11-14",
+  "db600fcaa3701fc8": "2026-11-14",
+  "c86c3c0c18ac1637": "2026-11-14",
+  "6621be6c86830f3b": "2026-11-14",
+  "a2d0602fb2710441": "2026-11-14",
+  "51cbeb1a06993adf": "2026-11-14",
+  "3df314181bca3a19": "2026-11-14",
+  "5ad7e826a1c9a8af": "2026-11-14",
+  "598e040b4d3b08bb": "2026-11-14",
+  "5f4645699136f76d": "2026-11-14",
+  "7b108cf11dd3f4d2": "2026-11-14",
+  "6c0d8ddb0e4d7ec1": "2026-11-14",
+  "cd3c1a303e8c5146": "2026-11-14",
+  "37e38656b3f2fe92": "2026-11-14",
+  "24949b2632bc8881": "2026-11-14"
  },
  "price_alerted": {
   "2026-11-09": [
@@ -1528,6 +1542,20 @@
     "impact": "Bullish",
     "importance": 8,
     "time": "07:52"
+   },
+   {
+    "symbol": "JUBLPHARMA",
+    "event": "Earnings / results: Jubilant Pharmova Generics revenue rises 64%, margin at 7% (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "10:52"
+   },
+   {
+    "symbol": "VOEPL",
+    "event": "Earnings / results: Statutory Earnings May Not Be The Best Way To Understand Virtuoso Optoelectronics' (NSE:VOEPL) True Position",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:52"
    }
   ]
  },
@@ -1674,11 +1702,13 @@
   "c2c39542e948634a": "2026-11-14",
   "bc4780e43869b84e": "2026-11-14",
   "e3fe22bffaf3f3d1": "2026-11-14",
-  "934c9f48f92d4760": "2026-11-14"
+  "934c9f48f92d4760": "2026-11-14",
+  "3df314181bca3a19": "2026-11-14",
+  "7b108cf11dd3f4d2": "2026-11-14"
  },
- "last_report": "2026-11-14T07:52",
+ "last_report": "2026-11-14T10:52",
  "filing_sources": {
-  "checked": "2026-11-14 07:52",
+  "checked": "2026-11-14 10:52",
   "NSE": "ok: 21 filings for 10 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
