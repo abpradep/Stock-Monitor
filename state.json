@@ -867,7 +867,23 @@
   "7f5094bc96621cad": "2026-11-16",
   "898bc46d1ec5f4db": "2026-11-16",
   "bbc22741b836eeda": "2026-11-16",
-  "4e88cebdeeac77c8": "2026-11-16"
+  "4e88cebdeeac77c8": "2026-11-16",
+  "a737d1fc1e89a69c": "2026-11-16",
+  "e93a7ef7c8f08f9e": "2026-11-16",
+  "4880042bc523facc": "2026-11-16",
+  "8e448ad91b53899c": "2026-11-16",
+  "b3f4c993f5da8044": "2026-11-16",
+  "8083b4c9b6adfa0b": "2026-11-16",
+  "05036a83ff04da74": "2026-11-16",
+  "6fdcd68f1d6f0632": "2026-11-16",
+  "6f73fe0524b412f8": "2026-11-16",
+  "15677c7bca52d018": "2026-11-16",
+  "15a80bd3a5a6990a": "2026-11-16",
+  "ccf9eca14355779b": "2026-11-16",
+  "aec7428e25b1ded8": "2026-11-16",
+  "039d74145e290b92": "2026-11-16",
+  "bf52a14ab31c043f": "2026-11-16",
+  "d061bcf2f39c7546": "2026-11-16"
  },
  "price_alerted": {
   "2026-11-09": [
@@ -1589,6 +1605,48 @@
     "impact": "Neutral",
     "importance": 5,
     "time": "15:32"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "M&A / stake change: Laurus Labs shares slide 10% after promoter stake sales (+2 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "17:16"
+   },
+   {
+    "symbol": "FDC",
+    "event": "Corporate action: [NSE filing] Buyback: FDC Limited has informed the Exchange about Buyback of equity Shares - Copy of Letter of Offer along with the Tender Forms for DEMAT & Physical Shareholders",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "17:16"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Earnings / results: TCS, Infosys, TechM, LTM, Cyient, Mphasis, TechM shares: Targets amid soft Q3 hopes",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "17:16"
+   },
+   {
+    "symbol": "DENTA",
+    "event": "Earnings / results: Denta Water (NSE:DENTA) Q2 H1 FY27 Earnings Call Recording",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "17:16"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Earnings / results: Natco Pharma surges despite reporting 61% drop in Q2 consolidated net profit",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "17:16"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Earnings / results: Karbonsteel Engineering H1FY27 Results: PAT up 91.61% HoH to \u20b9656.93 lakh",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "17:16"
    }
   ]
  },
@@ -1730,12 +1788,17 @@
   "e535afa712d47c44": "2026-11-16",
   "41c93384e3de2488": "2026-11-16",
   "babc41f0f513674c": "2026-11-16",
-  "5a94655236780960": "2026-11-16"
+  "5a94655236780960": "2026-11-16",
+  "8083b4c9b6adfa0b": "2026-11-16",
+  "6f73fe0524b412f8": "2026-11-16",
+  "15677c7bca52d018": "2026-11-16",
+  "15a80bd3a5a6990a": "2026-11-16",
+  "039d74145e290b92": "2026-11-16"
  },
- "last_report": "2026-11-16T15:32",
+ "last_report": "2026-11-16T17:16",
  "filing_sources": {
-  "checked": "2026-11-16 15:32",
-  "NSE": "ok: 2 filings for 2 stocks",
+  "checked": "2026-11-16 17:16",
+  "NSE": "ok: 3 filings for 3 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
