@@ -883,7 +883,49 @@
   "aec7428e25b1ded8": "2026-11-16",
   "039d74145e290b92": "2026-11-16",
   "bf52a14ab31c043f": "2026-11-16",
-  "d061bcf2f39c7546": "2026-11-16"
+  "d061bcf2f39c7546": "2026-11-16",
+  "6a13caa7776b7624": "2026-11-16",
+  "4d49e7230adeac20": "2026-11-16",
+  "7c7a97a6d3376ad1": "2026-11-16",
+  "7ae331c8bc1c2c67": "2026-11-16",
+  "dc335bc58d6fc411": "2026-11-16",
+  "fa561ca753651bfa": "2026-11-16",
+  "0be3d292291e75bc": "2026-11-16",
+  "094034375c078ec0": "2026-11-16",
+  "12e028189958af6d": "2026-11-16",
+  "3d3f731bcc981042": "2026-11-16",
+  "7a73bd52d72f23f5": "2026-11-16",
+  "802f732aaff8bcce": "2026-11-16",
+  "954d356be783b887": "2026-11-16",
+  "6f62a2cd4ba54c03": "2026-11-16",
+  "7ef9886e39d91362": "2026-11-16",
+  "74d5e34597cf0c2e": "2026-11-16",
+  "e653594257460329": "2026-11-16",
+  "594a21bd417f50dd": "2026-11-16",
+  "3299ecd4ed0c698c": "2026-11-16",
+  "aabb2c91b322456e": "2026-11-16",
+  "73233336a3f50fe9": "2026-11-16",
+  "fbf3b658988055db": "2026-11-16",
+  "2e9c5ec27e9f8d5a": "2026-11-16",
+  "63e1bee9e4d02771": "2026-11-16",
+  "b4305bc118069349": "2026-11-16",
+  "1d5d47ddee6b3f07": "2026-11-16",
+  "3adfa1f0353cd11a": "2026-11-16",
+  "d0f0707c7db1d2e7": "2026-11-16",
+  "aa2316ceaa09ef1a": "2026-11-16",
+  "861aba367dee9f00": "2026-11-16",
+  "2b1f87bcda97893b": "2026-11-16",
+  "879848ecc92e02ed": "2026-11-16",
+  "c98c07fb7911a6b3": "2026-11-16",
+  "51aa9aaf4d2c87a2": "2026-11-16",
+  "323f838b97db6ca1": "2026-11-16",
+  "a4c167c6fa0b5ef1": "2026-11-16",
+  "e78bf0a554599a10": "2026-11-16",
+  "b3224eee2fb091fd": "2026-11-16",
+  "075040db3770e855": "2026-11-16",
+  "ba2eb8c6326e302a": "2026-11-16",
+  "7bdb4e642b0e4923": "2026-11-16",
+  "2cbbc5712bb57fb0": "2026-11-16"
  },
  "price_alerted": {
   "2026-11-09": [
@@ -1647,6 +1689,34 @@
     "impact": "Bullish",
     "importance": 7,
     "time": "17:16"
+   },
+   {
+    "symbol": "SHIVALIK",
+    "event": "Earnings / results: Shivalik Rasayan Q2 FY27 Results Filing: What Investors Should Know",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "21:28"
+   },
+   {
+    "symbol": "PENIND",
+    "event": "Earnings / results: Pennar Industries PENIND Q2FY27 Earnings Call Recording Now Live",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "21:28"
+   },
+   {
+    "symbol": "FDC",
+    "event": "Corporate action: FDC Limited NSE:FDC Buyback 2026 Tender Offer Details",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "21:28"
+   },
+   {
+    "symbol": "HINDWAREAP",
+    "event": "Management change: Hindware Home Innovation Appoints Three New Senior Executives",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "21:28"
    }
   ]
  },
@@ -1793,12 +1863,18 @@
   "6f73fe0524b412f8": "2026-11-16",
   "15677c7bca52d018": "2026-11-16",
   "15a80bd3a5a6990a": "2026-11-16",
-  "039d74145e290b92": "2026-11-16"
+  "039d74145e290b92": "2026-11-16",
+  "52ca11714e9ca03b": "2026-11-16",
+  "094034375c078ec0": "2026-11-16",
+  "7ef9886e39d91362": "2026-11-16",
+  "3299ecd4ed0c698c": "2026-11-16",
+  "aabb2c91b322456e": "2026-11-16",
+  "861aba367dee9f00": "2026-11-16"
  },
- "last_report": "2026-11-16T17:16",
+ "last_report": "2026-11-16T21:29",
  "filing_sources": {
-  "checked": "2026-11-16 17:16",
-  "NSE": "ok: 3 filings for 3 stocks",
+  "checked": "2026-11-16 21:28",
+  "NSE": "ok: 10 filings for 10 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
