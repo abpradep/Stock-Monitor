@@ -788,7 +788,37 @@
   "9ea3fb2d27849294": "2026-11-16",
   "d4d689299c911a9e": "2026-11-16",
   "a79edb4789d70f0b": "2026-11-16",
-  "ab88542dbf202b12": "2026-11-16"
+  "ab88542dbf202b12": "2026-11-16",
+  "b94375fcd9faedec": "2026-11-16",
+  "61e5be77cbaad3b8": "2026-11-16",
+  "cf1ff788b27c95d8": "2026-11-16",
+  "9c312948f4bc78ee": "2026-11-16",
+  "66716d2f76bedce0": "2026-11-16",
+  "3eaad0c9b8f57aa2": "2026-11-16",
+  "a352e3b90093dca7": "2026-11-16",
+  "7d07b2ffbed8af9a": "2026-11-16",
+  "cf6e7d89474fcde4": "2026-11-16",
+  "27f3d4f1cd782b32": "2026-11-16",
+  "4f7f4b2500548f50": "2026-11-16",
+  "1b3f40da8206577e": "2026-11-16",
+  "2c0d419a85ae19cb": "2026-11-16",
+  "7b164888698f0db6": "2026-11-16",
+  "f62bd5c549f17a51": "2026-11-16",
+  "3105228d552be662": "2026-11-16",
+  "622a6344b7d81e66": "2026-11-16",
+  "da8c07a2eb8332b7": "2026-11-16",
+  "dcfa77a339d79bc7": "2026-11-16",
+  "223dd3e0d4675831": "2026-11-16",
+  "a8938d67e8be7afb": "2026-11-16",
+  "ff068670d99b05e3": "2026-11-16",
+  "923ffe014a00c722": "2026-11-16",
+  "13d5cbd0d49430df": "2026-11-16",
+  "f5efcdaa509fcfd4": "2026-11-16",
+  "deb3ca9d622c9245": "2026-11-16",
+  "b8ac2ed3097d3e23": "2026-11-16",
+  "336e99722490aa62": "2026-11-16",
+  "70b3b80a1cbfecc3": "2026-11-16",
+  "b6b70501103a4236": "2026-11-16"
  },
  "price_alerted": {
   "2026-11-09": [
@@ -819,7 +849,13 @@
    "NATCOPHARM:volume",
    "PENIND:volume"
   ],
-  "2026-11-16": []
+  "2026-11-16": [
+   "LAURUSLABS:price",
+   "SOLARA:price",
+   "PENIND:volume",
+   "NATCOPHARM:volume",
+   "KARBON:price"
+  ]
  },
  "events": {
   "2026-11-09": [
@@ -1382,6 +1418,62 @@
     "impact": "Neutral",
     "importance": 8,
     "time": "08:06"
+   },
+   {
+    "symbol": "JUBLPHARMA",
+    "event": "Earnings / results: Earnings call transcript: Jubilant Pharmova tops revenue in Q2 2026, shares rise By Investing.com (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "11:20"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Earnings / results: Natco Pharma Shares Rally 9% Despite Weak Q2 Results; Details Inside (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "11:20"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Management change: Aarti Pharmalabs (NSE:AARTIPHARM): What Does the Passing of Chairman Emeritus Chandrakant Gogri Mean?",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "11:20"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Price -5.3% today at \u20b92,294.80 (volume 0.9x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "11:20"
+   },
+   {
+    "symbol": "SOLARA",
+    "event": "Price -6.8% today at \u20b9642.65 (volume 0.2x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "11:20"
+   },
+   {
+    "symbol": "PENIND",
+    "event": "Unusual volume: 3.1x 20-day avg (price +3.6%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "11:20"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Unusual volume: 4.6x 20-day avg (price +0.2%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "11:20"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Price -8.6% today at \u20b995.00 (volume 0.4x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 7,
+    "time": "11:20"
    }
   ]
  },
@@ -1509,11 +1601,16 @@
   "cbf99ebc9328ab76": "2026-11-16",
   "9d8668557c2bbf97": "2026-11-16",
   "f10a1de37b8cdb99": "2026-11-16",
-  "755e9abd7677ab16": "2026-11-16"
+  "755e9abd7677ab16": "2026-11-16",
+  "7d07b2ffbed8af9a": "2026-11-16",
+  "cf6e7d89474fcde4": "2026-11-16",
+  "ff068670d99b05e3": "2026-11-16",
+  "923ffe014a00c722": "2026-11-16",
+  "b8ac2ed3097d3e23": "2026-11-16"
  },
- "last_report": "2026-11-16T08:06",
+ "last_report": "2026-11-16T11:20",
  "filing_sources": {
-  "checked": "2026-11-16 08:06",
+  "checked": "2026-11-16 11:20",
   "NSE": "ok: 1 filings for 1 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
