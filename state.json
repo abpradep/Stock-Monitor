@@ -1,63 +1,5 @@
 {
  "seen": {
-  "2f13773ae3c01ed6": "2026-11-08",
-  "f786fc6d7311a9a6": "2026-11-08",
-  "20fd83c095699bdb": "2026-11-08",
-  "1f9397250cc39afc": "2026-11-08",
-  "c43d56992a270741": "2026-11-08",
-  "2f0d720fb912c04a": "2026-11-08",
-  "0d5dc21cdb9b5d42": "2026-11-08",
-  "c508d130e08d798e": "2026-11-08",
-  "f7f53bc57ea32687": "2026-11-08",
-  "363faf37593bb37c": "2026-11-08",
-  "7595aa25f23a64ce": "2026-11-08",
-  "02383b19b6270a20": "2026-11-08",
-  "4d565e4009a9d2bd": "2026-11-08",
-  "e9743804b599c961": "2026-11-08",
-  "a2ca0ecd37530788": "2026-11-08",
-  "ab1a453ebad69617": "2026-11-08",
-  "a5328052c559b785": "2026-11-08",
-  "dc63a057d727c572": "2026-11-08",
-  "fe9fc5415bac1e68": "2026-11-08",
-  "e34237a3b3f3b5d0": "2026-11-08",
-  "8f8ee0bd511201b9": "2026-11-08",
-  "98f95e3e12384556": "2026-11-08",
-  "ffcd166c6791f45d": "2026-11-08",
-  "d63e4ec642163151": "2026-11-08",
-  "a352e3b90093dca7": "2026-11-08",
-  "68a329566668e778": "2026-11-08",
-  "7e5328a0aca0142a": "2026-11-08",
-  "b7bb21a7a806d0cb": "2026-11-08",
-  "15facee6c75f4b7f": "2026-11-08",
-  "99021b91efe1051d": "2026-11-08",
-  "5969e64bd756a08e": "2026-11-08",
-  "263e9c23fa6673ea": "2026-11-08",
-  "5b1f3ddbf5fb4951": "2026-11-08",
-  "d8ceceeb1960e368": "2026-11-08",
-  "bbe8f68de48e3115": "2026-11-08",
-  "ab386abe0bfc87d7": "2026-11-08",
-  "1a12855182afd22e": "2026-11-08",
-  "edf891648fd0bdd2": "2026-11-08",
-  "d99e6fd9e7da9a64": "2026-11-08",
-  "a4c0cd364b4217cc": "2026-11-08",
-  "dd3f845500cdf72c": "2026-11-08",
-  "17398062c2eef3ac": "2026-11-08",
-  "f3582af0e8253749": "2026-11-08",
-  "b0bd9b0c68029b1f": "2026-11-08",
-  "28119420db1925e0": "2026-11-08",
-  "123cfae62d430dd7": "2026-11-08",
-  "e6f78a77265b80b2": "2026-11-08",
-  "6b9446b62a51a916": "2026-11-08",
-  "5fbd6d39af34fb0c": "2026-11-08",
-  "df6d2952b26c5932": "2026-11-08",
-  "ab76821d5b8d235a": "2026-11-08",
-  "02d814dcb361a948": "2026-11-08",
-  "7b791878a2919d66": "2026-11-08",
-  "5c51f85ebeca8090": "2026-11-08",
-  "c909dcf81d8222e7": "2026-11-08",
-  "8a6590c1f7ddab2d": "2026-11-08",
-  "0fffbface6b6804f": "2026-11-08",
-  "ceb4a5dbe27a4eb3": "2026-11-08",
   "4c9c687b632f2ee9": "2026-11-09",
   "b80377ae7eea589b": "2026-11-09",
   "474f86b8328fa4b2": "2026-11-09",
@@ -816,7 +758,37 @@
   "e264295356de4168": "2026-11-15",
   "3871960affaf72d3": "2026-11-15",
   "b5fafd14da7551a2": "2026-11-15",
-  "b5cc40830fe8581e": "2026-11-15"
+  "b5cc40830fe8581e": "2026-11-15",
+  "7307d19c9d5468ed": "2026-11-16",
+  "71db62f2431ccb9c": "2026-11-16",
+  "a14a6dd3f3288543": "2026-11-16",
+  "80d456d5ada82224": "2026-11-16",
+  "b63a5aa96004c860": "2026-11-16",
+  "4b764355f2eb09ab": "2026-11-16",
+  "dbae3c24283e2a39": "2026-11-16",
+  "37776b12795807aa": "2026-11-16",
+  "f9a5e3fc8fd5759c": "2026-11-16",
+  "85f84606fd0e14ba": "2026-11-16",
+  "cd85383854106a77": "2026-11-16",
+  "4164f01e0ff28287": "2026-11-16",
+  "0ae739c3f777fefd": "2026-11-16",
+  "c14c07f1620a5955": "2026-11-16",
+  "83882c84c8ce6f82": "2026-11-16",
+  "cbf99ebc9328ab76": "2026-11-16",
+  "9d8668557c2bbf97": "2026-11-16",
+  "38aec31526e24850": "2026-11-16",
+  "f10a1de37b8cdb99": "2026-11-16",
+  "755e9abd7677ab16": "2026-11-16",
+  "9bc6c579089736c7": "2026-11-16",
+  "0a3b56d4d673f5d6": "2026-11-16",
+  "32f7003030adebff": "2026-11-16",
+  "7b24b43980f30bba": "2026-11-16",
+  "12034aba4dab700c": "2026-11-16",
+  "69f25de870da7cf9": "2026-11-16",
+  "9ea3fb2d27849294": "2026-11-16",
+  "d4d689299c911a9e": "2026-11-16",
+  "a79edb4789d70f0b": "2026-11-16",
+  "ab88542dbf202b12": "2026-11-16"
  },
  "price_alerted": {
   "2026-11-09": [
@@ -846,53 +818,10 @@
    "PENIND:price",
    "NATCOPHARM:volume",
    "PENIND:volume"
-  ]
+  ],
+  "2026-11-16": []
  },
  "events": {
-  "2026-11-08": [
-   {
-    "symbol": "DENTA",
-    "event": "Earnings / results: Denta Water Reports Q2 FY27 Performance; Order Book Stands at \u20b97,824 Million",
-    "impact": "Neutral",
-    "importance": 7,
-    "time": "07:54"
-   },
-   {
-    "symbol": "ENTERO",
-    "event": "Earnings / results: Entero Healthcare Solutions Ltd (NSE:ENTERO) (Q2 2027) Earnings Call Highlights: Revenue Surges ... (+1 more stories)",
-    "impact": "Bullish",
-    "importance": 7,
-    "time": "07:54"
-   },
-   {
-    "symbol": "JMFINANCIL",
-    "event": "Earnings / results: JM Financial Ltd (BOM:523405) (Q2 2027) Earnings Call Highlights",
-    "impact": "Neutral",
-    "importance": 7,
-    "time": "10:51"
-   },
-   {
-    "symbol": "ENTERO",
-    "event": "Earnings / results: Entero Healthcare Solutions Ltd (NSE:ENTERO) (Q2 2027) Earnings",
-    "impact": "Neutral",
-    "importance": 7,
-    "time": "10:51"
-   },
-   {
-    "symbol": "LAURUSLABS",
-    "event": "Earnings / results: Laurus Labs\u2019 \u20b93,000 Crore Capex Plan: Reviewing its Asset Turnover, Cash Generation, and Long Term Profitability",
-    "impact": "Neutral",
-    "importance": 7,
-    "time": "13:50"
-   },
-   {
-    "symbol": "INFOBEAN",
-    "event": "Earnings / results: InfoBeans Q2FY27 Results: Net profit up 16%, revenue grows 28% YoY",
-    "impact": "Bullish",
-    "importance": 7,
-    "time": "13:50"
-   }
-  ],
   "2026-11-09": [
    {
     "symbol": "BIRLANU",
@@ -1438,18 +1367,27 @@
     "importance": 7,
     "time": "07:55"
    }
+  ],
+  "2026-11-16": [
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Earnings / results: Laurus Labs profit rises 124% to \u20b9362 crore in Q1FY27 on CDMO surge",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "08:06"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Management change: [NSE filing] General Updates: Aarti Pharmalabs Limited has informed the Exchange about the sad demise of Promoter and Chairman Emeritus of the Company. (+3 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "08:06"
+   }
   ]
  },
  "bse_codes": {},
  "filings_primed": true,
  "reported_news": {
-  "363faf37593bb37c": "2026-11-08",
-  "7595aa25f23a64ce": "2026-11-08",
-  "02383b19b6270a20": "2026-11-08",
-  "98f95e3e12384556": "2026-11-08",
-  "68a329566668e778": "2026-11-08",
-  "15facee6c75f4b7f": "2026-11-08",
-  "263e9c23fa6673ea": "2026-11-08",
   "65564ed8287d5b02": "2026-11-09",
   "dfac6ea9c9bf137e": "2026-11-09",
   "ccfa18e04c09bb85": "2026-11-09",
@@ -1566,12 +1504,17 @@
   "1b1138aa05b5cb0c": "2026-11-15",
   "5991332a11a81382": "2026-11-15",
   "26867e8b0e3b91c0": "2026-11-15",
-  "3871960affaf72d3": "2026-11-15"
+  "3871960affaf72d3": "2026-11-15",
+  "7307d19c9d5468ed": "2026-11-16",
+  "cbf99ebc9328ab76": "2026-11-16",
+  "9d8668557c2bbf97": "2026-11-16",
+  "f10a1de37b8cdb99": "2026-11-16",
+  "755e9abd7677ab16": "2026-11-16"
  },
- "last_report": "2026-11-15T19:47",
+ "last_report": "2026-11-16T08:06",
  "filing_sources": {
-  "checked": "2026-11-15 19:47",
-  "NSE": "ok: 4 filings for 4 stocks",
+  "checked": "2026-11-16 08:06",
+  "NSE": "ok: 1 filings for 1 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
