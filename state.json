@@ -818,7 +818,56 @@
   "b8ac2ed3097d3e23": "2026-11-16",
   "336e99722490aa62": "2026-11-16",
   "70b3b80a1cbfecc3": "2026-11-16",
-  "b6b70501103a4236": "2026-11-16"
+  "b6b70501103a4236": "2026-11-16",
+  "d0395a43d8cdbb56": "2026-11-16",
+  "147e8816719843d4": "2026-11-16",
+  "2afd2624ef9c279c": "2026-11-16",
+  "5b3f548ba17b9686": "2026-11-16",
+  "4bc9912dc6714ead": "2026-11-16",
+  "86d3960681018369": "2026-11-16",
+  "7d466a07c0b34ced": "2026-11-16",
+  "9c1a0cff14d23e15": "2026-11-16",
+  "e1fb8d94e6ee70ff": "2026-11-16",
+  "e831adf954ff3872": "2026-11-16",
+  "52ca11714e9ca03b": "2026-11-16",
+  "e84fb9b782b42dc6": "2026-11-16",
+  "3006fef0bde00fe5": "2026-11-16",
+  "59d61054e583cbe6": "2026-11-16",
+  "78d099118f5becf1": "2026-11-16",
+  "3fbf68915c09efd8": "2026-11-16",
+  "87e0b19e06f9a0aa": "2026-11-16",
+  "5f882526204c5518": "2026-11-16",
+  "41c93384e3de2488": "2026-11-16",
+  "b5756c5a385c6cba": "2026-11-16",
+  "2ed23393389dad99": "2026-11-16",
+  "c20e080333e3d97e": "2026-11-16",
+  "b1d3dbe1808b5110": "2026-11-16",
+  "b95647d42ec27d9b": "2026-11-16",
+  "1cdb279b932c7c0b": "2026-11-16",
+  "a67a816cc7651841": "2026-11-16",
+  "caddce0feb836095": "2026-11-16",
+  "09260eadcd508052": "2026-11-16",
+  "8c2a26f1e2f0b7ac": "2026-11-16",
+  "92f6dc6945382244": "2026-11-16",
+  "0b72957d0c78bbb9": "2026-11-16",
+  "ec31617593d75131": "2026-11-16",
+  "e535afa712d47c44": "2026-11-16",
+  "db1d1ef764f580e7": "2026-11-16",
+  "b41b6347b617d5ad": "2026-11-16",
+  "53261fc9f87272ab": "2026-11-16",
+  "59e979ba0ce48669": "2026-11-16",
+  "ac3e215d7d95b1aa": "2026-11-16",
+  "6bbc3d5410921912": "2026-11-16",
+  "eedbf6423c7df0b3": "2026-11-16",
+  "babc41f0f513674c": "2026-11-16",
+  "38c8edcba6d280ea": "2026-11-16",
+  "5a94655236780960": "2026-11-16",
+  "38f1e673cd7daff9": "2026-11-16",
+  "beb7cce418e10c31": "2026-11-16",
+  "7f5094bc96621cad": "2026-11-16",
+  "898bc46d1ec5f4db": "2026-11-16",
+  "bbc22741b836eeda": "2026-11-16",
+  "4e88cebdeeac77c8": "2026-11-16"
  },
  "price_alerted": {
   "2026-11-09": [
@@ -854,7 +903,10 @@
    "SOLARA:price",
    "PENIND:volume",
    "NATCOPHARM:volume",
-   "KARBON:price"
+   "KARBON:price",
+   "LAURUSLABS:volume",
+   "JUBLPHARMA:volume",
+   "DENTA:volume"
   ]
  },
  "events": {
@@ -1474,6 +1526,69 @@
     "impact": "Bearish (price action)",
     "importance": 7,
     "time": "11:20"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "M&A / stake change: Laurus Labs Promoter Announces Small Stake Sale For Charity, Outlook Unchanged (+5 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "15:32"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Analyst action: JM Financial Model Portfolio: Banks upgraded; 3 sectors lose favour",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "15:32"
+   },
+   {
+    "symbol": "FDC",
+    "event": "Corporate action: FDC Ltd launches \u20b9120 crore buyback at \u20b9500 per share",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "15:32"
+   },
+   {
+    "symbol": "JUBLPHARMA",
+    "event": "Earnings / results: Jubilant Pharmova Q2 revenue jumps 21% to Rs 2,370 crore; profit plunges 74%",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "15:32"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Analyst action: Buy Natco Pharma: target of Rs 1065: ICICI Securities",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "15:32"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Sharp price move: Broad-Based Technical Strength Lifts Aarti Pharmalabs Ltd to 52-Week High of Rs 1024.65",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "15:32"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Unusual volume: 2.7x 20-day avg (price -8.4%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "15:32"
+   },
+   {
+    "symbol": "JUBLPHARMA",
+    "event": "Unusual volume: 2.9x 20-day avg (price -0.4%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "15:32"
+   },
+   {
+    "symbol": "DENTA",
+    "event": "Unusual volume: 2.9x 20-day avg (price -4.9%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "15:32"
    }
   ]
  },
@@ -1606,12 +1721,21 @@
   "cf6e7d89474fcde4": "2026-11-16",
   "ff068670d99b05e3": "2026-11-16",
   "923ffe014a00c722": "2026-11-16",
-  "b8ac2ed3097d3e23": "2026-11-16"
+  "b8ac2ed3097d3e23": "2026-11-16",
+  "2afd2624ef9c279c": "2026-11-16",
+  "5b3f548ba17b9686": "2026-11-16",
+  "4bc9912dc6714ead": "2026-11-16",
+  "1cdb279b932c7c0b": "2026-11-16",
+  "ec31617593d75131": "2026-11-16",
+  "e535afa712d47c44": "2026-11-16",
+  "41c93384e3de2488": "2026-11-16",
+  "babc41f0f513674c": "2026-11-16",
+  "5a94655236780960": "2026-11-16"
  },
- "last_report": "2026-11-16T11:20",
+ "last_report": "2026-11-16T15:32",
  "filing_sources": {
-  "checked": "2026-11-16 11:20",
-  "NSE": "ok: 1 filings for 1 stocks",
+  "checked": "2026-11-16 15:32",
+  "NSE": "ok: 2 filings for 2 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
