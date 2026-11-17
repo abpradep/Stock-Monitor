@@ -861,7 +861,41 @@
   "6ec50ce07bffe392": "2026-11-17",
   "80f4ad77fdd515ee": "2026-11-17",
   "5229489d803e9223": "2026-11-17",
-  "db98716b7487dc0e": "2026-11-17"
+  "db98716b7487dc0e": "2026-11-17",
+  "400452b1e8b1a4bf": "2026-11-17",
+  "92d660008ee6f402": "2026-11-17",
+  "e5e772d5277dc3c5": "2026-11-17",
+  "a0c1006b7399abad": "2026-11-17",
+  "1f3fcc193f6aa08a": "2026-11-17",
+  "43861d7dbaa9f6aa": "2026-11-17",
+  "d2ecee7ac3b45d22": "2026-11-17",
+  "d5c6fae5674042e6": "2026-11-17",
+  "9bc2a6ab45749b60": "2026-11-17",
+  "a36c5033864c01df": "2026-11-17",
+  "a97248f1f00b690d": "2026-11-17",
+  "4a64f2f57f9a293d": "2026-11-17",
+  "9895df65d65dff6a": "2026-11-17",
+  "0d3129a3af14a3a7": "2026-11-17",
+  "48825e383e1a9fb3": "2026-11-17",
+  "467bc1dd0d6fb656": "2026-11-17",
+  "b597571ac3cbdd84": "2026-11-17",
+  "4828ff2cfd5411ad": "2026-11-17",
+  "18b68adae94dfef9": "2026-11-17",
+  "f3b53631d9182069": "2026-11-17",
+  "0e50e524b09b8c6a": "2026-11-17",
+  "76e67a7e195e063a": "2026-11-17",
+  "1f7dcb73a3eb917c": "2026-11-17",
+  "8d347841303acfe2": "2026-11-17",
+  "4e3de517886188e7": "2026-11-17",
+  "ac9dccf762fb28d8": "2026-11-17",
+  "c07d161263de8701": "2026-11-17",
+  "b6fdfab772bf36f8": "2026-11-17",
+  "a840900f25c92977": "2026-11-17",
+  "d3bccd6a84d37f97": "2026-11-17",
+  "b692c3fb3925d46a": "2026-11-17",
+  "d382172c5c376294": "2026-11-17",
+  "36c3576f17bd1342": "2026-11-17",
+  "575208c288012f85": "2026-11-17"
  },
  "price_alerted": {
   "2026-11-10": [],
@@ -895,7 +929,11 @@
   ],
   "2026-11-17": [
    "GREAVESCOT:price",
-   "KARBON:price"
+   "KARBON:price",
+   "LAURUSLABS:price",
+   "SHIVALIK:price",
+   "GREAVESCOT:volume",
+   "VOEPL:price"
   ]
  },
  "events": {
@@ -1571,6 +1609,55 @@
     "impact": "Bearish (price action)",
     "importance": 7,
     "time": "10:59"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "M&A / stake change: Laurus Labs shares rise 3.5% as promoter says no further plans for stake sale (+3 more stories)",
+    "impact": "Bullish",
+    "importance": 8,
+    "time": "14:07"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Sharp price move: Greaves Cotton shares rally 9% to hit highest level in 3 months; what's fueling the rally (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "14:07"
+   },
+   {
+    "symbol": "JUBLPHARMA",
+    "event": "Earnings / results: Jubilant Pharmova Q2 Review: Nirmal Bang Raises Target Price, Bets On H2 Margin Recovery",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "14:07"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "Price +5.4% today at \u20b92,340.20 (volume 1.4x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:07"
+   },
+   {
+    "symbol": "SHIVALIK",
+    "event": "Price -5.5% today at \u20b9288.45 (volume 0.4x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "14:07"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Unusual volume: 4.4x 20-day avg (price +6.5%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "14:07"
+   },
+   {
+    "symbol": "VOEPL",
+    "event": "Price -5.5% today at \u20b9461.20 (volume 1.0x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 6,
+    "time": "14:07"
    }
   ]
  },
@@ -1712,11 +1799,18 @@
   "15e13fa735b994f4": "2026-11-17",
   "fd8859efc8a45a93": "2026-11-17",
   "60f5b7c5e55e1553": "2026-11-17",
-  "99211c07264513a3": "2026-11-17"
+  "99211c07264513a3": "2026-11-17",
+  "400452b1e8b1a4bf": "2026-11-17",
+  "92d660008ee6f402": "2026-11-17",
+  "e5e772d5277dc3c5": "2026-11-17",
+  "1f3fcc193f6aa08a": "2026-11-17",
+  "d5c6fae5674042e6": "2026-11-17",
+  "9bc2a6ab45749b60": "2026-11-17",
+  "467bc1dd0d6fb656": "2026-11-17"
  },
- "last_report": "2026-11-17T10:59",
+ "last_report": "2026-11-17T14:07",
  "filing_sources": {
-  "checked": "2026-11-17 10:59",
+  "checked": "2026-11-17 14:06",
   "NSE": "ok: 11 filings for 11 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
