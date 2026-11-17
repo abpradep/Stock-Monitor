@@ -1,112 +1,5 @@
 {
  "seen": {
-  "4c9c687b632f2ee9": "2026-11-09",
-  "b80377ae7eea589b": "2026-11-09",
-  "474f86b8328fa4b2": "2026-11-09",
-  "000e802cbbdb81df": "2026-11-09",
-  "5b026a19f9e53e0e": "2026-11-09",
-  "50b6a9c182814981": "2026-11-09",
-  "d8740cb7c68ff642": "2026-11-09",
-  "744a11821b7d03ed": "2026-11-09",
-  "fbcaafdf85c3e387": "2026-11-09",
-  "65564ed8287d5b02": "2026-11-09",
-  "c09e73a2354a283e": "2026-11-09",
-  "b2ab570b5a7e023c": "2026-11-09",
-  "018d2e74383abf53": "2026-11-09",
-  "f12e612e7e74a09e": "2026-11-09",
-  "fddc898f9edaa896": "2026-11-09",
-  "7245f625301b805c": "2026-11-09",
-  "27641de318efa222": "2026-11-09",
-  "0e013bb72fea24bf": "2026-11-09",
-  "5f8b14094b384621": "2026-11-09",
-  "416e70aac7f6b296": "2026-11-09",
-  "a1039d0ac0e6de68": "2026-11-09",
-  "25c3dd697c05b6ef": "2026-11-09",
-  "2f39e52d263c7ca6": "2026-11-09",
-  "8c2380ed2215affb": "2026-11-09",
-  "79470f382f4872f3": "2026-11-09",
-  "80d1c1d297c5caeb": "2026-11-09",
-  "2013b5419150572e": "2026-11-09",
-  "eb554188b54f930f": "2026-11-09",
-  "dfac6ea9c9bf137e": "2026-11-09",
-  "f44eaecb209502c0": "2026-11-09",
-  "4bb092ae2d10276a": "2026-11-09",
-  "f676f901172884fe": "2026-11-09",
-  "2868618cd80df0f4": "2026-11-09",
-  "1e76a312be711e5e": "2026-11-09",
-  "ccfa18e04c09bb85": "2026-11-09",
-  "74a31d1402b438a8": "2026-11-09",
-  "9bd4f5789786a631": "2026-11-09",
-  "9f7650f14eac912f": "2026-11-09",
-  "93fd0f1cbac9e9f5": "2026-11-09",
-  "a8a3686a68755a1c": "2026-11-09",
-  "a43ffda42e7cef37": "2026-11-09",
-  "f06fe49507917732": "2026-11-09",
-  "31dbb6a960c57dbe": "2026-11-09",
-  "220a5506432385b3": "2026-11-09",
-  "ff354b927cc0c459": "2026-11-09",
-  "02110f7e7847279f": "2026-11-09",
-  "1781094a9b6ceeb7": "2026-11-09",
-  "cbb39d7a14a99973": "2026-11-09",
-  "661bcb6578e735a2": "2026-11-09",
-  "7b564824a3728ed9": "2026-11-09",
-  "ca923c3e5980390a": "2026-11-09",
-  "7c4b9423d0e6b69a": "2026-11-09",
-  "6eaabd675219f80e": "2026-11-09",
-  "788fec6242e3c2e0": "2026-11-09",
-  "d613df62720c0e42": "2026-11-09",
-  "6330725023bb0246": "2026-11-09",
-  "a627b3ef78f58ccb": "2026-11-09",
-  "8e4337b1424fd017": "2026-11-09",
-  "01cdf7de69a35c22": "2026-11-09",
-  "c75a5092eea79c2b": "2026-11-09",
-  "8f0999fcecd7d45a": "2026-11-09",
-  "c9cba4c8f3ebe5d4": "2026-11-09",
-  "aec6619268838b5d": "2026-11-09",
-  "bed7fa877cc9140b": "2026-11-09",
-  "b2b0444622565dcf": "2026-11-09",
-  "e3c2c291c24c8245": "2026-11-09",
-  "f121fc6e05981ac1": "2026-11-09",
-  "31b11b43c5b5c6cb": "2026-11-09",
-  "9ee179f2d65ab77d": "2026-11-09",
-  "9d5cd39bb717bfb1": "2026-11-09",
-  "a65b860006e44e4e": "2026-11-09",
-  "ac3f3f191f202419": "2026-11-09",
-  "25127b3b86aa6039": "2026-11-09",
-  "467fadf1a3bb4c34": "2026-11-09",
-  "af2e96a6a2d9459f": "2026-11-09",
-  "e36f2e24bea161e9": "2026-11-09",
-  "ab1ec8c3c1913965": "2026-11-09",
-  "acc4a13cab0725a9": "2026-11-09",
-  "add2252e05084b0c": "2026-11-09",
-  "b03eb906ce9a6d68": "2026-11-09",
-  "d2c9fe2b9d1b0313": "2026-11-09",
-  "2ec3d2e950b85ef8": "2026-11-09",
-  "3cb19cc0a135588c": "2026-11-09",
-  "5c25b8291fcd80ac": "2026-11-09",
-  "7fe84757c472109a": "2026-11-09",
-  "b75a60eda8ad1077": "2026-11-09",
-  "2fd7f033bd9ab7aa": "2026-11-09",
-  "5edd51f14f2bfcb0": "2026-11-09",
-  "63aa36e6b6c1f430": "2026-11-09",
-  "34db2f8646d0d209": "2026-11-09",
-  "4adc18c41290c3ef": "2026-11-09",
-  "428163952cd784a7": "2026-11-09",
-  "a6b9c223f559edf8": "2026-11-09",
-  "83f1a9e80598dd72": "2026-11-09",
-  "e4ecee5225b565f6": "2026-11-09",
-  "51be2644bce17820": "2026-11-09",
-  "bbe0ac1acfb1ac9c": "2026-11-09",
-  "fb37f65ed17235d4": "2026-11-09",
-  "f483e42e6d45578e": "2026-11-09",
-  "ea48a0b363644aaf": "2026-11-09",
-  "fff1ff39c76bcc2f": "2026-11-09",
-  "a0134e989a88c5a8": "2026-11-09",
-  "602a4dab16449259": "2026-11-09",
-  "40642327468badb1": "2026-11-09",
-  "07e302084f7d39fe": "2026-11-09",
-  "4c32146b046d4c27": "2026-11-09",
-  "ee127326360065b5": "2026-11-09",
   "e270fa7e98a76c5e": "2026-11-10",
   "aff0a7c3892e61a7": "2026-11-10",
   "65f0231cc5f4d76e": "2026-11-10",
@@ -925,18 +818,22 @@
   "075040db3770e855": "2026-11-16",
   "ba2eb8c6326e302a": "2026-11-16",
   "7bdb4e642b0e4923": "2026-11-16",
-  "2cbbc5712bb57fb0": "2026-11-16"
+  "2cbbc5712bb57fb0": "2026-11-16",
+  "d728f7fe12bc716f": "2026-11-17",
+  "2058e74b8fb578f1": "2026-11-17",
+  "cd499255bc6a24c1": "2026-11-17",
+  "11c6ce3d43d1ae12": "2026-11-17",
+  "dac74a9dddf4e1a6": "2026-11-17",
+  "511cab5566582462": "2026-11-17",
+  "f205111beda40bdb": "2026-11-17",
+  "b9812dc429316b87": "2026-11-17",
+  "64e79b1b12b5482d": "2026-11-17",
+  "337e416ed486afb2": "2026-11-17",
+  "006c908aeca6767f": "2026-11-17",
+  "cb2672f20155ba33": "2026-11-17",
+  "a8ec77fc4561a9e5": "2026-11-17"
  },
  "price_alerted": {
-  "2026-11-09": [
-   "LAURUSLABS:price",
-   "SYNGENE:price",
-   "ENTERO:price",
-   "CONCORDBIO:price",
-   "ENTERO:volume",
-   "KARBON:price",
-   "ALIVUS:volume"
-  ],
   "2026-11-10": [],
   "2026-11-11": [
    "GREAVESCOT:price",
@@ -965,137 +862,10 @@
    "LAURUSLABS:volume",
    "JUBLPHARMA:volume",
    "DENTA:volume"
-  ]
+  ],
+  "2026-11-17": []
  },
  "events": {
-  "2026-11-09": [
-   {
-    "symbol": "BIRLANU",
-    "event": "Earnings / results: BirlaNu Q1FY27 net profit turns positive as EBITDA rises 35%",
-    "impact": "Bullish",
-    "importance": 7,
-    "time": "07:59"
-   },
-   {
-    "symbol": "NATCOPHARM",
-    "event": "M&A / stake change: Natco Pharma completes 13.25% stake buy in Adcock Ingram for \u20b91,060 crore",
-    "impact": "Bullish",
-    "importance": 7,
-    "time": "11:03"
-   },
-   {
-    "symbol": "LAURUSLABS",
-    "event": "Price +5.7% today at \u20b92,474.00 (volume 1.0x 20-day avg)",
-    "impact": "Bullish (price action)",
-    "importance": 6,
-    "time": "11:03"
-   },
-   {
-    "symbol": "SYNGENE",
-    "event": "Price +6.1% today at \u20b9442.55 (volume 0.2x 20-day avg)",
-    "impact": "Bullish (price action)",
-    "importance": 6,
-    "time": "11:03"
-   },
-   {
-    "symbol": "ENTERO",
-    "event": "Price +6.4% today at \u20b92,022.50 (volume 1.5x 20-day avg)",
-    "impact": "Bullish (price action)",
-    "importance": 6,
-    "time": "11:03"
-   },
-   {
-    "symbol": "CONCORDBIO",
-    "event": "Price -5.3% today at \u20b9598.90 (volume 0.6x 20-day avg)",
-    "impact": "Bearish (price action)",
-    "importance": 6,
-    "time": "11:03"
-   },
-   {
-    "symbol": "LAURUSLABS",
-    "event": "Sharp price move: Pharma shares shine: Sai, Gland, Divi's, Laurus, Glenmark surge up to 9%",
-    "impact": "Bullish",
-    "importance": 6,
-    "time": "14:16"
-   },
-   {
-    "symbol": "BIRLANU",
-    "event": "Earnings / results: BirlaNu India revenue up 17% in Q2FY27, Parador weighs on consolidated profit",
-    "impact": "Bullish",
-    "importance": 7,
-    "time": "14:16"
-   },
-   {
-    "symbol": "EUREKAFORB",
-    "event": "Earnings / results: Eureka Forbes plans 3%-4% hike as Q3 margins face near-term lag (+1 more stories)",
-    "impact": "Neutral",
-    "importance": 7,
-    "time": "14:16"
-   },
-   {
-    "symbol": "ENTERO",
-    "event": "Unusual volume: 2.6x 20-day avg (price +9.6%)",
-    "impact": "Neutral",
-    "importance": 5,
-    "time": "14:16"
-   },
-   {
-    "symbol": "KARBON",
-    "event": "Price +5.7% today at \u20b9103.50 (volume 0.3x 20-day avg)",
-    "impact": "Bullish (price action)",
-    "importance": 6,
-    "time": "14:16"
-   },
-   {
-    "symbol": "NORTHARC",
-    "event": "Earnings / results: Northern Arc Capital Discloses Q2 FY2026-27 Earnings Call Transcript",
-    "impact": "Neutral",
-    "importance": 7,
-    "time": "16:55"
-   },
-   {
-    "symbol": "BIRLANU",
-    "event": "Earnings / results: BirlaNu Limited Q2 Revenue Rises 9.2% as Loss Widens (+2 more stories)",
-    "impact": "Neutral",
-    "importance": 8,
-    "time": "16:55"
-   },
-   {
-    "symbol": "EUREKAFORB",
-    "event": "Earnings / results: Eureka Forbes Q2 FY27 Earnings Call: Key Highlights",
-    "impact": "Neutral",
-    "importance": 7,
-    "time": "16:55"
-   },
-   {
-    "symbol": "ALIVUS",
-    "event": "Unusual volume: 2.8x 20-day avg (price -0.4%)",
-    "impact": "Neutral",
-    "importance": 5,
-    "time": "16:55"
-   },
-   {
-    "symbol": "NORTHARC",
-    "event": "Earnings / results: [NSE filing] Monitoring Agency Report: Monitoring agency report for the quarter ended September 30, 2026 (+1 more stories)",
-    "impact": "Neutral",
-    "importance": 7,
-    "time": "20:00"
-   },
-   {
-    "symbol": "JMFINANCIL",
-    "event": "Earnings / results: JM Financial Anticipates 20% Revenue Increase And 20%-25% Profit Growth (+4 more stories)",
-    "impact": "Bullish",
-    "importance": 8,
-    "time": "20:00"
-   },
-   {
-    "symbol": "VOEPL",
-    "event": "Earnings / results: Virtuoso Optoelectronics Returns to Profit as Q2 Revenue Rises 81% (+1 more stories)",
-    "impact": "Bullish",
-    "importance": 7,
-    "time": "20:00"
-   }
-  ],
   "2026-11-10": [
    {
     "symbol": "LAURUSLABS",
@@ -1718,29 +1488,27 @@
     "importance": 7,
     "time": "21:28"
    }
+  ],
+  "2026-11-17": [
+   {
+    "symbol": "PENIND",
+    "event": "Earnings / results: Pennar Industries uploads audio of Q2FY27 earnings conference call",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "08:02"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Earnings / results: Revenue Beat: NATCO Pharma Limited Exceeded Revenue Forecasts By 20% And Analysts Are Updating Their Estimates",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "08:02"
+   }
   ]
  },
  "bse_codes": {},
  "filings_primed": true,
  "reported_news": {
-  "65564ed8287d5b02": "2026-11-09",
-  "dfac6ea9c9bf137e": "2026-11-09",
-  "ccfa18e04c09bb85": "2026-11-09",
-  "7b564824a3728ed9": "2026-11-09",
-  "a627b3ef78f58ccb": "2026-11-09",
-  "8e4337b1424fd017": "2026-11-09",
-  "bed7fa877cc9140b": "2026-11-09",
-  "9d5cd39bb717bfb1": "2026-11-09",
-  "a65b860006e44e4e": "2026-11-09",
-  "ac3f3f191f202419": "2026-11-09",
-  "d2c9fe2b9d1b0313": "2026-11-09",
-  "b75a60eda8ad1077": "2026-11-09",
-  "2fd7f033bd9ab7aa": "2026-11-09",
-  "428163952cd784a7": "2026-11-09",
-  "83f1a9e80598dd72": "2026-11-09",
-  "e4ecee5225b565f6": "2026-11-09",
-  "fff1ff39c76bcc2f": "2026-11-09",
-  "a0134e989a88c5a8": "2026-11-09",
   "635cf133e242122a": "2026-11-10",
   "9ba37b273343d53e": "2026-11-10",
   "b7c89e438333a56d": "2026-11-10",
@@ -1869,11 +1637,14 @@
   "7ef9886e39d91362": "2026-11-16",
   "3299ecd4ed0c698c": "2026-11-16",
   "aabb2c91b322456e": "2026-11-16",
-  "861aba367dee9f00": "2026-11-16"
+  "861aba367dee9f00": "2026-11-16",
+  "2058e74b8fb578f1": "2026-11-17",
+  "b9812dc429316b87": "2026-11-17",
+  "337e416ed486afb2": "2026-11-17"
  },
- "last_report": "2026-11-16T21:29",
+ "last_report": "2026-11-17T08:02",
  "filing_sources": {
-  "checked": "2026-11-16 21:28",
+  "checked": "2026-11-17 08:02",
   "NSE": "ok: 10 filings for 10 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
