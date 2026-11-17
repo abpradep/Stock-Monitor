@@ -895,7 +895,35 @@
   "b692c3fb3925d46a": "2026-11-17",
   "d382172c5c376294": "2026-11-17",
   "36c3576f17bd1342": "2026-11-17",
-  "575208c288012f85": "2026-11-17"
+  "575208c288012f85": "2026-11-17",
+  "e495c29ef9c64c43": "2026-11-17",
+  "108578403c81253f": "2026-11-17",
+  "040b9df373ec39c6": "2026-11-17",
+  "1f5cf5c70d5d4777": "2026-11-17",
+  "aa309eef2e9bcf0a": "2026-11-17",
+  "c1a12b1c3e287e6e": "2026-11-17",
+  "bdb3b444d7cee7f9": "2026-11-17",
+  "f87489d633220576": "2026-11-17",
+  "3cb654f39681928e": "2026-11-17",
+  "40865ba67366045f": "2026-11-17",
+  "978962a59e1de602": "2026-11-17",
+  "4c4ae3c0a70e34d7": "2026-11-17",
+  "ccf3bcb78d6f3f7b": "2026-11-17",
+  "6fb7bed483b38eeb": "2026-11-17",
+  "680a640d2b2e6c11": "2026-11-17",
+  "d428faee886767be": "2026-11-17",
+  "93ebe677b5bbd778": "2026-11-17",
+  "3331d383d5c5b312": "2026-11-17",
+  "acac2e580d278f96": "2026-11-17",
+  "0d2a7bcddbbe63aa": "2026-11-17",
+  "c92d52eb077efd31": "2026-11-17",
+  "90db448ee9a4c91f": "2026-11-17",
+  "9cb17e662797bd20": "2026-11-17",
+  "060efdbb358a8793": "2026-11-17",
+  "ec77fd44a30e00fe": "2026-11-17",
+  "5223b12575320fd9": "2026-11-17",
+  "ca662711cb6b912a": "2026-11-17",
+  "99210a4d57c7fc9b": "2026-11-17"
  },
  "price_alerted": {
   "2026-11-10": [],
@@ -1658,6 +1686,27 @@
     "impact": "Bearish (price action)",
     "importance": 6,
     "time": "14:07"
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "event": "M&A / stake change: Laurus Labs Promoters Confirm No Plans For Further Stake Sale Following Recent Transactions (+2 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "16:52"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Earnings / results: Greaves Cotton shareholders approve FY26 results, \u20b92 dividend",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:52"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Earnings / results: Sona BLW Q2FY27 Results: PAT up 29% to \u20b9223 crore, beats estimates",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:52"
    }
   ]
  },
@@ -1806,11 +1855,16 @@
   "1f3fcc193f6aa08a": "2026-11-17",
   "d5c6fae5674042e6": "2026-11-17",
   "9bc2a6ab45749b60": "2026-11-17",
-  "467bc1dd0d6fb656": "2026-11-17"
+  "467bc1dd0d6fb656": "2026-11-17",
+  "108578403c81253f": "2026-11-17",
+  "040b9df373ec39c6": "2026-11-17",
+  "c1a12b1c3e287e6e": "2026-11-17",
+  "6fb7bed483b38eeb": "2026-11-17",
+  "ca662711cb6b912a": "2026-11-17"
  },
- "last_report": "2026-11-17T14:07",
+ "last_report": "2026-11-17T16:53",
  "filing_sources": {
-  "checked": "2026-11-17 14:06",
+  "checked": "2026-11-17 16:52",
   "NSE": "ok: 11 filings for 11 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
