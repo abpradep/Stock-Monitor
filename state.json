@@ -831,7 +831,37 @@
   "337e416ed486afb2": "2026-11-17",
   "006c908aeca6767f": "2026-11-17",
   "cb2672f20155ba33": "2026-11-17",
-  "a8ec77fc4561a9e5": "2026-11-17"
+  "a8ec77fc4561a9e5": "2026-11-17",
+  "2bb631192c6b7dde": "2026-11-17",
+  "6643abc9523ee953": "2026-11-17",
+  "e4f5ee0906a5bf10": "2026-11-17",
+  "082da41ee058ccf0": "2026-11-17",
+  "322fbceaacc1c1df": "2026-11-17",
+  "01c184fdfa1ff54c": "2026-11-17",
+  "15e13fa735b994f4": "2026-11-17",
+  "285059e06cb9517e": "2026-11-17",
+  "caea251c3faa6489": "2026-11-17",
+  "ccd4df572dfca0b0": "2026-11-17",
+  "af23500e5dfa76d5": "2026-11-17",
+  "73f505cd0f9097c2": "2026-11-17",
+  "fb2c9007304b1970": "2026-11-17",
+  "497c2a94b875c5f8": "2026-11-17",
+  "8c5ff891ba373ea9": "2026-11-17",
+  "bc00452bbe991b6e": "2026-11-17",
+  "1450a462f9f6bbe1": "2026-11-17",
+  "fd8859efc8a45a93": "2026-11-17",
+  "44e72343cf22c792": "2026-11-17",
+  "ac4fcc4c274403b2": "2026-11-17",
+  "60f5b7c5e55e1553": "2026-11-17",
+  "99211c07264513a3": "2026-11-17",
+  "7cacdf57be24b138": "2026-11-17",
+  "43410c9529935c27": "2026-11-17",
+  "e0420e2346220bbd": "2026-11-17",
+  "4ecb7095d2a0a8be": "2026-11-17",
+  "6ec50ce07bffe392": "2026-11-17",
+  "80f4ad77fdd515ee": "2026-11-17",
+  "5229489d803e9223": "2026-11-17",
+  "db98716b7487dc0e": "2026-11-17"
  },
  "price_alerted": {
   "2026-11-10": [],
@@ -863,7 +893,10 @@
    "JUBLPHARMA:volume",
    "DENTA:volume"
   ],
-  "2026-11-17": []
+  "2026-11-17": [
+   "GREAVESCOT:price",
+   "KARBON:price"
+  ]
  },
  "events": {
   "2026-11-10": [
@@ -1503,6 +1536,41 @@
     "impact": "Bullish",
     "importance": 7,
     "time": "08:02"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Sharp price move: Greaves Cotton rallies 9%, stock nears 52-week high; here's why",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "10:59"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Management change: Piramal Pharma Appoints Swapnil Thakkar Supply Chain Head",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:59"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Management change: Cyient appoints Dhirendra Nath as Chief People Officer (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "10:59"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Price +6.5% today at \u20b9240.56 (volume 3.4x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "10:59"
+   },
+   {
+    "symbol": "KARBON",
+    "event": "Price -8.6% today at \u20b995.00 (volume 0.1x 20-day avg)",
+    "impact": "Bearish (price action)",
+    "importance": 7,
+    "time": "10:59"
    }
   ]
  },
@@ -1640,12 +1708,16 @@
   "861aba367dee9f00": "2026-11-16",
   "2058e74b8fb578f1": "2026-11-17",
   "b9812dc429316b87": "2026-11-17",
-  "337e416ed486afb2": "2026-11-17"
+  "337e416ed486afb2": "2026-11-17",
+  "15e13fa735b994f4": "2026-11-17",
+  "fd8859efc8a45a93": "2026-11-17",
+  "60f5b7c5e55e1553": "2026-11-17",
+  "99211c07264513a3": "2026-11-17"
  },
- "last_report": "2026-11-17T08:02",
+ "last_report": "2026-11-17T10:59",
  "filing_sources": {
-  "checked": "2026-11-17 08:02",
-  "NSE": "ok: 10 filings for 10 stocks",
+  "checked": "2026-11-17 10:59",
+  "NSE": "ok: 11 filings for 11 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
