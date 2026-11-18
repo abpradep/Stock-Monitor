@@ -977,7 +977,23 @@
   "9f840829a55529a3": "2026-11-18",
   "0158c59924ec9af6": "2026-11-18",
   "8b2af3743c046950": "2026-11-18",
-  "365f436463f33657": "2026-11-18"
+  "365f436463f33657": "2026-11-18",
+  "91510226b5bc5ef3": "2026-11-18",
+  "ba666dd32aa18171": "2026-11-18",
+  "50ce0de9e809976a": "2026-11-18",
+  "92548d07f64696ea": "2026-11-18",
+  "f0427011769b01f0": "2026-11-18",
+  "5fe4007940ee1e8f": "2026-11-18",
+  "3fe456ea7a2e926c": "2026-11-18",
+  "3b1ab933d9ac0060": "2026-11-18",
+  "4652593ee9d0df29": "2026-11-18",
+  "de473bb9ff3e2a20": "2026-11-18",
+  "d94fc10f27e735a6": "2026-11-18",
+  "cf164fea6c79c103": "2026-11-18",
+  "ddb6b6b0c1f2889d": "2026-11-18",
+  "737d4b2cec340e3a": "2026-11-18",
+  "4bd56ce4e5e89ced": "2026-11-18",
+  "14775b26abccf18c": "2026-11-18"
  },
  "price_alerted": {
   "2026-11-11": [
@@ -1017,7 +1033,8 @@
    "VOEPL:price"
   ],
   "2026-11-18": [
-   "EUREKAFORB:price"
+   "EUREKAFORB:price",
+   "GREAVESCOT:price"
   ]
  },
  "events": {
@@ -1805,6 +1822,20 @@
     "impact": "Bullish (price action)",
     "importance": 6,
     "time": "14:09"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Sharp price move: Greaves Cotton Ltd. Surges 9.2% to Day's High of Rs 265.9 \u2014 Outperforms Sector by 10 Percentage Points",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "16:56"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Price +9.5% today at \u20b9266.63 (volume 10.9x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "16:56"
    }
   ]
  },
@@ -1964,12 +1995,15 @@
   "8d621a181d06bd67": "2026-11-18",
   "c6290e18e426bb58": "2026-11-18",
   "137764fa15167a7b": "2026-11-18",
-  "ea2f55dad9fa553e": "2026-11-18"
+  "ea2f55dad9fa553e": "2026-11-18",
+  "f0427011769b01f0": "2026-11-18",
+  "3b1ab933d9ac0060": "2026-11-18",
+  "ddb6b6b0c1f2889d": "2026-11-18"
  },
- "last_report": "2026-11-18T14:09",
+ "last_report": "2026-11-18T16:56",
  "filing_sources": {
-  "checked": "2026-11-18 14:08",
-  "NSE": "ok: 10 filings for 9 stocks",
+  "checked": "2026-11-18 16:56",
+  "NSE": "ok: 14 filings for 11 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
