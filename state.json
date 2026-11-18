@@ -993,7 +993,35 @@
   "ddb6b6b0c1f2889d": "2026-11-18",
   "737d4b2cec340e3a": "2026-11-18",
   "4bd56ce4e5e89ced": "2026-11-18",
-  "14775b26abccf18c": "2026-11-18"
+  "14775b26abccf18c": "2026-11-18",
+  "7c476ee836ed202b": "2026-11-18",
+  "93773e73a7877a41": "2026-11-18",
+  "89bf028906cb3d84": "2026-11-18",
+  "ab2dec0a0df762cb": "2026-11-18",
+  "cb54695b62cf89da": "2026-11-18",
+  "159e93cea7356fa7": "2026-11-18",
+  "d2688f588c437287": "2026-11-18",
+  "dd69d92711afdb7a": "2026-11-18",
+  "a5cb4535fb06344f": "2026-11-18",
+  "208b4a79219097ea": "2026-11-18",
+  "26ffbc03eb23be43": "2026-11-18",
+  "75c0c50f51f390ec": "2026-11-18",
+  "6d8d4c4f55fd3a81": "2026-11-18",
+  "5b2813630877a250": "2026-11-18",
+  "6d56ef3ccc65efd3": "2026-11-18",
+  "62c367a516c77aaa": "2026-11-18",
+  "83090f6db566d920": "2026-11-18",
+  "7d72e4060c27c8d6": "2026-11-18",
+  "f696fa5c7b9589e8": "2026-11-18",
+  "73f25a67265dae6c": "2026-11-18",
+  "1031c4baf63f55d6": "2026-11-18",
+  "a0a8ef1f96d8b7dd": "2026-11-18",
+  "732a658519acab45": "2026-11-18",
+  "1070d28c42b7ae34": "2026-11-18",
+  "48de78f8dda2f5d3": "2026-11-18",
+  "08402d38c0d7a267": "2026-11-18",
+  "893976dee306c992": "2026-11-18",
+  "e612eac00d283396": "2026-11-18"
  },
  "price_alerted": {
   "2026-11-11": [
@@ -1034,7 +1062,8 @@
   ],
   "2026-11-18": [
    "EUREKAFORB:price",
-   "GREAVESCOT:price"
+   "GREAVESCOT:price",
+   "GREAVESCOT:volume"
   ]
  },
  "events": {
@@ -1836,6 +1865,27 @@
     "impact": "Bullish (price action)",
     "importance": 7,
     "time": "16:56"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "M&A / stake change: [NSE filing] General Updates: Piramal Pharma Limited has informed the Exchange about exercise of call option to acquire the balance 26% equity stake in Yapan Bio Private Limited (+3 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "19:59"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Management change: [NSE filing] Resignation of Director/KMP/SMP: Cyient Limited has informed the Exchange about Resignation of Director/KMP/SMP",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "19:59"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Unusual volume: 10.9x 20-day avg (price +9.5%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "19:59"
    }
   ]
  },
@@ -1998,12 +2048,18 @@
   "ea2f55dad9fa553e": "2026-11-18",
   "f0427011769b01f0": "2026-11-18",
   "3b1ab933d9ac0060": "2026-11-18",
-  "ddb6b6b0c1f2889d": "2026-11-18"
+  "ddb6b6b0c1f2889d": "2026-11-18",
+  "6d8d4c4f55fd3a81": "2026-11-18",
+  "73f25a67265dae6c": "2026-11-18",
+  "1031c4baf63f55d6": "2026-11-18",
+  "a0a8ef1f96d8b7dd": "2026-11-18",
+  "732a658519acab45": "2026-11-18",
+  "1070d28c42b7ae34": "2026-11-18"
  },
- "last_report": "2026-11-18T16:56",
+ "last_report": "2026-11-18T19:59",
  "filing_sources": {
-  "checked": "2026-11-18 16:56",
-  "NSE": "ok: 14 filings for 11 stocks",
+  "checked": "2026-11-18 19:59",
+  "NSE": "ok: 18 filings for 14 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
