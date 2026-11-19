@@ -1046,7 +1046,23 @@
   "555ad4bf7985b165": "2026-11-19",
   "0e55e49a484e53ff": "2026-11-19",
   "f0cb2f0f08447299": "2026-11-19",
-  "e28ae216777eb26f": "2026-11-19"
+  "e28ae216777eb26f": "2026-11-19",
+  "f60ad11fb7e64ca9": "2026-11-19",
+  "0795ca1512856c78": "2026-11-19",
+  "5511e08c72def5ee": "2026-11-19",
+  "064aa9b12c6280bb": "2026-11-19",
+  "89a2671a9513e6c8": "2026-11-19",
+  "c8427bf3db89e6c5": "2026-11-19",
+  "cf8f93009bfb31c9": "2026-11-19",
+  "67776d1b586e75a8": "2026-11-19",
+  "3063b5e3a17ce093": "2026-11-19",
+  "fb98d4ee2615fd23": "2026-11-19",
+  "f68571c1e5e41197": "2026-11-19",
+  "8c748817110696e7": "2026-11-19",
+  "1ba0f368e7d01178": "2026-11-19",
+  "8be0ceab4e5228c7": "2026-11-19",
+  "373a787bfc7b5c2b": "2026-11-19",
+  "05a10f4bb4e5c417": "2026-11-19"
  },
  "price_alerted": {
   "2026-11-12": [
@@ -1928,6 +1944,34 @@
     "impact": "Neutral",
     "importance": 5,
     "time": "16:54"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "M&A / stake change: Elpro International increases stake in Greaves Cotton with \u20b95 crore investment",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "20:01"
+   },
+   {
+    "symbol": "FDC",
+    "event": "Corporate action: FDC Ltd buyback opens Nov 19; corrigendum revises promoter holdings",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "20:01"
+   },
+   {
+    "symbol": "JUBLPHARMA",
+    "event": "Regulatory / legal: USFDA Inspection Concludes at Jubilant Pharmova's Spokane Facility With 8 Observations",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "20:01"
+   },
+   {
+    "symbol": "HINDWAREAP",
+    "event": "Order win: Hindware Home Innovation (NSE:HINDWAREAP): What Is the GST Demand Order Received in November 2026?",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "20:01"
    }
   ]
  },
@@ -2108,12 +2152,16 @@
   "6f00c0405ad300d1": "2026-11-19",
   "349851df119c5b12": "2026-11-19",
   "89fadc0731527c78": "2026-11-19",
-  "9d702ae6d79e27ba": "2026-11-19"
+  "9d702ae6d79e27ba": "2026-11-19",
+  "3063b5e3a17ce093": "2026-11-19",
+  "fb98d4ee2615fd23": "2026-11-19",
+  "f68571c1e5e41197": "2026-11-19",
+  "373a787bfc7b5c2b": "2026-11-19"
  },
- "last_report": "2026-11-19T16:54",
+ "last_report": "2026-11-19T20:02",
  "filing_sources": {
-  "checked": "2026-11-19 16:54",
-  "NSE": "ok: 18 filings for 14 stocks",
+  "checked": "2026-11-19 20:01",
+  "NSE": "ok: 20 filings for 16 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
