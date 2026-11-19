@@ -944,7 +944,48 @@
   "87ca7bf0aef2aeae": "2026-11-19",
   "8ddedd64279495a1": "2026-11-19",
   "ef346a4d71fee7be": "2026-11-19",
-  "11bf15f826787adf": "2026-11-19"
+  "11bf15f826787adf": "2026-11-19",
+  "333f4cfb10550424": "2026-11-19",
+  "3b0d0f2bcd8d5a0d": "2026-11-19",
+  "8c7188582905e41d": "2026-11-19",
+  "8b9edfeebc655eb1": "2026-11-19",
+  "6e10c7d888b26864": "2026-11-19",
+  "30128e0f6792c917": "2026-11-19",
+  "aab2785701b0de3f": "2026-11-19",
+  "517e0489ec7c1b0e": "2026-11-19",
+  "d3c264bb584cd177": "2026-11-19",
+  "5ecb40c559f20a68": "2026-11-19",
+  "8310a189a43b0b45": "2026-11-19",
+  "ae586eca0e05668e": "2026-11-19",
+  "0e4dee8b47228ce5": "2026-11-19",
+  "81d01da4ead6673c": "2026-11-19",
+  "106858f63ec3a838": "2026-11-19",
+  "6f8053536d6444d6": "2026-11-19",
+  "3de57f75b60143fa": "2026-11-19",
+  "d1fc467cd080992d": "2026-11-19",
+  "92855929cd5f61c2": "2026-11-19",
+  "22c8e584ab0fbaf1": "2026-11-19",
+  "9bd7985a117d25e8": "2026-11-19",
+  "78903623c899b9bb": "2026-11-19",
+  "93af282bc68f7a1e": "2026-11-19",
+  "f024f0221ada0a4a": "2026-11-19",
+  "546690a3557def01": "2026-11-19",
+  "915c26ff84060023": "2026-11-19",
+  "80839f8788ca782b": "2026-11-19",
+  "2c5c837ce260206a": "2026-11-19",
+  "5f4a87f2ee356c6d": "2026-11-19",
+  "55795d6364eb8bc2": "2026-11-19",
+  "011c282664717ba3": "2026-11-19",
+  "d0abe103428ccb6a": "2026-11-19",
+  "d050222d927319a7": "2026-11-19",
+  "c16411d4b9b36a7b": "2026-11-19",
+  "caab5e74ea7b07f1": "2026-11-19",
+  "2855c145ad2cdce5": "2026-11-19",
+  "d72da69c92f19039": "2026-11-19",
+  "9b4a884b721cfee7": "2026-11-19",
+  "824819989d2a821e": "2026-11-19",
+  "f9e1b1c9d66d9557": "2026-11-19",
+  "debaefaac9b41a58": "2026-11-19"
  },
  "price_alerted": {
   "2026-11-12": [
@@ -1770,6 +1811,34 @@
     "impact": "Bearish",
     "importance": 7,
     "time": "07:59"
+   },
+   {
+    "symbol": "ALIVUS",
+    "event": "Earnings / results: Alivus Share Price Target 2027: Q2 FY27 Review",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "11:02"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Earnings / results: JM Financial Q2FY27 results: Net profit falls 13% YoY; hosts investor meet Nov 18",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "11:02"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "M&A / stake change: Piramal Pharma acquisition: Company to buy remaining 26% stake in Yapan Bio",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "11:02"
+   },
+   {
+    "symbol": "AARTIPHARM",
+    "event": "Earnings / results: Aarti Pharmalabs Q2FY27 Results: Net profit up 180% to \u20b965.75 crore",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "11:02"
    }
   ]
  },
@@ -1933,12 +2002,19 @@
   "b776ad781479a770": "2026-11-19",
   "ae2c0bfed4e8c6e7": "2026-11-19",
   "87ca7bf0aef2aeae": "2026-11-19",
-  "8ddedd64279495a1": "2026-11-19"
+  "8ddedd64279495a1": "2026-11-19",
+  "5ecb40c559f20a68": "2026-11-19",
+  "0e4dee8b47228ce5": "2026-11-19",
+  "106858f63ec3a838": "2026-11-19",
+  "3de57f75b60143fa": "2026-11-19",
+  "d1fc467cd080992d": "2026-11-19",
+  "c16411d4b9b36a7b": "2026-11-19",
+  "9b4a884b721cfee7": "2026-11-19"
  },
- "last_report": "2026-11-19T07:59",
+ "last_report": "2026-11-19T11:02",
  "filing_sources": {
-  "checked": "2026-11-19 07:59",
-  "NSE": "ok: 10 filings for 9 stocks",
+  "checked": "2026-11-19 11:02",
+  "NSE": "ok: 12 filings for 9 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
