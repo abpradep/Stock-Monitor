@@ -1022,7 +1022,31 @@
   "23d4b7e56c54cc45": "2026-11-19",
   "b41ddaaf4f1c3ec0": "2026-11-19",
   "03da5f333c8aa603": "2026-11-19",
-  "2dac7f3155292ddd": "2026-11-19"
+  "2dac7f3155292ddd": "2026-11-19",
+  "70db195226455ef4": "2026-11-19",
+  "50da4533ab346d9e": "2026-11-19",
+  "d7ddfb055b6da035": "2026-11-19",
+  "1a2a5a12f9580aa2": "2026-11-19",
+  "a5b9b584c67aebdb": "2026-11-19",
+  "02adb133f34898ca": "2026-11-19",
+  "291d94b477a432f4": "2026-11-19",
+  "77395fdc5bfedd3e": "2026-11-19",
+  "7cdd1b052d32078d": "2026-11-19",
+  "4659f0f3285ddc85": "2026-11-19",
+  "6f00c0405ad300d1": "2026-11-19",
+  "349851df119c5b12": "2026-11-19",
+  "89fadc0731527c78": "2026-11-19",
+  "8b0656213d4b547a": "2026-11-19",
+  "3e49f0d650289089": "2026-11-19",
+  "73bc67a7314cc4bd": "2026-11-19",
+  "894f695413f607d5": "2026-11-19",
+  "9d702ae6d79e27ba": "2026-11-19",
+  "69b5bd1d80bfd579": "2026-11-19",
+  "5737124933464713": "2026-11-19",
+  "555ad4bf7985b165": "2026-11-19",
+  "0e55e49a484e53ff": "2026-11-19",
+  "f0cb2f0f08447299": "2026-11-19",
+  "e28ae216777eb26f": "2026-11-19"
  },
  "price_alerted": {
   "2026-11-12": [
@@ -1890,6 +1914,20 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "14:11"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "Earnings / results: JM Financial Q2FY27 Results: Net profit falls 13% YoY to \u20b9227 crore (+2 more stories)",
+    "impact": "Bearish",
+    "importance": 8,
+    "time": "16:54"
+   },
+   {
+    "symbol": "HINDWAREAP",
+    "event": "Order win: [NSE filing] Action(s) taken or orders passed: Hindware Home Innovation Limited has informed the Exchange about receipt of Demand Order",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "16:54"
    }
   ]
  },
@@ -2066,12 +2104,16 @@
   "4ef60f6bf9ba9139": "2026-11-19",
   "dd823af9096ea32d": "2026-11-19",
   "c3f3678c561aa2b4": "2026-11-19",
-  "bc8a8246f3a206b3": "2026-11-19"
+  "bc8a8246f3a206b3": "2026-11-19",
+  "6f00c0405ad300d1": "2026-11-19",
+  "349851df119c5b12": "2026-11-19",
+  "89fadc0731527c78": "2026-11-19",
+  "9d702ae6d79e27ba": "2026-11-19"
  },
- "last_report": "2026-11-19T14:11",
+ "last_report": "2026-11-19T16:54",
  "filing_sources": {
-  "checked": "2026-11-19 14:11",
-  "NSE": "ok: 16 filings for 12 stocks",
+  "checked": "2026-11-19 16:54",
+  "NSE": "ok: 18 filings for 14 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
