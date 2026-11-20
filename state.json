@@ -1008,7 +1008,31 @@
   "3087629a8b435466": "2026-11-20",
   "c63fcedd7849019f": "2026-11-20",
   "1c4fd9cc73e90242": "2026-11-20",
-  "cf0870f63387e4fa": "2026-11-20"
+  "cf0870f63387e4fa": "2026-11-20",
+  "266598e0c85bb1ef": "2026-11-20",
+  "599f9b69349753b8": "2026-11-20",
+  "40b5fe01c12b062c": "2026-11-20",
+  "4e47e6fb0ec94d64": "2026-11-20",
+  "8bd5400edbfa5152": "2026-11-20",
+  "b9410549d4ef60bf": "2026-11-20",
+  "f45723bb27897699": "2026-11-20",
+  "bd67c1188dfe4e17": "2026-11-20",
+  "13fc83ac7592168c": "2026-11-20",
+  "a848b4eec164b717": "2026-11-20",
+  "d9313a51710efe73": "2026-11-20",
+  "861d06bbfca88fe9": "2026-11-20",
+  "79749ef228478787": "2026-11-20",
+  "b716778bd4af0b83": "2026-11-20",
+  "5b9844e5c189aa5c": "2026-11-20",
+  "28bb732801197b40": "2026-11-20",
+  "6ef2ac452dfa2430": "2026-11-20",
+  "101d9135d447cc9b": "2026-11-20",
+  "58b1a2d94b74c7a2": "2026-11-20",
+  "de6cb8e48c4e2cd5": "2026-11-20",
+  "06cad89903d50bef": "2026-11-20",
+  "03b99bbdd2b87652": "2026-11-20",
+  "d8ddd13135982706": "2026-11-20",
+  "ba59c25b326e3a46": "2026-11-20"
  },
  "price_alerted": {
   "2026-11-13": [
@@ -1925,6 +1949,27 @@
     "impact": "Bullish (price action)",
     "importance": 6,
     "time": "14:09"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Sharp price move: Greaves Cotton (GREAVESCOT) Share Price Hits Fresh 52-Week High on 20 November 2026 (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "16:56"
+   },
+   {
+    "symbol": "RAYMOND",
+    "event": "M&A / stake change: BREAKING | NCLT Mumbai approves merger of Everblue Apparel with parent Raymond",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "16:56"
+   },
+   {
+    "symbol": "JUBLPHARMA",
+    "event": "Earnings / results: Jubilant Pharmova JUBLPHARMA Q2 FY2027 Earnings Webinar Key Highlights",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "16:56"
    }
   ]
  },
@@ -2115,11 +2160,15 @@
   "bcdb96de18198f6c": "2026-11-20",
   "8ad90f88cd803ba7": "2026-11-20",
   "3616a28158ef554f": "2026-11-20",
-  "63c0900e62c8b3e4": "2026-11-20"
+  "63c0900e62c8b3e4": "2026-11-20",
+  "8bd5400edbfa5152": "2026-11-20",
+  "bd67c1188dfe4e17": "2026-11-20",
+  "b716778bd4af0b83": "2026-11-20",
+  "58b1a2d94b74c7a2": "2026-11-20"
  },
- "last_report": "2026-11-20T14:09",
+ "last_report": "2026-11-20T16:56",
  "filing_sources": {
-  "checked": "2026-11-20 14:08",
+  "checked": "2026-11-20 16:56",
   "NSE": "ok: 14 filings for 12 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
