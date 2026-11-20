@@ -1032,7 +1032,36 @@
   "06cad89903d50bef": "2026-11-20",
   "03b99bbdd2b87652": "2026-11-20",
   "d8ddd13135982706": "2026-11-20",
-  "ba59c25b326e3a46": "2026-11-20"
+  "ba59c25b326e3a46": "2026-11-20",
+  "8e5fcc61712913ab": "2026-11-20",
+  "d8dfbcbbc032b592": "2026-11-20",
+  "a199adf358e1f89f": "2026-11-20",
+  "9bfc12254651bbce": "2026-11-20",
+  "0ec82597b9ee80e8": "2026-11-20",
+  "c37b52cb2d6c9e3c": "2026-11-20",
+  "d77ba66b37f9d926": "2026-11-20",
+  "c9edf58f9dec003c": "2026-11-20",
+  "9b0c113b8e68e0ab": "2026-11-20",
+  "6cbdf5930bc98968": "2026-11-20",
+  "5fce8b43f69a25d2": "2026-11-20",
+  "4087018f65f40e8f": "2026-11-20",
+  "45e10316decc50ae": "2026-11-20",
+  "646651627060141e": "2026-11-20",
+  "9d67ef1b4c9142a5": "2026-11-20",
+  "2bb680869b9b9912": "2026-11-20",
+  "f69b5aa20465fa8a": "2026-11-20",
+  "6b6139224c97bc8e": "2026-11-20",
+  "ffd7f3745a2ebd8f": "2026-11-20",
+  "eb9d04cf4f56e792": "2026-11-20",
+  "30a7eb778aed3730": "2026-11-20",
+  "8b6110ad5d27d497": "2026-11-20",
+  "16c840c9de59012b": "2026-11-20",
+  "b1786a55b9fd0c40": "2026-11-20",
+  "ddd797450004d797": "2026-11-20",
+  "43d32a8d7d39d1a3": "2026-11-20",
+  "fa46aa7587863e7f": "2026-11-20",
+  "19242ce9ecdad991": "2026-11-20",
+  "32a30d15b0edbc5a": "2026-11-20"
  },
  "price_alerted": {
   "2026-11-13": [
@@ -1970,6 +1999,27 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "16:56"
+   },
+   {
+    "symbol": "RAYMOND",
+    "event": "M&A / stake change: Raymond gets NCLT nod for Everblue Apparel merger (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "19:59"
+   },
+   {
+    "symbol": "ARMANFIN",
+    "event": "Analyst action: [NSE filing] Credit Rating: Arman Financial Services Limited has informed the Exchange about Credit Rating",
+    "impact": "Neutral",
+    "importance": 6,
+    "time": "19:59"
+   },
+   {
+    "symbol": "JUBLPHARMA",
+    "event": "Earnings / results: [NSE filing] Shareholders meeting: Jubilant Pharmova Limited has submitted the Exchange a copy Srutinizers report of Postal Ballot. Further, the company has informed the Exchange regarding voting results. (+2 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "19:59"
    }
   ]
  },
@@ -2164,12 +2214,22 @@
   "8bd5400edbfa5152": "2026-11-20",
   "bd67c1188dfe4e17": "2026-11-20",
   "b716778bd4af0b83": "2026-11-20",
-  "58b1a2d94b74c7a2": "2026-11-20"
+  "58b1a2d94b74c7a2": "2026-11-20",
+  "9b0c113b8e68e0ab": "2026-11-20",
+  "5fce8b43f69a25d2": "2026-11-20",
+  "45e10316decc50ae": "2026-11-20",
+  "646651627060141e": "2026-11-20",
+  "2bb680869b9b9912": "2026-11-20",
+  "6b6139224c97bc8e": "2026-11-20",
+  "ffd7f3745a2ebd8f": "2026-11-20",
+  "30a7eb778aed3730": "2026-11-20",
+  "19242ce9ecdad991": "2026-11-20",
+  "b1786a55b9fd0c40": "2026-11-20"
  },
- "last_report": "2026-11-20T16:56",
+ "last_report": "2026-11-20T19:59",
  "filing_sources": {
-  "checked": "2026-11-20 16:56",
-  "NSE": "ok: 14 filings for 12 stocks",
+  "checked": "2026-11-20 19:59",
+  "NSE": "ok: 19 filings for 14 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
