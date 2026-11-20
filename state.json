@@ -982,7 +982,33 @@
   "e4333c5539689518": "2026-11-20",
   "8ebe822a0b041970": "2026-11-20",
   "76c4760c28da01e4": "2026-11-20",
-  "cea0933aebdfc26e": "2026-11-20"
+  "cea0933aebdfc26e": "2026-11-20",
+  "153958d49dace7fc": "2026-11-20",
+  "44cbba0e3c5b305f": "2026-11-20",
+  "5e15f80b4aad342f": "2026-11-20",
+  "24986e5490e6b291": "2026-11-20",
+  "93ed8544cb86d55b": "2026-11-20",
+  "ad5b2eaae4ff5179": "2026-11-20",
+  "9f4905fb1a79562e": "2026-11-20",
+  "403dc0aa230f95e8": "2026-11-20",
+  "d728f958bb8dbb2b": "2026-11-20",
+  "68dfe06f2dbf5457": "2026-11-20",
+  "b828b8ff70b5752f": "2026-11-20",
+  "9fbf11e53e5a6f74": "2026-11-20",
+  "021f06d6f099d3ec": "2026-11-20",
+  "ec0ab1bacb462dd3": "2026-11-20",
+  "e4ad1c7802636a59": "2026-11-20",
+  "cfe1b274f21d2123": "2026-11-20",
+  "70b43a4ba6c51810": "2026-11-20",
+  "3f33f0e410d6373e": "2026-11-20",
+  "bcdb96de18198f6c": "2026-11-20",
+  "8ad90f88cd803ba7": "2026-11-20",
+  "3616a28158ef554f": "2026-11-20",
+  "63c0900e62c8b3e4": "2026-11-20",
+  "3087629a8b435466": "2026-11-20",
+  "c63fcedd7849019f": "2026-11-20",
+  "1c4fd9cc73e90242": "2026-11-20",
+  "cf0870f63387e4fa": "2026-11-20"
  },
  "price_alerted": {
   "2026-11-13": [
@@ -1017,7 +1043,10 @@
   ],
   "2026-11-19": [],
   "2026-11-20": [
-   "GREAVESCOT:price"
+   "GREAVESCOT:price",
+   "GREAVESCOT:volume",
+   "PENIND:price",
+   "VOEPL:price"
   ]
  },
  "events": {
@@ -1861,6 +1890,41 @@
     "impact": "Bullish (price action)",
     "importance": 6,
     "time": "11:02"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Sharp price move: Greaves Cotton shares hit 52-week high as electric two-wheeler market share grows (+3 more stories)",
+    "impact": "Bullish",
+    "importance": 7,
+    "time": "14:08"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Regulatory / legal: Natco Pharma Gets USFDA EIR for Vizag Unit; Shares Dip (+4 more stories)",
+    "impact": "Neutral",
+    "importance": 9,
+    "time": "14:09"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Unusual volume: 2.7x 20-day avg (price +3.4%)",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "14:09"
+   },
+   {
+    "symbol": "PENIND",
+    "event": "Price +6.2% today at \u20b9165.46 (volume 1.3x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:09"
+   },
+   {
+    "symbol": "VOEPL",
+    "event": "Price +5.5% today at \u20b9479.85 (volume 0.7x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "14:09"
    }
   ]
  },
@@ -2042,12 +2106,21 @@
   "01e00adb62e84f73": "2026-11-20",
   "764a4eda6030450b": "2026-11-20",
   "e4333c5539689518": "2026-11-20",
-  "cea0933aebdfc26e": "2026-11-20"
+  "cea0933aebdfc26e": "2026-11-20",
+  "ad5b2eaae4ff5179": "2026-11-20",
+  "9f4905fb1a79562e": "2026-11-20",
+  "d728f958bb8dbb2b": "2026-11-20",
+  "68dfe06f2dbf5457": "2026-11-20",
+  "3f33f0e410d6373e": "2026-11-20",
+  "bcdb96de18198f6c": "2026-11-20",
+  "8ad90f88cd803ba7": "2026-11-20",
+  "3616a28158ef554f": "2026-11-20",
+  "63c0900e62c8b3e4": "2026-11-20"
  },
- "last_report": "2026-11-20T11:02",
+ "last_report": "2026-11-20T14:09",
  "filing_sources": {
-  "checked": "2026-11-20 11:02",
-  "NSE": "ok: 12 filings for 11 stocks",
+  "checked": "2026-11-20 14:08",
+  "NSE": "ok: 14 filings for 12 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
