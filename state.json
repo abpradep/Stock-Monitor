@@ -963,7 +963,26 @@
   "6ae83a7030591203": "2026-11-20",
   "4b6e12d5604f1c6f": "2026-11-20",
   "0df392496c1bd8d3": "2026-11-20",
-  "b9c755d3a11f7443": "2026-11-20"
+  "b9c755d3a11f7443": "2026-11-20",
+  "9fa54816bab9a965": "2026-11-20",
+  "7fe1526c8dd69e65": "2026-11-20",
+  "ab6b2b76e7bc7ad3": "2026-11-20",
+  "22ce3e6af24f3a77": "2026-11-20",
+  "e3fcaca686ad7496": "2026-11-20",
+  "4e456ffd8186837b": "2026-11-20",
+  "c0b8190035ac06e6": "2026-11-20",
+  "a946b6cd1c6de271": "2026-11-20",
+  "e377afe6f498e480": "2026-11-20",
+  "066e7eac1bd3578f": "2026-11-20",
+  "9094da6b188b103e": "2026-11-20",
+  "d6fd2e71415cebe2": "2026-11-20",
+  "01e00adb62e84f73": "2026-11-20",
+  "764a4eda6030450b": "2026-11-20",
+  "fe2fa663d3ebe3c3": "2026-11-20",
+  "e4333c5539689518": "2026-11-20",
+  "8ebe822a0b041970": "2026-11-20",
+  "76c4760c28da01e4": "2026-11-20",
+  "cea0933aebdfc26e": "2026-11-20"
  },
  "price_alerted": {
   "2026-11-13": [
@@ -997,7 +1016,9 @@
    "GREAVESCOT:volume"
   ],
   "2026-11-19": [],
-  "2026-11-20": []
+  "2026-11-20": [
+   "GREAVESCOT:price"
+  ]
  },
  "events": {
   "2026-11-13": [
@@ -1812,6 +1833,34 @@
     "impact": "Bearish",
     "importance": 7,
     "time": "08:00"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Regulatory / legal: Natco Pharma stock in focus after USFDA issues inspection report (+4 more stories)",
+    "impact": "Neutral",
+    "importance": 9,
+    "time": "11:02"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "Price move: What Will It Take For KPIT Technologies To Hit \u20b91,900 Again?",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "11:02"
+   },
+   {
+    "symbol": "SONACOMS",
+    "event": "Earnings / results: Sona Comstar posts first quarterly profit at INR 82.2 crore since IPO",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "11:02"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Price +5.1% today at \u20b9276.90 (volume 1.9x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "11:02"
    }
   ]
  },
@@ -1986,12 +2035,19 @@
   "1b65730b7f7d1dd5": "2026-11-20",
   "95b010dc27107054": "2026-11-20",
   "2b20d0a6394f2acd": "2026-11-20",
-  "783f65d5f9a89949": "2026-11-20"
+  "783f65d5f9a89949": "2026-11-20",
+  "066e7eac1bd3578f": "2026-11-20",
+  "9094da6b188b103e": "2026-11-20",
+  "d6fd2e71415cebe2": "2026-11-20",
+  "01e00adb62e84f73": "2026-11-20",
+  "764a4eda6030450b": "2026-11-20",
+  "e4333c5539689518": "2026-11-20",
+  "cea0933aebdfc26e": "2026-11-20"
  },
- "last_report": "2026-11-20T08:00",
+ "last_report": "2026-11-20T11:02",
  "filing_sources": {
-  "checked": "2026-11-20 08:00",
-  "NSE": "ok: 11 filings for 10 stocks",
+  "checked": "2026-11-20 11:02",
+  "NSE": "ok: 12 filings for 11 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
