@@ -993,7 +993,47 @@
   "a59f69088d7d8283": "2026-11-21",
   "18ba2ed87a91aee3": "2026-11-21",
   "37fa784559b3ed28": "2026-11-21",
-  "691daf1422dca8e4": "2026-11-21"
+  "691daf1422dca8e4": "2026-11-21",
+  "22b8354d6516ea41": "2026-11-21",
+  "8252fe1a16868ffa": "2026-11-21",
+  "5fdc24d0fe0c9608": "2026-11-21",
+  "74d939ce711f1b5e": "2026-11-21",
+  "61176c1225541ac6": "2026-11-21",
+  "51d3e59b92896cc6": "2026-11-21",
+  "309a1379be08ef57": "2026-11-21",
+  "5bcfdaf324bc8932": "2026-11-21",
+  "64fbc9d88815c8ae": "2026-11-21",
+  "ddf93d28b3e4dc62": "2026-11-21",
+  "be9c675a68474c67": "2026-11-21",
+  "a88492d36f40eb83": "2026-11-21",
+  "240f1e88ef8d48f1": "2026-11-21",
+  "b6e1e2186f542958": "2026-11-21",
+  "c66dfd5022edd20e": "2026-11-21",
+  "e607d2592eb2869c": "2026-11-21",
+  "70c59be85ef86b18": "2026-11-21",
+  "55e7643143525c82": "2026-11-21",
+  "288ad797a23a406a": "2026-11-21",
+  "3c4ed66cfb7d344a": "2026-11-21",
+  "41c4ea2f9220634a": "2026-11-21",
+  "f22ab89da1eaf567": "2026-11-21",
+  "83173a5167e3bad6": "2026-11-21",
+  "25821b4df582a6ee": "2026-11-21",
+  "5dc5ce2bc6b7b6ce": "2026-11-21",
+  "a58f9287e043efdc": "2026-11-21",
+  "2aae8075318b92a9": "2026-11-21",
+  "2b27f3ae25b2adf9": "2026-11-21",
+  "95d4b747f9e498c3": "2026-11-21",
+  "019aee19ab75e960": "2026-11-21",
+  "4bcbe0550673dfbb": "2026-11-21",
+  "d72d73f8f87fdbb2": "2026-11-21",
+  "98fabed468731301": "2026-11-21",
+  "f3df4cd1166d6e24": "2026-11-21",
+  "6aabf5a0e65c008a": "2026-11-21",
+  "26ec41c56c09be2b": "2026-11-21",
+  "fa93ae22fd8d76f9": "2026-11-21",
+  "8af523d004bee128": "2026-11-21",
+  "d95d7336bf2adf3d": "2026-11-21",
+  "284f27d6171cb69e": "2026-11-21"
  },
  "price_alerted": {
   "2026-11-16": [
@@ -1868,6 +1908,41 @@
     "impact": "Bullish",
     "importance": 7,
     "time": "14:11"
+   },
+   {
+    "symbol": "INFOBEAN",
+    "event": "Earnings / results: Infobeans Technologies Q2 Results FY27: Revenue Rs 163.24 Cr",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "23:14"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Order win: Greaves Cotton wins \u20b921.66 crore arbitral award against Deev Genset (+4 more stories)",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "23:14"
+   },
+   {
+    "symbol": "FDC",
+    "event": "Regulatory / legal: [NSE filing] General Updates: Please find attached disclosure under Regulation 30 of SEBI (LODR) Regulations, 2015. (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "23:15"
+   },
+   {
+    "symbol": "ENTERO",
+    "event": "Analyst action: Entero Healthcare Solutions Ltd Downgraded to Buy Amid Mixed Technical Signals",
+    "impact": "Neutral",
+    "importance": 6,
+    "time": "23:15"
+   },
+   {
+    "symbol": "NATCOPHARM",
+    "event": "Regulatory / legal: USFDA issues 7 observations to NATCO Pharma's Hyderabad facility (+3 more stories)",
+    "impact": "Neutral",
+    "importance": 9,
+    "time": "23:15"
    }
   ]
  },
@@ -2059,12 +2134,24 @@
   "2970513f14e1ef9c": "2026-11-21",
   "e982d794bfa4dc69": "2026-11-21",
   "9f0719509e98fc52": "2026-11-21",
-  "18ba2ed87a91aee3": "2026-11-21"
+  "18ba2ed87a91aee3": "2026-11-21",
+  "5bcfdaf324bc8932": "2026-11-21",
+  "64fbc9d88815c8ae": "2026-11-21",
+  "ddf93d28b3e4dc62": "2026-11-21",
+  "be9c675a68474c67": "2026-11-21",
+  "a88492d36f40eb83": "2026-11-21",
+  "240f1e88ef8d48f1": "2026-11-21",
+  "83173a5167e3bad6": "2026-11-21",
+  "25821b4df582a6ee": "2026-11-21",
+  "d72d73f8f87fdbb2": "2026-11-21",
+  "98fabed468731301": "2026-11-21",
+  "f3df4cd1166d6e24": "2026-11-21",
+  "6aabf5a0e65c008a": "2026-11-21"
  },
- "last_report": "2026-11-21T14:11",
+ "last_report": "2026-11-21T23:15",
  "filing_sources": {
-  "checked": "2026-11-21 14:11",
-  "NSE": "ok: 11 filings for 7 stocks",
+  "checked": "2026-11-21 23:14",
+  "NSE": "ok: 13 filings for 8 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
