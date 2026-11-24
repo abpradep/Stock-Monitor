@@ -820,7 +820,8 @@
   "99b88f9d16b8f623": "2026-11-24",
   "da54a6ebde8364d7": "2026-11-24",
   "ee3e0e85a2b7a3ee": "2026-11-24",
-  "21429975809ae22b": "2026-11-24"
+  "21429975809ae22b": "2026-11-24",
+  "d8823f1e420a8897": "2026-11-24"
  },
  "price_alerted": {
   "2026-11-17": [
@@ -1463,6 +1464,13 @@
     "impact": "Neutral",
     "importance": 8,
     "time": "03:41"
+   },
+   {
+    "symbol": "HINDWAREAP",
+    "event": "Order win: [NSE filing] Action(s) taken or orders passed: Hindware Home Innovation Limited has informed the Exchange about Action(s) taken or orders passed",
+    "impact": "Neutral",
+    "importance": 5,
+    "time": "17:03"
    }
   ]
  },
@@ -1618,12 +1626,13 @@
   "2be61316f211b361": "2026-11-24",
   "91f4cb9b9226f3e0": "2026-11-24",
   "3315449c01b056bd": "2026-11-24",
-  "d265d1ef4b4ec23e": "2026-11-24"
+  "d265d1ef4b4ec23e": "2026-11-24",
+  "d8823f1e420a8897": "2026-11-24"
  },
- "last_report": "2026-11-24T03:41",
+ "last_report": "2026-11-24T17:04",
  "filing_sources": {
-  "checked": "2026-11-24 03:41",
-  "NSE": "ok: 5 filings for 5 stocks",
+  "checked": "2026-11-24 17:00",
+  "NSE": "ok: 6 filings for 6 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
