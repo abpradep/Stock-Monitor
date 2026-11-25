@@ -739,7 +739,69 @@
   "1d60e8d27f8f0f3a": "2026-11-25",
   "de156d49fd550238": "2026-11-25",
   "2160d3a6365d50c5": "2026-11-25",
-  "d061bcf2f39c7546": "2026-11-25"
+  "d061bcf2f39c7546": "2026-11-25",
+  "ae00803b30a0f0f9": "2026-11-25",
+  "be924dffdbf87989": "2026-11-25",
+  "e9902eb7878dd2f1": "2026-11-25",
+  "6669b09a044301b6": "2026-11-25",
+  "83a4b4180830ed20": "2026-11-25",
+  "f2d8105376334883": "2026-11-25",
+  "4c6fcdec34f1705f": "2026-11-25",
+  "8e258377703147d7": "2026-11-25",
+  "b6c1c13a83a321be": "2026-11-25",
+  "f8a45240f7670696": "2026-11-25",
+  "50de787057726983": "2026-11-25",
+  "d277cd003598dbee": "2026-11-25",
+  "5336827fa485743f": "2026-11-25",
+  "ea6c2d9b4564702a": "2026-11-25",
+  "7047445f75c67564": "2026-11-25",
+  "cb3dda177b84e8d3": "2026-11-25",
+  "f90aacb2214fc258": "2026-11-25",
+  "208559d499d07d67": "2026-11-25",
+  "df127467447d6795": "2026-11-25",
+  "181444414905dc65": "2026-11-25",
+  "24894aa56921007c": "2026-11-25",
+  "cbe9706aee4e5085": "2026-11-25",
+  "42ac8a013d068888": "2026-11-25",
+  "ec1c7b4ba208de5b": "2026-11-25",
+  "64e4eb28183fb75b": "2026-11-25",
+  "c2c8985b7b6e7b02": "2026-11-25",
+  "32b14bde8118dcbb": "2026-11-25",
+  "89684e1383d689d3": "2026-11-25",
+  "961c7f58b8928a66": "2026-11-25",
+  "0b11b382a2800ae3": "2026-11-25",
+  "c3ca314ace7cce67": "2026-11-25",
+  "a8eeecf1881738ce": "2026-11-25",
+  "0b9cc3f2a33cebbe": "2026-11-25",
+  "554c9da382d820ce": "2026-11-25",
+  "7abc9cd198d9fa29": "2026-11-25",
+  "659877d5d2a9f9dd": "2026-11-25",
+  "91b5cfeff0effbef": "2026-11-25",
+  "e673bb5f8bac70a4": "2026-11-25",
+  "e38e6581094c6a4a": "2026-11-25",
+  "d1736afa3b595373": "2026-11-25",
+  "a2cbf917f423a76a": "2026-11-25",
+  "1d4970db6e777172": "2026-11-25",
+  "069914c7be5b620c": "2026-11-25",
+  "13898d7ff3824781": "2026-11-25",
+  "90d8bc6ae6f4c8bd": "2026-11-25",
+  "ba6b4870db57c8f2": "2026-11-25",
+  "11bf805a32ba6525": "2026-11-25",
+  "039861d60760bf65": "2026-11-25",
+  "47ff606c34c0ed8d": "2026-11-25",
+  "99211c07264513a3": "2026-11-25",
+  "5031943849c3786a": "2026-11-25",
+  "013edc82afb8fbfd": "2026-11-25",
+  "5071dde885653f48": "2026-11-25",
+  "f14e7ba256b12980": "2026-11-25",
+  "5cf7a836744e75fd": "2026-11-25",
+  "308c0a5f8ca22085": "2026-11-25",
+  "42c190b8b5fc8375": "2026-11-25",
+  "688fcbcd9b8ace8f": "2026-11-25",
+  "e3d4af50dac96319": "2026-11-25",
+  "c7c581dc06d1c273": "2026-11-25",
+  "360235ba046b25a2": "2026-11-25",
+  "68bcc40d27f8a7db": "2026-11-25"
  },
  "price_alerted": {
   "2026-11-18": [
@@ -756,7 +818,10 @@
   ],
   "2026-11-23": [],
   "2026-11-24": [],
-  "2026-11-25": []
+  "2026-11-25": [
+   "BAJAJHCARE:price",
+   "GREAVESCOT:price"
+  ]
  },
  "events": {
   "2026-11-18": [
@@ -1298,6 +1363,69 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "04:44"
+   },
+   {
+    "symbol": "SOLARA",
+    "event": "Large deal / pledge: Solara Active Pharma Sciences promoter pledges 13 lakh shares to Aditya Birla Capital",
+    "impact": "Bearish",
+    "importance": 6,
+    "time": "15:48"
+   },
+   {
+    "symbol": "BAJAJHCARE",
+    "event": "Sharp price move: Greenchef, Balkrishna Paper, Bajaj Healthcare surge up to 7% on strong momentum (+1 more stories)",
+    "impact": "Bullish",
+    "importance": 6,
+    "time": "15:48"
+   },
+   {
+    "symbol": "JMFINANCIL",
+    "event": "M&A / stake change: Why has JM Financial Group lifted its stake in IMEXHS (ASX:IME) to 16.63%? (+2 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "15:48"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "M&A / stake change: Carlyle sells part of its stake in Piramal Pharma in Rs 2,200-crore block deal (+6 more stories)",
+    "impact": "Neutral",
+    "importance": 8,
+    "time": "15:48"
+   },
+   {
+    "symbol": "CYIENT",
+    "event": "Management change: Cyient Appoints Dhirendra Nath as Chief People Officer",
+    "impact": "Neutral",
+    "importance": 7,
+    "time": "15:48"
+   },
+   {
+    "symbol": "DENTA",
+    "event": "Order win: Denta Water wins orders worth \u20b965.56 crore from KNNL and JNS Infra",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "15:48"
+   },
+   {
+    "symbol": "KPITTECH",
+    "event": "Analyst action: KPIT Gets SBTi Net-Zero Target Validation (+1 more stories)",
+    "impact": "Neutral",
+    "importance": 6,
+    "time": "15:48"
+   },
+   {
+    "symbol": "BAJAJHCARE",
+    "event": "Price +7.8% today at \u20b9344.70 (volume 16.2x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 6,
+    "time": "15:48"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Price +15.0% today at \u20b9309.44 (volume 6.5x 20-day avg)",
+    "impact": "Bullish (price action)",
+    "importance": 7,
+    "time": "15:48"
    }
   ]
  },
@@ -1442,12 +1570,29 @@
   "c5342dbd3db60bfb": "2026-11-25",
   "d723c749c0fc0d4a": "2026-11-25",
   "1d60e8d27f8f0f3a": "2026-11-25",
-  "de156d49fd550238": "2026-11-25"
+  "de156d49fd550238": "2026-11-25",
+  "f2d8105376334883": "2026-11-25",
+  "b6c1c13a83a321be": "2026-11-25",
+  "f8a45240f7670696": "2026-11-25",
+  "208559d499d07d67": "2026-11-25",
+  "181444414905dc65": "2026-11-25",
+  "24894aa56921007c": "2026-11-25",
+  "a8eeecf1881738ce": "2026-11-25",
+  "0b9cc3f2a33cebbe": "2026-11-25",
+  "554c9da382d820ce": "2026-11-25",
+  "7abc9cd198d9fa29": "2026-11-25",
+  "659877d5d2a9f9dd": "2026-11-25",
+  "039861d60760bf65": "2026-11-25",
+  "99211c07264513a3": "2026-11-25",
+  "5031943849c3786a": "2026-11-25",
+  "308c0a5f8ca22085": "2026-11-25",
+  "688fcbcd9b8ace8f": "2026-11-25",
+  "360235ba046b25a2": "2026-11-25"
  },
- "last_report": "2026-11-25T04:44",
+ "last_report": "2026-11-25T15:48",
  "filing_sources": {
-  "checked": "2026-11-25 04:43",
-  "NSE": "ok: 1 filings for 1 stocks",
+  "checked": "2026-11-25 15:48",
+  "NSE": "ok: 3 filings for 3 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
