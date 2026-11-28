@@ -721,7 +721,37 @@
   "c9976feaefdfdc1b": "2026-11-28",
   "558e9e38fa0015ad": "2026-11-28",
   "a907552ceae02c17": "2026-11-28",
-  "dfb59e5113f5f85d": "2026-11-28"
+  "dfb59e5113f5f85d": "2026-11-28",
+  "7b6554187856cbcc": "2026-11-28",
+  "1f2028bb4dd4520b": "2026-11-28",
+  "8e75b6cb997d5946": "2026-11-28",
+  "b4d13b4c1d7b2991": "2026-11-28",
+  "97bb5eab11a87fbb": "2026-11-28",
+  "35fe5e99ab1cffdb": "2026-11-28",
+  "3eee8411753d9802": "2026-11-28",
+  "9bb8462c9dad38c2": "2026-11-28",
+  "257489102dd7dbbd": "2026-11-28",
+  "1c70cccc8aa2dc63": "2026-11-28",
+  "0cc322c65f5d3b5f": "2026-11-28",
+  "154f7243de61c5ae": "2026-11-28",
+  "2f299983a95fd3bd": "2026-11-28",
+  "2dc949af9777715c": "2026-11-28",
+  "1a79713e1d365164": "2026-11-28",
+  "676a2ea47398dbd5": "2026-11-28",
+  "7054b22f4e96c5bf": "2026-11-28",
+  "9ae3345d357449ad": "2026-11-28",
+  "0d6ae5c70a00c33d": "2026-11-28",
+  "3f0e5023c0b648ab": "2026-11-28",
+  "b52ba1cd4d226bf0": "2026-11-28",
+  "88fe5898797b00fa": "2026-11-28",
+  "cc61b2758907da65": "2026-11-28",
+  "92ca300160629f18": "2026-11-28",
+  "01bc770100ab0cd6": "2026-11-28",
+  "f11bda52de77846a": "2026-11-28",
+  "d18a4dea0d0e483c": "2026-11-28",
+  "8471705c990095a1": "2026-11-28",
+  "8083f3d0b221a735": "2026-11-28",
+  "dcd0f7e406470d45": "2026-11-28"
  },
  "price_alerted": {
   "2026-11-23": [],
@@ -1167,6 +1197,27 @@
     "impact": "Neutral",
     "importance": 7,
     "time": "01:07"
+   },
+   {
+    "symbol": "SYNGENE",
+    "event": "M&A / stake change: Syngene signs deal to sell 8.23% stake in O2 Renewable for \u20b93.5 crore",
+    "impact": "Bearish",
+    "importance": 7,
+    "time": "14:49"
+   },
+   {
+    "symbol": "GREAVESCOT",
+    "event": "Price move: Microcap winners: Greaves Cotton, Thomas Cook among 10 stocks with gains of up to 50%",
+    "impact": "Bullish",
+    "importance": 5,
+    "time": "14:49"
+   },
+   {
+    "symbol": "PPLPHARMA",
+    "event": "Price move: Piramal Pharma Share Price Today Drops 2.06% on Price Action",
+    "impact": "Bearish",
+    "importance": 5,
+    "time": "14:49"
    }
   ]
  },
@@ -1290,12 +1341,15 @@
   "52e15e095a203276": "2026-11-28",
   "56b2a4f1d028eebb": "2026-11-28",
   "558e9e38fa0015ad": "2026-11-28",
-  "a907552ceae02c17": "2026-11-28"
+  "a907552ceae02c17": "2026-11-28",
+  "1f2028bb4dd4520b": "2026-11-28",
+  "97bb5eab11a87fbb": "2026-11-28",
+  "7054b22f4e96c5bf": "2026-11-28"
  },
- "last_report": "2026-11-28T01:07",
+ "last_report": "2026-11-28T14:49",
  "filing_sources": {
-  "checked": "2026-11-28 01:06",
-  "NSE": "ok: 9 filings for 8 stocks",
+  "checked": "2026-11-28 14:49",
+  "NSE": "ok: 10 filings for 8 stocks",
   "BSE": "failed: BSE refused the request (HTTP 403)"
  },
  "known_symbols": [
